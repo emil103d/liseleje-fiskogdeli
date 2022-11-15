@@ -4,3 +4,10 @@
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
 <p class="bg-pink-600"> Hej Reves</p>
+
+<div class="flex justify-center bg-yellow-500 max-w-7xl">
+    <p>
+        TEst
+
+    </p>
+</div>
