@@ -1,32 +1,34 @@
-<section class="">
+<section class="py-20 px-10">
 
-    <div class="">
-
+    <div class="lg:max-w-[1200px] lg:m-auto md:flex justify-between items-center lg:grid">
+ 
         <div class="">
             <h1>TILMELD DIG VORES NYHEDSBREV</h1>
             <p>SPAR 10% på din første ordre!</p>
         </div>
     
-        <div class="lg:flex lg:justify-between">
-            <form class="lg:flex lg:justify-between g">
-                    
-                <div class="lg:flex lg:justify-between gap-4">
-                    <div>
-                        <label for="navn" class="text-textcolor" >Navn</label>
-                        <input class="h-10 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast navn" aria-label="Full name">
-                    </div>
-            
-                    <div>
-                        <label for="e-mail" class="text-textcolor">E-mail</label>
-                        <input class="h-10 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast e-mail" aria-label="E-mail">
-                    </div>
-                </div>
-            
+        
+        <div class="">
+            <div class="lg:flex lg:justify-between">
                 <div class="">
-                    <button class="bg-darkblue text-white h-10 w-32">Tilmeld mig</button>
-                </div>
-            
-            </form>
+                    <form class="lg:flex lg:justify-between w-[100%]">
+                            <div>
+                                <label for="navn" class="text-textcolor" >Navn</label>
+                                <input class="h-10 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast navn" aria-label="Full name">
+                            </div>
+                    
+                            <div>
+                                <label for="e-mail" class="text-textcolor">E-mail</label>
+                                <input class="h-10 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast e-mail" aria-label="E-mail">
+                            </div>
+                        </form>
+
+                    </div>
+                
+                    <div class="grid items-end">
+                        <button class="bg-darkblue text-white h-10 w-32">Tilmeld mig</button>
+                    </div>
+            </div>
         </div>
     </div>
     
