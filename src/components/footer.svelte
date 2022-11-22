@@ -101,19 +101,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style>
     footer {
         /* background-color: navy; */
