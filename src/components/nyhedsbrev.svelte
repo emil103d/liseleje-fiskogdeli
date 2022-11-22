@@ -1,6 +1,6 @@
 <section class="">
 
-    <div class="py-20 lg:flex lg:max-w-[1200px] lg:w-[-moz-available] lg:m-auto">
+    <div class="">
 
         <div class="">
             <h1>TILMELD DIG VORES NYHEDSBREV</h1>
