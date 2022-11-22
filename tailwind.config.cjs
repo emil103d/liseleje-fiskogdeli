@@ -10,11 +10,11 @@ module.exports = {
 			textcolor: '#1f425f',
 			attention: '#E5C72E',
 			test1: '#00FF00',
-			test2: '#7f00ff',
+			test2: '#7f00ff'
 		},
 
 		fontFamily: {
-			primarytext: ['Montserrat', 'sans-serif']
+			primarytext: ['Monoton', 'cursive']
 		},
 		extend: {}
 	},
