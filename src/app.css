@@ -4,34 +4,34 @@
 
 @layer components {
 	:root {
-		/* TYPOGRAFIER */
-		--h1_text: 'Prociono', serif;
-		--h2_text: 'Prociono', serif;
-		--text: 'lato', sans-serif;
+		/*__________________________________________________________________*/
 
 		/* FARVER */
-		--orange: #ff5e04;
-		--orange-light: #ff853e;
-		--brandcolor: var(--orange);
-		--cta-background-color: var(--brandcolor);
-		--primary-button-cta-background-color: var(--brandcolor);
-		--primary-button-cta-background-color-hover: var(--orange-light);
-		--secondary-button-cta-background-color: var(--hvid);
-		--secondary-button-cta-border-color: var(--brandcolor);
-		--button-cta-background-color-hover: var(--brandcolor);
-		--button-ghost-background-color: var(--txtcolor);
+		/*--- Primary color*/
+		--blue: #1f425f;
+		--primarycolor: var(--blue);
 
-		--sandstone: #faf9f7;
-		--sandstone-light: #fffbfb;
-		--sandbeach: rgba(250, 240, 219, 0.8);
-		--sandbeach-500: rgba(250, 240, 219, 0.5);
+		/*--- Secondary color*/
+		--lightblue: #f8fcfe;
+		--secondarycolor: var(--lightblue);
+
+		/*-- Neuturals colors */
 		--hvid: #ffffff;
+		--sort: #0000;
 
-		--sort: #000000;
-		--txtcolor: #545454;
-		--txtcolor-800: hlsa(0, 0%, 33%, 0.8);
-		--txtcolor-700: rgba(84, 84, 84, 0.7);
-		--txtcolor-600: rgba(84, 84, 84, 0.6);
+		/*--- Text colors*/
+		--primarytextcolor: var(--primarycolor);
+		--lighttextcolor: var(--secondarycolor);
+
+		/*__________________________________________________________________*/
+
+		/* TYPOGRAFIER */
+		--heading1: 'Montserrat', serif;
+		--heading2: 'Prociono', serif;
+		--heading3: 'Prociono', serif;
+		--label: 'lato', sans-serif;
+		--body: 'lato', sans-serif;
+		--button: 'lato', sans-serif;
 
 		/* FONT SIZES */
 		--font_h1: clamp(0.8rem, 0.8125rem + 2.5vw, 5.1875rem);
@@ -71,12 +71,6 @@
 
 		/* PADDING */
 		--padding-sections: clamp(0.5rem, 50%, 4rem);
-
-		/*LINE HIGHT */
-		--line-s: 0.8;
-		--line-m: 1.2;
-		--line-l: 1.4;
-		--line-xl: 1.7;
 	}
 
 	_______________________________________________
