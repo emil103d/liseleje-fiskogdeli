@@ -12,10 +12,3 @@
 <div class="flex justify-center bg-blue-500 max-w-7xl">
 	<p>Kanonen</p>
 </div>
-
-<div>
-	<h1>nu må vi lige teste det her engang h1</h1>
-	<h2>nu må vi lige teste det her engang h2</h2>
-	<p>nu må vi lige teste det her engang body</p>
-	<p>labeltext</p>
-</div>
