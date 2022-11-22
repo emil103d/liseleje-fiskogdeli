@@ -4,6 +4,7 @@
 
 @layer components {
 	:root {
+
 		/* TYPOGRAFIER */
 		/*--- Type face*/
 		--heading1: 'Montserrat', sans-serif;
@@ -34,7 +35,7 @@
 }
 
 * {
-    font-family: 'Montsserat';
+    font-family: 'Monoton', cursive;
 }
 
 h2 {
