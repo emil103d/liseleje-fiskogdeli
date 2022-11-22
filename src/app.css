@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    :root {
+         /* TYPOGRAFIER */
+    --h1_text: "Prociono", serif;
+    --h2_text: "Prociono", serif;
+    --text: "lato", sans-serif; 
+
+     /* FARVER */
+     --orange: #ff5e04;
+     --orange-light: #ff853e;
+     --brandcolor: var(--orange);
+     --cta-background-color: var(--brandcolor);
+     --primary-button-cta-background-color: var(--brandcolor);
+     --primary-button-cta-background-color-hover: var(--orange-light);
+     --secondary-button-cta-background-color: var(--hvid);
+     --secondary-button-cta-border-color: var(--brandcolor);
+     --button-cta-background-color-hover: var(--brandcolor);
+     --button-ghost-background-color: var(--txtcolor);
+    }   
+
+}
