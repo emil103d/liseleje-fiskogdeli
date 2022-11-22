@@ -34,6 +34,10 @@
 		--body: 'Montserrat', sans-serif, 'font-weight: semibold', 'font-size: 16px';
 		--button: 'Montserrat', sans-serif;
 
+		h2: var(--heading2);
+
+        --heading2:
+
 		/*__________________________________________________________________*/
 		/* SPACING  */
 
@@ -48,4 +52,14 @@
 		/* PADDING */
 		--padding-sections: clamp(0.5rem, 50%, 4rem);
 	}
+}
+
+* {
+    font-family: 'Montsserat';
+}
+
+h2 {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: var(--heading2);
+    font-weight: var(--heading2);
 }
