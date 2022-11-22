@@ -4,27 +4,6 @@
 
 @layer components {
 	:root {
-		/*__________________________________________________________________*/
-
-		/* FARVER */
-		/*--- Primary color*/
-		--blue: #1f425f;
-		--primarycolor: var(--blue);
-
-		/*--- Secondary color*/
-		--lightblue: #f8fcfe;
-		--secondarycolor: var(--lightblue);
-
-		/*-- Neuturals colors */
-		--hvid: #ffffff;
-		--sort: #0000;
-
-		/*--- Text colors*/
-		--primarytextcolor: var(--primarycolor);
-		--lighttextcolor: var(--secondarycolor);
-
-		/*__________________________________________________________________*/
-
 		/* TYPOGRAFIER */
 		/*--- Type face*/
 		--heading1: 'Montserrat', sans-serif;
