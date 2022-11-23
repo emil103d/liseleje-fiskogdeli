@@ -1,3 +1,7 @@
+<script>    
+    import Button from "../components/Button.svelte";
+</script>
+
 <section class="py-20 px-10">
 
     <div class=" md:flex md:justify-between lg:max-w-[1024px] lg:m-auto lg:flex-col">
@@ -15,18 +19,19 @@
                         <form class="grid gap-4 lg:flex lg:justify-between w-[100%]">
                             <div>
                                 <label for="navn" class="text-textcolor font-semibold" >Navn</label>
-                                <input class="h-10 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast navn" aria-label="Full name">
+                                <input class="h-[53.6px] appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast navn" aria-label="Full name">
                             </div>
                     
                             <div>
                                 <label for="e-mail" class="text-textcolor font-semibold">E-mail</label>
-                                <input class="h-10 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast e-mail" aria-label="E-mail">
+                                <input class="h-[53.6px] appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast e-mail" aria-label="E-mail">
                             </div>
                         </form>
                         </div>
                 
                         <div class="grid items-end">
-                            <button class="bg-darkblue text-white h-10 w-32">Tilmeld mig</button>
+                            <Button type="primary">primary </Button>
+                            <Button type="seconday">secondary </Button>
                         </div>
                 </div>
             </div>
