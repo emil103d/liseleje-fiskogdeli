@@ -35,11 +35,17 @@
 }
 
 * {
-    font-family: 'Monoton', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
 }
 
 h2 {
-	font-family: 'Courier New', Courier, monospace;
-	font-size: var(--heading2);
-    font-weight: var(--heading2);
+}
+
+h3 {
+}
+
+h1 {
 }

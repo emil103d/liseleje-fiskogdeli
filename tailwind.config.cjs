@@ -14,8 +14,9 @@ module.exports = {
 		},
 
 		fontFamily: {
-			primarytext: ['Monoton', 'cursive']
+			primarytext: ['Montserrat', 'sans-serif']
 		},
+
 		extend: {}
 	},
 	plugins: []
