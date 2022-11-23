@@ -17,7 +17,14 @@ module.exports = {
 			primarytext: ['Montserrat', 'sans-serif']
 		},
 
-		extend: {}
+		extend: {
+			keyframes: {
+				test: {
+					'0%, 100%': {transform: 'rotate(180deg)'},
+					'50%': { transform: 'rotate(10deg)'},
+				}
+			}
+		}
 	},
 	plugins: []
 };
