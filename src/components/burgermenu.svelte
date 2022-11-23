@@ -1,5 +1,5 @@
 <script>
-	import { fly } from 'svelte/transition';
+	import { fly, fade } from 'svelte/transition';
 	import Tab1 from '../components/tab1.svelte';
 	import Tab2 from '../components/tab2.svelte';
 	import Tab3 from '../components/tab3.svelte';
@@ -27,9 +27,9 @@
 <svelte:window on:keydown={handleNavWithKey} />
 
 <div id="mySidenav" class="sidenav" class:open={navOpen}>
-	<button class="closebtn z-4 " on:click={handleNav}>HEJ</button>
+	<button class="closebtn z-4 text-white" on:click={handleNav}>X</button>
 	{#if navOpen}
-		<div class="fisk flex " transition:fly={{ y: 300, duration: 2000, delay: 2000 }}>
+		<div class="fisk flex " in:fly={{ y: 300, duration: 2000, delay: 1000 }} out:fade>
 			<svg
 				class="fisk"
 				width="898"
@@ -265,8 +265,10 @@
 		position: absolute;
 		top: 0;
 		right: 25px;
-		font-size: 36px;
+		font-size: 20px;
 		margin-left: 50px;
+		padding-top: 1rem;
+		color: white;
 	}
 
 	li {
@@ -282,6 +284,7 @@
 		height: 30vh;
 		margin: auto;
 	}
+
 	.menu {
 		height: 70%; /* 100% Full-height */
 		width: 100%; /* 0 width - change this with JavaScript */

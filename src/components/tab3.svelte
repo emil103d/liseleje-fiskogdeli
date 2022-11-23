@@ -1,4 +1,5 @@
 <script>
+	import { fade } from 'svelte/transition';
 </script>
 
 <div class="sideboxRight flex bg-lightblue p-4 min min-h-full">
