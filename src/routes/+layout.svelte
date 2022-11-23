@@ -1,11 +1,12 @@
 <script>
 	import '../app.css';
 	import Nav from '../components/nav.svelte';
+	import Nyhedsbrev from '../components/nyhedsbrev.svelte';
 	import Footer from '../components/footer.svelte';
-	import Burgermenu from '../components/burgermenu.svelte';
 </script>
 
 <Nav />
 <Burgermenu />
 <slot />
+<Nyhedsbrev />
 <Footer />
