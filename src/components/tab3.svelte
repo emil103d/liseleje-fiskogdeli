@@ -5,7 +5,7 @@
 <div class="sideboxRight flex bg-lightblue p-4 min min-h-full">
 	<ul class="self-center">
 		<li>
-			<a href="#">Opskrifter</a>
+			<a href="/construction">Opskrifter</a>
 			<svg
 				class="hidden "
 				width="140"
