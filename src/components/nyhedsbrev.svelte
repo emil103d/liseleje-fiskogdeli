@@ -1,94 +1,39 @@
 <section class="py-20 px-10">
 
-    <div class="lg:max-w-[1200px] lg:m-auto md:flex justify-between items-center lg:grid">
+    <div class=" md:flex md:justify-between lg:max-w-[1024px] lg:m-auto lg:flex-col">
  
-        <div class="">
-            <h1>TILMELD DIG VORES NYHEDSBREV</h1>
-            <p>SPAR 10% på din første ordre!</p>
+        <div class="pb-6  gap-2 pr-4 m-auto lg:m-0">
+            <p class="text-2xl font-bold">TILMELD DIG VORES NYHEDSBREV</p>
+            <p>SPAR 10% på din første ordre</p>
         </div>
-    
-        
+
+
         <div class="">
             <div class="lg:flex lg:justify-between">
-                <div class="">
-                    <form class="lg:flex lg:justify-between w-[100%]">
+                <div class="grid pb-4 lg:pb-0">
+
+                        <form class="grid gap-4 lg:flex lg:justify-between w-[100%]">
                             <div>
-                                <label for="navn" class="text-textcolor" >Navn</label>
+                                <label for="navn" class="text-textcolor font-semibold" >Navn</label>
                                 <input class="h-10 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast navn" aria-label="Full name">
                             </div>
                     
                             <div>
-                                <label for="e-mail" class="text-textcolor">E-mail</label>
+                                <label for="e-mail" class="text-textcolor font-semibold">E-mail</label>
                                 <input class="h-10 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast e-mail" aria-label="E-mail">
                             </div>
                         </form>
-
-                    </div>
-                
-                    <div class="grid items-end">
-                        <button class="bg-darkblue text-white h-10 w-32">Tilmeld mig</button>
-                    </div>
-            </div>
-        </div>
-    </div>
-    
-
-</section>
-
-
-
-
-
-
-
-
-
-    <!-- <div class="md:flex md:justify-between lg:grid lg:max-w-[1200px] lg:m-auto">
-    
-        <div class="pb-9 md:pb-0 md:grid md:items-center">
-            <div class="">
-                <h4 class="text-bold">TILMELD DIG VORES NYHEDSBREV</h4>
-                <p>Spar 10% på din første ordre</p>
-            </div>    
-        </div>
-
-        <div class="flex justify-between">
-            <div class="bg-attention h-10 w-10"> 
-                <div class="grid gap-4 lg:flex">
-                            <div>
-                                <label for="navn" class="text-textcolor" >Navn</label>
-                                <input class="h-10 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast navn" aria-label="Full name">
-                            </div>
-        
-                            <div>
-                                <label for="e-mail" class="text-textcolor">E-mail</label>
-                                <input class="h-10 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Indtast e-mail" aria-label="E-mail">
-                            </div>
                         </div>
-            </div>
-        
-        
-            <div class="bg-test2 h-10 w-10">
-                <div class="grid items-end">
-                    <button class="bg-darkblue text-white h-10 w-32">Tilmeld mig</button>
+                
+                        <div class="grid items-end">
+                            <button class="bg-darkblue text-white h-10 w-32">Tilmeld mig</button>
+                        </div>
                 </div>
             </div>
         </div>
 
-            
 
-    </div> -->
-
-
-
-
-
-
-
-
-
-
-
+</section>
 
 
 
