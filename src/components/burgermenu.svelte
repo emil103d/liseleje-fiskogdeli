@@ -29,7 +29,7 @@
 <div id="mySidenav" class="sidenav" class:open={navOpen}>
 	<button class="closebtn z-4 text-white" on:click={handleNav}>X</button>
 	{#if navOpen}
-		<div class="fisk flex " in:fly={{ y: 300, duration: 2000, delay: 1000 }} out:fade>
+		<div class="fisk" in:fly={{ y: 300, duration: 2000, delay: 1000 }} out:fade>
 			<svg
 				class="fisk"
 				width="898"
@@ -62,7 +62,7 @@
 			class="menu grid grid-cols-2 flex"
 			transition:fly={{ y: 700, duration: 2000, delay: 2000 }}
 		>
-			<div class="sideboxLeft p-4 bg-white self-center block cols-start-1 ">
+			<div class="sideboxLeft p-4 bg-white self-center justify-self-center block cols-start-1 ">
 				<button
 					class={current === '1' ? 'selected' : ''}
 					on:click={() => (current = '1')}
@@ -239,8 +239,9 @@
 		display: flex;
 		transition: 0.3s;
 		color: #1f425f;
-		font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
-		margin-bottom: 4rem;
+		font-size: clamp(1.0625rem, 0.5rem + 2.25vw, 2.1875rem);
+		margin-bottom: 2rem;
+		margin-top: 2rem;
 		align-items: center;
 	}
 
@@ -330,6 +331,15 @@
 	/* ---------Hamburger menu close---------- */
 
 	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-	@media screen and (max-height: 450px) {
+	@media screen and (min-height: 700px) {
+		.fisk {
+			padding-top: 2rem;
+			padding-bottom: 4rem;
+			height: 40vh;
+		}
+
+		.menu {
+			height: 60%; /* 100% Full-height */
+		}
 	}
 </style>

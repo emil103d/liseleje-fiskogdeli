@@ -91,7 +91,7 @@
 		display: block;
 		transition: 0.3s;
 		color: #1f425f;
-		font-size: clamp(1.0625rem, 0.8438rem + 0.875vw, 1.5rem);
+		font-size: clamp(1.0625rem, 0.6563rem + 1.625vw, 1.875rem);
 		padding-bottom: 1rem;
 	}
 	li:hover svg {

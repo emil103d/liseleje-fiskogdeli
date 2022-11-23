@@ -2,7 +2,7 @@
 	import { fade } from 'svelte/transition';
 </script>
 
-<div class="sideboxRight flex bg-lightblue p-4 min min-h-full">
+<div class="sideboxRight flex bg-lightblue p-4 min-h-full">
 	<ul class="self-center">
 		<li>
 			<a href="#">Fisk og Skaldyr</a>
@@ -169,7 +169,7 @@
 		text-decoration: none;
 		display: block;
 		color: #1f425f;
-		font-size: clamp(1.0625rem, 0.8438rem + 0.875vw, 1.5rem);
+		font-size: clamp(1.0625rem, 0.6563rem + 1.625vw, 1.875rem);
 		padding-bottom: 1rem;
 	}
 	li:hover svg {
