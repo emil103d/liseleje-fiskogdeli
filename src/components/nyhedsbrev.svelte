@@ -6,8 +6,9 @@
 
     <div class=" md:flex md:justify-between lg:max-w-[1024px] lg:m-auto lg:flex-col">
  
-        <div class="pb-6  gap-2 pr-4 m-auto lg:m-0">
-            <p class="text-2xl font-bold">TILMELD DIG VORES NYHEDSBREV</p>
+        <div class="pb-6  gap-2 pr-4 m-auto lg:m-0 text-textcolor">
+            <h2 class="font-bold ">TILMELD DIG VORES NYHEDSBREV <b class="text-yellowdot"> . </b> </h2>
+            <div class="h-1 w-20 bg-darkblue mb-6"></div>
             <p>SPAR 10% på din første ordre</p>
         </div>
 

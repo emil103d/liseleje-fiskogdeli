@@ -1,8 +1,9 @@
 <section class="py-20 px-10">
 
     <div class="lg:max-w-[1024px] lg:m-auto lg:flex-col">
-        <div>
-            <h4>FÅ ET INDBLIK I VORES HVERDAG</h4>
+        <div class="text-textcolor pb-6">
+            <h2>FÅ ET INDBLIK I VORES HVERDAG <b class="text-yellowdot">.</b></h2>
+            <div class="h-1 w-20 bg-darkblue mb-6"></div>
             <p>Følg os på instagram og facebook</p>
         </div>
 
