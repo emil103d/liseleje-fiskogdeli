@@ -31,7 +31,7 @@
                 
                         <div class="grid items-end">
                             <Button type="primary">primary </Button>
-                            <Button type="seconday">secondary </Button>
+                        
                         </div>
                 </div>
             </div>
