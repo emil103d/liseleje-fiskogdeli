@@ -2,6 +2,7 @@
 	import '../app.css';
 	import Nav from '../components/nav.svelte';
 	import Burgermenu from '../components/burgermenu.svelte';
+	import Herosection from '../components/Herosection.svelte';
 	import Udvalg from '../components/Udvalg.svelte';
 	import Testimonials from '../components/Testimonials.svelte';
 	import Nyhedsbrev from '../components/nyhedsbrev.svelte';
@@ -10,10 +11,12 @@
 	import Footer from '../components/footer.svelte';
 	
 	
+	
 </script>
 
 <Nav />
 <Burgermenu />
+<Herosection />
 <Udvalg />
 <Testimonials/>
 <Howitworks />
