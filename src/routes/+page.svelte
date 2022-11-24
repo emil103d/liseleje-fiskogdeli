@@ -6,7 +6,6 @@
 	import Howitworks from '../components/Howitworks.svelte';
 	import Instafeed from '../components/Instafeed.svelte';
 	import Footer from '../components/footer.svelte';
-
 </script>
 
 <Nav />
@@ -15,3 +14,4 @@
 <Instafeed />
 <Nyhedsbrev />
 <Footer />
+
