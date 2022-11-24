@@ -8,7 +8,7 @@
  
         <div class="pb-6  gap-2 pr-4 m-auto lg:m-0 text-textcolor">
             <h2 class="font-bold ">TILMELD DIG VORES NYHEDSBREV <b class="text-yellowdot"> . </b> </h2>
-            <div class="h-1 w-20 bg-darkblue mb-6"></div>
+            <div class="h-[2px] w-20 bg-darkblue mb-6"></div>
             <p>SPAR 10% på din første ordre</p>
         </div>
 
@@ -31,7 +31,7 @@
                         </div>
                 
                         <div class="grid items-end">
-                            <Button type="primary">primary </Button>
+                            <Button type="primary">Skriv mig op </Button>
                         </div>
                 </div>
             </div>
