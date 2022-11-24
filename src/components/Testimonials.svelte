@@ -14,7 +14,5 @@
 
 <style>
 
-    section {
-        background-color: aqua;
-    }
+
 </style>

@@ -3,6 +3,7 @@
 	import Nav from '../components/nav.svelte';
 	import Burgermenu from '../components/burgermenu.svelte';
 	import Herosection from '../components/Herosection.svelte';
+	import Blandselvtapas from '../components/Blandselvtapas.svelte';
 	import Udvalg from '../components/Udvalg.svelte';
 	import Testimonials from '../components/Testimonials.svelte';
 	import Nyhedsbrev from '../components/nyhedsbrev.svelte';
@@ -12,11 +13,13 @@
 	
 	
 	
+	
 </script>
 
 <Nav />
 <Burgermenu />
 <Herosection />
+<Blandselvtapas />
 <Udvalg />
 <Testimonials/>
 <Howitworks />
