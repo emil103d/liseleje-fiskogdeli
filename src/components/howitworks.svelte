@@ -1,3 +1,8 @@
+<script>    
+    import Button from "../components/Button.svelte";
+</script>
+
+
 <section class="bg-darkblue py-20 px-10">
 
     <div class="lg:max-w-[1024px] lg:grid m-auto lg:align-middle gap-6">
@@ -49,7 +54,7 @@
         </div>
 
         <div class="grid justify-center pt-6">
-            <button class="bg-lightblue text-darkblue h-10 w-32">KOM IGANG NU</button>
+            <Button type="primary">primary </Button>
         </div>
 
     </div>
