@@ -26,14 +26,13 @@ button,
     gap: 1rem;
     justify-content: center;
     place-items: center;
-    max-width: 200px;
+    min-width: 200px;
     white-space: nowrap;
     animation-name: rotate_fish_out;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-fill-mode: both;
-
 }
 
 button:hover,
@@ -45,20 +44,24 @@ button:hover,
 
 
 
+button:hover .button_icon path {
+    fill: #1f425f;
+}
+
 button,
-.secondary {
+.primary {
     font-size: 16px;
     color: #1f425f;
     font-weight: bold;
     font-family: var(--button);
-    background-color: #ffffff;
+    background-color: #E9F4FC;
     padding: 0.8rem 30px;
     display: inline-block;
     display: flex;
     gap: 1rem;
     justify-content: center;
     place-items: center;
-    max-width: 200px;
+    min-width: 200px;
     white-space: nowrap;
     animation-name: rotate_fish_out;
     animation-duration: 0.3s;
@@ -66,26 +69,6 @@ button,
     animation-timing-function: linear;
     animation-fill-mode: both;
 }
-
-button:hover,
-.secondary:hover {
-    color: #ffffff;
-    background-color: #1f425f;
-}
-
-button:hover .button_icon path {
-    fill: #1f425f;
-}
-
-button, .button_icon .secondary path {
-    fill: red;
-}
-
-/* button:hover .secondary .button_icon path {
-    fill: red;
-} */
-
-
 
 
 

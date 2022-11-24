@@ -18,14 +18,9 @@ module.exports = {
 			headingtext: ['Abril Fatface', 'cursive'],
 			primarytext: ['Montserrat', 'sans-serif']
 		},
-
+		
 		extend: {
-			keyframes: {
-				test: {
-					'0%, 100%': {transform: 'rotate(180deg)'},
-					'50%': { transform: 'rotate(10deg)'},
-				}
-			}
+			
 		}
 	},
 	plugins: []
