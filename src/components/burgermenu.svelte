@@ -27,7 +27,7 @@
 <svelte:window on:keydown={handleNavWithKey} />
 
 <div id="mySidenav" class="sidenav" class:open={navOpen}>
-	<button class="closebtn z-4 text-white">X</button>
+	<button class="closebtn z-4 text-white" on:click={handleNav}>X</button>
 	{#if navOpen}
 		<div class="fisk" in:fly={{ y: 300, duration: 2000, delay: 1000 }} out:fade>
 			<svg
@@ -164,7 +164,7 @@
 					KONTAKT
 				</button>
 			</div>
-			<svelte:component this={activetab} />
+			<svelte:component this={activetab} on:click={handleNav} />
 		</div>
 	{/if}
 	<!-- <a href="javascript:void(0)" class="closebtn z-4" on:click={handleNav}>hej</a> -->

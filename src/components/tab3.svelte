@@ -3,7 +3,7 @@
 </script>
 
 <div class="sideboxRight flex bg-lightblue p-4 min min-h-full">
-	<ul class="self-center md:pl-32">
+	<ul class="self-center md:pl-32" in:fade={{ y: 200, duration: 1000 }}>
 		<li>
 			<a class="hover-underline-animation" href="/construction">Opskrifter</a>
 		</li>
