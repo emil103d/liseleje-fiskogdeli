@@ -27,7 +27,7 @@
 <svelte:window on:keydown={handleNavWithKey} />
 
 <div id="mySidenav" class="sidenav" class:open={navOpen}>
-	<button class="closebtn z-4 text-white" on:click={handleNav}>X</button>
+	<button class="closebtn z-4 text-white">X</button>
 	{#if navOpen}
 		<div class="fisk" in:fly={{ y: 300, duration: 2000, delay: 1000 }} out:fade>
 			<svg
@@ -62,7 +62,7 @@
 			class="menu grid grid-cols-2 flex"
 			transition:fly={{ y: 700, duration: 2000, delay: 2000 }}
 		>
-			<div class="sideboxLeft p-4 bg-white self-center justify-self-center block cols-start-1 ">
+			<div class="sideboxLeft p-4 bg-white self-center md:pl-32 block cols-start-1 ">
 				<button
 					class={current === '1' ? 'selected' : ''}
 					on:click={() => (current = '1')}
@@ -239,7 +239,7 @@
 		display: flex;
 		transition: 0.3s;
 		color: #1f425f;
-		font-size: clamp(1.0625rem, 0.5rem + 2.25vw, 2.1875rem);
+		font-size: clamp(1.0625rem, 0.6563rem + 1.625vw, 1.875rem);
 		margin-bottom: 2rem;
 		margin-top: 2rem;
 		align-items: center;
@@ -257,7 +257,12 @@
 	button svg {
 		transform: rotate(-90deg);
 	}
+
 	button:hover svg {
+		transform: rotate(-0deg);
+	}
+
+	button:focus svg {
 		transform: rotate(-0deg);
 	}
 
