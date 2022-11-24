@@ -1,5 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
+	import Label from '../components/label.svelte';
 </script>
 
 <div class="sideboxRight flex bg-lightblue p-4 min-h-full ">
@@ -8,7 +9,10 @@
 			<a class="hover-underline-animation" href="/construction">Fisk og Skaldyr</a>
 		</li>
 		<li>
-			<a class="hover-underline-animation" href="/construction">Fisketapas</a>
+			<div class="flex gap-2">
+				<a class="hover-underline-animation" href="/construction">Fisketapas</a>
+				<Label title="Populært" />
+			</div>
 		</li>
 		<li>
 			<a class="hover-underline-animation" href="/construction">Delikatesser</a>

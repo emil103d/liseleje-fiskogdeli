@@ -27,7 +27,7 @@
 <svelte:window on:keydown={handleNavWithKey} />
 
 <div id="mySidenav" class="sidenav" class:open={navOpen}>
-	<button class="closebtn z-4 text-white" on:click={handleNav}>X</button>
+	<button class="closebtn z-4 text-white close" on:click={handleNav} />
 	{#if navOpen}
 		<div class="fisk" in:fly={{ y: 300, duration: 2000, delay: 1000 }} out:fade>
 			<svg
@@ -167,7 +167,6 @@
 			<svelte:component this={activetab} on:click={handleNav} />
 		</div>
 	{/if}
-	<!-- <a href="javascript:void(0)" class="closebtn z-4" on:click={handleNav}>hej</a> -->
 </div>
 
 <!--hamburger icon to open the sidenav -->
@@ -266,17 +265,6 @@
 		transform: rotate(-0deg);
 	}
 
-	/* Position and style the close button (top right corner) */
-	.sidenav .closebtn {
-		position: absolute;
-		top: 0;
-		right: 25px;
-		font-size: 20px;
-		margin-left: 50px;
-		padding-top: 1rem;
-		color: white;
-	}
-
 	li {
 		margin-bottom: 1rem;
 	}
@@ -334,6 +322,43 @@
 	}
 
 	/* ---------Hamburger menu close---------- */
+
+	/* ---------close button start ----------- */
+
+	/* Position and style the close button (top right corner) */
+	.close {
+		position: absolute;
+		right: 32px;
+		top: 0;
+		width: 32px;
+		height: 32px;
+		opacity: 0.7;
+	}
+	.close:hover {
+		opacity: 1;
+	}
+	.close:before,
+	.close:after {
+		position: absolute;
+		left: 15px;
+		content: ' ';
+		height: 33px;
+		width: 2px;
+		background-color: white;
+	}
+	.close:before {
+		transform: rotate(45deg);
+	}
+	.close:after {
+		transform: rotate(-45deg);
+	}
+
+	.close:hover:after,
+	.close:hover:before {
+		transform: rotate(-90deg);
+	}
+
+	/* -----------close button stop-------- */
 
 	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 	@media screen and (min-height: 700px) {
