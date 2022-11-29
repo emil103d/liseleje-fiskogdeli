@@ -7,6 +7,8 @@
 				<p class="pb-6">
 					“Vi elsker Liseleje og har derfor startet Liseleje Fisk & Deli så du kan forkæles med frisk fisk løbet af hele sommeren. Vi er født og opvokset i området og har derfor en stor passion“
 				</p>
+
+                p
                 
                 
                 
