@@ -4,6 +4,8 @@
 	let current = '1';
 </script>
 
+<header class="bg-darkblue w-full border-t-2 m-auto" />
+
 <slot />
 
 <nav class="bg-darkblue w-full border-t-2 m-auto">
