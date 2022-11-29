@@ -6,7 +6,7 @@
 <section>
 	<div class="wrapper py-20 px-10">
 		<div class="grid  md:grid-cols-2 lg:max-w-[1024px] lg:m-auto place-items-center">
-			<div class="pb-6 gap-2 pr-4 m-auto lg:m-0 text-textcolor">
+			<div class="pb-6 md:pb-0 gap-2 pr-4 m-auto lg:m-0 text-textcolor">
 				<Label title="Skriv mig op"> </Label>
 				<h2 class="font-bold ">Bland selv fisketapas <b class="text-yellowdot"> . </b></h2>
 				<div class="h-[2px] w-20 bg-darkblue mb-6" />
