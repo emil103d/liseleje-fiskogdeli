@@ -3,6 +3,7 @@
 	import Burgermenu from '../lib/components/Burgermenu.svelte';
 	import Herosection from '../lib/components/Herosection.svelte';
 	import Blandselvtapas from '../lib/components/Blandselvtapas.svelte';
+	import Friskt_loyalt from '../lib/components/Friskt_loyalt.svelte';
 	import Udvalg from '../lib/components/Udvalg.svelte';
 	import Testimonials from '../lib/components/Testimonials.svelte';
 	import Nyhedsbrev from '../lib/components/Nyhedsbrev.svelte';
@@ -14,6 +15,7 @@
 <Burgermenu />
 <Herosection />
 <Blandselvtapas />
+<Friskt_loyalt />
 <Udvalg />
 <Testimonials />
 <Howitworks />

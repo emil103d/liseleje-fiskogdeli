@@ -2,7 +2,7 @@
 	import Button from '../uielements/Button.svelte';
 </script>
 
-<section class="py-20 px-10">
+<section class="py-20 px-10 min-h-[20rem]">
 	<div class=" md:flex md:justify-between lg:max-w-[1024px] lg:m-auto lg:flex-col">
 		<div class="pb-6  gap-2 pr-4 m-auto lg:m-0 text-textcolor">
 			<h2 class="font-bold ">Tilmeld dig vores nyhedsbrev <b class="text-yellowdot"> . </b></h2>
@@ -47,6 +47,5 @@
 <style>
 	section {
 		background-image: url('vaeg.png');
-		background-size: cover;
 	}
 </style>
