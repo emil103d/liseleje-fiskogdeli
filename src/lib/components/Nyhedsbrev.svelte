@@ -46,7 +46,7 @@
 
 <style>
 	section {
-		background-image: url('nyhedsbrev_baggrund.jpg');
+		background-image: url('vaeg.png');
 		background-size: cover;
 	}
 </style>
