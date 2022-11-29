@@ -5,7 +5,7 @@
                 <h1 class="text-darkblue tracking-wider">FISK & DELI</h1>
                 <p class="text-4xl tracking-widest">LISELEJE</p>
             </div>
-            <img src="logo.png" class="md:scale-75" alt="">
+            <img src="logo.svg" class="fisk m-auto max-w-xs " alt="">
         </div>
 
         <div class="absolute bottom-20 left-[calc(50%-33px)]">
@@ -17,6 +17,7 @@
 </section>
 
 <style>
+
 
 
 </style>
