@@ -18,6 +18,10 @@
 
 <style>
 
+section {
+    background-image: url('vaeg.png');
+    background-size: cover;
+}
 
 
 </style>

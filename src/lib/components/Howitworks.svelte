@@ -12,22 +12,22 @@
 
 		<div class="grid justify-center text-center gap-6 md:flex md:justify-between">
 			<div class="">
-				<img src="howto_1.png" class="pb-4 scale-75" alt="">
+				<img src="howto_1.png" class="pb-4 h-72 w-auto md:h-full md:w-full" alt="">
 				<p class="text-lightblue">1. Vælg dine yndlingsvarer <b class="text-yellowdot">.</b></p>
 			</div>
 
 			<div class="">
-				<img src="howto_2.png" class="pb-4 scale-75" alt="">
+				<img src="howto_2.png" class="pb-4 h-72 w-auto md:h-full md:w-full" alt="">
 				<p class="text-lightblue">2. Tilføj til kurv & betal <b class="text-yellowdot">.</b></p>
 			</div>
 
 			<div class="">
-				<img src="howto_3.png" class="pb-4 scale-75" alt="">
+				<img src="howto_3.png" class="pb-4 h-72 w-auto md:h-full md:w-full" alt="">
 				<p class="text-lightblue">3. Afhent i butik <b class="text-yellowdot">.</b></p>
 			</div>
 		</div>
 
-		<div class="grid justify-center pt-6">
+		<div class="grid justify-center pt-6 md:pt-12">
 			<Button type="primary">Kom igang</Button>
 		</div>
 	</div>

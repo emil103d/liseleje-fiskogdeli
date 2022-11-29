@@ -10,9 +10,9 @@
 			<div class="w-full h-full skygge md:block relative">
 				<img src="borat.jpg" alt="" class="w-full">
 				<div class="h-44 w-44 rounded-full bg-yellowdot absolute top-[-30px] right-[-30px] button z-10 text-center grid place-content-center">
-					<div>
+					<div class="gap-2">
 						<p class="font-headingtext text-3xl">Martin</p>
-						<p class=" text-sm"> Medejer & fiske entusiast</p>
+						<p class="font-headingtext text-sm "> Medejer & fiske entusiast</p>
 					</div>
 				</div>
 			</div>
@@ -29,8 +29,7 @@
 		</div>
 	</div>
 	<div>
-	
-			
+		<img src="friskt_loyalt.png" class="w-full" alt="">
 	</div>
 
 </section>
