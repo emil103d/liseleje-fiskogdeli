@@ -1,12 +1,24 @@
 <script>
 	import { fade } from 'svelte/transition';
 	import Label from '../uielements/Label.svelte';
+
+	let length = () => 'li:nth-child(1) path'.getTotalLength();
+
+	//console.log(length);
 </script>
 
 <div class="sideboxRight flex bg-lightblue p-4 min-h-full ">
-	<ul class="self-center md:pl-32" in:fade={{ y: 200, duration: 1000 }}>
+	<ul class="menu self-center md:pl-32" in:fade={{ y: 200, duration: 1000 }}>
 		<li>
-			<a class="hover-underline-animation" href="/blandselvtapasflow">Fisk og Skaldyr</a>
+			<a class="" href="/blandselvtapasflow"
+				>Fisk og Skaldyr <svg viewBox="0 0 455.555 48"
+					><path
+						d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+					/><path
+						d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+					/></svg
+				></a
+			>
 		</li>
 		<li>
 			<div class="flex gap-2">
@@ -25,14 +37,14 @@
 </div>
 
 <style>
-	.hover-underline-animation {
+	/* .hover-underline-animation {
 		display: inline-block;
 		position: relative;
 		text-decoration: none;
 		color: #1f425f;
 		font-size: clamp(1.0625rem, 0.9688rem + 0.375vw, 1.25rem);
 		margin-bottom: 1rem;
-	}
+	} */
 
 	/* .hover-underline-animation::after {
 		content: '';
@@ -51,7 +63,7 @@
 		transform: scaleX(1);
 		transform-origin: bottom left;
 	} */
-
+	/* 
 	.hover-underline-animation {
 		padding-bottom: 10px;
 		background: radial-gradient(circle 6px at bottom, currentColor 95%, #0000) bottom 4px left 9px,
@@ -65,5 +77,50 @@
 	}
 	.hover-underline-animation:hover {
 		--p: 100%;
+	} */
+
+	.menu {
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		text-decoration: none;
+		color: #1f425f;
+		font-size: clamp(1.0625rem, 0.9688rem + 0.375vw, 1.25rem);
+		margin-bottom: 1rem;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.menu a {
+		position: relative;
+		display: block;
+	}
+
+	.menu a svg {
+		position: absolute;
+		left: 0;
+		bottom: 5%;
+		width: 100%;
+	}
+
+	.menu a svg path {
+		fill: transparent;
+		stroke-width: 5px;
+		stroke: currentColor;
+		stroke-dasharray: 547.4111328125;
+		stroke-dashoffset: 547.4111328125;
+		transition: stroke-dashoffset 0.5s cubic-bezier(0.29, 0.68, 0.74, 1.02);
+	}
+
+	.menu a:hover svg path {
+		stroke-dashoffset: 0;
 	}
 </style>
