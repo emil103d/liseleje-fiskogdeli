@@ -1,29 +1,22 @@
 <script>
 	import '../app.css';
-	import Nav from '../components/nav.svelte';
-	import Burgermenu from '../components/burgermenu.svelte';
-	import Herosection from '../components/Herosection.svelte';
-	import Blandselvtapas from '../components/Blandselvtapas.svelte';
-	import Udvalg from '../components/Udvalg.svelte';
-	import Testimonials from '../components/Testimonials.svelte';
-	import Nyhedsbrev from '../components/nyhedsbrev.svelte';
-	import Howitworks from '../components/Howitworks.svelte';
-	import Instafeed from '../components/Instafeed.svelte';
-	import Footer from '../components/footer.svelte';
-	
-	
-	
-	
+	import Burgermenu from '../lib/components/Burgermenu.svelte';
+	import Herosection from '../lib/components/Herosection.svelte';
+	import Blandselvtapas from '../lib/components/Blandselvtapas.svelte';
+	import Udvalg from '../lib/components/Udvalg.svelte';
+	import Testimonials from '../lib/components/Testimonials.svelte';
+	import Nyhedsbrev from '../lib/components/Nyhedsbrev.svelte';
+	import Howitworks from '../lib/components/Howitworks.svelte';
+	import Instafeed from '../lib/components/Instafeed.svelte';
+	import Footer from '../lib/components/Footer.svelte';
 </script>
 
-<Nav />
 <Burgermenu />
 <Herosection />
 <Blandselvtapas />
 <Udvalg />
-<Testimonials/>
+<Testimonials />
 <Howitworks />
 <Instafeed />
 <Nyhedsbrev />
 <Footer />
-

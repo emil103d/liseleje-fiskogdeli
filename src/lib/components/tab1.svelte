@@ -1,12 +1,12 @@
 <script>
 	import { fade } from 'svelte/transition';
-	import Label from '../components/label.svelte';
+	import Label from '../uielements/Label.svelte';
 </script>
 
 <div class="sideboxRight flex bg-lightblue p-4 min-h-full ">
 	<ul class="self-center md:pl-32" in:fade={{ y: 200, duration: 1000 }}>
 		<li>
-			<a class="hover-underline-animation" href="/construction">Fisk og Skaldyr</a>
+			<a class="hover-underline-animation" href="/blandselvtapasflow">Fisk og Skaldyr</a>
 		</li>
 		<li>
 			<div class="flex gap-2">
