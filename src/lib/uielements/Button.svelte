@@ -19,7 +19,7 @@ button,
     color: #1f425f;
     font-weight: bold;
     font-family: var(--button);
-    background-color: #E9F4FC;
+    background-color: #EAC542;
     padding: 0.8rem 30px;
     display: inline-block;
     display: flex;
@@ -38,7 +38,7 @@ button,
 button:hover,
 .primary:hover {
     color: #1f425f;
-    background-color: #E2F3FF;
+    background-color: #f6d664;
 }
 
 
@@ -48,10 +48,10 @@ button:hover .button_icon path {
     fill: #1f425f;
 }
 
-button,
+/* button,
 .primary {
     font-size: 16px;
-    color: #1f425f;
+    color: #EAC542;
     font-weight: bold;
     font-family: var(--button);
     background-color: #E9F4FC;
@@ -68,7 +68,7 @@ button,
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-fill-mode: both;
-}
+} */
 
 
 
