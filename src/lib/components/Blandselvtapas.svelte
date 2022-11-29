@@ -1,6 +1,6 @@
 <script>
-	import Label from './Label.svelte';
-	import Button from '../components/Button.svelte';
+	import Label from '../uielements/Label.svelte';
+	import Button from '../uielements/Button.svelte';
 </script>
 
 <section>
