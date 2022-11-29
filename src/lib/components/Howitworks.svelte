@@ -1,5 +1,5 @@
 <script>
-	import Button from './Button.svelte';
+	import Button from '../uielements/Button.svelte';
 </script>
 
 <section class="bg-darkblue py-20 px-10">

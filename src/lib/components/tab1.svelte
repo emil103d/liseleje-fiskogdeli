@@ -1,6 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
-	import Label from './Label.svelte';
+	import Label from '../uielements/Label.svelte';
 </script>
 
 <div class="sideboxRight flex bg-lightblue p-4 min-h-full ">

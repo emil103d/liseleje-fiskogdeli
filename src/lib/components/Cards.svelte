@@ -1,5 +1,5 @@
 <script>
-    import Button from "../components/Button.svelte";
+    import Button from "../uielements/Button.svelte";
     export let kategori;
     export let beskrivelse;
 </script>
