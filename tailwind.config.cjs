@@ -5,6 +5,7 @@ module.exports = {
 		colors: {
 			darkblue: '#1f425f',
 			lightblue: '#f8fcfe',
+			shadowblue: '#B9DDF6',
 			yellowdot: '#E5C72E',
 			white: '#ffffff',
 			black: '#0000',
@@ -18,10 +19,8 @@ module.exports = {
 			headingtext: ['Abril Fatface', 'cursive'],
 			primarytext: ['Montserrat', 'sans-serif']
 		},
-		
-		extend: {
-			
-		}
+
+		extend: {}
 	},
 	plugins: []
 };
