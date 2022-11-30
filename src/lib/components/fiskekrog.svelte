@@ -1,8 +1,10 @@
 <body>
 
-<svg id="mySVG">
-  <path fill="none" stroke="red" stroke-width="3" id="triangle" d="M150 0V220.5V441" />
-</svg>
+    <svg id="mySVG">
+        <path fill="none" stroke="red" stroke-width="3" id="triangle" d="M1 0L1.00002 493.5L1.00004 987" />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+      
 
 
 
