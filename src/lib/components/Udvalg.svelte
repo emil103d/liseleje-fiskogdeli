@@ -11,7 +11,7 @@
         <div class="md:flex gap-4 md:justify-between">
             <Cards kategori="Fisk & Skaldyr" beskrivelse="Alt godt fra havet - friskfanget i kattegat." />
             <Cards kategori="Fisketapas" beskrivelse="Køb vores tapasfade eller bland dit eget."/>  
-            <Cards kategori="Delikatesser" beskrivelse="Vin, tapanader, brød m.m."/>
+            <Cards kategori="Tilbehør" beskrivelse="Vin, tapanader, brød m.m."/>
         </div>
     </div>
     
