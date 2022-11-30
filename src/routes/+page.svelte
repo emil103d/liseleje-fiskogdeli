@@ -11,16 +11,12 @@
 	import Howitworks from '../lib/components/Howitworks.svelte';
 	import Instafeed from '../lib/components/Instafeed.svelte';
 	import Footer from '../lib/components/Footer.svelte';
-	import Header from '../lib/components/Header.svelte';
-	import Processbar from '../lib/components/Processbar.svelte';
+
 	
 </script>
 
 <Burgermenu />
-<Header	/>
-
 <Herosection />
-<Processbar />
 <Fiskekrog />
 <Blandselvtapas />
 <Friskt_loyalt />
