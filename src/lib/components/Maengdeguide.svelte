@@ -10,10 +10,10 @@
 		tapas. <br /> Derfor har vi lavet nogen standard abefalinger som du kan vejlede dig efter når du
 		blander dit eget tapasfad <br /> <br />Velbekomme !
 	</p>
-	<div class="w-3/6">
+	<div class="w-4/6">
 		<div class=" border-lightblue border-t-2 ">
 			<h3>Tapas til forret</h3>
-			<div class="flex">
+			<div class="flex gap-4">
 				<svg
 					width="38"
 					height="24"
@@ -37,7 +37,7 @@
 		</div>
 		<div class="border-lightblue border-t-2 ">
 			<h3>Tapas til hovedret</h3>
-			<div class="flex">
+			<div class="flex gap-4">
 				<svg
 					width="38"
 					height="24"

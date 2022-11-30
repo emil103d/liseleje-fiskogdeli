@@ -1,10 +1,19 @@
 <script>
 	/** @type {import('./$types').LayoutData} */
-	export let data;
 	let current = '1';
+
+	function handleClick(string) {
+		alert(string);
+	}
 </script>
 
-<header class="bg-darkblue w-full border-t-2 m-auto" />
+<header class="bg-darkblue w-full border-t-2 m-auto">
+	<button
+		on:click={() => {
+			alert('Er du sikker på du vil ud');
+		}}>Jeg vil ud!!!!!!</button
+	>
+</header>
 
 <slot />
 
