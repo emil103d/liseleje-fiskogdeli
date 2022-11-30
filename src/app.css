@@ -40,7 +40,7 @@
 
 h1 {
 	font-family: 'Montserrat', cursive;
-	font-size: 7rem;
+	font-size: clamp(3.4rem, 8vw, 6rem)
 }
 
 h2 {

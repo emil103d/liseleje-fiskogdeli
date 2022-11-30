@@ -8,15 +8,15 @@
         </div>
 
         <div class="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-6 lg:grid-rows-3">
-            <img class="lg:col-start-1 lg:row-start-1" src="borat.jpg" alt="">
-            <img class="lg:col-start-2 lg:row-start-1" src="borat.jpg" alt="">
-            <img class="lg:col-start-3 lg:row-start-1" src="borat.jpg" alt="">
-            <img class="lg:col-start-4 lg:row-start-1" src="borat.jpg" alt="">
-            <img class="lg:col-start-5 lg:row-start-1" src="borat.jpg" alt="">
-            <img class="lg:col-start-6 lg:row-start-1" src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-1 lg:row-start-2" src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-2 lg:row-start-2" src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-3 lg:row-start-2" src="borat.jpg" alt="">
+            <img class="lg:col-start-1 lg:row-start-1" src="insta1.webp" alt="">
+            <img class="lg:col-start-2 lg:row-start-1" src="insta2.webp" alt="">
+            <img class="lg:col-start-3 lg:row-start-1" src="insta3.webp" alt="">
+            <img class="lg:col-start-4 lg:row-start-1" src="insta4.webp" alt="">
+            <img class="lg:col-start-5 lg:row-start-1" src="insta5.webp" alt="">
+            <img class="lg:col-start-6 lg:row-start-1" src="insta6.webp" alt="">
+            <img class="hidden lg:block lg:col-start-1 lg:row-start-2" src="insta7.webp" alt="">
+            <img class="hidden lg:block lg:col-start-2 lg:row-start-2" src="insta8.webp" alt="">
+            <img class="hidden lg:block lg:col-start-3 lg:row-start-2" src="insta9.webp" alt="">
             <img class="hidden lg:block lg:col-start-4 lg:row-start-2" src="borat.jpg" alt="">
             <img class="hidden lg:block lg:col-start-5 lg:row-start-2"src="borat.jpg" alt="">
             <img class="hidden lg:block lg:col-start-6 lg:row-start-2" src="borat.jpg" alt="">
