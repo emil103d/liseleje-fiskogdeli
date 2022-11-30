@@ -32,6 +32,6 @@
 	}
 
 	.skygge {
-		box-shadow: 20px 20px #f8fcfe;
+		box-shadow: 20px 20px #b9ddf6;
 	}
 </style>
