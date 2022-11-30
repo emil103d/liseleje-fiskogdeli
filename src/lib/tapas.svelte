@@ -7,7 +7,7 @@
 </script>
 
 <CartLength />
-<Products />
+<!-- <Products /> -->
 <Cart />
 
 <style>

@@ -14,7 +14,7 @@
 </script>
 
 <section>
-	<p>There are {$cart.length} items in your cart</p>
+	<p>Der er {$cart.length} retter</p>
 </section>
 
 <style>
