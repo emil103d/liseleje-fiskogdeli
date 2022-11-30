@@ -10,8 +10,8 @@
 <slot />
 
 
-<nav class="bg-darkblue">
-	<div class="wrapper py-20 px-10">
+<nav class="bg-darkblue fixed bottom-0 w-full">
+	<div class="wrapper py-10 px-10">
 
 		<div class="flex lg:max-w-[1024px] lg:m-auto justify-between relative">
         
@@ -95,6 +95,11 @@
 	.selected {
 		font-weight: 600;
 	}
+
+	a {
+		color: white;
+	}
+
 
 	.connector {
   display: inline-block;

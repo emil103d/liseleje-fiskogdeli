@@ -24,7 +24,7 @@
             </div>
 
             <div class="hidden w-full h-full md:block ">
-                <img class="w-full h-full object-cover" src="borat.jpg" alt="">
+                <img class="w-full h-full object-cover" src="testimonials.webp" alt="">
             </div>
         </div>
     </div>
