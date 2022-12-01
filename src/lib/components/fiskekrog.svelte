@@ -25,9 +25,6 @@
         </defs>
         </svg>
         
-        
-
-
 
 <script>
 // Get the id of the <path> element and the length of <path>
@@ -54,9 +51,6 @@ var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTo
 </script>
 
 </body>
-
-
-
 
 
 
