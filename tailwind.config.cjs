@@ -20,7 +20,7 @@ module.exports = {
 			primarytext: ['Montserrat', 'sans-serif']
 		},
 		
-		extend: {}
+		extend: {},
 	},
 	plugins: []
 };

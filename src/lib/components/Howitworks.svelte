@@ -12,17 +12,17 @@
 
 		<div class="grid justify-center text-center gap-6 md:flex md:justify-between">
 			<div class="">
-				<img src="howto_1.png" class="pb-4 h-72 w-auto md:h-full md:w-full" alt="">
+				<img src="howto_1.png" class="pb-4 h-48 w-auto md:h-64 md:w-full" alt="">
 				<p class="text-lightblue">1. Vælg dine yndlingsvarer <b class="text-yellowdot">.</b></p>
 			</div>
 
 			<div class="">
-				<img src="howto_2.png" class="pb-4 h-72 w-auto md:h-full md:w-full" alt="">
+				<img src="howto_2.png" class="pb-4 h-48 w-auto md:h-64 md:w-full" alt="">
 				<p class="text-lightblue">2. Tilføj til kurv & betal <b class="text-yellowdot">.</b></p>
 			</div>
 
 			<div class="">
-				<img src="howto_3.png" class="pb-4 h-72 w-auto md:h-full md:w-full" alt="">
+				<img src="howto_3.png" class="pb-4 h-48 w-auto md:h-64 md:w-full" alt="">
 				<p class="text-lightblue">3. Afhent i butik <b class="text-yellowdot">.</b></p>
 			</div>
 		</div>
