@@ -1,16 +1,15 @@
 <script>
-	export let kategory;
+	export let kategories;
 	export let selectedKat;
-	// $:console.log(languages)
+	$: console.log(kategories);
 </script>
 
 <!-- svelte-ignore a11y-no-onchange -->
 <section class="menu-cont">
-	<select class="menu" name="menu" id="menu" bind:value={selectedKat}>
-		<option disabled selected value="">Select a language.</option>
-		<option value="all">All languages</option>
-		{#each kategory as language}
-			<option value={language}>{language}</option>
+	<select size="3" class="menu" name="menu" id="menu" bind:value={selectedKat}>
+		<option value="alle">Alle Retter</option>
+		{#each kategories as kategory}
+			<option value={kategory}>{kategory}</option>
 		{/each}
 	</select>
 </section>

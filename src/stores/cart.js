@@ -4,7 +4,7 @@ export const products = readable([
 	{
 		id: '1',
 		title: 'Lynstegt tun PRODUCT',
-		kategory: 'Tun',
+		kategory: 'Fisk',
 		price: '30',
 		image: 'borat.jpg',
 		quantity: 1
@@ -12,7 +12,7 @@ export const products = readable([
 	{
 		id: '2',
 		title: 'Lynstegt Laks PRODUCT',
-		kategory: 'Laks',
+		kategory: 'Fisk',
 		price: '30',
 		image: 'borat.jpg',
 		quantity: 1

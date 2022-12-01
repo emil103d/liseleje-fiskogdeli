@@ -5,20 +5,37 @@
 	import Menu from '/src/lib/Menu.svelte';
 	import Tapas from '/src/lib/tapas.svelte';
 
-	let kategory = [];
+	let kategories = [];
 	let selectedKat = ''; //  menu selection
-	$: console.log(kategory);
+	$: console.log(kategories);
 
 	const getKategory = () => {
 		for (let productObj of $products) {
-			if (!kategory.includes(productObj.kat)) {
-				kategory = [...kategory, productObj.kat];
+			if (!kategories.includes(productObj.kategory)) {
+				kategories = [...kategories, productObj.kategory];
 			}
 		}
-		kategory = kategory.sort();
+		kategories = kategories.sort();
 	};
 
 	onMount(() => getKategory());
+
+	// Query results
+	let filteredProducts = [];
+
+	// For Select Menu
+	$: if (selectedKat) getOpholdByKat(); //Svelte reaktiv condition -> if selected varighed er sand kald funktion
+	$: console.log(filteredProducts, selectedKat);
+
+	const getOpholdByKat = () => {
+		if (selectedKat === 'alle') {
+			// Hvis der er blevet valgt se alle valgmuligheder knappen
+			return (filteredProducts = []); // Er det ligmed et tomt array da den så vil kalde else sektion med alle opholdende
+		}
+		return (filteredProducts = $products.filter(
+			(product) => product.kategory === selectedKat // Filter ud de ophold der matcher den valgte varighed
+		));
+	};
 
 	const addToCart = (product) => {
 		for (let item of $cart) {
@@ -40,17 +57,27 @@
 		<h2>Udvælg dine fiske tapasretter</h2>
 	</section>
 
+	<Menu {kategories} bind:selectedKat />
+
 	<section>
-		<Menu {kategory} bind:selectedKat />
-		<div class="product-list">
-			{#each $products as product}
-				<div>
-					<div class="image" style="background-image: url({product.image})" />
-					<h4>{product.title}</h4>
-					<p>{product.price} kr.</p>
-					<button on:click={() => addToCart(product)}>Tilføj til kurven</button>
-				</div>
-			{/each}
+		<div class="product_list">
+			{#if filteredProducts.length > 0}
+				{#each filteredProducts as product}
+					<div>
+						<h4>{product.title}</h4>
+						<p>{product.price} kr.</p>
+						<button on:click={() => addToCart(product)}>Tilføj til kurven</button>
+					</div>
+				{/each}
+			{:else}
+				{#each $products as product}
+					<div>
+						<h4>{product.title}</h4>
+						<p>{product.price} kr.</p>
+						<button on:click={() => addToCart(product)}>Tilføj til kurven</button>
+					</div>
+				{/each}
+			{/if}
 		</div>
 		<Tapas />
 	</section>
@@ -61,7 +88,7 @@
 		background-color: #f8fcfe;
 	}
 
-	.product-list {
+	.product_list {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 	}
