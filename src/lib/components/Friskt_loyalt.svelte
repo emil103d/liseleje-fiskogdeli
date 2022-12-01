@@ -8,7 +8,7 @@
 		<div class="grid  md:grid-cols-2 lg:max-w-[1024px] lg:m-auto place-items-center">
 
 			<div class="w-full h-full skygge md:block relative">
-				<img src="borat.jpg" alt="" class="w-full">
+				<img src="martin.webp" alt="" class="w-full">
 				<div class="h-44 w-44 rounded-full bg-yellowdot absolute top-[-30px] right-[-30px] button z-10 text-center grid place-content-center">
 					<div class="grid gap-2">
 						<p class="font-headingtext text-3xl">Martin</p>
@@ -18,7 +18,6 @@
 			</div>
 
 			<div class="pt-6 md:pl-10  md:pb-0 gap-2  m-auto lg:m-0 text-white">
-				<Label title="Nyhed"> </Label>
 				<h2 class="font-bold ">Friskt & Lokalt <b class="text-yellowdot"> . </b></h2>
 				<div class="h-[2px] w-20 bg-white mb-6" />
 				<p class="pb-6">
