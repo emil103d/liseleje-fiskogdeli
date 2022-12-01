@@ -1,41 +1,9 @@
 <script>
 	/** @type {import('./$types').PageData} */
-	import { onMount } from 'svelte';
 	import { products, cart } from '/src/stores/cart.js';
-	import Menu from '/src/lib/Menu.svelte';
+	import { categories } from '/src/stores/cart.js';
 	import Tapas from '/src/lib/tapas.svelte';
-
-	let kategories = [];
-	let selectedKat = ''; //  menu selection
-	$: console.log(kategories);
-
-	const getKategory = () => {
-		for (let productObj of $products) {
-			if (!kategories.includes(productObj.kategory)) {
-				kategories = [...kategories, productObj.kategory];
-			}
-		}
-		kategories = kategories.sort();
-	};
-
-	onMount(() => getKategory());
-
-	// Query results
-	let filteredProducts = [];
-
-	// For Select Menu
-	$: if (selectedKat) getOpholdByKat(); //Svelte reaktiv condition -> if selected varighed er sand kald funktion
-	$: console.log(filteredProducts, selectedKat);
-
-	const getOpholdByKat = () => {
-		if (selectedKat === 'alle') {
-			// Hvis der er blevet valgt se alle valgmuligheder knappen
-			return (filteredProducts = []); // Er det ligmed et tomt array da den så vil kalde else sektion med alle opholdende
-		}
-		return (filteredProducts = $products.filter(
-			(product) => product.kategory === selectedKat // Filter ud de ophold der matcher den valgte varighed
-		));
-	};
+	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
 
 	const addToCart = (product) => {
 		for (let item of $cart) {
@@ -47,9 +15,13 @@
 		}
 		$cart = [...$cart, product];
 	};
+
+	let selected = 'alle';
+	const filterSelection = (e) => (selected = e.target.dataset.name);
+	console.log(filterSelection);
 </script>
 
-<main>
+<main class="lg:max-w-[1024px]">
 	<section>
 		<h1 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h1>
 		<div class="h-[2px] w-20 bg-darkblue mb-6" />
@@ -57,27 +29,42 @@
 		<h2>Udvælg dine fiske tapasretter</h2>
 	</section>
 
-	<Menu {kategories} bind:selectedKat />
+	<ButtonContainer>
+		{#each categories as category}
+			<button
+				class:active={selected === category}
+				class="btn"
+				data-name={category}
+				on:click={filterSelection}
+			>
+				{category}
+			</button>
+		{/each}
+	</ButtonContainer>
 
-	<section>
-		<div class="product_list">
-			{#if filteredProducts.length > 0}
-				{#each filteredProducts as product}
+	<section class="grid grid-cols-2">
+		<div class="product_list ">
+			{#each $products as product}
+				{#if selected === 'alle'}
 					<div>
-						<h4>{product.title}</h4>
-						<p>{product.price} kr.</p>
-						<button on:click={() => addToCart(product)}>Tilføj til kurven</button>
+						<div class="content">
+							<img src={product.image} alt={product.title} class="h-full w-full" />
+							<h4>{product.title}</h4>
+							<p>{product.price} kr.</p>
+							<button on:click={() => addToCart(product)}>Tilføj til kurven</button>
+						</div>
 					</div>
-				{/each}
-			{:else}
-				{#each $products as product}
-					<div>
-						<h4>{product.title}</h4>
-						<p>{product.price} kr.</p>
-						<button on:click={() => addToCart(product)}>Tilføj til kurven</button>
+				{:else}
+					<div class:show={selected === product.kategory} class="column">
+						<div class="content">
+							<img src={product.image} alt={product.title} class="h-full w-full" />
+							<h4>{product.title}</h4>
+							<p>{product.price} kr.</p>
+							<button on:click={() => addToCart(product)}>Tilføj til kurven</button>
+						</div>
 					</div>
-				{/each}
-			{/if}
+				{/if}
+			{/each}
 		</div>
 		<Tapas />
 	</section>
@@ -94,10 +81,56 @@
 	}
 
 	.image {
-		height: 150px;
-		width: 150px;
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
+	}
+
+	/* Create three equal columns */
+	.column {
+		display: none;
+		justify-content: center;
+		margin: 10px 0;
+	}
+
+	/* Content */
+	.content {
+		background-color: white;
+		margin: 5px;
+		padding: 10px;
+		box-shadow: 1px 1px 5px black;
+	}
+
+	img {
+		min-height: 200px;
+	}
+
+	/* The "show" class is added to the filtered elements */
+	.show {
+		display: flex;
+	}
+
+	/* Style the buttons */
+	.btn {
+		width: 150px;
+		text-transform: uppercase;
+		font-weight: 200;
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+		border: none;
+		outline: none;
+		margin: 5px;
+		padding: 14px 16px 12px;
+		background-color: white;
+		border: 1px solid black;
+		cursor: pointer;
+		transition: 0.1s ease-in-out;
+	}
+
+	/* Add a dark background color to the active button */
+	.btn:active,
+	.active {
+		background-color: #000;
+		color: white;
 	}
 </style>

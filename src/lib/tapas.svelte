@@ -6,7 +6,6 @@
 	console.log($products);
 </script>
 
-<CartLength />
 <!-- <Products /> -->
 <Cart />
 
