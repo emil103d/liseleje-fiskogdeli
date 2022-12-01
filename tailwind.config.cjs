@@ -19,8 +19,8 @@ module.exports = {
 			headingtext: ['Abril Fatface', 'cursive'],
 			primarytext: ['Montserrat', 'sans-serif']
 		},
-
-		extend: {}
+		
+		extend: {},
 	},
 	plugins: []
 };

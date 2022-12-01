@@ -5,7 +5,7 @@
                 <h1 class="text-darkblue tracking-wider">FISK & DELI</h1>
                 <p class="text-4xl tracking-widest">LISELEJE</p>
             </div>
-            <img src="logo.svg" class="fisk m-auto max-w-xs " alt="">
+            <img src="logo.svg" class="fisk m-auto max-w-[150px] md:max-w-xs " alt="">
         </div>
 
         <div class="absolute bottom-20 left-[calc(50%-33px)]">
@@ -20,7 +20,7 @@
 
 section {
     background-image: url('vaeg.png');
-    background-size: cover;
+    background-size: contain;
 }
 
 

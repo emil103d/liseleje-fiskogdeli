@@ -9,7 +9,7 @@
     <div class="bg-white max-w-xs skygge ">
       <a href="#!">
         <div class="overflow-hidden">
-        <img class="w-full object-cover md:aspect-[4/5] hover:scale-110" src={image} alt=""/>
+        <img class="w-full h-auto object-cover aspect-[4/5] hover:scale-110" src={image} alt=""/>
       </div>
       <div class="px-2 py-4">
         <h5 class="text-gray-900 text-l font-semibold mb-1">{kategori}</h5>
