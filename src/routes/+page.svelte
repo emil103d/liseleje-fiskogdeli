@@ -11,8 +11,6 @@
 	import Howitworks from '../lib/components/Howitworks.svelte';
 	import Instafeed from '../lib/components/Instafeed.svelte';
 	import Footer from '../lib/components/Footer.svelte';
-
-	
 </script>
 
 <Burgermenu />
