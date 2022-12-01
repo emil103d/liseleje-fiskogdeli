@@ -28,7 +28,7 @@
 		</div>
 	</div>
 	<div>
-		<img src="friskt_loyalt.png" class="w-full" alt="">
+		<img src="fiskebillede.webp" class="w-full" alt="">
 	</div>
 
 </section>
