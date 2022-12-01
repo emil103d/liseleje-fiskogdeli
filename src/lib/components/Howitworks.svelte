@@ -13,17 +13,17 @@
 		<div class="grid justify-center text-center gap-6 md:flex md:justify-between">
 			<div class="">
 				<img src="howto_1.png" class="pb-4 h-48 w-auto md:h-64 md:w-full" alt="">
-				<p class="text-lightblue">1. Vælg dine yndlingsvarer</p>
+				<p class="text-lightblue font-semibold">1. Vælg dine yndlingsvarer</p>
 			</div>
 
 			<div class="">
 				<img src="howto_2.png" class="pb-4 h-48 w-auto md:h-64 md:w-full" alt="">
-				<p class="text-lightblue">2. Tilføj til kurv & betal </p>
+				<p class="text-lightblue font-semibold">2. Tilføj til kurv & betal </p>
 			</div>
 
 			<div class="">
 				<img src="howto_3.png" class="pb-4 h-48 w-auto md:h-64 md:w-full" alt="">
-				<p class="text-lightblue">3. Afhent i butik </p>
+				<p class="text-lightblue font-semibold">3. Afhent i butik </p>
 			</div>
 		</div>
 
