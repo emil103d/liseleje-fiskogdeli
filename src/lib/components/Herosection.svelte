@@ -20,7 +20,7 @@
 
 section {
     background-image: url('vaeg.png');
-    background-size: cover;
+    background-size: contain;
 }
 
 
