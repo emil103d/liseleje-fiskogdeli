@@ -1,11 +1,11 @@
 
 
 <section>
-    <div class="wrapper py-20 px-10">   
+    <div class="wrapper py-32 md:py-44 px-10">   
         <div class="flex md:justify-between lg:max-w-[1024px] lg:m-auto">
             <div class="w-full h-full m-auto pr-10">
                 <h2 class="font-bold text-textcolor">Kunderne siger <b class="text-yellowdot"> . </b></h2>
-				<div class="h-[2px] w-20 bg-darkblue mb-6" />
+				<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
 				<p class="pb-6 italic">
 					“Vi elsker Liseleje og har derfor startet Liseleje Fisk & Deli så du kan forkæles med frisk fisk løbet af hele sommeren. Vi er født og opvokset i området og har derfor en stor passion“
 				</p>

@@ -4,13 +4,13 @@
 </script>
 
 <section>
-	<div class="wrapper py-20 px-10">
+	<div class="wrapper py-32 md:py-44 px-10">
 		<div class="grid  md:grid-cols-2 lg:max-w-[1024px] lg:m-auto place-items-center">
-			<div class="pb-6 md:pb-0 gap-2 md:pr-10 m-auto lg:m-0 text-textcolor">
+			<div class="pb-12 md:pb-0 gap-2 md:pr-10 m-auto lg:m-0 text-textcolor">
 				<Label title="Nyhed"> </Label>
 				<h2 class="font-bold ">Bland selv fisketapas <b class="text-yellowdot"> . </b></h2>
-				<div class="h-[2px] w-20 bg-darkblue mb-6" />
-				<p class="pb-6">
+				<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
+				<p class="pb-8">
 					Liseleje’s fisk og deli version af fiske tapas er farvefuldr, der byder på mere og andet
 					end rå fisk. Den klassiske ret der nænsomt er krydret og smagt til med skandinaviske
 					detaljer og visionære tanker om mad. Vælg fra menuen eller komponer din egen, vi glæder os

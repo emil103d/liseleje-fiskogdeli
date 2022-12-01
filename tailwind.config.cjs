@@ -19,6 +19,10 @@ module.exports = {
 			headingtext: ['Abril Fatface', 'cursive'],
 			primarytext: ['Montserrat', 'sans-serif']
 		},
+
+		// spacing: {
+		// 	'section-spacing': '100px', 
+		// },
 		
 		extend: {},
 	},
