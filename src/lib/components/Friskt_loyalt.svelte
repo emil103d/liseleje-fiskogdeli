@@ -23,7 +23,7 @@
 				<p class="pb-6">
 					Vi elsker Liseleje og har derfor startet Liseleje Fisk & Deli så du kan forkæles med frisk fisk løbet af hele sommeren. Vi er født og opvokset i området og har derfor en stor passion forkæles med frisk fisk løbet af hele sommeren.
 				</p>
-				<a href="www.google.dk" class="font-semibold"> Læs mere</a>
+				<a href="www.google.dk" class="font-semibold hover:underline"> Læs mere</a>
 			</div>
 		</div>
 	</div>
