@@ -20,6 +20,10 @@ module.exports = {
 			primarytext: ['Montserrat', 'sans-serif']
 		},
 
+		padding: {
+			section-spacing: '2rem',
+		}
+
 		extend: {}
 	},
 	plugins: []
