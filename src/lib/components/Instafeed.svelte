@@ -8,24 +8,24 @@
         </div>
 
         <div class="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-6 lg:grid-rows-3">
-            <img class="lg:col-start-1 lg:row-start-1" src="insta1.webp" alt="">
-            <img class="lg:col-start-2 lg:row-start-1" src="insta2.webp" alt="">
-            <img class="lg:col-start-3 lg:row-start-1" src="insta3.webp" alt="">
-            <img class="lg:col-start-4 lg:row-start-1" src="insta4.webp" alt="">
-            <img class="lg:col-start-5 lg:row-start-1" src="insta5.webp" alt="">
-            <img class="lg:col-start-6 lg:row-start-1" src="insta6.webp" alt="">
-            <img class="hidden lg:block lg:col-start-1 lg:row-start-2" src="insta7.webp" alt="">
-            <img class="hidden lg:block lg:col-start-2 lg:row-start-2" src="insta8.webp" alt="">
-            <img class="hidden lg:block lg:col-start-3 lg:row-start-2" src="insta9.webp" alt="">
-            <img class="hidden lg:block lg:col-start-4 lg:row-start-2" src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-5 lg:row-start-2"src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-6 lg:row-start-2" src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-1 lg:row-start-3" src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-2 lg:row-start-3" src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-3 lg:row-start-3" src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-4 lg:row-start-3" src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-5 lg:row-start-3" src="borat.jpg" alt="">
-            <img class="hidden lg:block lg:col-start-6 lg:row-start-3" src="borat.jpg" alt="">
+            <img class="lg:col-start-1 lg:row-start-1w-full h-auto  object-cover aspect-square" src="insta1.webp" alt="">
+            <img class="lg:col-start-2 lg:row-start-1 w-full h-auto object-cover aspect-square" src="insta2.webp" alt="">
+            <img class="lg:col-start-3 lg:row-start-1 w-full h-auto object-cover aspect-square" src="insta3.webp" alt="">
+            <img class="lg:col-start-4 lg:row-start-1 w-full h-auto object-cover aspect-square" src="insta4.webp" alt="">
+            <img class="lg:col-start-5 lg:row-start-1 w-full h-auto object-cover aspect-square" src="insta5.webp" alt="">
+            <img class="lg:col-start-6 lg:row-start-1 w-full h-auto object-cover aspect-square" src="insta6.webp" alt="">
+            <img class="hidden lg:block lg:col-start-1 lg:row-start-2 w-full h-auto object-cover aspect-square" src="insta7.webp" alt="">
+            <img class="hidden lg:block lg:col-start-2 lg:row-start-2 w-full h-auto object-cover aspect-square" src="insta8.webp" alt="">
+            <img class="hidden lg:block lg:col-start-3 lg:row-start-2 w-full h-auto object-cover aspect-square" src="insta9.webp" alt="">
+            <img class="hidden lg:block lg:col-start-4 lg:row-start-2 w-full h-auto object-cover aspect-square" src="insta10.webp" alt="">
+            <img class="hidden lg:block lg:col-start-5 lg:row-start-2 w-full h-auto object-cover aspect-square"src="insta11.webp" alt="">
+            <img class="hidden lg:block lg:col-start-6 lg:row-start-2 w-full h-auto object-cover aspect-square" src="insta12.webp" alt="">
+            <img class="hidden lg:block lg:col-start-1 lg:row-start-3 w-full h-auto object-cover aspect-square" src="insta13.webp" alt="">
+            <img class="hidden lg:block lg:col-start-2 lg:row-start-3 w-full h-auto object-cover aspect-square" src="insta14.webp" alt="">
+            <img class="hidden lg:block lg:col-start-3 lg:row-start-3 w-full h-auto object-cover aspect-square" src="insta15.webp" alt="">
+            <img class="hidden lg:block lg:col-start-4 lg:row-start-3 w-full h-auto object-cover aspect-square" src="insta16.webp" alt="">
+            <img class="hidden lg:block lg:col-start-5 lg:row-start-3 w-full h-auto object-cover aspect-square" src="insta17.webp" alt="">
+            <img class="hidden lg:block lg:col-start-6 lg:row-start-3 w-full h-auto object-cover aspect-square" src="borat.jpg" alt="">
         </div>
     </div>
 </section>
