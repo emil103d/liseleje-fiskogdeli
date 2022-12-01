@@ -19,11 +19,7 @@ module.exports = {
 			headingtext: ['Abril Fatface', 'cursive'],
 			primarytext: ['Montserrat', 'sans-serif']
 		},
-
-		padding: {
-			section-spacing: '2rem',
-		}
-
+		
 		extend: {}
 	},
 	plugins: []
