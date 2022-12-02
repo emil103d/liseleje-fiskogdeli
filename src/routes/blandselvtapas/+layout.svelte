@@ -95,7 +95,7 @@
 
 
 
-<nav class="bg-darkblue fixed bottom-0 w-full h-32 grid content-center">
+<nav class="bg-darkblue fixed bottom-0 w-full h-44 grid content-center">
 	<div class="wrapper py-10 px-10"> 
 		<div class="flex lg:max-w-[1024px] lg:m-auto justify-between relative">
 
@@ -112,7 +112,7 @@
 							>
 								<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 							</div>
-							<p class="text-white font-semibold">Antal personer</p>
+							<p class="text-white font-semibold pt-2">Antal personer</p>
 						</div>
 					</a>
 
@@ -126,7 +126,7 @@
 							>
 								<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 							</div>
-							<p class="text-white font-semibold">Vælg tapasretter</p>
+							<p class="text-white font-semibold pt-2">Vælg tapasretter</p>
 						</div>
 					</a>
 					
@@ -141,7 +141,7 @@
 							>
 								<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 							</div>
-							<p class="text-white font-semibold">Tilkøb</p>
+							<p class="text-white font-semibold pt-2">Tilkøb</p>
 						</div>
 					</a>
 					
@@ -155,7 +155,7 @@
 							>
 								<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 							</div>
-							<p class="text-white font-semibold">Afslut bestilling</p>
+							<p class="text-white font-semibold pt-2">Afslut bestilling</p>
 						</div>	
 					</a>
 
@@ -176,11 +176,4 @@
 		color: white;
 	}
 
-	.connector {
-		display: inline-block;
-		background: white;
-		height: 3px;
-		flex-grow: 1;
-		place-self: center;
-	}
 </style>
