@@ -22,7 +22,7 @@
 	console.log(filterSelection);
 </script>
 
-<main class="bg-darkblue py-32 md:py-44 px-10">
+<main class="md:py-32 md:py-44 px-10 h-[100vh] place-content-center w-full grid">
 	<div class="lg:max-w-[1024px] lg:m-auto place-items-center">
 		<section class="">
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>

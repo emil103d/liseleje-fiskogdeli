@@ -95,7 +95,7 @@
 
 
 
-<nav class="bg-darkblue fixed bottom-0 w-full h-44 grid content-center">
+<nav class="bg-darkblue fixed bottom-0 w-full h-[120px] grid pt-2">
 	<div class="wrapper py-10 px-10"> 
 		<div class="flex lg:max-w-[1024px] lg:m-auto justify-between relative">
 
