@@ -1,4 +1,4 @@
-<section class="bg-darkblue flex justify-between px-10 py-6">   
+<section class="bg-darkblue flex justify-between px-10 py-6 fixed w-full">   
     <div class="grid text-center">
         <p class="text-white font-medium"> FISK & DELI</p>
         <p class="text-white font-thin text-sm"> LISELEJE</p>

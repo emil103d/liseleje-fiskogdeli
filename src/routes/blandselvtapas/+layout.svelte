@@ -112,7 +112,7 @@
 							>
 								<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 							</div>
-							<p class="text-white font-semibold pt-2">Antal personer</p>
+							<p class="text-white font-semibold pt-2 text-center">Antal personer</p>
 						</div>
 					</a>
 

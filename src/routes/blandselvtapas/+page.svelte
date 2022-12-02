@@ -6,22 +6,26 @@
 	import Maengdeguide from '/src/lib/components/Maengdeguide.svelte';
 </script>
 
-<main class="py-32 md:py-44 px-10">
+<main class="md:py-32 md:py-44 px-10">
 
 	
 	<div class="grid lg:max-w-[1024px] lg:m-auto">
-		<h2 class="font-bold ">Bland selv fisketapas <b class="text-yellowdot"> . </b></h2>
+		<h2 class="font-bold text-darkblue  ">Bland selv fisketapas <b class="text-yellowdot"> . </b></h2>
 		<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
 
 
-		<section class="">
+		<section class="md:grid grid-cols-2">
 
-			<Maengdeguide class="grid" />
+			<Maengdeguide class="" />
 
-			<div class="">
-				<h3>Hvor mange personer bliver I?</h3>
-				<Numericbutton />
-				<Button type="primary"><a href="/blandselvtapas/vaelgfisketapas">Vælg Tapasretter</a></Button>
+			<div class="pt-12 grid justify-center">
+				<div class="max-w-xs">
+					<h3 class="text-center">Hvor mange personer bliver I?</h3>
+					<Numericbutton />
+					<div class="m-auto flex">
+					<Button type="primary" class="m-auto"><a href="/blandselvtapas/vaelgfisketapas">Vælg Tapasretter</a></Button>
+					</div>
+				</div>
 			</div>
 		</section>
 
