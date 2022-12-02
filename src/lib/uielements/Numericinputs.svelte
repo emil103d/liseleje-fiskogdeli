@@ -5,7 +5,7 @@
 </script>
 
 <!-- the function will be called on click -->
-<div class="flex items-center">
+<div class="flex justify-between bg-yellowdot">
 	<button on:click={() => decreaseNum(count)}>-</button>
 	<label> <input type="number" bind:value={count} min="0" max="10" /></label>
 	<button on:click={() => increaseNum(count)}>+</button>
@@ -24,11 +24,14 @@
 	input {
 		text-align: center;
 		background: #f8fcfe;
+		width: 100%;
+		-webkit-appearance: none;
+		-moz-appearance:textfield;
 	}
 
 	button {
-		width: 5rem;
-		height: 5rem;
+		width: 4.5rem;
+		height: 4.5rem;
 		background: #ffffff;
 		border: 1px solid #e9f4fc;
 		border-radius: 100%;
@@ -39,5 +42,6 @@
 		text-align: center;
 		color: #1f425f;
 		padding: 1rem;
+		flex-shrink: 0;
 	}
 </style>

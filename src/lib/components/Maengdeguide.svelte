@@ -1,20 +1,20 @@
 <script>
 </script>
 
-<article>
-	<h2 class="text-darkblue">Mængdeguide <b class="text-yellowdot">.</b></h2>
-	<div class="h-[2px] w-20 bg-darkblue mb-6" />
+<article class="p-6 w-full grid">
+	<h3 class="text-darkblue font-bold pb-2">Vælg den rigtige mængde </h3>
 
-	<p>
+	<p class="mb-4">
 		Det kan være svært at vide hvor mange tapasretter du skal vælge når det angår bland selv fiske
 		tapas. <br /> Derfor har vi lavet nogen standard abefalinger som du kan vejlede dig efter når du
-		blander dit eget tapasfad <br /> <br />Velbekomme !
+		blander dit eget tapasfad <br/> <br> Velbekomme !
 	</p>
-	<div class="w-4/6">
-		<div class=" border-lightblue border-t-2 ">
-			<h3>Tapas til forret</h3>
-			<div class="flex gap-4">
+	<div class="grid gap-4">
+		<div class="border-lightblue border-t-2 py-2 ">
+			<h4 class="font-semibold">Tapas til forret</h4>
+			<div class="flex gap-4 ">
 				<svg
+					class="place-self-center fisk"
 					width="38"
 					height="24"
 					viewBox="0 0 38 24"
@@ -32,13 +32,14 @@
 						/>
 					</g>
 				</svg>
-				<p>Vi anbefaler som min. 5 tapasretter</p>
+				<p class="font-medium">Vi anbefaler som min. 5 tapasretter</p>
 			</div>
 		</div>
-		<div class="border-lightblue border-t-2 ">
-			<h3>Tapas til hovedret</h3>
+		<div class="border-lightblue border-t-2 py-2">
+			<h4 class="font-semibold">Tapas til hovedret</h4>
 			<div class="flex gap-4">
 				<svg
+					class="place-self-center fisk"
 					width="38"
 					height="24"
 					viewBox="0 0 38 24"
@@ -56,7 +57,7 @@
 						/>
 					</g>
 				</svg>
-				<p>Vi anbefaler som min. 8 tapasretter</p>
+				<p class="font-medium">Vi anbefaler som min. 8 tapasretter</p>
 			</div>
 		</div>
 	</div>
@@ -69,4 +70,8 @@
 
 		box-shadow: 7px 7px 0px 2px #e5f1f9;
 	}
+
+	.fisk path {
+    fill: #E5C72E;
+}
 </style>
