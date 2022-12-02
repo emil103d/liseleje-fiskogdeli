@@ -1,5 +1,6 @@
 <script>
 	/** @type {import('./$types').PageData} */
+	import '/src/app.css';
 	import { products, cart } from '/src/stores/cart.js';
 	import { categories } from '/src/stores/cart.js';
 	import Tapas from '/src/lib/tapas.svelte';
@@ -21,53 +22,64 @@
 	console.log(filterSelection);
 </script>
 
-<main class="lg:max-w-[1024px]">
-	<section>
-		<h1 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h1>
-		<div class="h-[2px] w-20 bg-darkblue mb-6" />
+<main class="bg-darkblue py-32 md:py-44 px-10">
+	<div class="lg:max-w-[1024px] lg:m-auto place-items-center">
+		<section class="">
+			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
+			<div class="h-[2px] w-20 bg-darkblue mb-6" />
 
-		<h2>Udvælg dine fiske tapasretter</h2>
-	</section>
+			<h3>Udvælg dine fiske tapasretter</h3>
+		</section>
 
-	<ButtonContainer>
-		{#each categories as category}
-			<button
-				class:active={selected === category}
-				class="btn"
-				data-name={category}
-				on:click={filterSelection}
-			>
-				{category}
-			</button>
-		{/each}
-	</ButtonContainer>
-
-	<section class="grid grid-cols-2">
-		<div class="product_list ">
-			{#each $products as product}
-				{#if selected === 'alle'}
-					<div>
-						<div class="content">
-							<img src={product.image} alt={product.title} class="h-full w-full" />
-							<h4>{product.title}</h4>
-							<p>{product.price} kr.</p>
-							<button on:click={() => addToCart(product)}>Tilføj til kurven</button>
-						</div>
-					</div>
-				{:else}
-					<div class:show={selected === product.kategory} class="column">
-						<div class="content">
-							<img src={product.image} alt={product.title} class="h-full w-full" />
-							<h4>{product.title}</h4>
-							<p>{product.price} kr.</p>
-							<button on:click={() => addToCart(product)}>Tilføj til tapasfad</button>
-						</div>
-					</div>
-				{/if}
+		<ButtonContainer>
+			{#each categories as category}
+				<button
+					class:active={selected === category}
+					class="btn"
+					data-name={category}
+					on:click={filterSelection}
+				>
+					{category}
+				</button>
 			{/each}
-		</div>
-		<Tapas />
-	</section>
+		</ButtonContainer>
+
+		<section class="grid md:grid-cols-[auto_250px] gap-10 lg:gap-20">
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
+				{#each $products as product}
+					{#if selected === 'alle'}
+						<div>
+							<div class="content">
+								<img src={product.image} alt={product.title} class="h-auto w-full aspect-square" />
+								<div class="p-2">
+									<div class="grid py-2">
+										<h4 class="font-semibold">{product.title}</h4>
+										<p>{product.price} kr.</p>
+									</div>
+									<div class="grid justify-center pb-2 pt-2">
+									<button class="font-semibold" on:click={() => addToCart(product)}>Tilføj til kurven</button>
+									</div>
+
+									
+								</div>
+								
+							</div>
+						</div>
+					{:else}
+						<div class:show={selected === product.kategory} class="column">
+							<div class="content">
+								<img src={product.image} alt={product.title} class="h-full w-full" />
+								<h4>{product.title}</h4>
+								<p>{product.price} kr.</p>
+								<button on:click={() => addToCart(product)}>Tilføj til tapasfad</button>
+							</div>
+						</div>
+					{/if}
+				{/each}
+			</div>
+			<Tapas />
+		</section>
+	</div>	
 </main>
 
 <style>
@@ -75,10 +87,6 @@
 		background-color: #f8fcfe;
 	}
 
-	.product_list {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
 
 	.image {
 		background-size: contain;
@@ -96,8 +104,7 @@
 	/* Content */
 	.content {
 		background-color: white;
-		margin: 5px;
-		padding: 10px;
+
 		box-shadow: 1px 1px 5px black;
 	}
 
@@ -133,4 +140,6 @@
 		background-color: #000;
 		color: white;
 	}
+	
+
 </style>

@@ -26,32 +26,38 @@
 	$: total = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 </script>
 
-<section>
-	<h2 class="text-white">Mit tapasfad<b class="text-yellowdot">.</b></h2>
+<section class="pt-6 bg-white h-full skygge p-4">
+	<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
 	<p>Til 2 personer</p>
 	<p>Der er {$cart.length} retter</p>
-	<div class="h-[2px] w-20 bg-white mb-6 mt-2" />
+	<div class="h-[2px] w-20"/>
 
-	<div class="border-lightblue border-t-2 " />
-	<h3>TapasRetter</h3>
-	<div class="cart-list">
-		{#each $cart as item}
-			{#if item.quantity > 0}
-				<div class="cart-item">
-					<img width="50" src={item.image} alt={item.name} />
-					<div>
-						<button on:click={() => minusItem(item)}>-</button>
-						{item.quantity}
-						<button on:click={() => plusItem(item)}>+</button>
+	<div class="border-lightblue border-t-2" />
+		<h3>TapasRetter</h3>
+	
+		<div class="cart-list md:grid md:grid-rows-[auto_30px]">
+
+			<div>
+				{#each $cart as item}
+					{#if item.quantity > 0}
+					<div class="cart-item">
+						<img width="50" src={item.image} alt={item.name} />
+						<div>
+							<button on:click={() => minusItem(item)}>-</button>
+							{item.quantity}
+							<button on:click={() => plusItem(item)}>+</button>
+						</div>
+						<p>{item.price * item.quantity}</p>
 					</div>
-					<p>{item.price * item.quantity}</p>
-				</div>
-			{/if}
-		{/each}
-		<div class="total">
-			<h4>Total: {total}</h4>
-		</div>
+				{/if}
+				{/each}
+			</div>
+
+			<div class="total">
+				<h4 class="font-bold">Total: {total}</h4>
+			</div>
 	</div>
+
 </section>
 
 <style>
@@ -62,5 +68,9 @@
 
 	.total {
 		text-align: right;
+	}
+
+	.skygge {
+		box-shadow: 10px 10px #b9ddf6;
 	}
 </style>
