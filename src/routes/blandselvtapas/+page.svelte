@@ -19,7 +19,7 @@
 			<Maengdeguide class="grid" />
 
 			<div class="">
-				<h2>Hvor mange personer bliver I?</h2>
+				<h3>Hvor mange personer bliver I?</h3>
 				<Numericbutton />
 				<Button type="primary"><a href="/blandselvtapas/vaelgfisketapas">Vælg Tapasretter</a></Button>
 			</div>
