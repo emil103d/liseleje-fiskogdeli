@@ -10,7 +10,7 @@
 <div class="sideboxRight flex bg-lightblue p-4 min-h-full ">
 	<ul class="menu self-center md:pl-32" in:fade={{ y: 200, duration: 1000 }}>
 		<li>
-			<a class="" href="/blandselvtapasflow"
+			<a class="" href="/blandselvtapas"
 				>Fisk og Skaldyr <svg viewBox="0 0 455.555 48"
 					><path
 						d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
@@ -99,21 +99,14 @@
 		text-decoration: none;
 	}
 
-	.menu a {
-		position: relative;
-		display: block;
-	}
-
 	.menu a svg {
-		position: absolute;
-		left: 0;
-		bottom: 5%;
 		width: 100%;
+		/* height: 10px; */
 	}
 
 	.menu a svg path {
 		fill: transparent;
-		stroke-width: 5px;
+		stroke-width: 4px;
 		stroke: currentColor;
 		stroke-dasharray: 547.4111328125;
 		stroke-dashoffset: 547.4111328125;

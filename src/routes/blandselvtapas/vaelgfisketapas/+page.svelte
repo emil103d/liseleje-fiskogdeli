@@ -60,7 +60,7 @@
 							<img src={product.image} alt={product.title} class="h-full w-full" />
 							<h4>{product.title}</h4>
 							<p>{product.price} kr.</p>
-							<button on:click={() => addToCart(product)}>Tilføj til kurven</button>
+							<button on:click={() => addToCart(product)}>Tilføj til tapasfad</button>
 						</div>
 					</div>
 				{/if}
