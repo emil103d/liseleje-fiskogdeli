@@ -10,29 +10,96 @@
 <div class="sideboxRight flex bg-lightblue p-4 min-h-full ">
 	<ul class="menu self-center md:pl-32" in:fade={{ y: 200, duration: 1000 }}>
 		<li>
-			<a class="" href="/blandselvtapas"
-				>Fisk og Skaldyr <svg viewBox="0 0 455.555 48"
-					><path
-						d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
-					/><path
-						d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
-					/></svg
-				></a
-			>
+			<div class="flex gap-2">
+				<a class="" href="/construction"
+					>Fisk og Skaldyr <svg
+						viewBox="0 0 455.555 48"
+						preserveAspectRatio="none"
+						width="150"
+						height="10"
+					>
+						<path
+							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+						/><path
+							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+						/></svg
+					></a
+				>
+			</div>
 		</li>
 		<li>
 			<div class="flex gap-2">
-				<a class="hover-underline-animation" href="/construction">Fisketapas</a>
+				<a class="hover-underline-animation" href="/blandselvtapas"
+					>Fisketapas <svg
+						viewBox="0 0 455.555 48"
+						preserveAspectRatio="none"
+						width="150"
+						height="10"
+					>
+						<path
+							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+						/><path
+							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+						/></svg
+					></a
+				>
 				<Label title="Populært" />
 			</div>
 		</li>
 		<li>
-			<a class="hover-underline-animation" href="/construction">Delikatesser</a>
+			<div class="flex gap-2">
+				<a class="hover-underline-animation" href="/construction"
+					>Delikatesser <svg
+						viewBox="0 0 455.555 48"
+						preserveAspectRatio="none"
+						width="150"
+						height="10"
+					>
+						<path
+							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+						/><path
+							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+						/></svg
+					></a
+				>
+			</div>
 		</li>
 		<li>
-			<a class="hover-underline-animation" href="/construction">Tilbehør</a>
+			<div class="flex gap-2">
+				<a class="hover-underline-animation" href="/construction"
+					>Tilbehør <svg
+						viewBox="0 0 455.555 48"
+						preserveAspectRatio="none"
+						width="150"
+						height="10"
+					>
+						<path
+							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+						/><path
+							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+						/></svg
+					></a
+				>
+			</div>
 		</li>
-		<li><a class="hover-underline-animation" href="/construction">Alle Produkter</a></li>
+		<li>
+			<div class="flex gap-2">
+				<a class="hover-underline-animation" href="/construction"
+					>Alle Produkter<svg
+						viewBox="0 0 455.555 48"
+						preserveAspectRatio="none"
+						width="150"
+						height="10"
+					>
+						<path
+							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+						/><path
+							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+						/></svg
+					></a
+				>
+			</div>
+		</li>
 	</ul>
 </div>
 
@@ -94,14 +161,17 @@
 		list-style: none;
 	}
 
-	a {
+	li a {
 		color: inherit;
 		text-decoration: none;
+		position: relative;
+		margin-bottom: 1rem;
 	}
 
 	.menu a svg {
-		width: 100%;
 		/* height: 10px; */
+		position: absolute;
+		width: 100%;
 	}
 
 	.menu a svg path {
