@@ -9,7 +9,7 @@
 
 			<div class="w-full h-full skygge md:block relative">
 				<img src="martin.webp" alt="" class="w-full">
-				<div class="h-40 w-40 rounded-full bg-yellowdot absolute top-[-30px] right-[-30px] button z-10 text-center grid place-content-center">
+				<div class="h-40 w-40 rounded-full bg-yellowdot absolute top-[-30px] right-[-30px] button text-center grid place-content-center">
 					<div class="grid gap-2">
 						<p class="font-headingtext text-2xl">Martin</p>
 						<p class="font-headingtext text-sm "> Medejer & <br> fiske entusiast</p>
