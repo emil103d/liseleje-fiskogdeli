@@ -6,7 +6,7 @@
 	import Maengdeguide from '/src/lib/components/Maengdeguide.svelte';
 </script>
 
-<main class="md:py-32 md:py-44 px-10 h-[100vh] place-content-center w-full grid">
+<main class="md:py-32 lg:py-44 px-10 h-[100vh] place-content-center w-full grid">
 
 	<div class="grid lg:max-w-[1024px] lg:m-auto">
 		<h2 class="font-bold text-darkblue  ">Bland selv fisketapas <b class="text-yellowdot"> . </b></h2>
