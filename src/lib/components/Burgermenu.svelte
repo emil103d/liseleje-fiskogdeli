@@ -176,47 +176,7 @@
 	on:click={handleNav}
 	on:keydown={handleNavWithKey}
 	class:change={navOpen}
->
-	<div class="bar1">
-		<svg width="47" height="8" viewBox="0 0 47 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path
-				class="path"
-				d="M45 5.92806C43.3286 5.92806 41.8092 5.95025 38.4729 4.03318L38.4296 4.00688C36.905 3.08145 35.3712 2.15046 33.0949 2.16406C30.7846 2.17773 29.2731 3.15444 27.8162 4.09585L27.7951 4.10947C26.3188 5.06337 24.8929 5.97773 22.71 5.9996C20.4276 6.02251 18.8265 5.05432 17.1604 4.04027L17.1405 4.0282C15.497 3.02786 13.7871 1.9872 11.3361 2.00012C8.86103 2.01346 7.19233 3.09284 5.60349 4.1226L5.59959 4.12513C4.45236 4.86868 3.34802 5.58442 2 5.92806"
-				stroke="#1F425F"
-				stroke-width="4"
-				stroke-miterlimit="10"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			/>
-		</svg>
-	</div>
-	<div class="bar2">
-		<svg width="47" height="8" viewBox="0 0 47 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path
-				class="path"
-				d="M45 5.92806C43.3286 5.92806 41.8092 5.95025 38.4729 4.03318L38.4296 4.00688C36.905 3.08145 35.3712 2.15046 33.0949 2.16406C30.7846 2.17773 29.2731 3.15444 27.8162 4.09585L27.7951 4.10947C26.3188 5.06337 24.8929 5.97773 22.71 5.9996C20.4276 6.02251 18.8265 5.05432 17.1604 4.04027L17.1405 4.0282C15.497 3.02786 13.7871 1.9872 11.3361 2.00012C8.86103 2.01346 7.19233 3.09284 5.60349 4.1226L5.59959 4.12513C4.45236 4.86868 3.34802 5.58442 2 5.92806"
-				stroke="#1F425F"
-				stroke-width="4"
-				stroke-miterlimit="10"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			/>
-		</svg>
-	</div>
-	<div class="bar3">
-		<svg width="47" height="8" viewBox="0 0 47 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path
-				class="path"
-				d="M45 5.92806C43.3286 5.92806 41.8092 5.95025 38.4729 4.03318L38.4296 4.00688C36.905 3.08145 35.3712 2.15046 33.0949 2.16406C30.7846 2.17773 29.2731 3.15444 27.8162 4.09585L27.7951 4.10947C26.3188 5.06337 24.8929 5.97773 22.71 5.9996C20.4276 6.02251 18.8265 5.05432 17.1604 4.04027L17.1405 4.0282C15.497 3.02786 13.7871 1.9872 11.3361 2.00012C8.86103 2.01346 7.19233 3.09284 5.60349 4.1226L5.59959 4.12513C4.45236 4.86868 3.34802 5.58442 2 5.92806"
-				stroke="#1F425F"
-				stroke-width="4"
-				stroke-miterlimit="10"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			/>
-		</svg>
-	</div>
-</div>
+/>
 
 <style>
 	/* span {
@@ -300,31 +260,19 @@
 		display: inline-block;
 		cursor: pointer;
 		position: fixed;
+		height: 23%;
+		width: 4%;
+		background: url(/hamburger.png) repeat-x;
+		background-position: 0;
 		right: 10%;
+		animation: waveline 4s linear infinite;
+		transition: all ease 0.5s;
 	}
 
-	.path {
-		stroke-dasharray: 40;
-		stroke-dashoffset: 800;
-		animation: dash 8s linear infinite;
-	}
-
-	@keyframes dash {
+	@keyframes waveline {
 		to {
-			stroke-dashoffset: 1000;
+			background-position: -150px;
 		}
-	}
-
-	.change .bar1 {
-		transform: translate(0, 11px) rotate(-45deg);
-	}
-
-	.change .bar2 {
-		opacity: 0;
-	}
-
-	.change .bar3 {
-		transform: translate(0, -11px) rotate(45deg);
 	}
 
 	/* ---------Hamburger menu close---------- */
