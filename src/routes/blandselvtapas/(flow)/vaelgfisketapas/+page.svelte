@@ -10,13 +10,14 @@
 	const addToCart = (product) => {
 		console.log('addToCart tapasretter');
 		for (let item of $cart) {
+			// for hvert produkt i kurven
 			if (item.id === product.id) {
-				product.quantity += 1;
-				// $cart = $cart;
+				// sammenligner hvad der er i kurven med produkt.id
+				product.quantity += 1; // så det eneste der ændre sig er qunatity
 				return;
 			}
 		}
-		$cart = [...$cart, product];
+		$cart = [...$cart, product]; //for at gøre reaktivt skal sveltekit have en assignment, så man bruger spreadopreatoren (...) derefter bliver produktet tilføjet til kurven
 	};
 
 	let selected = 'alle';
@@ -49,6 +50,7 @@
 		<section class="grid md:grid-cols-[auto_250px] gap-10 lg:gap-20">
 			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
 				{#each $products as product}
+					<!-- Viser alle produkter -->
 					{#if selected === 'alle'}
 						<div>
 							<div class="content">
@@ -67,6 +69,7 @@
 							</div>
 						</div>
 					{:else}
+						<!-- Viser de filtreret produkter -->
 						<div class:show={selected === product.kategory} class="column">
 							<div class="content">
 								<img src={product.image} alt={product.title} class="h-full w-full" />
