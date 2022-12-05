@@ -260,12 +260,16 @@
 		display: inline-block;
 		cursor: pointer;
 		position: fixed;
-		height: 23%;
+		height: 15vh;
 		width: 4%;
-		background: url(/hamburger.png) repeat-x;
+		background: url(/hamburger_ikon.svg) repeat-x;
 		background-position: 0;
 		right: 10%;
+	}
+
+	.burgercontainer:hover {
 		animation: waveline 4s linear infinite;
+		/* opacity: 0; */
 		transition: all ease 0.5s;
 	}
 

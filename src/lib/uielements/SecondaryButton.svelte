@@ -23,7 +23,7 @@
 		left: 0;
 		height: 100%;
 		width: 100%;
-		background: url(/linje.png) repeat-x;
+		background: url(/line.svg) repeat-x;
 		background-position: 0;
 	}
 
