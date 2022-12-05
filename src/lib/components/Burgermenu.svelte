@@ -13,6 +13,7 @@
 
 	// Saml de to nedenstående funktioner til denne smarte en
 	const handleNav = () => {
+		console.log('OPEN');
 		navOpen = !navOpen;
 	};
 
@@ -170,7 +171,12 @@
 </div>
 
 <!--hamburger icon to open the sidenav -->
-<div class="burgercontainer" on:click={handleNav} class:change={navOpen}>
+<div
+	class="burgercontainer"
+	on:click={handleNav}
+	on:keydown={handleNavWithKey}
+	class:change={navOpen}
+>
 	<div class="bar1">
 		<svg width="47" height="8" viewBox="0 0 47 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path
