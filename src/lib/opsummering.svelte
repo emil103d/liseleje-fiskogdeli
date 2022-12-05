@@ -2,17 +2,17 @@
 	import { cart } from '../stores/cart.js';
 	import Button from './uielements/Button.svelte';
 
-	$: totalp = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-	$: totalt = $cart.reduce((sum, ting) => sum + ting.price * ting.quantity, 0);
+	$: totalp = $cart.reduce((sum, product) => sum + product.price * product.quantity, 0);
+	$: total = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 </script>
 
 <article class="p-6 w-full grid skygge">
 	<h3 class="text-darkblue font-bold pb-2">Opsummering</h3>
 
 	<div>
-		<p>Bland selv tapas fad {totalp}</p>
-		<p>Tilkøbsvarer {totalt}</p>
-		<p>Total:</p>
+		<p>Bland selv tapas fad: {totalp}</p>
+		<p>Tilkøbsvarer: {totalp}</p>
+		<p>Total: {total}</p>
 	</div>
 	<div class=" border-shadowblue border-t-2 py-2 " />
 	<div>

@@ -23,8 +23,6 @@
 		$cart = [...$cart, product];
 	};
 
-	$: subtotal = $cart.reduce((sum, p) => sum + p.price * p.quantity, 0);
-
 	$: total = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 </script>
 
@@ -75,7 +73,6 @@
 		</div>
 
 		<div class="total">
-			<h4 class="font-bold">SubTotal: {subtotal}</h4>
 			<h4 class="font-bold">Total: {total}</h4>
 		</div>
 	</div>
