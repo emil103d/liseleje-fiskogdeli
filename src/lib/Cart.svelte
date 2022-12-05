@@ -23,29 +23,9 @@
 		$cart = [...$cart, product];
 	};
 
-	const minusTing = (tilkoeb) => {
-		for (let ting of $cart) {
-			if (ting.id === tilkoeb.id) {
-				tilkoeb.quantity -= 1;
-				$cart = $cart;
-				return;
-			}
-		}
-		$cart = [...$cart, tilkoeb];
-	};
+	// subtotal = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-	const plusTing = (tilkoeb) => {
-		for (let ting of $cart) {
-			if (ting.id === tilkoeb.id) {
-				ting.quantity += 1;
-				$cart = $cart;
-				return;
-			}
-		}
-		$cart = [...$cart, tilkoeb];
-	};
-
-	$: total = $cart.reduce((sum, item, ting) => sum + item.price * item.quantity, 0);
+	$: total = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 </script>
 
 <section class="pt-6 bg-white h-full skygge p-4">
@@ -78,17 +58,17 @@
 		<div class="border-lightblue border-t-2" />
 		<h3>Tilkøb</h3>
 		<div>
-			{#each $cart as ting}
-				{#if ting.quantity > 0 && ting.type == 't'}
+			{#each $cart as item}
+				{#if item.quantity > 0 && item.type == 't'}
 					<div class="cart-item">
-						<img width="50" src={ting.image} alt={ting.name} />
-						<p>{ting.title}</p>
+						<img width="50" src={item.image} alt={item.name} />
+						<p>{item.title}</p>
 						<div>
-							<button on:click={() => minusTing(ting)}>-</button>
-							{ting.quantity}
-							<button on:click={() => plusTing(ting)}>+</button>
+							<button on:click={() => minusItem(item)}>-</button>
+							{item.quantity}
+							<button on:click={() => plusItem(item)}>+</button>
 						</div>
-						<p>{ting.price * ting.quantity}</p>
+						<p>{item.price * item.quantity}</p>
 					</div>
 				{/if}
 			{/each}

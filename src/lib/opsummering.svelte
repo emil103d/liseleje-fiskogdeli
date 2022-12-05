@@ -1,19 +1,25 @@
-<script></script>
+<script>
+	import { cart } from '../stores/cart.js';
+	import Button from './uielements/Button.svelte';
 
-<article class="p-6 w-full grid">
+	$: totalp = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+	$: totalt = $cart.reduce((sum, ting) => sum + ting.price * ting.quantity, 0);
+</script>
+
+<article class="p-6 w-full grid skygge">
 	<h3 class="text-darkblue font-bold pb-2">Opsummering</h3>
 
 	<div>
-		<p>Blandselvtapas</p>
-		<p>Tilkøbsvarer</p>
+		<p>Bland selv tapas fad {totalp}</p>
+		<p>Tilkøbsvarer {totalt}</p>
 		<p>Total:</p>
 	</div>
-	<div class="border border-lightblue border-t-2 py-2 " />
+	<div class=" border-shadowblue border-t-2 py-2 " />
 	<div>
 		<form>
 			<label class="block mb-2 text-sm font-medium " for="title">Tilføj Rabatkode:</label>
 			<input
-				class=" border border-lightblue focus:border-yellowdot block"
+				class=" border border-shadowblue focus:border-yellowdot block"
 				placeholder="fx. Gladfiske20"
 				type="text"
 				id="title"
@@ -22,4 +28,11 @@
 			<input type="submit" value="Submit" />
 		</form>
 	</div>
+	<Button type="primary">Tilføj tapas til kurven</Button>
 </article>
+
+<style>
+	.skygge {
+		box-shadow: 6px 6px #b9ddf6;
+	}
+</style>
