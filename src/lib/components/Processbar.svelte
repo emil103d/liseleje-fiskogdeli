@@ -35,7 +35,7 @@
 
 <style>
     .logo {
-        transform: rotate(180deg);
+        transform: rotateY(180deg)
     }
 
     .connector {

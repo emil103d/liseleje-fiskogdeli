@@ -95,72 +95,81 @@
 
 
 
-<nav class="bg-darkblue bottom-0 w-full h-[120px] fixed grid pt-2">
-	<div class="wrapper py-10 px-10"> 
+<nav class="bg-darkblue bottom-0 w-full h-[140px] md:h-[120px] fixed grid pt-2">
+	<div class="wrapper py-4 px-10"> 
 		<div class="flex lg:max-w-[1024px] lg:m-auto justify-between relative">
 
-		<div class="h-[3px] w-full place-self-center justify-center place-content-center place-content-center items-center bg-white">
-		
-				<div class="relative flex justify-between top-[-26px]">
-					<a
-					class={current === '1' ? 'selected' : ''}
-					on:click={() => (current = '1')}
-					href="/blandselvtapas/"
-						><div class="">
-							<div
-								class="h-14 w-14 rounded-full border-[3px] border-yellowdot bg-white grid place-content-center justify-center align-middle m-auto items-center "
-							>
-								<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
-							</div>
-							<p class="text-white font-semibold pt-2 text-center">Antal personer</p>
-						</div>
-					</a>
-
-					<a
-					class={current === '2' ? 'selected' : ''}
-					on:click={() => (current = '2')}
-					href="/blandselvtapas/vaelgfisketapas">
-						<div class="grid justify-center place-items-center text-center">
-							<div
-								class="h-14 w-14 rounded-full border-[3px] border-yellowdot bg-white grid place-content-center justify-center align-middle m-auto items-center "
-							>
-								<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
-							</div>
-							<p class="text-white font-semibold pt-2">Vælg tapasretter</p>
-						</div>
-					</a>
-					
-					<a
-					class={current === '3' ? 'selected' : ''}
-					on:click={() => (current = '3')}
-					href="/blandselvtapas/tilkoeb">
-					
-						<div class="grid justify-center place-items-center text-center">
-							<div
-								class="h-14 w-14 rounded-full border-[3px] border-yellowdot bg-white grid place-content-center justify-center align-middle m-auto items-center "
-							>
-								<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
-							</div>
-							<p class="text-white font-semibold pt-2">Tilkøb</p>
-						</div>
-					</a>
-					
-					<a
-					class={current === '4' ? 'selected' : ''}
-					on:click={() => (current = '4')}
-					href="/blandselvtapas/afslut">
-						<div class="grid justify-center place-items-center text-center">
-							<div
-								class="h-14 w-14 rounded-full border-[3px] border-yellowdot bg-white grid place-content-center justify-center align-middle m-auto items-center "
-							>
-								<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
-							</div>
-							<p class="text-white font-semibold pt-2">Afslut bestilling</p>
-						</div>	
-					</a>
-
-				</div>
+		<div class="h-[3px] w-[85%] top-7 absolute left-[7.5%] bg-white">
 		</div>		
+
+		<div class="flex justify-between w-full">
+			<div>
+				<a
+				class={current === '1' ? 'selected' : ''}
+				on:click={() => (current = '1')}
+				href="/blandselvtapas/"
+					><div class="">
+						<div
+							class="h-14 w-14 rounded-full border-[3px] border-yellowdot bg-white grid place-content-center justify-center align-middle m-auto items-center "
+						>
+							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
+						</div>
+						<p class="text-white font-semibold pt-2 text-center">Antal personer</p>
+					</div>
+				</a>
+			</div>
+
+			<div>
+				<a
+				class={current === '2' ? 'selected' : ''}
+				on:click={() => (current = '2')}
+				href="/blandselvtapas/vaelgfisketapas">
+					<div class="grid justify-center place-items-center text-center">
+						<div
+							class="h-14 w-14 rounded-full border-[3px] border-yellowdot bg-white grid place-content-center justify-center align-middle m-auto items-center "
+						>
+							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
+						</div>
+						<p class="text-white font-semibold pt-2">Vælg tapasretter</p>
+					</div>
+				</a>
+			</div>
+
+			<div>
+				<a
+				class={current === '3' ? 'selected' : ''}
+				on:click={() => (current = '3')}
+				href="/blandselvtapas/tilkoeb">
+				
+					<div class="grid justify-center place-items-center text-center">
+						<div
+							class="h-14 w-14 rounded-full border-[3px] border-yellowdot bg-white grid place-content-center justify-center align-middle m-auto items-center "
+						>
+							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
+						</div>
+						<p class="text-white font-semibold pt-2">Tilkøb</p>
+					</div>
+				</a>
+			</div>
+
+			<div>
+				<a
+				class={current === '4' ? 'selected' : ''}
+				on:click={() => (current = '4')}
+				href="/blandselvtapas/afslut">
+					<div class="grid justify-center place-items-center text-center">
+						<div
+							class="h-14 w-14 rounded-full border-[3px] border-yellowdot bg-white grid place-content-center justify-center align-middle m-auto items-center "
+						>
+							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
+						</div>
+						<p class="text-white font-semibold pt-2">Afslut bestilling</p>
+					</div>	
+				</a>
+			</div>
+		</div>
+
+
 		</div>
 	</div>
 </nav>
@@ -174,6 +183,10 @@
 
 	a {
 		color: white;
+	}
+	
+	.logo {
+		transform: rotatey(180deg);
 	}
 
 </style>
