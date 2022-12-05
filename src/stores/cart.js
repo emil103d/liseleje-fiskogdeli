@@ -7,7 +7,8 @@ export const products = readable([
 		kategory: 'fisk',
 		price: '30',
 		image: '/borat.jpg',
-		quantity: 1
+		quantity: 1,
+		type: 'p'
 	},
 	{
 		id: '2',
@@ -15,7 +16,8 @@ export const products = readable([
 		kategory: 'fisk',
 		price: '30',
 		image: '/borat.jpg',
-		quantity: 1
+		quantity: 1,
+		type: 'p'
 	},
 	{
 		id: '3',
@@ -23,7 +25,8 @@ export const products = readable([
 		kategory: 'skaldyr',
 		price: '30',
 		image: '/borat.jpg',
-		quantity: 1
+		quantity: 1,
+		type: 'p'
 	},
 	{
 		id: '4',
@@ -31,42 +34,47 @@ export const products = readable([
 		kategory: 'salater',
 		price: '30',
 		image: '/borat.jpg',
-		quantity: 1
+		quantity: 1,
+		type: 'p'
 	}
 ]);
 
-export const tilkoeb = readable([
+export const tilkoebs = readable([
 	{
-		id: '1',
+		id: '5',
 		title: 'Vino vino',
 		kategory: 'vin',
 		price: '30',
 		image: '/borat.jpg',
-		quantity: 1
+		quantity: 1,
+		type: 't'
 	},
 	{
-		id: '2',
+		id: '6',
 		title: 'Tapanader',
 		kategory: 'tapanader',
 		price: '30',
 		image: '/borat.jpg',
-		quantity: 1
+		quantity: 1,
+		type: 't'
 	},
 	{
-		id: '3',
+		id: '7',
 		title: 'Surdejsbrød',
 		kategory: 'Brød',
 		price: '30',
 		image: '/borat.jpg',
-		quantity: 1
+		quantity: 1,
+		type: 't'
 	},
 	{
-		id: '4',
+		id: '8',
 		title: 'Rødvin',
 		kategory: 'Vin',
 		price: '30',
 		image: '/borat.jpg',
-		quantity: 1
+		quantity: 1,
+		type: 't'
 	}
 ]);
 
@@ -74,4 +82,4 @@ export const cart = writable([]);
 
 export const categories = ['alle', 'fisk', 'skaldyr', 'salater'];
 
-export const kategorier = ['vin', 'tapanader', 'brød'];
+export const kategorier = ['alle', 'vin', 'tapanader', 'brød'];

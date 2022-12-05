@@ -1,24 +1,25 @@
 <script>
 	/** @type {import('./$types').PageData} */
 	import '/src/app.css';
-	import { tilkoeb, cart } from '/src/stores/cart.js';
+	import { tilkoebs, cart } from '/src/stores/cart.js';
 	import { kategorier } from '/src/stores/cart.js';
 	import Tapas from '/src/lib/tapas.svelte';
 	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
 
-	const addToCart = (product) => {
-		for (let item of $cart) {
-			if (item.id === product.id) {
-				product.quantity += 1;
-				$cart = $cart;
+	const addToCart = (tilkoeb) => {
+		console.log('addToCart tilkoeb');
+		for (let ting of $cart) {
+			if (ting.id === tilkoeb.id) {
+				tilkoeb.quantity += 1;
+				// $cart = $cart;
 				return;
 			}
 		}
-		$cart = [...$cart, product];
+		$cart = [...$cart, tilkoeb];
 	};
 
 	let selected = 'alle';
-	const filterSelection = (e) => (selected = e.target.dataset.name);
+	const filterSelection = (e) => (selected = e.target.dataset.tilkoeb);
 	console.log(filterSelection);
 </script>
 
@@ -28,7 +29,7 @@
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
 
-			<h3>Udvælg dine fiske tapasretter</h3>
+			<h3>Udvælg dine tilkøbsretter</h3>
 		</section>
 
 		<ButtonContainer>
@@ -36,7 +37,7 @@
 				<button
 					class:active={selected === kategori}
 					class="btn"
-					data-name={kategori}
+					data-tilkoeb={kategori}
 					on:click={filterSelection}
 				>
 					{kategori}
@@ -46,18 +47,18 @@
 
 		<section class="grid md:grid-cols-[auto_250px] gap-10 lg:gap-20">
 			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
-				{#each $tilkoeb as product}
+				{#each $tilkoebs as tilkoeb}
 					{#if selected === 'alle'}
 						<div>
 							<div class="content">
-								<img src={product.image} alt={product.title} class="h-auto w-full aspect-square" />
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-auto w-full aspect-square" />
 								<div class="p-2">
 									<div class="grid py-2">
-										<h4 class="font-semibold">{product.title}</h4>
-										<p>{product.price} kr.</p>
+										<h4 class="font-semibold">{tilkoeb.title}</h4>
+										<p>{tilkoeb.price} kr.</p>
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
-										<button class="font-semibold" on:click={() => addToCart(product)}
+										<button class="font-semibold" on:click={() => addToCart(tilkoeb)}
 											>Tilføj til kurven</button
 										>
 									</div>
@@ -65,18 +66,17 @@
 							</div>
 						</div>
 					{:else}
-						<div class:show={selected === product.kategory} class="column">
+						<div class:show={selected === tilkoeb.kategory} class="column">
 							<div class="content">
-								<img src={product.image} alt={product.title} class="h-full w-full" />
-								<h4>{product.title}</h4>
-								<p>{product.price} kr.</p>
-								<button on:click={() => addToCart(product)}>Tilføj til tapasfad</button>
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full w-full" />
+								<h4>{tilkoeb.title}</h4>
+								<p>{tilkoeb.price} kr.</p>
+								<button on:click={() => addToCart(tilkoeb)}>Tilføj til tapasfad</button>
 							</div>
 						</div>
 					{/if}
 				{/each}
 			</div>
-			<Tapas />
 		</section>
 	</div>
 </main>

@@ -5,12 +5,14 @@
 	import { categories } from '/src/stores/cart.js';
 	import Tapas from '/src/lib/tapas.svelte';
 	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
+	import Cart from '../../../../lib/Cart.svelte';
 
 	const addToCart = (product) => {
+		console.log('addToCart tapasretter');
 		for (let item of $cart) {
 			if (item.id === product.id) {
 				product.quantity += 1;
-				$cart = $cart;
+				// $cart = $cart;
 				return;
 			}
 		}
@@ -57,12 +59,11 @@
 										<p>{product.price} kr.</p>
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
-									<button class="font-semibold" on:click={() => addToCart(product)}>Tilføj til kurven</button>
+										<button class="font-semibold" on:click={() => addToCart(product)}
+											>Tilføj til kurven</button
+										>
 									</div>
-
-									
 								</div>
-								
 							</div>
 						</div>
 					{:else}
@@ -77,16 +78,14 @@
 					{/if}
 				{/each}
 			</div>
-			<Tapas />
 		</section>
-	</div>	
+	</div>
 </main>
 
 <style>
 	main {
 		background-color: #f8fcfe;
 	}
-
 
 	.image {
 		background-size: contain;
@@ -140,6 +139,4 @@
 		background-color: #000;
 		color: white;
 	}
-	
-
 </style>
