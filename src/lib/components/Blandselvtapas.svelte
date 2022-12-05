@@ -7,7 +7,7 @@
 	<div class="wrapper py-32 md:py-44 px-10">
 		<div class="grid  md:grid-cols-2 lg:max-w-[1024px] lg:m-auto place-items-center">
 			<div class="pb-12 md:pb-0 gap-2 md:pr-10 m-auto lg:m-0 text-textcolor">
-				<Label title="Nyhed"> </Label>
+				<Label title="Nyhed" />
 				<h2 class="font-bold ">Bland selv fisketapas <b class="text-yellowdot"> . </b></h2>
 				<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
 				<p class="pb-8">
@@ -20,7 +20,15 @@
 			</div>
 
 			<div class="w-full h-full skygge md:block">
-				<video src="tapas.mp4" class="w-full h-full object-cover aspect-square" track kind="video/mp4" autoplay loop ></video>
+				<video
+					src="tapas.mp4"
+					class="w-full h-full object-cover aspect-square"
+					track
+					kind="video/mp4"
+					autoplay
+					loop
+					muted
+				/>
 				<!-- <img class="w-full h-full object-cover" src="borat.jpg" alt="" /> -->
 			</div>
 		</div>
