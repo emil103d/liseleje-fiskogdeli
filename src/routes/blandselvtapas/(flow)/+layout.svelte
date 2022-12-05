@@ -4,5 +4,27 @@
 	export let data;
 </script>
 
-<Tapas />
-<slot />
+<div class="pt-[150px] pb-[150px] grid h-auto lg:flex w-full lg:max-w-[1024px] lg:m-auto">
+	<div>
+		<slot  />
+	</div>
+
+	<div>
+		<Tapas />
+	</div>
+</div>
+
+<style>
+
+/* @media only screen and (max-width: 768px) {
+	.tapas {
+		position: fixed;
+		width: 100%;
+		bottom: 40px;
+	}
+}
+	
+	 */
+	
+	
+</style>

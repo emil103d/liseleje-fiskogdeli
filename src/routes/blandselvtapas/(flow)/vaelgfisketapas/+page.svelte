@@ -25,7 +25,7 @@
 	console.log(filterSelection);
 </script>
 
-<main class="md:py-32 md:py-44 px-10 h-[100vh] place-content-center w-full grid">
+<main class="px-5 lg:px-0 place-content-center w-full grid">
 	<div class="lg:max-w-[1024px] lg:m-auto place-items-center">
 		<section class="">
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
@@ -34,7 +34,7 @@
 			<h3>Udvælg dine fiske tapasretter</h3>
 		</section>
 
-		<ButtonContainer>
+		<ButtonContainer> 
 			{#each categories as category}
 				<button
 					class:active={selected === category}
@@ -47,8 +47,8 @@
 			{/each}
 		</ButtonContainer>
 
-		<section class="grid md:grid-cols-[auto_250px] gap-10 lg:gap-20">
-			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
+		<section class="grid md:grid-cols gap-10 lg:gap-20">
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4">
 				{#each $products as product}
 					<!-- Viser alle produkter -->
 					{#if selected === 'alle'}
@@ -121,15 +121,13 @@
 
 	/* Style the buttons */
 	.btn {
-		width: 150px;
 		text-transform: uppercase;
 		font-weight: 200;
 		font-size: 1.2rem;
 		letter-spacing: 1px;
 		border: none;
 		outline: none;
-		margin: 5px;
-		padding: 14px 16px 12px;
+		padding: 2px;
 		background-color: white;
 		border: 1px solid black;
 		cursor: pointer;
