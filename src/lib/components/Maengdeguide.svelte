@@ -11,7 +11,7 @@
 	</p>
 	<div class="grid gap-4">
 		<div class="border-lightblue border-t-2 py-2 ">
-			<h4 class="font-semibold text-darkblue">Tapas til forret</h4>
+			<h4 class="font-semibold text-darkblue pb-2">Tapas til forret</h4>
 			<div class="flex gap-6 place-items-center w-auto">
 				<div>
 					<svg
@@ -76,6 +76,6 @@
 	}
 
 	.fisk path {
-    fill: #E5C72E;
+    fill: #E5C72E
 }
 </style>
