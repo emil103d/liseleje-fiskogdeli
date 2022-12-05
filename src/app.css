@@ -51,13 +51,20 @@ h2 {
 
 h3 {
 	font-family: 'Montserrat', cursive;
+	font-size: 1.3rem;
 }
 
 h4 {
 	font-family: 'Montserrat', cursive;
+	font-size: 1.1rem;
+
 }
 
 body {
 	background-color: #F8FCFE;
+}
+
+p {
+	font-size: 15px;
 }
 
