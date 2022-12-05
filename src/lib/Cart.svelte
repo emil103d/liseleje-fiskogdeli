@@ -1,5 +1,5 @@
 <script>
-	import { products, tilkoebs, cart } from '../stores/cart.js';
+	import { cart } from '../stores/cart.js';
 
 	const minusItem = (product) => {
 		for (let item of $cart) {
