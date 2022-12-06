@@ -23,7 +23,7 @@
 		$cart = [...$cart, product];
 	};
 
-	$: total = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+	$: total = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0); // $= “re-run this code whenever any of the referenced values change”.
 </script>
 
 <section class="pt-6 bg-white h-full skygge p-4">

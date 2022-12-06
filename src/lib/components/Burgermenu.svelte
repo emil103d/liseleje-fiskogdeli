@@ -265,12 +265,15 @@
 		background: url(/hamburger_ikon.svg) repeat-x;
 		background-position: 0;
 		right: 10%;
+		animation: waveline 8s linear infinite;
+		/* opacity: 0; */
+		transition: all ease 0.5s;
 	}
 
 	.burgercontainer:hover {
 		animation: waveline 4s linear infinite;
 		/* opacity: 0; */
-		transition: all ease 0.5s;
+		transition: all ease 1s;
 	}
 
 	@keyframes waveline {
