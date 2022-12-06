@@ -17,7 +17,7 @@
 				return;
 			}
 		}
-		$cart = [...$cart, product]; //for at gøre reaktivt skal sveltekit have en assignment, så man bruger spreadopreatoren (...) derefter bliver produktet tilføjet til kurven
+		$cart = [...$cart, product]; //for at gøre reaktivt skal sveltekit have en assignment, så man bruger spreadopreatoren (...) beholdeeksisterende produkter men tilføje nye.
 	};
 
 	let selected = 'alle';
@@ -34,7 +34,7 @@
 			<h3>Udvælg dine fiske tapasretter</h3>
 		</section>
 
-		<ButtonContainer> 
+		<ButtonContainer>
 			{#each categories as category}
 				<button
 					class:active={selected === category}
