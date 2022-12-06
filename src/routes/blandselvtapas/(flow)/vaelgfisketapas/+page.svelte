@@ -108,7 +108,7 @@
 
 <main>
 
-	<div class="grid lg:max-w-[1024px] py-[150px] lg:m-auto place-content-center w-full md:h-[100vh] py-[150px]">
+	<div class="grid lg:max-w-[1024px] py-[150px] lg:m-auto place-content-center w-full md:h-[100vh]">
 		<div>
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
@@ -139,7 +139,7 @@
 						<!-- Viser alle produkter -->
 						{#if selected === 'alle'}
 							<div>
-								<div class="content">
+								<div class="content grid h-full w-auto">
 									<img src={product.image} alt={product.title} class="" />
 									<div class="p-2">
 										<div class="grid py-2">
