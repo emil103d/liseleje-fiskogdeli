@@ -4,16 +4,8 @@
 	export let data;
 </script>
 
-<div class="">
-	<div>
-		<slot  />
 
-	</div>
-
-	<div>
-		<!-- <Tapas /> -->
-	</div>
-</div>
+<slot  />
 
 <style>
 
