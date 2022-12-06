@@ -4,9 +4,10 @@
 	export let data;
 </script>
 
-<div class=" grid h-auto w-full lg:flex lg:max-w-[1024px] lg:m-auto">
+<div class="">
 	<div>
 		<slot  />
+
 	</div>
 
 	<div>

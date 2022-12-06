@@ -6,6 +6,8 @@
 	import Tapas from '/src/lib/tapas.svelte';
 	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
 	import Cart from '../../../../lib/Cart.svelte';
+	import Button from '../../../../lib/uielements/Button.svelte';
+	import SecondaryButton from '../../../../lib/uielements/SecondaryButton.svelte';
 	
 
 	const addToCart = (product) => {
@@ -26,8 +28,9 @@
 	console.log(filterSelection);
 </script>
 
-<main class="grid px-5 place-content-center h-[100vh] w-full">
-	<div class="lg:max-w-[1024px] md:min-h-[950px]  place-items-center">
+<main class="pt-[150px] grid px-5 place-content-center h-[100%] w-full">
+	<div class="lg:max-w-[1024px] md:h-[600px]  place-items-center" >
+
 		<section class="">
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
@@ -48,8 +51,8 @@
 			{/each}
 		</ButtonContainer>
 
-		<section class="grid md:grid-cols gap-10 lg:gap-20  md:grid-cols-[minmax(auto,_1fr)_250px]">
-			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4">
+		<section class="grid md:grid-cols gap-10 lg:gap-20  md:grid-cols-[minmax(auto,_1fr)_250px] h-full">
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4  overflow-y-scroll">
 				{#each $products as product}
 					<!-- Viser alle produkter -->
 					{#if selected === 'alle'}
@@ -63,7 +66,7 @@
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
 										<button class=" font-medium" on:click={() => addToCart(product)}
-											>Tilføj til kurven</button
+											>Tilføj til tapasfad</button
 										>
 									</div>
 								</div>
@@ -82,10 +85,22 @@
 					{/if}
 				{/each}
 			</div>
+			
 			<div>
 				<Tapas />
 			</div>
+			
 		</section>
+
+		<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
+			<div class="flex justify-between">
+				<SecondaryButton>Tilbage </SecondaryButton>
+				<Button type="primary">Næste</Button>
+			</div>
+			<div>
+
+			</div>
+		</div>
 			
 
 
