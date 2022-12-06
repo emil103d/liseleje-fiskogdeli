@@ -108,7 +108,7 @@
 
 <main>
 
-	<div class="grid lg:max-w-[1024px] py-[150px] lg:m-auto">
+	<div class="grid lg:max-w-[1024px] py-[150px] lg:m-auto place-content-center w-full md:h-[100vh] py-[150px]">
 		<div>
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
@@ -132,7 +132,7 @@
 
 		<div>
 
-			<section class="grid md:grid-cols gap-10 lg:gap-20  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[500px]">
+			<section class="grid md:grid-cols gap-10 lg:gap-20  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]">
 
 				<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 overflow-y-scroll">
 					{#each $products as product}
@@ -168,7 +168,7 @@
 					{/each}
 				</div>
 				
-				<div>
+				<div class="hidden md:block">
 					<Tapas />
 				</div>
 
