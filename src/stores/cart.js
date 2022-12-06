@@ -3,7 +3,7 @@ import { readable, writable } from 'svelte/store';
 export const products = readable([
 	{
 		id: '1',
-		title: 'Lynstegt tun PRODUCT',
+		title: 'Lynstegt tun',
 		kategory: 'fisk',
 		price: '30',
 		image: '/borat.jpg',
