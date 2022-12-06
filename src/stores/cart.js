@@ -3,7 +3,7 @@ import { readable, writable } from 'svelte/store';
 export const products = readable([
 	{
 		id: '1',
-		title: 'Lynstegt tun PRODUCT',
+		title: 'Lynstegt tun',
 		kategory: 'fisk',
 		price: '30',
 		image: '/borat.jpg',
@@ -12,7 +12,7 @@ export const products = readable([
 	},
 	{
 		id: '2',
-		title: 'Lynstegt Laks PRODUCT',
+		title: 'Lynstegt Laks',
 		kategory: 'fisk',
 		price: '30',
 		image: '/borat.jpg',
@@ -21,7 +21,7 @@ export const products = readable([
 	},
 	{
 		id: '3',
-		title: 'Lynstegt Rejer PRODUCT',
+		title: 'Lynstegt Rejer',
 		kategory: 'skaldyr',
 		price: '30',
 		image: '/borat.jpg',
@@ -30,7 +30,7 @@ export const products = readable([
 	},
 	{
 		id: '4',
-		title: 'Lynstegt Rejer PRODUCT',
+		title: 'Lynstegt Rejer',
 		kategory: 'salater',
 		price: '30',
 		image: '/borat.jpg',

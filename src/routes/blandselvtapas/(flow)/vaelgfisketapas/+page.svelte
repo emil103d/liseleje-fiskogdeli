@@ -32,14 +32,14 @@
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
 
-			<h3>Udvælg dine fiske tapasretter</h3>
+			<p>Vælg dine fiske tapasretter</p>
 		</section>
 
 		<ButtonContainer> 
 			{#each categories as category}
 				<button
 					class:active={selected === category}
-					class="btn"
+					class="btn pt-4 pr-6"
 					data-name={category}
 					on:click={filterSelection}
 				>
@@ -58,11 +58,11 @@
 								<img src={product.image} alt={product.title} class="h-auto w-full" />
 								<div class="p-2">
 									<div class="grid py-2">
-										<h4 class="font-semibold">{product.title}</h4>
+										<h4 class="font-semibold text-darkblue">{product.title}</h4>
 										<p>{product.price} kr.</p>
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
-										<button class="font-semibold" on:click={() => addToCart(product)}
+										<button class=" font-medium" on:click={() => addToCart(product)}
 											>Tilføj til kurven</button
 										>
 									</div>
@@ -130,13 +130,10 @@
 	.btn {
 		text-transform: uppercase;
 		font-weight: 200;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		letter-spacing: 1px;
 		border: none;
 		outline: none;
-		padding: 2px;
-		background-color: white;
-		border: 1px solid black;
 		cursor: pointer;
 		transition: 0.1s ease-in-out;
 	}
@@ -144,7 +141,6 @@
 	/* Add a dark background color to the active button */
 	.btn:active,
 	.active {
-		background-color: #000;
-		color: white;
+		font-weight: 600;
 	}
 </style>
