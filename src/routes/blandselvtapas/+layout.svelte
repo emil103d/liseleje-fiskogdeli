@@ -95,11 +95,12 @@
 
 
 
-<nav class="bg-darkblue bottom-0 w-full h-[140px] md:h-[120px] fixed grid pt-2">
+<nav class="bg-darkblue px-5
+ bottom-0 w-full h-[140px] md:h-[120px] fixed grid pt-2">
 	<div class="wrapper py-4"> 
 		<div class="flex lg:max-w-[1024px] lg:m-auto justify-between relative">
 
-		<div class="h-[3px] w-[84%] top-7 absolute left-[7.5%] bg-white">
+		<div class="h-[3px] w-[90%] top-7 absolute left-[5%] bg-white">
 		</div>		
 
 		<div class="flex justify-between w-full">
@@ -114,7 +115,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white font-semibold pt-2 text-center">Antal personer</p>
+						<p class="text-white font-semibold pt-2 text-center">Antal</p>
 					</div>
 				</a>
 			</div>
@@ -130,7 +131,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white font-semibold pt-2">Vælg tapasretter</p>
+						<p class="text-white font-semibold pt-2">Tapasretter</p>
 					</div>
 				</a>
 			</div>
@@ -163,7 +164,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white font-semibold pt-2">Afslut bestilling</p>
+						<p class="text-white font-semibold pt-2">Bestil</p>
 					</div>	
 				</a>
 			</div>

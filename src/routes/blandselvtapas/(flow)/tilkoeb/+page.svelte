@@ -77,6 +77,9 @@
 					{/if}
 				{/each}
 			</div>
+			<div>
+				<Tapas />
+			</div>
 		</section>
 	</div>
 </main>

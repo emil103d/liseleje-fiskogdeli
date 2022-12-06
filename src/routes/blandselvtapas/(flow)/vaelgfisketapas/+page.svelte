@@ -6,6 +6,7 @@
 	import Tapas from '/src/lib/tapas.svelte';
 	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
 	import Cart from '../../../../lib/Cart.svelte';
+	
 
 	const addToCart = (product) => {
 		console.log('addToCart tapasretter');
@@ -25,8 +26,8 @@
 	console.log(filterSelection);
 </script>
 
-<main class="px-5 lg:px-0 place-content-center w-full grid">
-	<div class="lg:max-w-[1024px] lg:m-auto place-items-center">
+<main class="grid px-5 place-content-center h-[100vh] w-full">
+	<div class="lg:max-w-[1024px] md:min-h-[950px]  place-items-center">
 		<section class="">
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
@@ -47,14 +48,14 @@
 			{/each}
 		</ButtonContainer>
 
-		<section class="grid md:grid-cols gap-10 lg:gap-20">
+		<section class="grid md:grid-cols gap-10 lg:gap-20  md:grid-cols-[minmax(auto,_1fr)_250px]">
 			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4">
 				{#each $products as product}
 					<!-- Viser alle produkter -->
 					{#if selected === 'alle'}
 						<div>
 							<div class="content">
-								<img src={product.image} alt={product.title} class="h-auto w-full aspect-square" />
+								<img src={product.image} alt={product.title} class="h-auto w-full" />
 								<div class="p-2">
 									<div class="grid py-2">
 										<h4 class="font-semibold">{product.title}</h4>
@@ -81,7 +82,13 @@
 					{/if}
 				{/each}
 			</div>
+			<div>
+				<Tapas />
+			</div>
 		</section>
+			
+
+
 	</div>
 </main>
 
@@ -109,10 +116,10 @@
 
 		box-shadow: 1px 1px 5px black;
 	}
-
+/* 
 	img {
 		min-height: 200px;
-	}
+	} */
 
 	/* The "show" class is added to the filtered elements */
 	.show {

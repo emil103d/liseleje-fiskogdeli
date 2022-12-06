@@ -4,13 +4,13 @@
 	export let data;
 </script>
 
-<div class="pt-[150px] pb-[150px] grid h-auto lg:flex w-full lg:max-w-[1024px] lg:m-auto">
+<div class=" grid h-auto w-full lg:flex lg:max-w-[1024px] lg:m-auto">
 	<div>
 		<slot  />
 	</div>
 
 	<div>
-		<Tapas />
+		<!-- <Tapas /> -->
 	</div>
 </div>
 
