@@ -132,7 +132,7 @@
 
 		<div>
 
-			<section class="grid md:grid-cols gap-10 lg:gap-20  md:grid-cols-[minmax(auto,_1fr)_250px] h-[500px]">
+			<section class="grid md:grid-cols gap-10 lg:gap-20  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[500px]">
 
 				<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 overflow-y-scroll">
 					{#each $products as product}
@@ -246,5 +246,9 @@
 	.btn:active,
 	.active {
 		font-weight: 600;
+	}
+
+	.scrollstyling {
+		scrollbar-color: #E5C72E #f8fcfe;
 	}
 </style>
