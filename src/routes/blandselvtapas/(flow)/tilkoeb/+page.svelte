@@ -23,7 +23,7 @@
 	console.log(filterSelection);
 </script>
 
-<main class="md:py-32 md:py-44 px-10 h-[100vh] place-content-center w-full grid">
+<!-- <main class="md:py-32 md:py-44 px-10 h-[100vh] place-content-center w-full grid">
 	<div class="lg:max-w-[1024px] lg:m-auto place-items-center">
 		<section class="">
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
@@ -82,7 +82,90 @@
 			</div>
 		</section>
 	</div>
+</main> -->
+
+
+<main>
+
+	<div class="">
+
+		<div>
+			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
+			<div class="h-[2px] w-20 bg-darkblue mb-6" />
+			<h3>Udvælg dine tilkøbsretter</h3>
+		</div>
+		
+
+		<div class="">
+			<ButtonContainer>
+				{#each kategorier as kategori}
+					<button
+						class:active={selected === kategori}
+						class="btn"
+						data-tilkoeb={kategori}
+						on:click={filterSelection}
+					>
+						{kategori}
+					</button>
+				{/each}
+			</ButtonContainer>
+		</div>
+
+		<section class="grid md:grid-cols-[auto_250px] gap-10 lg:gap-20">
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
+				{#each $tilkoebs as tilkoeb}
+					{#if selected === 'alle'}
+						<div>
+							<div class="content">
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="" />
+								<div class="p-2">
+									<div class="grid py-2">
+										<h4 class="font-semibold">{tilkoeb.title}</h4>
+										<p>{tilkoeb.price} kr.</p>
+									</div>
+									<div class="grid justify-center pb-2 pt-2">
+										<button class="font-semibold" on:click={() => addToCart(tilkoeb)}
+											>Tilføj til kurven</button
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					{:else}
+						<div class:show={selected === tilkoeb.kategory} class="column">
+							<div class="content">
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full w-full" />
+								<h4>{tilkoeb.title}</h4>
+								<p>{tilkoeb.price} kr.</p>
+								<button on:click={() => addToCart(tilkoeb)}>Tilføj til tapasfad</button>
+							</div>
+						</div>
+					{/if}
+				{/each}
+			</div>
+
+			<div>
+				<Tapas />
+			</div>
+				
+		</section>
+
+	</div>
+
 </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <style>
 	main {
@@ -96,16 +179,15 @@
 	}
 
 	/* Create three equal columns */
-	.column {
+	/* .column {
 		display: none;
 		justify-content: center;
 		margin: 10px 0;
-	}
+	} */
 
 	/* Content */
 	.content {
 		background-color: white;
-
 		box-shadow: 1px 1px 5px black;
 	}
 

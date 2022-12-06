@@ -4,8 +4,9 @@
 	export let data;
 </script>
 
-
+<div>
 <slot  />
+</div>
 
 <style>
 
@@ -19,5 +20,6 @@
 	
 	 */
 	
+
 	
 </style>

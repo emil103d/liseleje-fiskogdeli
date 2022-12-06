@@ -50,7 +50,7 @@ export const products = readable([
 
 	{
 		id: '6',
-		title: 'krabbeklo',
+		title: 'Krabbeklo',
 		kategory: 'skaldyr',
 		price: '30',
 		image: '/products/krappeklo.webp',
