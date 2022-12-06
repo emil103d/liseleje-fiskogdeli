@@ -218,7 +218,7 @@
 	/* Content */
 	.content {
 		background-color: white;
-		box-shadow: 1px 1px 5px black;
+		box-shadow: 7px 7px 0px 2px #e5f1f9;
 	}
 /* 
 	img {
