@@ -27,7 +27,7 @@ export const products = writable([
 		price: '30 kr.',
 		image: 'borat.jpg',
 		quantity: 1
-	}
+	},
 ]);
 
 // export default products;
