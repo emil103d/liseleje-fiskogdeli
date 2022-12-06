@@ -132,12 +132,13 @@
 
 		<div>
 
-			<section class="grid md:grid-cols gap-10 lg:gap-20  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]">
+			<section class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]">
 
-				<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 overflow-y-scroll">
+				<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll">
 					{#each $products as product}
 						<!-- Viser alle produkter -->
 						{#if selected === 'alle'}
+
 							<div>
 								<div class="content grid h-full w-auto">
 									<img src={product.image} alt={product.title} class="" />
@@ -155,15 +156,26 @@
 								</div>
 							</div>
 						{:else}
+
+
 							<!-- Viser de filtreret produkter -->
-							<div class:show={selected === product.kategory} class="column">
-								<div class="content">
-									<img src={product.image} alt={product.title} class="h-full w-full" />
-									<h4>{product.title}</h4>
-									<p>{product.price} kr.</p>
-									<button on:click={() => addToCart(product)}>Tilføj til tapasfad</button>
+							<div>
+								<div class:show={selected === product.kategory} class="content grid h-full w-auto">
+									<img src={product.image} alt={product.title} class="" />
+									<div class="p-2">
+										<div class="grid py-2">
+											<h4 class="font-semibold text-darkblue">{product.title}</h4>
+											<p>{product.price} kr.</p>
+										</div>
+										<div class="grid justify-center pb-2 pt-2">
+											<button class="font-medium" on:click={() => addToCart(product)}>Tilføj til tapasfad</button>
+										</div>
+									</div>
 								</div>
 							</div>
+
+
+
 						{/if}
 					{/each}
 				</div>
@@ -227,7 +239,7 @@
 
 	/* The "show" class is added to the filtered elements */
 	.show {
-		display: flex;
+		display: grid;
 	}
 
 	/* Style the buttons */

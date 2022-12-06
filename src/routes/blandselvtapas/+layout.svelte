@@ -115,7 +115,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white font-semibold pt-2 text-center">Antal</p>
+						<p class="text-white font-medium pt-2 text-center">Antal</p>
 					</div>
 				</a>
 			</div>
@@ -131,7 +131,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white font-semibold pt-2">Tapasretter</p>
+						<p class="text-white font-medium pt-2">Tapasretter</p>
 					</div>
 				</a>
 			</div>
@@ -148,7 +148,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white font-semibold pt-2">Tilkøb</p>
+						<p class="text-white font-medium pt-2">Tilkøb</p>
 					</div>
 				</a>
 			</div>
@@ -164,7 +164,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white font-semibold pt-2">Bestil</p>
+						<p class="text-white font-medium pt-2">Bestil</p>
 					</div>	
 				</a>
 			</div>
