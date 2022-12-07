@@ -92,7 +92,7 @@
 	<div class="grid lg:max-w-[1024px] px-5 lg:px-0 py-[150px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]">
 
 		<div>
-			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
+			<h2 class="text-darkblue pb-2">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
 			<p>Vælg dine tilbehør</p>
 		</div>
@@ -123,6 +123,7 @@
 								<div class="p-2">
 									<div class="grid py-2">
 										<h4 class="font-semibold">{tilkoeb.title}</h4>
+										<p>Pr. styk</p>
 										<p>{tilkoeb.price} kr.</p>
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
@@ -139,6 +140,7 @@
 								<div class="p-2">
 									<div class="grid py-2">
 										<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
+										<p>Pr. styk</p>
 										<p>{tilkoeb.price} kr.</p>
 									</div>
 								<div class="grid justify-center pb-2 pt-2">

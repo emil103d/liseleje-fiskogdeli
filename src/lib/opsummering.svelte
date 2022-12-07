@@ -3,11 +3,11 @@
 	import Button from './uielements/Button.svelte';
 </script>
 
-<article class="p-6 w-full grid skygge h-[40vh]">
-	<h3 class="text-darkblue font-bold pb-2">Opsummering</h3>
+<article class="p-4 w-full grid content h-[40vh]">
+	<h3 class="text-darkblue font-bold pb-26">Opsummering</h3>
 
 	<div>
-		<p>
+		<p class="font-semibold">
 			Bland selv tapas fad: {$cart.reduce((total, cartItem) => {
 				const item = $cart.find((i) => i.type === cartItem.type);
 				if (item.type === 'p') {
@@ -33,26 +33,36 @@
 			}, 0)};
 		</p>
 	</div>
+
 	<div class=" border-shadowblue border-t-2 py-2 " />
 	<div>
-		<form>
-			<label class="block mb-2 text-sm font-medium " for="title">Tilføj Rabatkode:</label>
-			<input
-				class=" border border-shadowblue focus:border-yellowdot block"
-				placeholder="fx. Gladfiske20"
-				type="text"
-				id="title"
-				name="title"
-			/>
-			<input type="submit" value="Submit" />
-		</form>
+
+		<div>
+			<form>
+				<label class="block mb-2 text-sm font-medium " for="title">Tilføj Rabatkode:</label>
+				<input
+					class=" border border-shadowblue focus:border-yellowdot block"
+					placeholder="fx. Gladfiske20"
+					type="text"
+					id="title"
+					name="title"
+				/>
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+
+		<div>
+			<Button type="primary">Tilføj tapas til kurven</Button>
+		</div>
 	</div>
-	<Button type="primary">Tilføj tapas til kurven</Button>
 </article>
 
 <style>
-	.skygge {
-		box-shadow: 6px 6px #b9ddf6;
+
+.content {
+		background-color: white;
+		box-shadow: 7px 7px 0px 2px #e5f1f9;
 	}
+
 
 </style>
