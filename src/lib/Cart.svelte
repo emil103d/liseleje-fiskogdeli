@@ -42,47 +42,53 @@
 
 <section class="pt-6 bg-white h-full skygge p-4 md:flex md:justify-between md:flex-col">
 	<div>
-		<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
-		<p>Til {countValue} personer</p>
-
+		<div class="pb-2">
+			<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
+			<p>Til {countValue} personer</p>
+		</div>
 		<!-- <p>Der er {$cart.length} retter</p> -->
 		<div class="h-[2px] w-20" />
 
-		<div class="border-lightblue border-t-2" />
-		<h3>TapasRetter</h3>
+		<div class="border-lightblue border-t-2 py-2" />
+		<p class="font-semibold">TapasRetter</p>
 
-		<div class="cart-list md:grid md:grid-rows-[auto_30px]">
+		<div class="cart-list md:grid md:grid-rows gap-2 justify-between">
 		
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 'p'}
-					<div class="cart-item">
-						<img width="50" src={item.image} alt={item.name} />
-						<p>{item.title}</p>
-						<div>
-							<button on:click={() => minusItem(item)}>-</button>
+					<div class="cart-item gap-2">
+						<img class="w-full h-full aspect-square" width="" src={item.image} alt={item.name} />
+						<p class="place-content-center grid justify-center items-center">{item.title}</p>
+						<div class="flex gap-1 justify-end items-center">
+							<button class="place-content-center grid justify-center items-center" on:click={() => minusItem(item)}>-</button>
 							{item.quantity}
-							<button on:click={() => plusItem(item)}>+</button>
+							<button class="place-content-center grid justify-center items-center" on:click={() => plusItem(item)}>+</button>
 						</div>
-						<p>{item.price * item.quantity}</p>
+						<div class="w-full h-full grid justify-center items-center">
+							<p>{item.price * item.quantity}</p>
+						</div>
 					</div>
 				{/if}
 			{/each}
 		</div>
 
 		<div class="border-lightblue border-t-2" />
-			<h3>Tilkøb</h3>
-			<div>
+			<p class="font-semibold">Tilkøb</p>
+			<div class="md:grid md:grid-rows gap-2 justify-between">
 				{#each $cart as item}
 					{#if item.quantity > 0 && item.type == 't'}
-						<div class="cart-item">
-							<img width="50" src={item.image} alt={item.name} />
-							<p>{item.title}</p>
-							<div>
-								<button on:click={() => minusItem(item)}>-</button>
+						<div class="cart-item gap-2">
+							<img class="w-full h-full aspect-square" width="50" src={item.image} alt={item.name} />
+							<p class="place-content-center grid justify-center items-center">{item.title}</p>
+							<div class="flex gap-1 justify-end items-center">
+								<button class="place-content-center grid justify-center items-center" on:click={() => minusItem(item)}>-</button>
 								{item.quantity}
-								<button on:click={() => plusItem(item)}>+</button>
+								<button class="place-content-center grid justify-center items-center" on:click={() => plusItem(item)}>+</button>
 							</div>
-							<p>{item.price * item.quantity}</p>
+							<div class="w-full h-full grid justify-center items-center">
+								<p>{item.price * item.quantity}</p>
+							</div>
+							
 						</div>
 					{/if}
 				{/each}
@@ -90,7 +96,7 @@
 	</div>
 
 	<div class="total">
-		<h4 class="font-bold">Total: {total}</h4>
+		<h4 class="font-bold">Total: {total} DKK</h4>
 	</div>
 
 </section>
@@ -98,7 +104,8 @@
 <style>
 	.cart-item {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: 40px 1fr 1fr 1fr;
+		justify-content: space-between;
 	}
 
 	.total {
