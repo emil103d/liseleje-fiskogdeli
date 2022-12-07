@@ -29,7 +29,7 @@
 		<p>
 			Total: {$cart.reduce((total, cartItem) => {
 				const item = $cart.find((i) => i.type === cartItem.type);
-				return total + (item?.price || 0) * cartItem.quantity;
+				return total + (item.price || 0) * cartItem.quantity;
 			}, 0)};
 		</p>
 	</div>

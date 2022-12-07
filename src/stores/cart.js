@@ -150,7 +150,7 @@ export const tilkoebs = readable([
 
 export const cart = writable([]);
 
-export const count = writable(0);
+export const count = writable(1);
 
 export const categories = ['alle', 'fisk', 'skaldyr', 'salater'];
 

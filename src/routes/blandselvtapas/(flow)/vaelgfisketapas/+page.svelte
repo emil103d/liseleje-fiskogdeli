@@ -1,14 +1,13 @@
 <script>
 	/** @type {import('./$types').PageData} */
 	import '/src/app.css';
-	import { products, cart } from '/src/stores/cart.js';
+	import { products, cart, count } from '/src/stores/cart.js';
 	import { categories } from '/src/stores/cart.js';
 	import Tapas from '/src/lib/tapas.svelte';
 	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
 	import Cart from '../../../../lib/Cart.svelte';
 	import Button from '../../../../lib/uielements/Button.svelte';
 	import SecondaryButton from '../../../../lib/uielements/SecondaryButton.svelte';
-	
 
 	const addToCart = (product) => {
 		console.log('addToCart tapasretter');
@@ -26,6 +25,16 @@
 	let selected = 'alle';
 	const filterSelection = (e) => (selected = e.target.dataset.name);
 	console.log(filterSelection);
+
+	let countValue;
+
+	count.subscribe((value) => {
+		countValue = value;
+	});
+
+	// const produktTotal = (product) => {
+	// 	product.reduce((total, product) => total + product.price, 0) * countValue;
+	// };
 </script>
 
 <!-- <main class="pt-[150px] grid px-5 place-content-center h-[100%] w-full">
@@ -54,8 +63,8 @@
 		<section class="grid md:grid-cols gap-10 lg:gap-20  md:grid-cols-[minmax(auto,_1fr)_250px] h-full">
 			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4  overflow-y-scroll">
 				{#each $products as product} -->
-					<!-- Viser alle produkter -->
-					<!-- {#if selected === 'alle'}
+<!-- Viser alle produkter -->
+<!-- {#if selected === 'alle'}
 						<div>
 							<div class="content">
 								<img src={product.image} alt={product.title} class="h-auto w-full" />
@@ -73,8 +82,8 @@
 							</div>
 						</div>
 					{:else} -->
-						<!-- Viser de filtreret produkter -->
-						<!-- <div class:show={selected === product.kategory} class="column">
+<!-- Viser de filtreret produkter -->
+<!-- <div class:show={selected === product.kategory} class="column">
 							<div class="content">
 								<img src={product.image} alt={product.title} class="h-full w-full" />
 								<h4>{product.title}</h4>
@@ -105,10 +114,10 @@
 	</div>
 </main> -->
 
-
 <main>
-
-	<div class="grid lg:max-w-[1024px] px-5 lg:px-0 py-[150px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]">
+	<div
+		class="grid lg:max-w-[1024px] px-5 lg:px-0 py-[150px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]"
+	>
 		<div>
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
@@ -116,7 +125,7 @@
 		</div>
 
 		<div>
-			<ButtonContainer> 
+			<ButtonContainer>
 				{#each categories as category}
 					<button
 						class:active={selected === category}
@@ -131,21 +140,29 @@
 		</div>
 
 		<div>
-
-			<section class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]">
-
-				<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll">
+			<section
+				class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]"
+			>
+				<div
+					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll"
+				>
 					{#each $products as product}
 						<!-- Viser alle produkter -->
 						{#if selected === 'alle'}
-
 							<div>
 								<div class="content grid h-full w-auto">
 									<img src={product.image} alt={product.title} class="" />
 									<div class="p-2">
 										<div class="grid py-2">
 											<h4 class="font-semibold text-darkblue">{product.title}</h4>
-											<p>{product.price} kr.</p>
+											<p>Til {countValue} personer</p>
+											<p>
+												{product.price} kr.
+												{$products.reduce((total) => {
+													console.log(total);
+													return total + (product.price || 0) * { countValue };
+												}, 0)};
+											</p>
 										</div>
 										<div class="grid justify-center pb-2 pt-2">
 											<button class=" font-medium" on:click={() => addToCart(product)}
@@ -156,58 +173,55 @@
 								</div>
 							</div>
 						{:else}
+							// <!-- Bland selv tapas fad: {$cart.reduce((total, cartItem) => {
+			// 	const item = $cart.find((i) => i.type === cartItem.type);
+			// 	if (item.type === 'p') {
+			// 		return total + (item.price || 0) * cartItem.quantity;
+			// 	}
 
+			// 	return total;
+			// }, 0)}; -->
 
 							<!-- Viser de filtreret produkter -->
-				
-								<div class:show={selected === product.kategory} class="column content grid h-full w-auto">
-									<img src={product.image} alt={product.title} class="" />
-									<div class="p-2">
-										<div class="grid py-2">
-											<h4 class="font-semibold text-darkblue">{product.title}</h4>
-											<p>{product.price} kr.</p>
-										</div>
-										<div class="grid justify-center pb-2 pt-2">
-											<button class="font-medium" on:click={() => addToCart(product)}>Tilføj til tapasfad</button>
-										</div>
+
+							<div
+								class:show={selected === product.kategory}
+								class="column content grid h-full w-auto"
+							>
+								<img src={product.image} alt={product.title} class="" />
+								<div class="p-2">
+									<div class="grid py-2">
+										<h4 class="font-semibold text-darkblue">{product.title}</h4>
+										<p>{product.price} kr.</p>
+									</div>
+									<div class="grid justify-center pb-2 pt-2">
+										<button class="font-medium" on:click={() => addToCart(product)}
+											>Tilføj til tapasfad</button
+										>
 									</div>
 								</div>
-		
-
-
-
+							</div>
 						{/if}
 					{/each}
 				</div>
-				
+
 				<div class="hidden md:block">
 					<Tapas />
 				</div>
-
 			</section>
 
-			<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
+			<div
+				class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6"
+			>
 				<div class="flex justify-between place-items-center">
-					<SecondaryButton>Tilbage </SecondaryButton>
+					<SecondaryButton>Tilbage</SecondaryButton>
 					<Button type="primary">Næste</Button>
 				</div>
-				<div>
-	
-				</div>
+				<div />
 			</div>
 		</div>
 	</div>
 </main>
-
-
-
-
-
-
-
-
-
-
 
 <style>
 	main {
@@ -232,7 +246,7 @@
 		background-color: white;
 		box-shadow: 7px 7px 0px 2px #e5f1f9;
 	}
-/* 
+	/* 
 	img {
 		min-height: 200px;
 	} */
@@ -261,6 +275,6 @@
 	}
 
 	.scrollstyling {
-		scrollbar-color: #E5C72E #f8fcfe;
+		scrollbar-color: #e5c72e #f8fcfe;
 	}
 </style>
