@@ -151,8 +151,8 @@
 						<!-- Viser alle produkter -->
 						{#if selected === 'alle'}
 							<div>
-								<div class="content grid h-full w-auto">
-									<img src={product.image} alt={product.title} class="" />
+								<div class="content grid w-auto">
+									<img src={product.image} alt={product.title} class="h-full aspect-square" />
 									<div class="p-2">
 										<div class="grid py-2">
 											<h4 class="font-semibold text-darkblue">{product.title}</h4>
@@ -174,9 +174,9 @@
 
 							<div
 								class:show={selected === product.kategory}
-								class="column content grid h-full w-auto"
+								class="column content grid w-auto"
 							>
-								<img src={product.image} alt={product.title} class="" />
+								<img src={product.image} alt={product.title} class="h-full aspect-square" />
 								<div class="p-2">
 									<div class="grid py-2">
 										<h4 class="font-semibold text-darkblue">{product.title}</h4>
@@ -194,19 +194,17 @@
 					{/each}
 				</div>
 
-				<div class="hidden md:block">
+				<div class="fixed bottom-[140px] w-full left-0 md:relative md:bottom-0">
 					<Tapas />
 				</div>
 			</section>
 
-			<div
-				class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6"
-			>
+			<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
 				<div class="flex justify-between place-items-center">
 					<SecondaryButton>Tilbage</SecondaryButton>
 					<Button type="primary">Næste</Button>
 				</div>
-				<div />
+				<div/>
 			</div>
 		</div>
 	</div>
@@ -227,7 +225,6 @@
 	.column {
 		display: none;
 		justify-content: center;
-		margin: 10px 0;
 	}
 
 	/* Content */
@@ -266,4 +263,6 @@
 	.scrollstyling {
 		scrollbar-color: #e5c72e #f8fcfe;
 	}
+
+
 </style>
