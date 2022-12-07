@@ -159,8 +159,8 @@
 
 
 							<!-- Viser de filtreret produkter -->
-							<div>
-								<div class:show={selected === product.kategory} class="content grid h-full w-auto">
+				
+								<div class:show={selected === product.kategory} class="column content grid h-full w-auto">
 									<img src={product.image} alt={product.title} class="" />
 									<div class="p-2">
 										<div class="grid py-2">
@@ -172,7 +172,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+		
 
 
 
@@ -221,11 +221,11 @@
 	}
 
 	/* Create three equal columns */
-	/* .column {
+	.column {
 		display: none;
 		justify-content: center;
 		margin: 10px 0;
-	} */
+	}
 
 	/* Content */
 	.content {
