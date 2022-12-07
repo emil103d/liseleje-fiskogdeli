@@ -237,7 +237,7 @@
 
 	/* The "show" class is added to the filtered elements */
 	.show {
-		display: flex;
+		display: grid;
 	}
 
 	/* Style the buttons */
