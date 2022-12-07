@@ -221,11 +221,11 @@
 	}
 
 	/* Create three equal columns */
-	/* .column {
+	.column {
 		display: none;
 		justify-content: center;
 		margin: 10px 0;
-	} */
+	}
 
 	/* Content */
 	.content {
