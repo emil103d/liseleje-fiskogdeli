@@ -204,16 +204,16 @@ export const products = readable([
 
 export const tilkoebs = readable([
 	{
-		id: '5',
+		id: '19',
 		title: 'Vino vino',
 		kategory: 'vin',
 		price: '30',
-		image: '/borat.jpg',
+		image: '/products/vin.webp',
 		quantity: 1,
 		type: 't'
 	},
 	{
-		id: '6',
+		id: '20',
 		title: 'Tapanader',
 		kategory: 'tapanader',
 		price: '30',
@@ -222,18 +222,126 @@ export const tilkoebs = readable([
 		type: 't'
 	},
 	{
-		id: '7',
+		id: '21',
 		title: 'Surdejsbrød',
 		kategory: 'Brød',
+		price: '30',
+		image: '/products/broed.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '22',
+		title: 'Rødvin',
+		kategory: 'Vin',
+		price: '30',
+		image: '/products/vin.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '23',
+		title: 'Rødvin',
+		kategory: 'Vin',
+		price: '30',
+		image: '/products/vin.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '24',
+		title: 'Rødvin',
+		kategory: 'Vin',
+		price: '30',
+		image: '/products/vin.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '25',
+		title: 'Rødvin',
+		kategory: 'Vin',
+		price: '30',
+		image: '/products/vin.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '26',
+		title: 'Rødvin',
+		kategory: 'Vin',
+		price: '30',
+		image: '/products/vin.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '27',
+		title: 'Surdejsbrød',
+		kategory: 'Brød',
+		price: '30',
+		image: '/products/broed.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '28',
+		title: 'Surdejsbrød',
+		kategory: 'Brød',
+		price: '30',
+		image: '/products/broed.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '29',
+		title: 'Surdejsbrød',
+		kategory: 'Brød',
+		price: '30',
+		image: '/products/broed.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '30',
+		title: 'Surdejsbrød',
+		kategory: 'Brød',
+		price: '30',
+		image: '/products/broed.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '31',
+		title: 'Tapanader',
+		kategory: 'tapanader',
 		price: '30',
 		image: '/borat.jpg',
 		quantity: 1,
 		type: 't'
 	},
 	{
-		id: '8',
-		title: 'Rødvin',
-		kategory: 'Vin',
+		id: '32',
+		title: 'Tapanader',
+		kategory: 'tapanader',
+		price: '30',
+		image: '/borat.jpg',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '33',
+		title: 'Tapanader',
+		kategory: 'tapanader',
+		price: '30',
+		image: '/borat.jpg',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '34',
+		title: 'Tapanader',
+		kategory: 'tapanader',
 		price: '30',
 		image: '/borat.jpg',
 		quantity: 1,
