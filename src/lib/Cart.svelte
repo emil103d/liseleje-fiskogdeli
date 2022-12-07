@@ -50,15 +50,15 @@
 		<div class="h-[2px] w-20" />
 
 		<div class="border-lightblue border-t-2 py-2" />
-		<p class="font-semibold">TapasRetter</p>
+		<p class="font-semibold pb-2">TapasRetter</p>
 
 		<div class="cart-list md:grid md:grid-rows gap-2 justify-between">
 		
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 'p'}
-					<div class="cart-item gap-2">
+					<div class="cart-item gap-2 pt-2 md:pt-0">
 						<img class="w-full h-full aspect-square" width="" src={item.image} alt={item.name} />
-						<p class="place-content-center grid justify-center items-center">{item.title}</p>
+						<p class="grid items-center">{item.title}</p>
 						<div class="flex gap-1 justify-end items-center">
 							<button class="place-content-center grid justify-center items-center" on:click={() => minusItem(item)}>-</button>
 							{item.quantity}
@@ -73,13 +73,13 @@
 		</div>
 
 		<div class="border-lightblue border-t-2" />
-			<p class="font-semibold">Tilkøb</p>
+			<p class="font-semibold pb-2">Tilkøb</p>
 			<div class="md:grid md:grid-rows gap-2 justify-between">
 				{#each $cart as item}
 					{#if item.quantity > 0 && item.type == 't'}
-						<div class="cart-item gap-2">
+						<div class="cart-item gap-2 pt-2 md:pt-0">
 							<img class="w-full h-full aspect-square" width="50" src={item.image} alt={item.name} />
-							<p class="place-content-center grid justify-center items-center">{item.title}</p>
+							<p class="grid items-center">{item.title}</p>
 							<div class="flex gap-1 justify-end items-center">
 								<button class="place-content-center grid justify-center items-center" on:click={() => minusItem(item)}>-</button>
 								{item.quantity}
@@ -104,7 +104,7 @@
 <style>
 	.cart-item {
 		display: grid;
-		grid-template-columns: 40px 1fr 1fr 1fr;
+		grid-template-columns: 40px 1fr 1fr 20px;
 		justify-content: space-between;
 	}
 
