@@ -3,7 +3,7 @@
 	import Button from './uielements/Button.svelte';
 </script>
 
-<article class="p-6 w-full grid skygge">
+<article class="p-6 w-full grid skygge h-[40vh]">
 	<h3 class="text-darkblue font-bold pb-2">Opsummering</h3>
 
 	<div>
@@ -54,4 +54,5 @@
 	.skygge {
 		box-shadow: 6px 6px #b9ddf6;
 	}
+
 </style>
