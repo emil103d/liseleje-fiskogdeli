@@ -106,7 +106,100 @@ export const products = readable([
 		image: '/products/sild.webp',
 		quantity: 1,
 		type: 'p'
-	}
+	},
+	{
+		id: '9',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
+		price: '30',
+		image: '/products/krappeklo.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '10',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
+		price: '30',
+		image: '/products/krappeklo.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '11',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
+		price: '30',
+		image: '/products/krappeklo.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '12',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
+		price: '30',
+		image: '/products/krappeklo.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '13',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
+		price: '30',
+		image: '/products/krappeklo.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '14',
+		title: 'Laksemouse',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/laksemouse.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '15',
+		title: 'Laksemouse',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/laksemouse.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '16',
+		title: 'Laksemouse',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/laksemouse.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '17',
+		title: 'Laksemouse',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/laksemouse.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '18',
+		title: 'Laksemouse',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/laksemouse.webp',
+		quantity: 1,
+		type: 'p'
+	},
+
+
+
 ]);
 
 export const tilkoebs = readable([

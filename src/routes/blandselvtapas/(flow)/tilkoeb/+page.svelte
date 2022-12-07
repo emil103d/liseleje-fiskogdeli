@@ -5,6 +5,8 @@
 	import { kategorier } from '/src/stores/cart.js';
 	import Tapas from '/src/lib/tapas.svelte';
 	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
+	import Button from '../../../../lib/uielements/Button.svelte';
+	import SecondaryButton from '../../../../lib/uielements/SecondaryButton.svelte';
 
 	const addToCart = (tilkoeb) => {
 		console.log('addToCart tilkoeb');
@@ -92,7 +94,7 @@
 		<div>
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
-			<h3>Udvælg dine tilkøbsretter</h3>
+			<p>Vælg dine tilbehør</p>
 		</div>
 		
 
@@ -101,7 +103,7 @@
 				{#each kategorier as kategori}
 					<button
 						class:active={selected === kategori}
-						class="btn"
+						class="btn pt-4 pr-6"
 						data-tilkoeb={kategori}
 						on:click={filterSelection}
 					>
@@ -111,8 +113,8 @@
 			</ButtonContainer>
 		</div>
 
-		<section class="grid md:grid-cols-[auto_250px] gap-10 lg:gap-20">
-			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
+		<section class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]">
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll">
 				{#each $tilkoebs as tilkoeb}
 					{#if selected === 'alle'}
 						<div>
@@ -124,7 +126,7 @@
 										<p>{tilkoeb.price} kr.</p>
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
-										<button class="font-semibold" on:click={() => addToCart(tilkoeb)}
+										<button class="font-medium" on:click={() => addToCart(tilkoeb)}
 											>Tilføj til kurven</button
 										>
 									</div>
@@ -134,7 +136,7 @@
 					{:else}
 						<div class:show={selected === tilkoeb.kategory} class="column">
 							<div class="content">
-								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full w-full" />
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full aspect-square" />
 								<h4>{tilkoeb.title}</h4>
 								<p>{tilkoeb.price} kr.</p>
 								<button on:click={() => addToCart(tilkoeb)}>Tilføj til tapasfad</button>
@@ -144,24 +146,23 @@
 				{/each}
 			</div>
 
-			<div>
+			<div class="fixed bottom-[140px] w-full left-0 md:relative md:bottom-0">
 				<Tapas />
 			</div>
 				
 		</section>
 
+		<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
+			<div class="flex justify-between place-items-center">
+				<SecondaryButton>Tilbage</SecondaryButton>
+				<Button type="primary">Næste</Button>
+			</div>
+			<div/>
+		</div>
+
 	</div>
 
 </main>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -188,7 +189,7 @@
 	/* Content */
 	.content {
 		background-color: white;
-		box-shadow: 1px 1px 5px black;
+		box-shadow: 7px 7px 0px 2px #e5f1f9;
 	}
 
 	img {
@@ -202,17 +203,12 @@
 
 	/* Style the buttons */
 	.btn {
-		width: 150px;
 		text-transform: uppercase;
 		font-weight: 200;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		letter-spacing: 1px;
 		border: none;
 		outline: none;
-		margin: 5px;
-		padding: 14px 16px 12px;
-		background-color: white;
-		border: 1px solid black;
 		cursor: pointer;
 		transition: 0.1s ease-in-out;
 	}
@@ -220,7 +216,10 @@
 	/* Add a dark background color to the active button */
 	.btn:active,
 	.active {
-		background-color: #000;
-		color: white;
+		font-weight: 600;
+	}
+
+	.scrollstyling {
+		scrollbar-color: #e5c72e #f8fcfe;
 	}
 </style>
