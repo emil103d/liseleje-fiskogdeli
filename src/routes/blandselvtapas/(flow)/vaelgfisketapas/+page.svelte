@@ -108,7 +108,7 @@
 
 <main>
 
-	<div class="grid lg:max-w-[1024px] py-[150px] lg:m-auto">
+	<div class="grid lg:max-w-[1024px] px-5 lg:px-0 py-[150px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]">
 		<div>
 			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
@@ -132,14 +132,15 @@
 
 		<div>
 
-			<section class="grid md:grid-cols gap-10 lg:gap-20  md:grid-cols-[minmax(auto,_1fr)_250px] h-[500px]">
+			<section class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]">
 
-				<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 overflow-y-scroll">
+				<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll">
 					{#each $products as product}
 						<!-- Viser alle produkter -->
 						{#if selected === 'alle'}
+
 							<div>
-								<div class="content">
+								<div class="content grid h-full w-auto">
 									<img src={product.image} alt={product.title} class="" />
 									<div class="p-2">
 										<div class="grid py-2">
@@ -155,27 +156,38 @@
 								</div>
 							</div>
 						{:else}
+
+
 							<!-- Viser de filtreret produkter -->
-							<div class:show={selected === product.kategory} class="column">
-								<div class="content">
-									<img src={product.image} alt={product.title} class="h-full w-full" />
-									<h4>{product.title}</h4>
-									<p>{product.price} kr.</p>
-									<button on:click={() => addToCart(product)}>Tilføj til tapasfad</button>
+							<div>
+								<div class:show={selected === product.kategory} class="content grid h-full w-auto">
+									<img src={product.image} alt={product.title} class="" />
+									<div class="p-2">
+										<div class="grid py-2">
+											<h4 class="font-semibold text-darkblue">{product.title}</h4>
+											<p>{product.price} kr.</p>
+										</div>
+										<div class="grid justify-center pb-2 pt-2">
+											<button class="font-medium" on:click={() => addToCart(product)}>Tilføj til tapasfad</button>
+										</div>
+									</div>
 								</div>
 							</div>
+
+
+
 						{/if}
 					{/each}
 				</div>
 				
-				<div>
+				<div class="hidden md:block">
 					<Tapas />
 				</div>
 
 			</section>
 
 			<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
-				<div class="flex justify-between">
+				<div class="flex justify-between place-items-center">
 					<SecondaryButton>Tilbage </SecondaryButton>
 					<Button type="primary">Næste</Button>
 				</div>
@@ -218,7 +230,7 @@
 	/* Content */
 	.content {
 		background-color: white;
-		box-shadow: 1px 1px 5px black;
+		box-shadow: 7px 7px 0px 2px #e5f1f9;
 	}
 /* 
 	img {
@@ -227,7 +239,7 @@
 
 	/* The "show" class is added to the filtered elements */
 	.show {
-		display: flex;
+		display: grid;
 	}
 
 	/* Style the buttons */
@@ -246,5 +258,9 @@
 	.btn:active,
 	.active {
 		font-weight: 600;
+	}
+
+	.scrollstyling {
+		scrollbar-color: #E5C72E #f8fcfe;
 	}
 </style>
