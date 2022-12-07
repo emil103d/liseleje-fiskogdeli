@@ -173,15 +173,6 @@
 								</div>
 							</div>
 						{:else}
-							// <!-- Bland selv tapas fad: {$cart.reduce((total, cartItem) => {
-			// 	const item = $cart.find((i) => i.type === cartItem.type);
-			// 	if (item.type === 'p') {
-			// 		return total + (item.price || 0) * cartItem.quantity;
-			// 	}
-
-			// 	return total;
-			// }, 0)}; -->
-
 							<!-- Viser de filtreret produkter -->
 
 							<div
