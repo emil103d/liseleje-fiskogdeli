@@ -172,8 +172,7 @@
 						{:else}
 							<!-- Viser de filtreret produkter -->
 
-							<div
-								class:show={selected === product.kategory} class="column content grid w-auto">
+							<div class:show={selected === product.kategory} class="column content grid w-auto">
 								<img src={product.image} alt={product.title} class="h-full aspect-square" />
 								<div class="p-2">
 									<div class="grid py-2">
@@ -182,9 +181,7 @@
 										<p>{product.price} kr.</p>
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
-										<button class="font-medium" on:click={() => addToCart(product)}
-											>Tilføj til tapasfad</button
-										>
+										<button class="font-medium" on:click={() => addToCart(product)}>Tilføj til tapasfad</button>
 									</div>
 								</div>
 							</div>
@@ -200,7 +197,7 @@
 			<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
 				<div class="flex justify-between place-items-center">
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
-					<Button type="primary" class="m-auto"> <a href="/blandselvtapas/tilkoeb">Næste</a></Button
+					<Button type="primary"> <a href="/blandselvtapas/tilkoeb">Næste</a></Button
 						>
 				</div>
 				<div/>

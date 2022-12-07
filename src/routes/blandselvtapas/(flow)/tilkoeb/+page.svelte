@@ -135,8 +135,7 @@
 						</div>
 					{:else}
 						<div class:show={selected === tilkoeb.kategory} class="column content grid w-auto">
-							<div class="column content grid w-auto h-full">
-								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full w-full aspect-square" />
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full aspect-square" />
 								<div class="p-2">
 									<div class="grid py-2">
 										<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
@@ -145,7 +144,8 @@
 								<div class="grid justify-center pb-2 pt-2">
 								<button class="font-medium" on:click={() => addToCart(tilkoeb)}>Tilføj til tapasfad</button>
 								</div>
-							</div>
+					
+								
 							</div>
 						</div>
 					{/if}
@@ -161,7 +161,7 @@
 		<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
 			<div class="flex justify-between place-items-center">
 				<SecondaryButton><a href="/blandselvtapas/tilkoeb">Tilbage</a></SecondaryButton>
-					<Button type="primary" class="m-auto"> <a href="/blandselvtapas/afslut">Næste</a></Button
+					<Button type="primary"> <a href="/blandselvtapas/afslut">Næste</a></Button
 						>
 			</div>
 			<div/>
@@ -204,7 +204,7 @@
 
 	/* The "show" class is added to the filtered elements */
 	.show {
-		display: flex;
+		display: grid;
 	}
 
 	/* Style the buttons */
