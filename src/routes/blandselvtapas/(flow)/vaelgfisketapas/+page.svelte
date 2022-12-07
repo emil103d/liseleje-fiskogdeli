@@ -159,7 +159,7 @@
 
 
 							<!-- Viser de filtreret produkter -->
-							<div>
+				
 								<div class:show={selected === product.kategory} class="column content grid h-full w-auto">
 									<img src={product.image} alt={product.title} class="" />
 									<div class="p-2">
@@ -172,7 +172,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+		
 
 
 
