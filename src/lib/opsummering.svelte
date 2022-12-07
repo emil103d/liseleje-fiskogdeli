@@ -17,7 +17,7 @@
 				return total;
 			}, 0)};
 		</p>
-		<p>
+		<p class="font-semibold">
 			Tilkøbsvarer: {$cart.reduce((total, cartItem) => {
 				const item = $cart.find((i) => i.type === cartItem.type);
 				if (item.type === 't') {
@@ -26,7 +26,7 @@
 				return total;
 			}, 0)};
 		</p>
-		<p>
+		<p class="font-semibold">
 			Total: {$cart.reduce((total, cartItem) => {
 				const item = $cart.find((i) => i.type === cartItem.type);
 				return total + (item.price || 0) * cartItem.quantity;

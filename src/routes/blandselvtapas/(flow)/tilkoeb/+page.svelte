@@ -94,7 +94,7 @@
 		<div>
 			<h2 class="text-darkblue pb-2">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
-			<p>Vælg dine tilbehør</p>
+			<p>Vælg dit tilbehør</p>
 		</div>
 		
 
