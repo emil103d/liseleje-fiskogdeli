@@ -16,6 +16,7 @@
 			if (item.id === product.id) {
 				// sammenligner hvad der er i kurven med produkt.id
 				product.quantity += 1; // så det eneste der ændre sig er qunatity
+				$cart = $cart;
 				return;
 			}
 		}
@@ -158,10 +159,6 @@
 											<p>Til {countValue} personer</p>
 											<p>
 												{product.price} kr.
-												{$products.reduce((total) => {
-													console.log(total);
-													return total + (product.price || 0) * { countValue };
-												}, 0)};
 											</p>
 										</div>
 										<div class="grid justify-center pb-2 pt-2">
@@ -183,6 +180,7 @@
 								<div class="p-2">
 									<div class="grid py-2">
 										<h4 class="font-semibold text-darkblue">{product.title}</h4>
+										<p>Til {countValue} personer</p>
 										<p>{product.price} kr.</p>
 									</div>
 									<div class="grid justify-center pb-2 pt-2">

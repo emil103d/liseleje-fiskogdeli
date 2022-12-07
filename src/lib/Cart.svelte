@@ -35,14 +35,16 @@
 		countValue = value;
 	});
 
-	$: total = $cart.reduce((total, item) => total + item.price * item.quantity, 0) * countValue; // $= “re-run this code whenever any of the referenced values change”.
+	$: total = $cart.reduce((total, item) => total + item.price * item.quantity, 0); // $= “re-run this code whenever any of the referenced values change”.
+
+	// $: total = $cart.reduce((total, item) => total + item.price * item.quantity, 0) * countValue;
 </script>
 
 <section class="pt-6 bg-white h-full skygge p-4">
 	<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
 	<p>Til {countValue} personer</p>
 
-	<p>Der er {$cart.length} retter</p>
+	<!-- <p>Der er {$cart.length} retter</p> -->
 	<div class="h-[2px] w-20" />
 
 	<div class="border-lightblue border-t-2" />
