@@ -1,18 +1,37 @@
 <script>
 	import { cart } from '../stores/cart.js';
 	import Button from './uielements/Button.svelte';
-
-	$: totalp = $cart.reduce((sum, product) => sum + product.price * product.quantity, 0);
-	$: total = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 </script>
 
 <article class="p-6 w-full grid skygge">
 	<h3 class="text-darkblue font-bold pb-2">Opsummering</h3>
 
 	<div>
-		<p>Bland selv tapas fad: {totalp}</p>
-		<p>Tilkøbsvarer: {totalp}</p>
-		<p>Total: {total}</p>
+		<p>
+			Bland selv tapas fad: {$cart.reduce((total, cartItem) => {
+				const item = $cart.find((i) => i.type === cartItem.type);
+				if (item.type === 'p') {
+					return total + (item.price || 0) * cartItem.quantity;
+				}
+
+				return total;
+			}, 0)};
+		</p>
+		<p>
+			Tilkøbsvarer: {$cart.reduce((total, cartItem) => {
+				const item = $cart.find((i) => i.type === cartItem.type);
+				if (item.type === 't') {
+					return total + (item.price || 0) * cartItem.quantity;
+				}
+				return total;
+			}, 0)};
+		</p>
+		<p>
+			Total: {$cart.reduce((total, cartItem) => {
+				const item = $cart.find((i) => i.type === cartItem.type);
+				return total + (item?.price || 0) * cartItem.quantity;
+			}, 0)};
+		</p>
 	</div>
 	<div class=" border-shadowblue border-t-2 py-2 " />
 	<div>

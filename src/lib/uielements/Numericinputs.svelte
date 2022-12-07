@@ -1,13 +1,24 @@
 <script>
-	let count = 1;
-	let increaseNum = () => (count += 1);
-	let decreaseNum = () => (count -= 1);
+	import { count } from '../../stores/cart.js';
+
+	let increaseNum = () => {
+		count.update((n) => n + 1);
+	};
+	let decreaseNum = () => {
+		count.update((n) => n - 1);
+	};
+
+	let countValue;
+
+	count.subscribe((value) => {
+		countValue = value;
+	});
 </script>
 
 <!-- the function will be called on click -->
 <div class="flex justify-between">
 	<button on:click={() => decreaseNum(count)}>-</button>
-	<label> <input type="number"  bind:value={count} min="0" max="10" /></label>
+	<label> <input type="number" value={countValue} min="0" max="10" /></label>
 	<button on:click={() => increaseNum(count)}>+</button>
 </div>
 
@@ -45,18 +56,16 @@
 		flex-shrink: 0;
 	}
 
-		/* hide arrows
+	/* hide arrows
 	Chrome, Safari, Edge, Opera */
 	input::-webkit-outer-spin-button,
 	input::-webkit-inner-spin-button {
-	-webkit-appearance: none !important;
-	margin: 0 !important;
+		-webkit-appearance: none !important;
+		margin: 0 !important;
 	}
 
 	/* Firefox */
-	input[type=number] {
-	-moz-appearance: textfield !important;
+	input[type='number'] {
+		-moz-appearance: textfield !important;
 	}
-
-
 </style>

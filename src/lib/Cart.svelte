@@ -1,5 +1,7 @@
 <script>
-	import { cart } from '../stores/cart.js';
+	import { cart, count } from '../stores/cart';
+
+	console.log(count);
 
 	const minusItem = (product) => {
 		for (let item of $cart) {
@@ -23,12 +25,23 @@
 		$cart = [...$cart, product];
 	};
 
-	$: total = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0); // $= “re-run this code whenever any of the referenced values change”.
+	// console.log(subtotal);
+
+	console.log($cart);
+
+	let countValue;
+
+	count.subscribe((value) => {
+		countValue = value;
+	});
+
+	$: total = $cart.reduce((total, item) => total + item.price * item.quantity, 0) * countValue; // $= “re-run this code whenever any of the referenced values change”.
 </script>
 
 <section class="pt-6 bg-white h-full skygge p-4">
 	<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
-	<p>Til 2 personer</p>
+	<p>Til {countValue} personer</p>
+
 	<p>Der er {$cart.length} retter</p>
 	<div class="h-[2px] w-20" />
 

@@ -106,8 +106,7 @@ export const products = readable([
 		image: '/products/sild.webp',
 		quantity: 1,
 		type: 'p'
-	},
-
+	}
 ]);
 
 export const tilkoebs = readable([
@@ -150,6 +149,8 @@ export const tilkoebs = readable([
 ]);
 
 export const cart = writable([]);
+
+export const count = writable(0);
 
 export const categories = ['alle', 'fisk', 'skaldyr', 'salater'];
 
