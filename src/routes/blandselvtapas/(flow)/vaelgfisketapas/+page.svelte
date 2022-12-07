@@ -152,7 +152,7 @@
 						{#if selected === 'alle'}
 							<div>
 								<div class="content grid w-auto">
-									<img src={product.image} alt={product.title} class="h-full aspect-square" />
+									<img src={product.image} alt={product.title} class="h-full w-full aspect-square" />
 									<div class="p-2">
 										<div class="grid py-2">
 											<h4 class="font-semibold text-darkblue">{product.title}</h4>
@@ -162,7 +162,7 @@
 											</p>
 										</div>
 										<div class="grid justify-center pb-2 pt-2">
-											<button class=" font-medium" on:click={() => addToCart(product)}
+											<button class="font-medium" on:click={() => addToCart(product)}
 												>Tilføj til tapasfad</button
 											>
 										</div>
@@ -173,9 +173,7 @@
 							<!-- Viser de filtreret produkter -->
 
 							<div
-								class:show={selected === product.kategory}
-								class="column content grid w-auto"
-							>
+								class:show={selected === product.kategory} class="column content grid w-auto">
 								<img src={product.image} alt={product.title} class="h-full aspect-square" />
 								<div class="p-2">
 									<div class="grid py-2">
@@ -239,7 +237,7 @@
 
 	/* The "show" class is added to the filtered elements */
 	.show {
-		display: grid;
+		display: flex;
 	}
 
 	/* Style the buttons */

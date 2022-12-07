@@ -118,8 +118,8 @@
 				{#each $tilkoebs as tilkoeb}
 					{#if selected === 'alle'}
 						<div>
-							<div class="content">
-								<img src={tilkoeb.image} alt={tilkoeb.title} class="" />
+							<div class="content grid w-auto">
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full w-full aspect-square"  />
 								<div class="p-2">
 									<div class="grid py-2">
 										<h4 class="font-semibold">{tilkoeb.title}</h4>
@@ -127,19 +127,25 @@
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
 										<button class="font-medium" on:click={() => addToCart(tilkoeb)}
-											>Tilføj til kurven</button
+											>Tilføj til tapasfad</button
 										>
 									</div>
 								</div>
 							</div>
 						</div>
 					{:else}
-						<div class:show={selected === tilkoeb.kategory} class="column">
-							<div class="content">
-								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full aspect-square" />
-								<h4>{tilkoeb.title}</h4>
-								<p>{tilkoeb.price} kr.</p>
-								<button on:click={() => addToCart(tilkoeb)}>Tilføj til tapasfad</button>
+						<div class:show={selected === tilkoeb.kategory} class="column content grid w-auto">
+							<div class="column content grid w-auto h-full">
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full w-full aspect-square" />
+								<div class="p-2">
+									<div class="grid py-2">
+										<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
+										<p>{tilkoeb.price} kr.</p>
+									</div>
+								<div class="grid justify-center pb-2 pt-2">
+								<button class="font-medium" on:click={() => addToCart(tilkoeb)}>Tilføj til tapasfad</button>
+								</div>
+							</div>
 							</div>
 						</div>
 					{/if}
@@ -180,11 +186,10 @@
 	}
 
 	/* Create three equal columns */
-	/* .column {
+	.column {
 		display: none;
 		justify-content: center;
-		margin: 10px 0;
-	} */
+	}
 
 	/* Content */
 	.content {
@@ -192,9 +197,9 @@
 		box-shadow: 7px 7px 0px 2px #e5f1f9;
 	}
 
-	img {
+	/* img {
 		min-height: 200px;
-	}
+	} */
 
 	/* The "show" class is added to the filtered elements */
 	.show {
