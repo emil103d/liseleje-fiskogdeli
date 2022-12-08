@@ -45,18 +45,18 @@ h1 {
 
 h2 {
 	font-family: 'Abril Fatface', cursive;
-	font-size: clamp(1.5rem, 3vw, 2.5rem);
+	font-size: clamp(1.5rem, 3vw, 2.3rem);
 	line-height: 2.4rem;
 }
 
 h3 {
 	font-family: 'Montserrat', cursive;
-	font-size: clamp(1rem, 3vw, 1.3rem);
+	font-size: clamp(1rem, 1.4vw, 1.1rem);
 }
 
 h4 {
 	font-family: 'Montserrat', cursive;
-	font-size: clamp(0.9rem, 3vw, 1.1rem);
+	font-size: clamp(0.9rem, 1.3vw, 1rem);
 }
 
 body {

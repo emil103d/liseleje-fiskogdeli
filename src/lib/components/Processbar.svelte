@@ -27,7 +27,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white lilletekst text-center">Antal</p>
+						<p class="text-white lilletekst text-center pt-2">Antal</p>
 					</div>
 				</a>
 			</div>
@@ -43,7 +43,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white lilletekst ">Tapasretter</p>
+						<p class="text-white lilletekst pt-2">Tapasretter</p>
 					</div>
 				</a>
 			</div>
@@ -60,7 +60,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white lilletekst ">Tilkøb</p>
+						<p class="text-white lilletekst pt-2">Tilkøb</p>
 					</div>
 				</a>
 			</div>
@@ -76,7 +76,7 @@
 						>
 							<img class="w-[70%] h-auto place-self-center logo" src="logo.png" alt="" />
 						</div>
-						<p class="text-white lilletekst">Bestil</p>
+						<p class="text-white lilletekst pt-2">Bestil</p>
 					</div>	
 				</a>
 			</div>
