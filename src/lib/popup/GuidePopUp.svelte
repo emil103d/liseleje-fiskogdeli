@@ -121,6 +121,7 @@
 	.content {
 		background-color: white;
 		box-shadow: 7px 7px 0px 2px #e5f1f9;
+		letter-spacing: 0.5px;
 	}
 
 	article {

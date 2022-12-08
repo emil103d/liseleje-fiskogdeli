@@ -43,14 +43,18 @@
 
 <section class=" pt-6 bg-white h-full skygge p-4 md:flex md:justify-between md:flex-col">
 	<div>
-		<div class="pb-2">
-			<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
-			<p>Til {countValue} personer</p>
+		<div class="pb-2 flex justify-between align-bottom">
+
+			<div class="">
+				<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
+				<p>Til {countValue} personer</p>
+			</div>
+			<div class="total grid place-self-end md:hidden">
+				<h4 class="font-bold">Total: {total} DKK</h4>
+			</div>
 		</div>
 
-		<div class="total md:hidden">
-			<h4 class="font-bold">Total: {total} DKK</h4>
-		</div>
+		
 
 		<!-- <p>Der er {$cart.length} retter</p> -->
 		<div class="h-[2px] w-20" />

@@ -71,6 +71,10 @@ p {
 	font-size: clamp(0.7rem, 1vw, 1rem);
 }
 
+.mellemtekst {
+	font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
 .stortekst {
 	font-size: clamp(2rem, 3vw, 2rem);
 }

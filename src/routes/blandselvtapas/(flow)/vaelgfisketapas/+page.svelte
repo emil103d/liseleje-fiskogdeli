@@ -50,7 +50,7 @@
 
 <main>
 	<div
-		class="grid lg:max-w-[1024px] px-5 lg:px-0 py-[150px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]"
+		class="grid lg:max-w-[1024px] px-5 md:px-10 lg:px-0 pt-[150px] pb-[100px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]"
 	>
 		<div>
 			<h2 class="text-darkblue pb-2">Bland selv fisketapas <b class="text-yellowdot">.</b></h2>
@@ -86,7 +86,7 @@
 				class="grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]"
 			>
 				<div
-					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll"
+					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-scroll"
 				>
 					{#each $products as product}
 						<!-- Viser alle produkter -->
@@ -101,13 +101,15 @@
 									<div class="p-2">
 										<div class="grid py-2">
 											<h4 class="font-semibold text-darkblue">{product.title}</h4>
-											<p>Til {countValue} personer</p>
-											<p>
-												{product.price} kr.
+											<div class="flex justify-between pt-1">
+											<p class="lilletekst pb-2">Til {countValue} personer</p>
+											<p class="lilletekst font-semibold">
+												{product.price} kr
 											</p>
+											</div>
 										</div>
 										<div class="grid justify-center pb-2 pt-2">
-											<button class="font-medium" on:click={() => addToCart(product)}
+											<button class="font-semibold mellemtekst" on:click={() => addToCart(product)}
 												>Tilføj til tapasfad</button
 											>
 										</div>
@@ -137,6 +139,32 @@
 				</div>
 
 				<div id="mobile" class=" w-full md:relative md:bottom-0">
+					
+					<button class=" p-4 float-right md:hidden" on:click={toggleMenu}
+						><svg
+							id="roter"
+							width="16"
+							height="9"
+							viewBox="0 0 16 9"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M7.69717 0.983701L14.7468 8.3227L15.3948 7.561L8.13185 0L7.69714 0.511046L7.2624 4.82916e-05L0 7.56165L0.647986 8.32331L7.69717 0.983701Z"
+								fill="#1F425F"
+							/>
+						</svg>
+					</button>
+
+					<div class="hidden md:block">
+						<Tapas />
+					</div>
+				</div>
+				
+
+				<div class="absolute bottom-0 w-full md:hidden" id="mobile">
 					<button class=" p-4 float-right md:hidden" on:click={toggleMenu}
 						><svg
 							id="roter"
@@ -156,7 +184,9 @@
 					</button>
 					<Tapas />
 				</div>
+
 			</section>
+			
 
 			<div
 				class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6"
@@ -199,19 +229,19 @@
 
 	/* Style the buttons */
 	.btn {
-		text-transform: uppercase;
-		font-weight: 200;
+		text-transform: capitalize;
 		letter-spacing: 1px;
 		border: none;
 		outline: none;
 		cursor: pointer;
 		transition: 0.1s ease-in-out;
+		font-weight: 400;
 	}
 
 	/* Add a dark background color to the active button */
 	.btn:active,
 	.active {
-		font-weight: 600;
+		font-weight: 800;
 	}
 	.scrollstyling {
 		scrollbar-color: #e5c72e #f8fcfe;
@@ -229,10 +259,10 @@
 		/* For mobile phones: */
 		#mobile {
 			position: absolute;
-			bottom: -300px;
+			bottom: -500px;
 			left: 0;
 			transition: bottom 0.5s;
-			height: 60vh;
+			height: 500px;
 			overflow-y: scroll;
 		}
 	}
