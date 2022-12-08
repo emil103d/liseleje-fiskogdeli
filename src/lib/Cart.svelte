@@ -1,5 +1,6 @@
 <script>
 	import { cart, count } from '../stores/cart';
+	import { fly, fade } from 'svelte/transition';
 
 	console.log(count);
 
@@ -40,12 +41,17 @@
 	// $: total = $cart.reduce((total, item) => total + item.price * item.quantity, 0) * countValue;
 </script>
 
-<section class="pt-6 bg-white h-full skygge p-4 md:flex md:justify-between md:flex-col">
+<section class=" pt-6 bg-white h-full skygge p-4 md:flex md:justify-between md:flex-col">
 	<div>
 		<div class="pb-2">
 			<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
 			<p>Til {countValue} personer</p>
 		</div>
+
+		<div class="total md:hidden">
+			<h4 class="font-bold">Total: {total} DKK</h4>
+		</div>
+
 		<!-- <p>Der er {$cart.length} retter</p> -->
 		<div class="h-[2px] w-20" />
 
@@ -53,16 +59,21 @@
 		<p class="font-semibold pb-2">TapasRetter</p>
 
 		<div class="cart-list md:grid md:grid-rows gap-2 justify-between">
-		
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 'p'}
 					<div class="cart-item gap-2 pt-2 md:pt-0">
 						<img class="w-full h-full aspect-square" width="" src={item.image} alt={item.name} />
 						<p class="grid items-center">{item.title}</p>
 						<div class="flex gap-1 justify-end items-center">
-							<button class="place-content-center grid justify-center items-center" on:click={() => minusItem(item)}>-</button>
+							<button
+								class="place-content-center grid justify-center items-center"
+								on:click={() => minusItem(item)}>-</button
+							>
 							{item.quantity}
-							<button class="place-content-center grid justify-center items-center" on:click={() => plusItem(item)}>+</button>
+							<button
+								class="place-content-center grid justify-center items-center"
+								on:click={() => plusItem(item)}>+</button
+							>
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
 							<p>{item.price * item.quantity}</p>
@@ -73,32 +84,36 @@
 		</div>
 
 		<div class="border-lightblue border-t-2" />
-			<p class="font-semibold pb-2">Tilkøb</p>
-			<div class="md:grid md:grid-rows gap-2 justify-between">
-				{#each $cart as item}
-					{#if item.quantity > 0 && item.type == 't'}
-						<div class="cart-item gap-2 pt-2 md:pt-0">
-							<img class="w-full h-full aspect-square" width="50" src={item.image} alt={item.name} />
-							<p class="grid items-center">{item.title}</p>
-							<div class="flex gap-1 justify-end items-center">
-								<button class="place-content-center grid justify-center items-center" on:click={() => minusItem(item)}>-</button>
-								{item.quantity}
-								<button class="place-content-center grid justify-center items-center" on:click={() => plusItem(item)}>+</button>
-							</div>
-							<div class="w-full h-full grid justify-center items-center">
-								<p>{item.price * item.quantity}</p>
-							</div>
-							
+		<p class="font-semibold pb-2">Tilkøb</p>
+		<div class="md:grid md:grid-rows gap-2 justify-between">
+			{#each $cart as item}
+				{#if item.quantity > 0 && item.type == 't'}
+					<div class="cart-item gap-2 pt-2 md:pt-0">
+						<img class="w-full h-full aspect-square" width="50" src={item.image} alt={item.name} />
+						<p class="grid items-center">{item.title}</p>
+						<div class="flex gap-1 justify-end items-center">
+							<button
+								class="place-content-center grid justify-center items-center"
+								on:click={() => minusItem(item)}>-</button
+							>
+							{item.quantity}
+							<button
+								class="place-content-center grid justify-center items-center"
+								on:click={() => plusItem(item)}>+</button
+							>
 						</div>
-					{/if}
-				{/each}
-			</div>
+						<div class="w-full h-full grid justify-center items-center">
+							<p>{item.price * item.quantity}</p>
+						</div>
+					</div>
+				{/if}
+			{/each}
+		</div>
 	</div>
 
-	<div class="total">
+	<div class="total hidden md:block">
 		<h4 class="font-bold">Total: {total} DKK</h4>
 	</div>
-
 </section>
 
 <style>

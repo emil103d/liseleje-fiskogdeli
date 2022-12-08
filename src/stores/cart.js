@@ -196,10 +196,7 @@ export const products = readable([
 		image: '/products/laksemouse.webp',
 		quantity: 1,
 		type: 'p'
-	},
-
-
-
+	}
 ]);
 
 export const tilkoebs = readable([
@@ -356,3 +353,7 @@ export const count = writable(1);
 export const categories = ['alle', 'fisk', 'skaldyr', 'salater'];
 
 export const kategorier = ['alle', 'vin', 'tapanader', 'brød'];
+
+// popup
+export const modal = writable(null);
+export const windowStyle = writable({});
