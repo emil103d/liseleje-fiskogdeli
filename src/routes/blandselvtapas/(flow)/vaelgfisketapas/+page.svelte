@@ -1,15 +1,13 @@
 <script>
 	/** @type {import('./$types').PageData} */
 	import '/src/app.css';
-	import { products, cart, count, modal } from '/src/stores/cart.js';
+	import { products, cart, count } from '/src/stores/cart.js';
 	import { categories } from '/src/stores/cart.js';
 	import Tapas from '/src/lib/tapas.svelte';
 	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
 	import Button from '../../../../lib/uielements/Button.svelte';
 	import SecondaryButton from '../../../../lib/uielements/SecondaryButton.svelte';
-
-	import Content from '/src/lib/Content.svelte';
-	import Modal from '/src/lib/popup/Modal.svelte';
+	import GuidePopup from '/src/lib/popup/GuidePopUp.svelte';
 
 	const addToCart = (product) => {
 		console.log('addToCart tapasretter');
@@ -75,9 +73,7 @@
 			</ButtonContainer>
 		</div>
 
-		<Modal show={$modal}>
-			<Content />
-		</Modal>
+		<GuidePopup />
 
 		<div>
 			<section
