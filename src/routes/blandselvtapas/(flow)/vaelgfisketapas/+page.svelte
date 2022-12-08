@@ -50,7 +50,7 @@
 
 <main>
 	<div
-		class="grid lg:max-w-[1024px] px-5 md:px-10 lg:px-0  pt-[150px] pb-[100px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]"
+		class="grid lg:max-w-[1024px] px-5 md:px-10 lg:px-0  pt-[150px] pb-[200px] md:pb-[150px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]"
 	>
 		<div>
 			<h2 class="text-darkblue pb-2">Bland selv fisketapas <b class="text-yellowdot">.</b></h2>
@@ -198,7 +198,7 @@
 			
 
 			<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
-				<div class="hidden md:block flex justify-between place-items-center">
+				<div class="hidden md:flex justify-between place-items-center">
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
 					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
 				</div>
