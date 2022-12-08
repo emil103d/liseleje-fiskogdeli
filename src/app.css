@@ -69,8 +69,7 @@ p {
 }
 
 .lilletekst {
-	font-family: 'Abril Fatface', cursive;
-	font-size: clamp(1.8rem, 3vw, 2.5rem);
+	font-size: clamp(0.7rem, 3vw, 1rem);
 	line-height: 2.4rem;
 }
 
