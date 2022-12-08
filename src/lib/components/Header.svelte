@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<section class="bg-darkblue flex justify-between px-5 fixed w-full py-3 md:py-6">
+<section class="bg-darkblue flex justify-between px-5 md:px-10 fixed w-full py-3 md:py-6">
 	<div class="grid text-center">
 		<a href="/">
 			<p class="text-white font-medium">FISK & DELI</p>

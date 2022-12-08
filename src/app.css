@@ -68,7 +68,7 @@ p {
 }
 
 .lilletekst {
-	font-size: clamp(0.7rem, 3vw, 1rem);
+	font-size: clamp(0.7rem, 1vw, 1rem);
 }
 
 .stortekst {
