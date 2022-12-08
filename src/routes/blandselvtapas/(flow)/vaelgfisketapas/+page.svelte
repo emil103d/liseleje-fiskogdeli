@@ -58,14 +58,14 @@
 			<p>Vælg dine fiske tapasretter</p>
 		</div>
 
-		<div class="flex grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px]">
+		<div class="flex grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] py-4">
 			
-			<div class="flex justify-between">
+			<div class="flex justify-between place-items-center">
 				<ButtonContainer>
 					{#each categories as category}
 						<button
 							class:active={selected === category}
-							class="btn pt-4 pr-6"
+							class="btn pr-6"
 							data-name={category}
 							on:click={filterSelection}
 						>
@@ -81,7 +81,7 @@
 
 		<div>
 			<section
-				class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]"
+				class="grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]"
 			>
 				<div
 					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll"
