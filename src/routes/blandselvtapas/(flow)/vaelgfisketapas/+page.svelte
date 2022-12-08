@@ -58,22 +58,30 @@
 			<p>Vælg dine fiske tapasretter</p>
 		</div>
 
-		<div>
-			<ButtonContainer>
-				{#each categories as category}
-					<button
-						class:active={selected === category}
-						class="btn pt-4 pr-6"
-						data-name={category}
-						on:click={filterSelection}
-					>
-						{category}
-					</button>
-				{/each}
-			</ButtonContainer>
+		<div class="flex md:grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px]">
+			
+			<div class="flex justify-between">
+				<ButtonContainer>
+					{#each categories as category}
+						<button
+							class:active={selected === category}
+							class="btn pt-4 pr-6"
+							data-name={category}
+							on:click={filterSelection}
+						>
+							{category}
+						</button>
+					{/each}
+				</ButtonContainer>
+				<GuidePopup />
+			</div>
+
+			
+			
+			
 		</div>
 
-		<GuidePopup />
+		
 
 		<div>
 			<section

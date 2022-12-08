@@ -8,8 +8,8 @@
 	};
 </script>
 
-<div class:open={navOpen} class="cookie w-96 fixed z-5000 pb-5">
-	<button on:click={handleNav} class="content bg-white p-4">Mængdeguide + </button>
+<div class:open={navOpen} class="cookie z-5000 pb-6">
+	<button on:click={handleNav} class="content bg-white p-2 font-medium text-textcolor">Mængdeguide </button>
 	{#if navOpen}
 		<article class="p-6 w-full grid" transition:fade={{ y: 200, duration: 500 }}>
 			<button on:click={handleNav}
