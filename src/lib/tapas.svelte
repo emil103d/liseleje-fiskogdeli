@@ -5,9 +5,10 @@
 </script>
 
 <!-- <Products /> -->
-<div class="padding">
+
 <Cart />
-</div>
+
+
 <style>
 
 

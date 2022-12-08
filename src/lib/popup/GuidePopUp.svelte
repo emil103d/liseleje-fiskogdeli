@@ -113,7 +113,7 @@
 
 <style>
 	.cookie {
-		z-index: 100;
+		z-index: 1000;
 		bottom: 64vh;
 		right: 30vw;
 	}

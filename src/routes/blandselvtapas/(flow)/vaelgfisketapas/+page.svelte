@@ -166,7 +166,7 @@
 				</div> -->
 				
 
-				<div class="absolute md:block bottom-0 md:relative w-full z-30" id="mobile">
+				<div class="absolute md:block bottom-0 md:relative w-full  z-30" id="mobile">
 					<button class="pr-3 pt-3 float-right md:hidden" on:click={toggleMenu}
 						><svg
 							id="roter"
@@ -184,7 +184,7 @@
 							/>
 						</svg>
 					</button>
-					<div class="">
+					<div class="h-full">
 					<Tapas />
 					</div>
 				</div>
