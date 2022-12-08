@@ -7,185 +7,209 @@
 	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
 	import Button from '../../../../lib/uielements/Button.svelte';
 	import SecondaryButton from '../../../../lib/uielements/SecondaryButton.svelte';
+	import GuidePopup from '/src/lib/popup/GuidePopUp.svelte';
 
 	const addToCart = (tilkoeb) => {
 		console.log('addToCart tilkoeb');
-		for (let ting of $cart) {
-			if (ting.id === tilkoeb.id) {
-				tilkoeb.quantity += 1;
+		for (let item of $cart) {
+			// for hvert produkt i kurven
+			if (item.id === tilkoeb.id) {
+				// sammenligner hvad der er i kurven med produkt.id
+				tilkoeb.quantity += 1; // så det eneste der ændre sig er qunatity
 				// $cart = $cart;
 				return;
 			}
 		}
-		$cart = [...$cart, tilkoeb];
+		$cart = [...$cart, tilkoeb]; //for at gøre reaktivt skal sveltekit have en assignment, så man bruger spreadopreatoren (...) beholdeeksisterende produkter men tilføje nye.
 	};
 
 	let selected = 'alle';
 	const filterSelection = (e) => (selected = e.target.dataset.tilkoeb);
 	console.log(filterSelection);
+
+	
+
+	// const produktTotal = (product) => {
+	// 	product.reduce((total, product) => total + product.price, 0) * countValue;
+	// };
+
+	function toggleMenu() {
+		if (document.getElementById('mobile').style.bottom == '100px') {
+			document.getElementById('mobile').style.bottom = '0px';
+			document.getElementById('roter').style.transform = 'rotate(180deg)';
+		} else {
+			document.getElementById('mobile').style.bottom = '100px';
+			document.getElementById('roter').style.transform = 'rotate(0deg)';
+		}
+	}
 </script>
 
-<!-- <main class="md:py-32 md:py-44 px-10 h-[100vh] place-content-center w-full grid">
-	<div class="lg:max-w-[1024px] lg:m-auto place-items-center">
-		<section class="">
-			<h2 class="text-darkblue">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
-			<div class="h-[2px] w-20 bg-darkblue mb-6" />
 
-			<h3>Udvælg dine tilkøbsretter</h3>
-		</section>
 
-		<ButtonContainer>
-			{#each kategorier as kategori}
-				<button
-					class:active={selected === kategori}
-					class="btn"
-					data-tilkoeb={kategori}
-					on:click={filterSelection}
-				>
-					{kategori}
-				</button>
-			{/each}
-		</ButtonContainer>
 
-		<section class="grid md:grid-cols-[auto_250px] gap-10 lg:gap-20">
-			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
-				{#each $tilkoebs as tilkoeb}
-					{#if selected === 'alle'}
-						<div>
-							<div class="content">
-								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-auto w-full aspect-square" />
-								<div class="p-2">
-									<div class="grid py-2">
-										<h4 class="font-semibold">{tilkoeb.title}</h4>
-										<p>{tilkoeb.price} kr.</p>
-									</div>
-									<div class="grid justify-center pb-2 pt-2">
-										<button class="font-semibold" on:click={() => addToCart(tilkoeb)}
-											>Tilføj til kurven</button
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-					{:else}
-						<div class:show={selected === tilkoeb.kategory} class="column">
-							<div class="content">
-								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full w-full" />
-								<h4>{tilkoeb.title}</h4>
-								<p>{tilkoeb.price} kr.</p>
-								<button on:click={() => addToCart(tilkoeb)}>Tilføj til tapasfad</button>
-							</div>
-						</div>
-					{/if}
-				{/each}
-			</div>
-			<div>
-				<Tapas />
-			</div>
-		</section>
-	</div>
-</main> -->
 
 
 <main>
-
-	<div class="grid lg:max-w-[1024px] px-5 lg:px-0 py-[150px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]">
-
+	<div
+		class="grid lg:max-w-[1024px] px-5 md:px-10 lg:px-0  pt-[150px] pb-[200px] md:pb-[150px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]"
+	>
 		<div>
-			<h2 class="text-darkblue pb-2">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
+			<h2 class="text-darkblue pb-2">Bland selv fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
-			<p>Vælg dit tilbehør</p>
+			<p>Vælg dine fiske tapasretter</p>
 		</div>
+
+		<div class="flex grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] py-4">
+			
+			<div class="flex justify-between place-items-center">
+				<ButtonContainer>
+					{#each kategorier as kategori}
+						<button
+							class:active={selected === kategori}
+							class="btn"
+							data-tilkoeb={kategori}
+							on:click={filterSelection}
+						>
+							{kategori}
+						</button>
+					{/each}
+				</ButtonContainer>
+				<div class="hidden md:block">
+					<GuidePopup />
+				</div>
+			</div>
+		</div>
+
 		
 
-		<div class="">
-			<ButtonContainer>
-				{#each kategorier as kategori}
-					<button
-						class:active={selected === kategori}
-						class="btn pt-4 pr-6"
-						data-tilkoeb={kategori}
-						on:click={filterSelection}
-					>
-						{kategori}
-					</button>
-				{/each}
-			</ButtonContainer>
-		</div>
+		<div>
+			<section
+				class="grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling md:h-[40vh]"
+			>
+				<div
+					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-scroll"
+				>
+					{#each $tilkoebs as tilkoeb}
+						<!-- Viser alle produkter -->
+						{#if selected === 'alle'}
+							<div>
+								<div class="content grid w-auto">
+									<img
+										src={tilkoeb.image}
+										alt={tilkoeb.title}
+										class="h-full w-full aspect-square"
+									/>
+									<div class="p-2">
+										<div class="grid py-2">
+											<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
+											<div class="flex justify-between pt-1">
+											<p class="lilletekst font-semibold">
+												{tilkoeb.price} kr
+											</p>
+											</div>
+										</div>
+										<div class="grid justify-center pb-2 pt-2">
+											<button class="font-semibold mellemtekst" on:click={() => addToCart(tilkoeb)}
+												>Tilføj til tapasfad</button
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						{:else}
+							<!-- Viser de filtreret produkter -->
 
-		<section class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]">
-			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll">
-				{#each $tilkoebs as tilkoeb}
-					{#if selected === 'alle'}
-						<div>
-							<div class="content grid w-auto">
-								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full w-full aspect-square"  />
+							<div class:show={selected === tilkoeb.kategory} class="column content grid w-auto">
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full aspect-square" />
 								<div class="p-2">
 									<div class="grid py-2">
-										<h4 class="font-semibold">{tilkoeb.title}</h4>
-										<p>Pr. styk</p>
-										<p>{tilkoeb.price} kr.</p>
+										<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
+										<div class="flex justify-between pt-1">
+											<p class="lilletekst font-semibold">{tilkoeb.price} kr</p>
+										</div>
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
-										<button class="font-medium" on:click={() => addToCart(tilkoeb)}
+										<button class="font-semibold mellemtekst" on:click={() => addToCart(tilkoeb)}
 											>Tilføj til tapasfad</button
 										>
 									</div>
 								</div>
 							</div>
-						</div>
-					{:else}
-						<div class:show={selected === tilkoeb.kategory} class="column content grid w-auto">
-								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full aspect-square" />
-								<div class="p-2">
-									<div class="grid py-2">
-										<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
-										<p>Pr. styk</p>
-										<p>{tilkoeb.price} kr.</p>
-									</div>
-								<div class="grid justify-center pb-2 pt-2">
-								<button class="font-medium" on:click={() => addToCart(tilkoeb)}>Tilføj til tapasfad</button>
-								</div>
+						{/if}
+					{/each}
+				</div>
+
+				<!-- <div id="mobile" class=" w-full md:relative md:bottom-0">
 					
-								
-							</div>
-						</div>
-					{/if}
-				{/each}
-			</div>
-
-			<div class="fixed bottom-[140px] w-full left-0 md:relative md:bottom-0">
-				<Tapas />
-			</div>
-				
-		</section>
-
-		<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
-			<div class="flex justify-between place-items-center">
-				<SecondaryButton><a href="/blandselvtapas/tilkoeb">Tilbage</a></SecondaryButton>
-					<Button type="primary"> <a href="/blandselvtapas/afslut">Næste</a></Button
+					<button class=" p-4 float-right md:hidden" on:click={toggleMenu}
+						><svg
+							id="roter"
+							width="16"
+							height="9"
+							viewBox="0 0 16 9"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
 						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M7.69717 0.983701L14.7468 8.3227L15.3948 7.561L8.13185 0L7.69714 0.511046L7.2624 4.82916e-05L0 7.56165L0.647986 8.32331L7.69717 0.983701Z"
+								fill="#1F425F"
+							/>
+						</svg>
+					</button>
+
+					<div class="hidden md:block">
+						<Tapas />
+					</div>
+				</div> -->
+				
+
+				<div class="absolute md:block bottom-0 md:relative w-full z-30" id="mobile">
+					<button class="pr-3 pt-3 float-right md:hidden" on:click={toggleMenu}
+						><svg
+							id="roter"
+							width="16"
+							height="9"
+							viewBox="0 0 16 9"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M7.69717 0.983701L14.7468 8.3227L15.3948 7.561L8.13185 0L7.69714 0.511046L7.2624 4.82916e-05L0 7.56165L0.647986 8.32331L7.69717 0.983701Z"
+								fill="#1F425F"
+							/>
+						</svg>
+					</button>
+					<div class="h-full">
+					<Tapas />
+					</div>
+				</div>
+
+				<div class="flex justify-between place-items-center md:hidden">
+					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
+					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
+				</div>
+
+			</section>
+			
+
+			<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
+				<div class="hidden md:flex justify-between place-items-center">
+					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
+					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
+				</div>
+				<div />
 			</div>
-			<div/>
 		</div>
-
 	</div>
-
 </main>
-
-
-
-
 
 <style>
 	main {
 		background-color: #f8fcfe;
-	}
-
-	.image {
-		background-size: contain;
-		background-position: center;
-		background-repeat: no-repeat;
 	}
 
 	/* Create three equal columns */
@@ -199,8 +223,8 @@
 		background-color: white;
 		box-shadow: 7px 7px 0px 2px #e5f1f9;
 	}
-
-	/* img {
+	/* 
+	img {
 		min-height: 200px;
 	} */
 
@@ -211,23 +235,40 @@
 
 	/* Style the buttons */
 	.btn {
-		text-transform: uppercase;
-		font-weight: 200;
-		font-size: 1rem;
+		text-transform: capitalize;
 		letter-spacing: 1px;
 		border: none;
 		outline: none;
 		cursor: pointer;
 		transition: 0.1s ease-in-out;
+		font-weight: 400;
 	}
 
 	/* Add a dark background color to the active button */
 	.btn:active,
 	.active {
-		font-weight: 600;
+		font-weight: 800;
 	}
-
 	.scrollstyling {
 		scrollbar-color: #e5c72e #f8fcfe;
+	}
+
+	/* #mobile button svg {
+		transform: rotate(-0deg);
+	}
+
+	#mobile button:focus svg {
+		transform: rotate(180deg);
+	} */
+
+	@media only screen and (max-width: 768px) {
+		/* For mobile phones: */
+		#mobile {
+			position: fixed;
+			left: 0;
+			transition: bottom 0.5s;
+			overflow-y: hidden;
+			max-height: 500px;
+		}
 	}
 </style>
