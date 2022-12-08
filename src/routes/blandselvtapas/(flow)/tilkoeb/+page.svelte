@@ -56,7 +56,7 @@
 		<div>
 			<h2 class="text-darkblue pb-2">Bland selv fisketapas <b class="text-yellowdot">.</b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6" />
-			<p>Vælg dine fiske tapasretter</p>
+			<p>Vælg dit tilbehør</p>
 		</div>
 
 		<div class="flex grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] py-4">
@@ -199,7 +199,7 @@
 			<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
 				<div class="hidden md:flex justify-between place-items-center">
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
-					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
+					<Button type="primary"><a href="/blandselvtapas/afslut">Næste</a></Button>
 				</div>
 				<div />
 			</div>
