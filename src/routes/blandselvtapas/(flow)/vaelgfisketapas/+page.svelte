@@ -50,7 +50,7 @@
 
 <main>
 	<div
-		class="grid lg:max-w-[1024px] px-5 md:px-10 lg:px-0 pt-[150px] pb-[100px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]"
+		class="grid lg:max-w-[1024px] px-5 md:px-10 lg:px-0  pt-[150px] pb-[100px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]"
 	>
 		<div>
 			<h2 class="text-darkblue pb-2">Bland selv fisketapas <b class="text-yellowdot">.</b></h2>
@@ -83,7 +83,7 @@
 
 		<div>
 			<section
-				class="grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]"
+				class="grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling md:h-[40vh]"
 			>
 				<div
 					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-scroll"
@@ -124,11 +124,13 @@
 								<div class="p-2">
 									<div class="grid py-2">
 										<h4 class="font-semibold text-darkblue">{product.title}</h4>
-										<p>Til {countValue} personer</p>
-										<p>{product.price} kr.</p>
+										<div class="flex justify-between pt-1">
+											<p class="lilletekst pb-2">Til {countValue} personer</p>
+											<p class="lilletekst font-semibold">{product.price} kr</p>
+										</div>
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
-										<button class="font-medium" on:click={() => addToCart(product)}
+										<button class="font-semibold mellemtekst" on:click={() => addToCart(product)}
 											>Tilføj til tapasfad</button
 										>
 									</div>
@@ -164,7 +166,7 @@
 				</div> -->
 				
 
-				<div class="absolute bottom-0 w-full md:hidden z-30" id="mobile">
+				<div class="absolute md:block bottom-0 md:relative w-full z-30" id="mobile">
 					<button class="pr-3 pt-3 float-right md:hidden" on:click={toggleMenu}
 						><svg
 							id="roter"
@@ -187,7 +189,7 @@
 					</div>
 				</div>
 
-				<div class="flex justify-between place-items-center">
+				<div class="flex justify-between place-items-center md:hidden">
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
 					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
 				</div>
@@ -195,10 +197,8 @@
 			</section>
 			
 
-			<div
-				class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6"
-			>
-				<div class="hidden flex justify-between place-items-center">
+			<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
+				<div class="hidden md:block flex justify-between place-items-center">
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
 					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
 				</div>
