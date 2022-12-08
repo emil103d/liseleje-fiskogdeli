@@ -11,7 +11,8 @@
 <div class:open={navOpen} class="cookie z-5000">
 	<button on:click={handleNav} class="content bg-white p-2 font-medium text-textcolor">Mængdeguide </button>
 	{#if navOpen}
-		<article class="p-6 w-full grid" transition:fade={{ y: 200, duration: 500 }}>
+		<article class="p-6 w-full" transition:fade={{ y: 200, duration: 500 }}>
+	
 			<button on:click={handleNav}
 				><svg
 					width="35"
@@ -105,6 +106,7 @@
 					</div>
 				</div>
 			</div>
+
 		</article>
 	{/if}
 </div>
@@ -123,8 +125,6 @@
 
 	article {
 		position: fixed;
-		top: 25vh;
-		right: 25vw;
 		background-color: white;
 		max-width: 22vw;
 		box-shadow: 7px 7px 0px 2px #e5f1f9;
