@@ -265,7 +265,7 @@
 	@media only screen and (max-width: 768px) {
 		/* For mobile phones: */
 		#mobile {
-			position: absolute;
+			position: fixed;
 			left: 0;
 			transition: bottom 0.5s;
 			overflow-y: hidden;
