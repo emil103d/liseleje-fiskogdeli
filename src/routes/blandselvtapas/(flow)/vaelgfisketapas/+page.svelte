@@ -38,11 +38,11 @@
 	// };
 
 	function toggleMenu() {
-		if (document.getElementById('mobile').style.bottom == '-300px') {
-			document.getElementById('mobile').style.bottom = '100px';
+		if (document.getElementById('mobile').style.bottom == '300px') {
+			document.getElementById('mobile').style.bottom = '0px';
 			document.getElementById('roter').style.transform = 'rotate(180deg)';
 		} else {
-			document.getElementById('mobile').style.bottom = '-300px';
+			document.getElementById('mobile').style.bottom = '300px';
 			document.getElementById('roter').style.transform = 'rotate(0deg)';
 		}
 	}
@@ -138,7 +138,7 @@
 					{/each}
 				</div>
 
-				<div id="mobile" class=" w-full md:relative md:bottom-0">
+				<!-- <div id="mobile" class=" w-full md:relative md:bottom-0">
 					
 					<button class=" p-4 float-right md:hidden" on:click={toggleMenu}
 						><svg
@@ -161,11 +161,11 @@
 					<div class="hidden md:block">
 						<Tapas />
 					</div>
-				</div>
+				</div> -->
 				
 
 				<div class="absolute bottom-0 w-full md:hidden" id="mobile">
-					<button class=" p-4 float-right md:hidden" on:click={toggleMenu}
+					<button class="pr-3 pt-3 float-right md:hidden" on:click={toggleMenu}
 						><svg
 							id="roter"
 							width="16"
@@ -182,7 +182,9 @@
 							/>
 						</svg>
 					</button>
+					<div class="">
 					<Tapas />
+					</div>
 				</div>
 
 			</section>
@@ -259,11 +261,9 @@
 		/* For mobile phones: */
 		#mobile {
 			position: absolute;
-			bottom: -500px;
 			left: 0;
 			transition: bottom 0.5s;
-			height: 500px;
-			overflow-y: scroll;
+			overflow-y: hidden;
 		}
 	}
 </style>
