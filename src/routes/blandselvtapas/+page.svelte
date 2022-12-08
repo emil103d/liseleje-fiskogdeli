@@ -17,7 +17,7 @@
 			<Maengdeguide class="" />
 
 			<div class="pt-12 md:pt-0 grid justify-center">
-				<div class="max-w-[15rem] md:m-auto grid gap-6">
+				<div class="max-w-[16rem] md:max-w-[20rem] md:m-auto grid gap-6">
 					<h3 class="text-center">Hvor mange personer bliver I?</h3>
 					<Numericbutton />
 					<div class="m-auto">
