@@ -58,7 +58,7 @@
 			<p>Vælg dine fiske tapasretter</p>
 		</div>
 
-		<div class="flex md:grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px]">
+		<div class="flex grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px]">
 			
 			<div class="flex justify-between">
 				<ButtonContainer>
@@ -75,10 +75,6 @@
 				</ButtonContainer>
 				<GuidePopup />
 			</div>
-
-			
-			
-			
 		</div>
 
 		
@@ -138,7 +134,7 @@
 					{/each}
 				</div>
 
-				<div id="mobile" class=" w-full md:relative md:bottom-0 md:top-[-8vh] ">
+				<div id="mobile" class=" w-full md:relative md:bottom-0">
 					<button class=" p-4 float-right md:hidden" on:click={toggleMenu}
 						><svg
 							id="roter"
@@ -163,7 +159,7 @@
 			<div
 				class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6"
 			>
-				<div class="hidden flex justify-between place-items-center">
+				<div class="flex justify-between place-items-center">
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
 					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
 				</div>
