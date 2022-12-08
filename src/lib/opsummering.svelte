@@ -52,7 +52,7 @@
 		</div>
 
 		<div>
-			<Button type="primary">Tilføj tapas til kurven</Button>
+			<Button type="primary">Tilføj kurven</Button>
 		</div>
 	</div>
 </article>
