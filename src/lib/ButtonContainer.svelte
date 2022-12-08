@@ -3,5 +3,10 @@
 </div>
 
 <style>
-	
+
+	#myBtnContainer{
+		display: flex;
+		gap: 24px;
+	}
+
 </style>

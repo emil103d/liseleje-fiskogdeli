@@ -24,7 +24,7 @@
 
 	button,
 	.primary {
-		font-size: 16px;
+		font-size: clamp(0.9rem, 3vw, 1rem);
 		color: #1f425f;
 		font-weight: bold;
 		font-family: var(--button);

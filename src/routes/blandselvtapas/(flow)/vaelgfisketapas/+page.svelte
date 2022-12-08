@@ -65,7 +65,7 @@
 					{#each categories as category}
 						<button
 							class:active={selected === category}
-							class="btn pr-6"
+							class="btn"
 							data-name={category}
 							on:click={filterSelection}
 						>
@@ -73,7 +73,9 @@
 						</button>
 					{/each}
 				</ButtonContainer>
-				<GuidePopup />
+				<div class="hidden md:block">
+					<GuidePopup />
+				</div>
 			</div>
 		</div>
 
@@ -199,7 +201,6 @@
 	.btn {
 		text-transform: uppercase;
 		font-weight: 200;
-		font-size: 1rem;
 		letter-spacing: 1px;
 		border: none;
 		outline: none;
