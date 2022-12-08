@@ -7,9 +7,9 @@
 </script>
 
 <main>
-	<div class="grid lg:max-w-[1024px] lg:px-0 py-[150px] lg:py-0 lg:m-auto place-content-center w-[100vw] md:h-[100vh] ">
+	<div class="grid lg:max-w-[1024px] lg:px-0 py-[150px] md:py-32 lg:py-44   lg:py-0 lg:m-auto place-content-center w-[100vw] md:h-[100vh] ">
 		
-		<div class="w-[100vw] px-5 lg:max-w-[1024px]">
+		<div class="w-[100vw] px-5 md:px-10 lg:px-0 lg:max-w-[1024px]">
 			<div class="w-full">
 				<div class="pb-4">
 					<h2 class="text-darkblue pb-2">Bland Selv Fisketapas <b class="text-yellowdot">.</b></h2>
