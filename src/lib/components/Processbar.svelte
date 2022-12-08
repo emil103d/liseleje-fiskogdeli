@@ -8,7 +8,7 @@
 	}
 </script>
 
-<nav class="bg-darkblue px-5 md:px-10 bottom-0 w-full h-[105px] md:h-[120px] pt-3 md:pt-5 fixed grid">
+<nav class="bg-darkblue px-5 md:px-10 bottom-0 w-full h-[105px] md:h-[120px] pt-3 md:pt-5 fixed grid z-50">
 	<div class="wrapper"> 
 		<div class="flex lg:max-w-[1024px] lg:m-auto justify-between relative">
 

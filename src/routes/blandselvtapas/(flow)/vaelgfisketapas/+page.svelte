@@ -38,11 +38,11 @@
 	// };
 
 	function toggleMenu() {
-		if (document.getElementById('mobile').style.bottom == '300px') {
+		if (document.getElementById('mobile').style.bottom == '100px') {
 			document.getElementById('mobile').style.bottom = '0px';
 			document.getElementById('roter').style.transform = 'rotate(180deg)';
 		} else {
-			document.getElementById('mobile').style.bottom = '300px';
+			document.getElementById('mobile').style.bottom = '100px';
 			document.getElementById('roter').style.transform = 'rotate(0deg)';
 		}
 	}
@@ -164,7 +164,7 @@
 				</div> -->
 				
 
-				<div class="absolute bottom-0 w-full md:hidden" id="mobile">
+				<div class="absolute bottom-0 w-full md:hidden z-30" id="mobile">
 					<button class="pr-3 pt-3 float-right md:hidden" on:click={toggleMenu}
 						><svg
 							id="roter"
@@ -187,13 +187,18 @@
 					</div>
 				</div>
 
+				<div class="flex justify-between place-items-center">
+					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
+					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
+				</div>
+
 			</section>
 			
 
 			<div
 				class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6"
 			>
-				<div class="flex justify-between place-items-center">
+				<div class="hidden flex justify-between place-items-center">
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
 					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
 				</div>
@@ -264,6 +269,7 @@
 			left: 0;
 			transition: bottom 0.5s;
 			overflow-y: hidden;
+			max-height: 500px;
 		}
 	}
 </style>
