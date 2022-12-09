@@ -221,7 +221,7 @@ export const tilkoebs = readable([
 	{
 		id: '21',
 		title: 'Surdejsbrød',
-		kategory: 'Brød',
+		kategory: 'brød',
 		price: '30',
 		image: '/products/broed.webp',
 		quantity: 1,
@@ -230,7 +230,7 @@ export const tilkoebs = readable([
 	{
 		id: '22',
 		title: 'Rødvin',
-		kategory: 'Vin',
+		kategory: 'vin',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -239,7 +239,7 @@ export const tilkoebs = readable([
 	{
 		id: '23',
 		title: 'Rødvin',
-		kategory: 'Vin',
+		kategory: 'vin',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -248,7 +248,7 @@ export const tilkoebs = readable([
 	{
 		id: '24',
 		title: 'Rødvin',
-		kategory: 'Vin',
+		kategory: 'vin',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -257,7 +257,7 @@ export const tilkoebs = readable([
 	{
 		id: '25',
 		title: 'Rødvin',
-		kategory: 'Vin',
+		kategory: 'vin',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -266,7 +266,7 @@ export const tilkoebs = readable([
 	{
 		id: '26',
 		title: 'Rødvin',
-		kategory: 'Vin',
+		kategory: 'vin',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -275,7 +275,7 @@ export const tilkoebs = readable([
 	{
 		id: '27',
 		title: 'Surdejsbrød',
-		kategory: 'Brød',
+		kategory: 'brød',
 		price: '30',
 		image: '/products/broed.webp',
 		quantity: 1,
@@ -284,7 +284,7 @@ export const tilkoebs = readable([
 	{
 		id: '28',
 		title: 'Surdejsbrød',
-		kategory: 'Brød',
+		kategory: 'brød',
 		price: '30',
 		image: '/products/broed.webp',
 		quantity: 1,
@@ -293,7 +293,7 @@ export const tilkoebs = readable([
 	{
 		id: '29',
 		title: 'Surdejsbrød',
-		kategory: 'Brød',
+		kategory: 'brød',
 		price: '30',
 		image: '/products/broed.webp',
 		quantity: 1,
@@ -302,7 +302,7 @@ export const tilkoebs = readable([
 	{
 		id: '30',
 		title: 'Surdejsbrød',
-		kategory: 'Brød',
+		kategory: 'brød',
 		price: '30',
 		image: '/products/broed.webp',
 		quantity: 1,
