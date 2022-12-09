@@ -1,13 +1,14 @@
 <script>
 	/** @type {import('./$types').PageData} */
 	import '/src/app.css';
-	import { products, cart, count } from '/src/stores/cart.js';
+	import { products, cart, count, modal } from '/src/stores/cart.js';
 	import { categories } from '/src/stores/cart.js';
 	import Tapas from '/src/lib/tapas.svelte';
 	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
 	import Button from '../../../../lib/uielements/Button.svelte';
 	import SecondaryButton from '../../../../lib/uielements/SecondaryButton.svelte';
-	import GuidePopup from '/src/lib/popup/GuidePopUp.svelte';
+	import Content from '/src/lib/popup/Content.svelte';
+	import Modal from '/src/lib/popup/Modal.svelte';
 
 	const addToCart = (product) => {
 		console.log('addToCart tapasretter');
@@ -58,8 +59,9 @@
 			<p>Vælg dine fiske tapasretter</p>
 		</div>
 
-		<div class="flex grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] py-4">
-			
+		<div
+			class="flex grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] py-4"
+		>
 			<div class="flex justify-between place-items-center">
 				<ButtonContainer>
 					{#each categories as category}
@@ -74,12 +76,12 @@
 					{/each}
 				</ButtonContainer>
 				<div class="hidden md:block">
-					<GuidePopup />
+					<Modal show={$modal}>
+						<Content />
+					</Modal>
 				</div>
 			</div>
 		</div>
-
-		
 
 		<div>
 			<section
@@ -102,10 +104,10 @@
 										<div class="grid py-2">
 											<h4 class="font-semibold text-darkblue">{product.title}</h4>
 											<div class="flex justify-between pt-1">
-											<p class="lilletekst pb-2">Til {countValue} personer</p>
-											<p class="lilletekst font-semibold">
-												{product.price} kr
-											</p>
+												<p class="lilletekst pb-2">Til {countValue} personer</p>
+												<p class="lilletekst font-semibold">
+													{product.price} kr
+												</p>
 											</div>
 										</div>
 										<div class="grid justify-center pb-2 pt-2">
@@ -164,7 +166,6 @@
 						<Tapas />
 					</div>
 				</div> -->
-				
 
 				<div class="absolute md:block bottom-0 md:relative w-full z-30" id="mobile">
 					<button class="pr-3 pt-3 float-right md:hidden" on:click={toggleMenu}
@@ -185,7 +186,7 @@
 						</svg>
 					</button>
 					<div class="h-full">
-					<Tapas />
+						<Tapas />
 					</div>
 				</div>
 
@@ -193,11 +194,11 @@
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
 					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
 				</div>
-
 			</section>
-			
 
-			<div class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6">
+			<div
+				class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+5rem)] md:pt-6"
+			>
 				<div class="hidden md:flex justify-between place-items-center">
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
 					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
