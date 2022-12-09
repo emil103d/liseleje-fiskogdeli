@@ -2,143 +2,37 @@
 	import { getContext } from 'svelte';
 	import { fly } from 'svelte/transition';
 
-	import Popup from './Popup.svelte';
-	import CloseButton from './CloseButton.svelte';
+	import PopUp from './Popup.svelte';
 
 	const { open } = getContext('simple-modal');
 
-	let opening = false;
-	let opened = false;
-	let closing = false;
-	let closed = false;
-
 	const showPopup = () => {
-		open(Popup, { message: "It's a popup!" });
-	};
-	const showPopupLong = () => {
-		open(PopupLong, { message: "It's a popup with long text!" });
-	};
-	const showPopupCustom = () => {
-		open(
-			Popup,
-			{
-				message: "It's a customized popup!"
-			},
-			{
-				closeButton: CloseButton,
-				styleBg: {
-					background: 'rgba(200, 255, 0, 0.66)'
-				},
-				styleWindowWrap: {
-					margin: '4rem'
-				},
-				styleWindow: {
-					border: '2px solid #00beff',
-					boxShadow: 'inset 0 0 0 2px white, 0 0 0 2px white',
-					background: '#ff7000'
-				},
-				styleContent: {
-					color: '#9500ff',
-					fontFamily: 'Comic Sans',
-					fontStyle: 'italic'
-				},
-				styleCloseButton: {
-					borderRadius: 0,
-					boxShadow: '0 0 0 2px white',
-					background: 'pink'
-				},
-				transitionWindow: fly,
-				transitionWindowProps: {
-					y: 100,
-					duration: 1000
-				}
-			},
-			{
-				onOpen: () => {
-					opening = true;
-				},
-				onOpened: () => {
-					opening = false;
-					opened = true;
-				},
-				onClose: () => {
-					opened = false;
-					closing = true;
-				},
-				onClosed: () => {
-					closing = false;
-					closed = true;
-					setTimeout(() => {
-						closed = false;
-					}, 1000);
-				}
-			}
-		);
-	};
-
-	let name;
-	let status = 0;
-
-	const onCancel = (text) => {
-		name = '';
-		status = -1;
-	};
-
-	const onOkay = (text) => {
-		name = text;
-		status = 1;
-	};
-
-	const showDialog = () => {
-		open(
-			Dialog,
-			{
-				message: 'What is your name?',
-				hasForm: true,
-				onCancel,
-				onOkay
-			},
-			{
-				closeButton: false,
-				closeOnEsc: false,
-				closeOnOuterClick: false
-			}
-		);
+		open(PopUp);
 	};
 </script>
 
-<section>
-	<button on:click={showPopup}>Mængdeguide</button>
-
-	{#if status === 1}
-		<p>Hi {name}! 👋</p>
-	{:else if status === -1}
-		<p><em>Dialog was canceled</em></p>
-	{/if}
-
-	<div id="state">
-		{#if opening}
-			<p>opening modal...</p>
-		{:else if opened}
-			<p>opened modal!</p>
-		{:else if closing}
-			<p>closing modal...</p>
-		{:else if closed}
-			<p>closed modal!</p>
-		{/if}
-	</div>
+<section class="p-2">
+	<button class="flex place-items-center gap-2 lilletekst" on:click={showPopup}>Mængdeguide <div>
+		<div>
+			<svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M11.4284 8.51785C11.4284 8.56785 11.4284 8.62785 11.4284 8.67785C11.4284 8.61785 11.4284 8.54785 11.4284 8.48785C11.9384 8.87785 12.2684 9.54785 12.2284 10.1979C12.1884 10.8679 11.8384 11.3978 11.3284 11.7078C11.3284 10.6478 11.3684 9.57785 11.4184 8.51785H11.4284Z" fill="#1F435F"/>
+			<path d="M8.37845 9.96785C8.40845 9.42785 8.63845 8.97785 8.99845 8.65785C9.01845 9.24785 9.03845 9.83785 9.05845 10.4278C9.05845 10.8078 9.07845 11.1979 9.07845 11.5779C8.62845 11.1779 8.34845 10.5678 8.37845 9.95785V9.96785Z" fill="#1F435F"/>
+			<path d="M0.0184494 9.73785C1.12845 -4.00214 21.2184 -2.84215 20.7184 10.9479C20.1984 17.5279 15.3185 20.6978 10.4285 20.6978C5.09845 20.6978 -0.241551 16.9379 0.0084492 9.73785H0.0184494ZM8.53845 16.5078C8.53845 17.2978 9.19845 17.9778 9.98845 17.9778C10.7785 17.9778 11.4484 17.3278 11.4584 16.5278C11.4584 15.7378 10.7985 15.0578 10.0085 15.0578C9.21845 15.0578 8.54845 15.7078 8.53845 16.5078ZM9.08845 12.4279C9.08845 13.0279 9.62845 13.5179 10.2084 13.5179H10.2485C10.8685 13.4979 11.3485 12.9778 11.3485 12.3579C11.3485 11.0779 11.3884 9.78785 11.4384 8.50785C11.4384 8.55785 11.4384 8.61785 11.4384 8.66785C11.4384 8.54785 11.4484 8.41785 11.4584 8.28785C11.4584 7.91785 11.4985 7.55785 11.4985 7.18785C11.4985 6.77785 11.5385 6.35785 11.5185 5.94785C11.4985 5.27785 11.4184 4.60785 11.3584 3.94785C11.3084 3.39785 11.2484 2.55785 10.6284 2.32785C10.5184 2.28785 10.3984 2.25785 10.2784 2.25785C10.1584 2.25785 10.0285 2.27785 9.91845 2.32785C9.91845 2.32785 9.91845 2.32785 9.92845 2.32785C9.54845 2.46785 9.35845 2.87785 9.26845 3.24785C9.14845 3.70785 9.09845 4.17785 9.04845 4.65785C9.00845 5.01785 8.97845 5.36785 8.95845 5.72785C8.93845 6.05785 8.94845 6.38785 8.95845 6.71785C8.95845 7.07785 8.96845 7.42785 8.99845 7.78785C8.99845 7.72785 8.99845 7.67785 8.98845 7.61785C9.03845 8.55785 9.05845 9.49785 9.08845 10.4379C9.10845 11.0979 9.11845 11.7679 9.10845 12.4379L9.08845 12.4279Z" fill="#1F435F"/>
+			<path d="M10.9485 2.61785C10.9485 2.61785 10.9485 2.61785 10.9485 2.62785C10.9485 2.62785 10.9484 2.61785 10.9384 2.60785L10.9485 2.61785Z" fill="#1F435F"/>
+			<path d="M9.53845 2.60785C9.53845 2.60785 9.53845 2.60785 9.54845 2.60785C9.54845 2.60785 9.53845 2.61785 9.52845 2.62785C9.52845 2.62785 9.52845 2.62785 9.52845 2.61785L9.53845 2.60785Z" fill="#1F435F"/>
+			</svg>
+			</div> 
+		</div>
+	</button>
 </section>
 
 <style>
 	section {
-		padding-top: 0.5em;
+		background-color: white;
+		box-shadow: 4px 4px 0px 2px #e5f1f9;
 	}
 
-	#state {
-		position: absolute;
-		top: 0;
-		right: 0;
-		opacity: 0.33;
-		font-size: 0.8em;
+	button {
+		letter-spacing: 0.5px;
 	}
 </style>
