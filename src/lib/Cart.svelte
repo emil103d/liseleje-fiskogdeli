@@ -66,7 +66,7 @@
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 'p'}
 					<div class="cart-item gap-2 pt-2 md:pt-0">
-						<img class="w-full h-full aspect-square" width="" src={item.image} alt={item.name} />
+						<img class="w-full h-full aspect-square mindrebillede" width="" src={item.image} alt={item.name} />
 						<p class="grid items-center lilletekst">{item.title}</p>
 						<div class="flex gap-1 justify-end items-center lilletekst">
 							<button
@@ -167,5 +167,6 @@
 
 	.mindrebillede{
 		width: 30px;
+		height: 30px;
 	}
 </style>
