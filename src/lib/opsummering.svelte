@@ -1,6 +1,8 @@
 <script>
-	import { cart } from '../stores/cart.js';
+	import { cart, modal } from '../stores/cart.js';
 	import Button from './uielements/Button.svelte';
+	import KoebContent from '/src/lib/popup/KoebContent.svelte';
+	import Modal from '/src/lib/popup/Modal.svelte';
 </script>
 
 <article class="p-4 w-full grid content h-[40vh]">
@@ -36,7 +38,6 @@
 
 	<div class=" border-shadowblue border-t-2 py-2 " />
 	<div>
-
 		<div>
 			<form>
 				<label class="block mb-2 text-sm font-medium " for="title">Tilføj Rabatkode:</label>
@@ -52,17 +53,16 @@
 		</div>
 
 		<div>
-			<Button type="primary">Tilføj kurven</Button>
+			<Modal show={$modal}>
+				<KoebContent />
+			</Modal>
 		</div>
 	</div>
 </article>
 
 <style>
-
-.content {
+	.content {
 		background-color: white;
 		box-shadow: 7px 7px 0px 2px #e5f1f9;
 	}
-
-
 </style>

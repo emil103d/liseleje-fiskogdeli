@@ -1,5 +1,7 @@
 <script>
-	import Obsluk from '../popup/Obsluk.svelte';
+	import ExitPopContent from '/src/lib/popup/ExitPopContent.svelte';
+	import Modal from '/src/lib/popup/Modal.svelte';
+	import { modal } from '/src/stores/cart.js';
 </script>
 
 <section class="bg-darkblue flex justify-between px-5 md:px-10 fixed w-full py-3 md:py-6">
@@ -206,7 +208,9 @@
 				</defs>
 			</svg>
 		</div>
-		<Obsluk />
+		<Modal show={$modal}>
+			<ExitPopContent />
+		</Modal>
 	</div>
 </section>
 

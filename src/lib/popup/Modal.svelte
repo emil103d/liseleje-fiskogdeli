@@ -483,7 +483,7 @@
 		justify-content: center;
 		width: 100vw;
 		height: 100vh;
-		background: rgba(0, 0, 0, 0.66);
+		background: rgba(31, 66, 95, 0.66);
 	}
 
 	.wrap {
@@ -499,7 +499,6 @@
 		max-height: 100%;
 		margin: 2rem auto;
 		color: black;
-		border-radius: 0.5rem;
 		background: white;
 	}
 
@@ -508,6 +507,7 @@
 		padding: 1rem;
 		max-height: calc(100vh - 4rem);
 		overflow: auto;
+		box-shadow: 7px 7px 0px 2px #e5f1f9;
 	}
 
 	.close {
