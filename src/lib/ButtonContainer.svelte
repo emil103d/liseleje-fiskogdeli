@@ -3,7 +3,10 @@
 </div>
 
 <style>
-	#myBtnContainer {
-		margin-bottom: 1rem;
+
+	#myBtnContainer{
+		display: flex;
+		gap: 24px;
 	}
+
 </style>
