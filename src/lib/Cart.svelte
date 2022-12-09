@@ -1,5 +1,5 @@
 <script>
-	import { cart, count } from '../stores/cart';
+	import { cart, count, products, tilkoebs } from '../stores/cart';
 	import { fly, fade } from 'svelte/transition';
 
 	console.log(count);
@@ -36,15 +36,20 @@
 		countValue = value;
 	});
 
-	$: total = $cart.reduce((total, item) => total + item.price * item.quantity, 0); // $= “re-run this code whenever any of the referenced values change”.
-
 	// $: total = $cart.reduce((total, item) => total + item.price * item.quantity, 0) * countValue;
+	$: produktPris = $products.reduce((total, produkt) => produkt.price * countValue, 0);
+
+	$: produktPris2 = $tilkoebs.reduce((total, item) => item.price * item.quantity, 0);
+
+	$: total =
+		$cart.reduce((total, produkt) => total + produktPris * produkt.quantity, 0) + produktPris2; // $= “re-run this code whenever any of the referenced values change”.
+
+	console.log(total);
 </script>
 
 <section class="px-5 bg-white h-full skygge p-4 md:flex md:justify-between md:flex-col">
 	<div>
 		<div class="pb-4 flex justify-between align-bottom">
-
 			<div class="">
 				<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
 				<p>Til {countValue} personer</p>
@@ -53,8 +58,6 @@
 				<h4 class="font-bold">Total: {total} DKK</h4>
 			</div>
 		</div>
-
-		
 
 		<!-- <p>Der er {$cart.length} retter</p> -->
 		<div class="h-[2px] w-20" />
@@ -80,7 +83,7 @@
 							>
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
-							<p>{item.price * item.quantity}</p>
+							<p>{produktPris * item.quantity}</p>
 						</div>
 					</div>
 				{/if}
@@ -107,7 +110,7 @@
 							>
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
-							<p>{item.price * item.quantity}</p>
+							<p>{produktPris2 * item.quantity}</p>
 						</div>
 					</div>
 				{/if}

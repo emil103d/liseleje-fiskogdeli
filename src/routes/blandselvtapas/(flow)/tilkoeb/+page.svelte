@@ -17,7 +17,7 @@
 			if (item.id === tilkoeb.id) {
 				// sammenligner hvad der er i kurven med produkt.id
 				tilkoeb.quantity += 1; // så det eneste der ændre sig er qunatity
-				// $cart = $cart;
+				$cart = $cart;
 				return;
 			}
 		}

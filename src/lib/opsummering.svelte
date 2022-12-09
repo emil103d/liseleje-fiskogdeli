@@ -1,8 +1,16 @@
 <script>
-	import { cart, modal } from '../stores/cart.js';
+	import { cart, count, modal } from '../stores/cart.js';
 	import Button from './uielements/Button.svelte';
 	import KoebContent from '/src/lib/popup/KoebContent.svelte';
 	import Modal from '/src/lib/popup/Modal.svelte';
+
+	console.log('HEJ MED DIG');
+	let countValue;
+	console.log(countValue);
+
+	count.subscribe((value) => {
+		countValue = value;
+	});
 </script>
 
 <article class="p-4 w-full grid content h-[40vh]">
@@ -13,7 +21,7 @@
 			Bland selv tapas fad: {$cart.reduce((total, cartItem) => {
 				const item = $cart.find((i) => i.type === cartItem.type);
 				if (item.type === 'p') {
-					return total + (item.price || 0) * cartItem.quantity;
+					return total + (item.price || 0) * cartItem.quantity * countValue;
 				}
 
 				return total;
@@ -31,7 +39,7 @@
 		<p class="font-semibold">
 			Total: {$cart.reduce((total, cartItem) => {
 				const item = $cart.find((i) => i.type === cartItem.type);
-				return total + (item.price || 0) * cartItem.quantity;
+				return total + (item.price || 0) * cartItem.quantity * countValue;
 			}, 0)};
 		</p>
 	</div>
