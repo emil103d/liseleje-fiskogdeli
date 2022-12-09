@@ -6,7 +6,7 @@ export const products = readable([
 		title: 'Lynstegt tun',
 		kategory: 'fisk',
 		price: '30',
-		image: '/products/tun.webp',
+		image: '/products/fisk/tun.webp',
 		quantity: 1,
 		type: 'p'
 	},
@@ -15,7 +15,7 @@ export const products = readable([
 		title: 'Lynstegt Laks',
 		kategory: 'fisk',
 		price: '30',
-		image: '/products/laks1.webp',
+		image: '/products/fisk/laks1.webp',
 		quantity: 1,
 		type: 'p'
 	},
@@ -24,326 +24,196 @@ export const products = readable([
 		title: 'Lynstegt Rejer',
 		kategory: 'skaldyr',
 		price: '30',
-		image: '/products/rejer.webp',
+		image: '/products/skaldyr/rejer.webp',
 		quantity: 1,
 		type: 'p'
 	},
 	{
 		id: '4',
-		title: 'Laksemouse',
-		kategory: 'salater',
+		title: 'Fiskefrikadeller',
+		kategory: 'fisk',
 		price: '30',
-		image: '/products/laksemouse.webp',
+		image: '/products/fisk/fiskefrikadelle.webp',
 		quantity: 1,
 		type: 'p'
 	},
 
 	{
 		id: '5',
-		title: 'Fiskefrikadeller',
-		kategory: 'fisk',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
 		price: '30',
-		image: '/products/fiskefrikadelle.webp',
+		image: '/products/skaldyr/krappeklo.webp',
 		quantity: 1,
 		type: 'p'
 	},
 
 	{
 		id: '6',
-		title: 'Krabbeklo',
-		kategory: 'skaldyr',
+		title: 'Lakseroulade',
+		kategory: 'fisk',
 		price: '30',
-		image: '/products/krappeklo.webp',
+		image: '/products/fisk/lakseroulade.webp',
 		quantity: 1,
 		type: 'p'
 	},
 
 	{
 		id: '7',
-		title: 'Lakseroulade',
+		title: 'Sild',
 		kategory: 'fisk',
 		price: '30',
-		image: '/products/lakseroulade.webp',
+		image: '/products/fisk/sild.webp',
 		quantity: 1,
 		type: 'p'
 	},
-
 	{
 		id: '8',
-		title: 'Sild',
-		kategory: 'fisk',
+		title: 'Krebs',
+		kategory: 'skaldyr',
 		price: '30',
-		image: '/products/sild.webp',
-		quantity: 1,
-		type: 'p'
-	},
-
-	{
-		id: '9',
-		title: 'Sild',
-		kategory: 'fisk',
-		price: '30',
-		image: '/products/sild.webp',
-		quantity: 1,
-		type: 'p'
-	},
-
-	{
-		id: '10',
-		title: 'Sild',
-		kategory: 'fisk',
-		price: '30',
-		image: '/products/sild.webp',
-		quantity: 1,
-		type: 'p'
-	},
-
-	{
-		id: '11',
-		title: 'Sild',
-		kategory: 'fisk',
-		price: '30',
-		image: '/products/sild.webp',
+		image: '/products/skaldyr/krebs.webp',
 		quantity: 1,
 		type: 'p'
 	},
 	{
 		id: '9',
-		title: 'Krabbeklo',
+		title: 'Pillederejser',
 		kategory: 'skaldyr',
 		price: '30',
-		image: '/products/krappeklo.webp',
+		image: '/products/skaldyr/pillederejer.webp',
 		quantity: 1,
 		type: 'p'
 	},
 	{
 		id: '10',
-		title: 'Krabbeklo',
-		kategory: 'skaldyr',
+		title: 'Laksesalat',
+		kategory: 'salater',
 		price: '30',
-		image: '/products/krappeklo.webp',
+		image: '/products/salater/laksesalat.webp',
 		quantity: 1,
 		type: 'p'
 	},
 	{
 		id: '11',
-		title: 'Krabbeklo',
-		kategory: 'skaldyr',
+		title: 'Krebsesalat',
+		kategory: 'salater',
 		price: '30',
-		image: '/products/krappeklo.webp',
+		image: '/products/salater/krebsesalat.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '11',
+		title: 'Tangsalat',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/salater/tangsalat.webp',
 		quantity: 1,
 		type: 'p'
 	},
 	{
 		id: '12',
-		title: 'Krabbeklo',
-		kategory: 'skaldyr',
-		price: '30',
-		image: '/products/krappeklo.webp',
-		quantity: 1,
-		type: 'p'
-	},
-	{
-		id: '13',
-		title: 'Krabbeklo',
-		kategory: 'skaldyr',
-		price: '30',
-		image: '/products/krappeklo.webp',
-		quantity: 1,
-		type: 'p'
-	},
-	{
-		id: '14',
-		title: 'Laksemouse',
+		title: 'Tunsalat',
 		kategory: 'salater',
 		price: '30',
-		image: '/products/laksemouse.webp',
+		image: '/products/salater/tunsalat.webp',
 		quantity: 1,
 		type: 'p'
 	},
-	{
-		id: '15',
-		title: 'Laksemouse',
-		kategory: 'salater',
-		price: '30',
-		image: '/products/laksemouse.webp',
-		quantity: 1,
-		type: 'p'
-	},
-	{
-		id: '16',
-		title: 'Laksemouse',
-		kategory: 'salater',
-		price: '30',
-		image: '/products/laksemouse.webp',
-		quantity: 1,
-		type: 'p'
-	},
-	{
-		id: '17',
-		title: 'Laksemouse',
-		kategory: 'salater',
-		price: '30',
-		image: '/products/laksemouse.webp',
-		quantity: 1,
-		type: 'p'
-	},
-	{
-		id: '18',
-		title: 'Laksemouse',
-		kategory: 'salater',
-		price: '30',
-		image: '/products/laksemouse.webp',
-		quantity: 1,
-		type: 'p'
-	}
 ]);
 
 export const tilkoebs = readable([
 	{
-		id: '19',
-		title: 'Vino vino',
+		id: '13',
+		title: 'Chablis',
 		kategory: 'drikkevarer',
 		price: '30',
-		image: '/products/vin.webp',
+		image: '/products/drikkevarer/chablis.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '14',
+		title: 'Pinotage',
+		kategory: 'drikkevarer',
+		price: '30',
+		image: '/products/drikkevarer/pinotage.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '15',
+		title: 'Rose',
+		kategory: 'drikkevarer',
+		price: '30',
+		image: '/products/drikkevarer/rose.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '16',
+		title: 'Rosso',
+		kategory: 'drikkevarer',
+		price: '30',
+		image: '/products/drikkevarer/rosse.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '17',
+		title: 'Sancerre',
+		kategory: 'drikkevarer',
+		price: '30',
+		image: '/products/drikkevarer/sancerre.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '18',
+		title: 'Limemayo',
+		kategory: 'tapanader',
+		price: '30',
+		image: '/products/dyppelse/limemayo.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '19',
+		title: 'Remoulade',
+		kategory: 'tapanader',
+		price: '30',
+		image: '/products/dyppelse/remoulade.webp',
 		quantity: 1,
 		type: 't'
 	},
 	{
 		id: '20',
-		title: 'Tapanader',
+		title: 'Tzatziki',
 		kategory: 'tapanader',
 		price: '30',
-		image: '/borat.jpg',
+		image: '/products/dyppelse/Tzatziki.webp',
 		quantity: 1,
 		type: 't'
 	},
 	{
 		id: '21',
-		title: 'Surdejsbrød',
+		title: 'broed',
 		kategory: 'brød',
 		price: '30',
-		image: '/products/broed.webp',
+		image: '/products/broed/broed.webp',
 		quantity: 1,
 		type: 't'
 	},
 	{
 		id: '22',
-		title: 'Rødvin',
-		kategory: 'drikkevarer',
-		price: '30',
-		image: '/products/vin.webp',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '23',
-		title: 'Rødvin',
-		kategory: 'drikkevarer',
-		price: '30',
-		image: '/products/vin.webp',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '24',
-		title: 'Rødvin',
-		kategory: 'drikkevarer',
-		price: '30',
-		image: '/products/vin.webp',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '25',
-		title: 'Rødvin',
-		kategory: 'drikkevarer',
-		price: '30',
-		image: '/products/vin.webp',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '26',
-		title: 'Rødvin',
-		kategory: 'drikkevarer',
-		price: '30',
-		image: '/products/vin.webp',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '27',
-		title: 'Surdejsbrød',
+		title: 'surdej',
 		kategory: 'brød',
 		price: '30',
-		image: '/products/broed.webp',
+		image: '/products/broed/surdej.webp',
 		quantity: 1,
 		type: 't'
 	},
-	{
-		id: '28',
-		title: 'Surdejsbrød',
-		kategory: 'brød',
-		price: '30',
-		image: '/products/broed.webp',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '29',
-		title: 'Surdejsbrød',
-		kategory: 'brød',
-		price: '30',
-		image: '/products/broed.webp',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '30',
-		title: 'Surdejsbrød',
-		kategory: 'brød',
-		price: '30',
-		image: '/products/broed.webp',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '31',
-		title: 'Tapanader',
-		kategory: 'tapanader',
-		price: '30',
-		image: '/borat.jpg',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '32',
-		title: 'Tapanader',
-		kategory: 'tapanader',
-		price: '30',
-		image: '/borat.jpg',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '33',
-		title: 'Tapanader',
-		kategory: 'tapanader',
-		price: '30',
-		image: '/borat.jpg',
-		quantity: 1,
-		type: 't'
-	},
-	{
-		id: '34',
-		title: 'Tapanader',
-		kategory: 'tapanader',
-		price: '30',
-		image: '/borat.jpg',
-		quantity: 1,
-		type: 't'
-	}
 ]);
 
 export const cart = writable([]);
