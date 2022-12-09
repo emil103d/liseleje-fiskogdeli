@@ -156,7 +156,7 @@ export const tilkoebs = readable([
 		title: 'Rosso',
 		kategory: 'drikkevarer',
 		price: '30',
-		image: '/products/drikkevarer/rosse.webp',
+		image: '/products/drikkevarer/rosso.webp',
 		quantity: 1,
 		type: 't'
 	},
@@ -192,7 +192,7 @@ export const tilkoebs = readable([
 		title: 'Tzatziki',
 		kategory: 'tapanader',
 		price: '30',
-		image: '/products/dyppelse/Tzatziki.webp',
+		image: '/products/dyppelse/tzatziki.webp',
 		quantity: 1,
 		type: 't'
 	},
@@ -214,6 +214,27 @@ export const tilkoebs = readable([
 		quantity: 1,
 		type: 't'
 	},
+	{
+		id: '23',
+		title: 'Knækbrød',
+		kategory: 'brød',
+		price: '30',
+		image: '/products/broed/knækbrød.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '24',
+		title: 'Rugbrød',
+		kategory: 'brød',
+		price: '30',
+		image: '/products/broed/rugbrød.webp',
+		quantity: 1,
+		type: 't'
+	},
+
+
+
 ]);
 
 export const cart = writable([]);
