@@ -120,7 +120,7 @@
 							<!-- Viser de filtreret produkter -->
 
 							<div class:show={selected === tilkoeb.kategory} class="column content grid w-auto">
-								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full aspect-square" />
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full w-full aspect-square" />
 								<div class="p-2">
 									<div class="grid py-2">
 										<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
