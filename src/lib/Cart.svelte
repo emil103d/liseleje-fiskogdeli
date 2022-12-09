@@ -60,7 +60,7 @@
 		<div class="h-[2px] w-20" />
 
 		<div class="border-lightblue border-t-2 py-2" />
-		<p class="font-semibold pb-2">TapasRetter</p>
+		<p class="font-semibold pb-2 mellemtekst">TapasRetter</p>
 
 		<div class="cart-list md:grid md:grid-rows gap-2 justify-between">
 			{#each $cart as item}
@@ -113,7 +113,7 @@
 		</div>
 
 		<div class="border-lightblue border-t-2" />
-		<p class="font-semibold pb-2">Tilkøb</p>
+		<p class="font-semibold pb-2 mellemtekst">Tilkøb</p>
 		<div class="md:grid md:grid-rows gap-2 justify-between">
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 't'}
