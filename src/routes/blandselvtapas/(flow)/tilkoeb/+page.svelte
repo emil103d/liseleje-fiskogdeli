@@ -103,9 +103,8 @@
 										<div class="grid py-2">
 											<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
 											<div class="flex justify-between pt-1">
-											<p class="lilletekst font-semibold">
-												{tilkoeb.price} kr
-											</p>
+												<p class="lilletekst">pr. stk</p>
+												<p class="lilletekst font-semibold"> {tilkoeb.price} kr </p>
 											</div>
 										</div>
 										<div class="grid justify-center pb-2 pt-2">
@@ -120,11 +119,12 @@
 							<!-- Viser de filtreret produkter -->
 
 							<div class:show={selected === tilkoeb.kategory} class="column content grid w-auto">
-								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full aspect-square" />
+								<img src={tilkoeb.image} alt={tilkoeb.title} class="h-full w-full aspect-square" />
 								<div class="p-2">
 									<div class="grid py-2">
 										<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
 										<div class="flex justify-between pt-1">
+											<p class="lilletekst">Pr. styk</p>
 											<p class="lilletekst font-semibold">{tilkoeb.price} kr</p>
 										</div>
 									</div>
