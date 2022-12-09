@@ -68,4 +68,8 @@
 </article>
 
 <style>
+
+.fisk path {
+		fill: #E5C72E;
+	}
 </style>
