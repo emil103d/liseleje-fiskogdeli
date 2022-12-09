@@ -198,7 +198,7 @@ export const tilkoebs = readable([
 	},
 	{
 		id: '21',
-		title: 'broed',
+		title: 'Hvedebrød',
 		kategory: 'brød',
 		price: '30',
 		image: '/products/broed/broed.webp',
@@ -207,7 +207,7 @@ export const tilkoebs = readable([
 	},
 	{
 		id: '22',
-		title: 'surdej',
+		title: 'Surdej',
 		kategory: 'brød',
 		price: '30',
 		image: '/products/broed/surdej.webp',
@@ -229,6 +229,15 @@ export const tilkoebs = readable([
 		kategory: 'brød',
 		price: '30',
 		image: '/products/broed/rugbrød.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '25',
+		title: 'Remoulade',
+		kategory: 'tapanader',
+		price: '30',
+		image: '/products/dyppelse/remoulade.webp',
 		quantity: 1,
 		type: 't'
 	},

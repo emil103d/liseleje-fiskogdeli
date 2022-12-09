@@ -67,8 +67,8 @@
 				{#if item.quantity > 0 && item.type == 'p'}
 					<div class="cart-item gap-2 pt-2 md:pt-0">
 						<img class="w-full h-full aspect-square" width="" src={item.image} alt={item.name} />
-						<p class="grid items-center">{item.title}</p>
-						<div class="flex gap-1 justify-end items-center">
+						<p class="grid items-center lilletekst">{item.title}</p>
+						<div class="flex gap-1 justify-end items-center lilletekst">
 							<button
 								class="place-content-center grid justify-center items-center"
 								on:click={() => minusItem(item)}>-</button
@@ -80,7 +80,7 @@
 							>
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
-							<p>{item.price * item.quantity}</p>
+							<p class="lilletekst">{item.price * item.quantity}</p>
 						</div>
 					</div>
 				{/if}
@@ -93,13 +93,13 @@
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 't'}
 					<div class="cart-item gap-2 pt-2 md:pt-0">
-						<img class="w-full h-full aspect-square" width="50" src={item.image} alt={item.name} />
-						<p class="grid items-center">{item.title}</p>
+						<img class="w-full h-full aspect-square mindrebillede" width="" src={item.image} alt={item.name} />
+						<p class="grid items-center lilletekst">{item.title}</p>
 						<div class="flex gap-1 justify-end items-center">
 							<button
-								class="place-content-center grid justify-center items-center"
+								class="place-content-center grid justify-center items-center "
 								on:click={() => minusItem(item)}>
-								<svg width="15" height="15" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg width="12" height="12" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M12.1084 11.5179C12.2184 11.5179 12.3384 11.5179 12.4484 11.5179C12.3484 11.6279 12.2384 11.7179 12.1184 11.8079C12.1184 11.7079 12.1184 11.6179 12.1084 11.5179Z" fill="#1F435F"/>
 									<path d="M12.0584 9.86787C12.0584 9.47787 12.0484 9.09787 12.0384 8.70787C12.0384 8.67787 12.0384 8.64787 12.0384 8.61787C12.0384 8.61787 12.0384 8.61787 12.0384 8.60787C12.0384 8.59787 12.0384 8.57787 12.0384 8.56787C12.4784 8.86787 12.7984 9.34787 12.8984 9.86787C12.6184 9.86787 12.3384 9.86787 12.0584 9.86787Z" fill="#1F435F"/>
 									<path d="M9.55844 11.5079C9.64844 11.5079 9.74844 11.5079 9.83844 11.5079C9.83844 11.6079 9.84844 11.7079 9.85844 11.7979C9.74844 11.7079 9.64844 11.6079 9.55844 11.5079Z" fill="#1F435F"/>
@@ -112,11 +112,13 @@
 									</svg>
 								</button
 							>
+							<div class="lilletekst">
 							{item.quantity}
+							</div>
 							<button
 								class="place-content-center grid justify-center items-center"
 								on:click={() => plusItem(item)}>
-								<svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg width="12" height="12" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M11.4 11.3675C11.51 11.3675 11.63 11.3675 11.74 11.3675C11.64 11.4775 11.53 11.5675 11.41 11.6575C11.41 11.5575 11.41 11.4675 11.4 11.3675Z" fill="#1F435F"/>
 									<path d="M11.39 9.72751C11.4 9.37751 11.42 9.02751 11.43 8.67751C11.43 8.61751 11.43 8.56751 11.43 8.50751C11.81 8.80751 12.09 9.24751 12.19 9.72751C11.92 9.72751 11.66 9.72751 11.39 9.72751V9.72751Z" fill="#1F435F"/>
 									<path d="M8.85001 9.35751C8.94001 9.35751 9.04 9.35751 9.13 9.35751C9.13 9.45751 9.14 9.55752 9.15 9.64752C9.04 9.55752 8.94001 9.45751 8.85001 9.35751V9.35751Z" fill="#1F435F"/>
@@ -136,7 +138,7 @@
 							>
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
-							<p>{item.price * item.quantity}</p>
+							<p class="lilletekst">{item.price * item.quantity} kr </p>
 						</div>
 					</div>
 				{/if}
@@ -152,8 +154,7 @@
 <style>
 	.cart-item {
 		display: grid;
-		grid-template-columns: 40px 1fr 1fr 20px;
-		justify-content: space-between;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
 	.total {
@@ -162,5 +163,9 @@
 
 	.skygge {
 		box-shadow: 7px 7px 0px 2px #e5f1f9;
+	}
+
+	.mindrebillede{
+		width: 30px;
 	}
 </style>
