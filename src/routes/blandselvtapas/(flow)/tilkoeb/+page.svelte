@@ -70,7 +70,7 @@
 					{/each}
 				</ButtonContainer>
 
-				<div class="hidden md:block">
+				<div class="">
 					<Modal show={$modal}>
 						<Content />
 					</Modal>
