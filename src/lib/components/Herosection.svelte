@@ -1,6 +1,6 @@
 <section class="grid px-10 justify-center align-middle w-[100%] h-[100vh] place-content-center">   
-
-        <div class="text-center grid gap-20">
+    
+        <div class="text-center grid gap-20 ">
             <div class="grid gap-2">
                 <h1 class="text-darkblue tracking-wider">FISK & DELI</h1>
                 <p class="text-4xl tracking-widest">LISELEJE</p>
@@ -13,7 +13,6 @@
                 <path d="M2 2L33 33L64 2" stroke="#1F425F" stroke-width="3" stroke-linecap="round"/>
             </svg>    
         </div>
-
 </section>
 
 <style>
@@ -21,6 +20,8 @@
 section {
     background-image: url('vaeg.png');
     background-size: contain;
+    z-index: 1000;
+    position: relative;
 }
 
 

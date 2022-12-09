@@ -106,21 +106,111 @@ export const products = readable([
 		image: '/products/sild.webp',
 		quantity: 1,
 		type: 'p'
+	},
+	{
+		id: '9',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
+		price: '30',
+		image: '/products/krappeklo.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '10',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
+		price: '30',
+		image: '/products/krappeklo.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '11',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
+		price: '30',
+		image: '/products/krappeklo.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '12',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
+		price: '30',
+		image: '/products/krappeklo.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '13',
+		title: 'Krabbeklo',
+		kategory: 'skaldyr',
+		price: '30',
+		image: '/products/krappeklo.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '14',
+		title: 'Laksemouse',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/laksemouse.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '15',
+		title: 'Laksemouse',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/laksemouse.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '16',
+		title: 'Laksemouse',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/laksemouse.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '17',
+		title: 'Laksemouse',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/laksemouse.webp',
+		quantity: 1,
+		type: 'p'
+	},
+	{
+		id: '18',
+		title: 'Laksemouse',
+		kategory: 'salater',
+		price: '30',
+		image: '/products/laksemouse.webp',
+		quantity: 1,
+		type: 'p'
 	}
 ]);
 
 export const tilkoebs = readable([
 	{
-		id: '5',
+		id: '19',
 		title: 'Vino vino',
-		kategory: 'vin',
+		kategory: 'drikkevarer',
 		price: '30',
-		image: '/borat.jpg',
+		image: '/products/vin.webp',
 		quantity: 1,
 		type: 't'
 	},
 	{
-		id: '6',
+		id: '20',
 		title: 'Tapanader',
 		kategory: 'tapanader',
 		price: '30',
@@ -129,18 +219,126 @@ export const tilkoebs = readable([
 		type: 't'
 	},
 	{
-		id: '7',
+		id: '21',
 		title: 'Surdejsbrød',
-		kategory: 'Brød',
+		kategory: 'brød',
+		price: '30',
+		image: '/products/broed.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '22',
+		title: 'Rødvin',
+		kategory: 'drikkevarer',
+		price: '30',
+		image: '/products/vin.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '23',
+		title: 'Rødvin',
+		kategory: 'drikkevarer',
+		price: '30',
+		image: '/products/vin.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '24',
+		title: 'Rødvin',
+		kategory: 'drikkevarer',
+		price: '30',
+		image: '/products/vin.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '25',
+		title: 'Rødvin',
+		kategory: 'drikkevarer',
+		price: '30',
+		image: '/products/vin.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '26',
+		title: 'Rødvin',
+		kategory: 'drikkevarer',
+		price: '30',
+		image: '/products/vin.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '27',
+		title: 'Surdejsbrød',
+		kategory: 'brød',
+		price: '30',
+		image: '/products/broed.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '28',
+		title: 'Surdejsbrød',
+		kategory: 'brød',
+		price: '30',
+		image: '/products/broed.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '29',
+		title: 'Surdejsbrød',
+		kategory: 'brød',
+		price: '30',
+		image: '/products/broed.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '30',
+		title: 'Surdejsbrød',
+		kategory: 'brød',
+		price: '30',
+		image: '/products/broed.webp',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '31',
+		title: 'Tapanader',
+		kategory: 'tapanader',
 		price: '30',
 		image: '/borat.jpg',
 		quantity: 1,
 		type: 't'
 	},
 	{
-		id: '8',
-		title: 'Rødvin',
-		kategory: 'Vin',
+		id: '32',
+		title: 'Tapanader',
+		kategory: 'tapanader',
+		price: '30',
+		image: '/borat.jpg',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '33',
+		title: 'Tapanader',
+		kategory: 'tapanader',
+		price: '30',
+		image: '/borat.jpg',
+		quantity: 1,
+		type: 't'
+	},
+	{
+		id: '34',
+		title: 'Tapanader',
+		kategory: 'tapanader',
 		price: '30',
 		image: '/borat.jpg',
 		quantity: 1,
@@ -150,8 +348,12 @@ export const tilkoebs = readable([
 
 export const cart = writable([]);
 
-export const count = writable(0);
+export const count = writable(1);
 
 export const categories = ['alle', 'fisk', 'skaldyr', 'salater'];
 
-export const kategorier = ['alle', 'vin', 'tapanader', 'brød'];
+export const kategorier = ['alle', 'drikkevarer', 'tapanader', 'brød'];
+
+// popup
+export const modal = writable(null);
+export const windowStyle = writable({});

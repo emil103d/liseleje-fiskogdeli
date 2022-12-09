@@ -261,7 +261,7 @@
 		cursor: pointer;
 		position: fixed;
 		height: 15vh;
-		width: 4%;
+		width: 60px;
 		background: url(/hamburger_ikon.svg) repeat-x;
 		background-position: 0;
 		right: 10%;

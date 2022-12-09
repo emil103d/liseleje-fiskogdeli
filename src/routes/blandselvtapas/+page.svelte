@@ -6,9 +6,9 @@
 	import Maengdeguide from '/src/lib/components/Maengdeguide.svelte';
 </script>
 
-<main class="pt-[150px] pb-[150px] md:py-32 lg:py-44 md:h-[100vh] px-5 place-content-center w-full grid overflow-y-hidden ">
+<main class="pt-[150px] pb-[150px] md:py-32 lg:py-44 md:h-[100vh] px-5 md:px-10 place-content-center w-full grid overflow-y-hidden ">
 	<div class="grid lg:max-w-[1024px] lg:m-auto">
-		<h2 class="font-bold text-darkblue">
+		<h2 class="text-darkblue">
 			Bland selv fisketapas <b class="text-yellowdot"> . </b>
 		</h2>
 		<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
@@ -17,8 +17,8 @@
 			<Maengdeguide class="" />
 
 			<div class="pt-12 md:pt-0 grid justify-center">
-				<div class="max-w-[15rem] md:m-auto grid gap-6">
-					<h3 class="text-center">Hvor mange personer bliver I?</h3>
+				<div class="max-w-[16rem] md:max-w-[20rem] md:m-auto grid gap-6">
+					<h3 class="text-center text-darkblue">Hvor mange personer bliver I?</h3>
 					<Numericbutton />
 					<div class="m-auto">
 						<Button type="primary" class="m-auto"

@@ -16,7 +16,7 @@
 					detaljer og visionære tanker om mad. Vælg fra menuen eller komponer din egen, vi glæder os
 					til at se hvad du finder på.
 				</p>
-				<Button type="primary">Bestil takeaway</Button>
+				<Button type="primary"><a href="/blandselvtapas">Bestil takeaway</a></Button>
 			</div>
 
 			<div class="w-full h-full skygge md:block">

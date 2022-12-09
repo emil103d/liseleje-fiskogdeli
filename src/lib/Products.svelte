@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { products, cart } from '../stores/cart.js';
 
 	const addToCart = (product) => {
@@ -6,10 +6,11 @@
 			if (item.id === product.id) {
 				product.quantity += 1;
 				$cart = $cart;
-				return;
+				return ;
+			} else {
+				$cart = [...$cart, product];
 			}
 		}
-		$cart = [...$cart, product];
 	};
 </script>
 
@@ -37,4 +38,4 @@
 		background-position: center;
 		background-repeat: no-repeat;
 	}
-</style>
+</style> -->
