@@ -203,7 +203,7 @@ export const tilkoebs = readable([
 	{
 		id: '19',
 		title: 'Vino vino',
-		kategory: 'vin',
+		kategory: 'drikkevarer',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -230,7 +230,7 @@ export const tilkoebs = readable([
 	{
 		id: '22',
 		title: 'Rødvin',
-		kategory: 'vin',
+		kategory: 'drikkevarer',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -239,7 +239,7 @@ export const tilkoebs = readable([
 	{
 		id: '23',
 		title: 'Rødvin',
-		kategory: 'vin',
+		kategory: 'drikkevarer',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -248,7 +248,7 @@ export const tilkoebs = readable([
 	{
 		id: '24',
 		title: 'Rødvin',
-		kategory: 'vin',
+		kategory: 'drikkevarer',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -257,7 +257,7 @@ export const tilkoebs = readable([
 	{
 		id: '25',
 		title: 'Rødvin',
-		kategory: 'vin',
+		kategory: 'drikkevarer',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -266,7 +266,7 @@ export const tilkoebs = readable([
 	{
 		id: '26',
 		title: 'Rødvin',
-		kategory: 'vin',
+		kategory: 'drikkevarer',
 		price: '30',
 		image: '/products/vin.webp',
 		quantity: 1,
@@ -352,7 +352,7 @@ export const count = writable(1);
 
 export const categories = ['alle', 'fisk', 'skaldyr', 'salater'];
 
-export const kategorier = ['alle', 'vin', 'tapanader', 'brød'];
+export const kategorier = ['alle', 'drikkevarer', 'tapanader', 'brød'];
 
 // popup
 export const modal = writable(null);

@@ -21,6 +21,8 @@
 section {
     background-image: url('vaeg.png');
     background-size: contain;
+    z-index: 1000;
+    position: relative;
 }
 
 
