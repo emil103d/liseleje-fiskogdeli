@@ -4,7 +4,7 @@
 </script>
 
 <div class=" p-10">
-	<h2 class="font-bold text-darkblue">
+	<h2 class=" text-darkblue">
 		Dit fad er tilføjet til kurven<b class="text-yellowdot"> . </b>
 	</h2>
 	<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
@@ -50,7 +50,7 @@
 	</div>
 
 	<div class=" flex justify-between">
-		<SecondaryButton type="primary"><a href="/construction">Mere fisk?</a></SecondaryButton>
+		<SecondaryButton type="primary"><a href="/construction">Shop videre</a></SecondaryButton>
 		<Button type="primary"><a href="/blandselvtapas">Gå til betaling</a></Button>
 	</div>
 </div>
