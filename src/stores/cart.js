@@ -5,25 +5,25 @@ export const products = readable([
 		id: '1',
 		title: 'Lynstegt tun',
 		kategory: 'fisk',
-		price: '30',
+		price: '35',
 		image: '/products/fisk/tun.webp',
 		quantity: 1,
 		type: 'p'
 	},
 	{
 		id: '2',
-		title: 'Lynstegt Laks',
+		title: 'Pepper Laks',
 		kategory: 'fisk',
-		price: '30',
+		price: '20',
 		image: '/products/fisk/laks1.webp',
 		quantity: 1,
 		type: 'p'
 	},
 	{
 		id: '3',
-		title: 'Lynstegt Rejer',
+		title: 'Hvidløgs Rejer',
 		kategory: 'skaldyr',
-		price: '30',
+		price: '10',
 		image: '/products/skaldyr/rejer.webp',
 		quantity: 1,
 		type: 'p'
@@ -32,7 +32,7 @@ export const products = readable([
 		id: '4',
 		title: 'Fiskefrikadeller',
 		kategory: 'fisk',
-		price: '30',
+		price: '8',
 		image: '/products/fisk/fiskefrikadelle.webp',
 		quantity: 1,
 		type: 'p'
@@ -42,7 +42,7 @@ export const products = readable([
 		id: '5',
 		title: 'Krabbeklo',
 		kategory: 'skaldyr',
-		price: '30',
+		price: '10',
 		image: '/products/skaldyr/krappeklo.webp',
 		quantity: 1,
 		type: 'p'
@@ -52,7 +52,7 @@ export const products = readable([
 		id: '6',
 		title: 'Lakseroulade',
 		kategory: 'fisk',
-		price: '30',
+		price: '8',
 		image: '/products/fisk/lakseroulade.webp',
 		quantity: 1,
 		type: 'p'
@@ -62,7 +62,7 @@ export const products = readable([
 		id: '7',
 		title: 'Sild',
 		kategory: 'fisk',
-		price: '30',
+		price: '15',
 		image: '/products/fisk/sild.webp',
 		quantity: 1,
 		type: 'p'
@@ -78,7 +78,7 @@ export const products = readable([
 	},
 	{
 		id: '9',
-		title: 'Pillederejser',
+		title: 'Pillede rejer',
 		kategory: 'skaldyr',
 		price: '30',
 		image: '/products/skaldyr/pillederejer.webp',
@@ -120,7 +120,7 @@ export const products = readable([
 		image: '/products/salater/tunsalat.webp',
 		quantity: 1,
 		type: 'p'
-	},
+	}
 ]);
 
 export const tilkoebs = readable([
@@ -240,10 +240,7 @@ export const tilkoebs = readable([
 		image: '/products/dyppelse/remoulade.webp',
 		quantity: 1,
 		type: 't'
-	},
-
-
-
+	}
 ]);
 
 export const cart = writable([]);

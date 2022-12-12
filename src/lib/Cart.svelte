@@ -103,7 +103,7 @@
 		<div class="h-[2px] w-20" />
 
 		<div class="border-lightblue border-t-2 py-2" />
-		<p class="font-semibold pb-2 mellemtekst">TapasRetter</p>
+		<p class="font-semibold pb-2 mellemtekst">Tapasretter</p>
 
 		<div class="cart-list md:grid md:grid-rows gap-2 justify-between">
 			{#each $cart as item}
