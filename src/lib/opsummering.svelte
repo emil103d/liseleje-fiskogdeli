@@ -37,10 +37,19 @@
 			}, 0)};
 		</p>
 		<p class="font-semibold">
-			Total: {$cart.reduce((total, cartItem) => {
+			<!-- Total: {$cart.reduce((total, cartItem) => {
 				const item = $cart.find((i) => i.type === cartItem.type);
 				return total + (item.price || 0) * cartItem.quantity * countValue;
-			}, 0)};
+			}, 0)}; -->
+
+			Total: {$cart.reduce((total, cartItem) => {
+				let item = $cart.find((i) => i.type === cartItem.type);
+				if (item.type === 'p') {
+					return total + (item.price || 0) * cartItem.quantity * countValue;
+				} else if (item.type === 't') {
+					return total + (item.price || 0) * cartItem.quantity;
+				}
+			}, 0)}
 		</p>
 	</div>
 

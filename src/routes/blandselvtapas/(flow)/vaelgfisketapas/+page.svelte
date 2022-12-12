@@ -39,11 +39,11 @@
 	// };
 
 	function toggleMenu() {
-		if (document.getElementById('mobile').style.bottom == '100px') {
-			document.getElementById('mobile').style.bottom = '100px';
+		if (document.getElementById('mobile').style.bottom == '10vh') {
+			document.getElementById('mobile').style.bottom = '10vh';
 			document.getElementById('roter').style.transform = 'rotate(180deg)';
 		} else {
-			document.getElementById('mobile').style.bottom = '100px';
+			document.getElementById('mobile').style.bottom = '40vh';
 			document.getElementById('roter').style.transform = 'rotate(0deg)';
 		}
 	}
@@ -169,7 +169,7 @@
 					</div>
 				</div> -->
 
-				<div class="absolute md:block bottom-0 md:relative w-full z-30" id="mobile">
+				<div class="md:block md:bottom-0 md:relative w-full z-30" id="mobile">
 					<button class="pr-3 pt-3 float-right md:hidden" on:click={toggleMenu}
 						><svg
 							id="roter"
@@ -270,9 +270,9 @@
 		#mobile {
 			position: fixed;
 			left: 0;
+			bottom: 10vh;
 			transition: bottom 0.5s;
-			overflow-y: hidden;
-			max-height: 500px;
+			width: 100vw;
 		}
 	}
 </style>

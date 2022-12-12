@@ -41,12 +41,24 @@
 
 	$: produktPris2 = $tilkoebs.reduce((total, item) => item.price, 0);
 
-	$: total = $cart.reduce((total, item) => total + produktPris * item.quantity, 0); // $= “re-run this code whenever any of the referenced values change”.
+	//$: total = $cart.reduce((total, item) => total + produktPris * item.quantity, 0); // $= “re-run this code whenever any of the referenced values change”.
+
+	$: total = $cart.reduce((total, cartItem) => {
+		let item = $cart.find((i) => i.type === cartItem.type);
+		if (item.type === 'p') {
+			return total + (item.price || 0) * cartItem.quantity * countValue;
+		} else if (item.type === 't') {
+			return total + (item.price || 0) * cartItem.quantity;
+		}
+	}, 0);
 
 	console.log('total');
 </script>
 
-<section class="px-5 bg-white h-full skygge p-4 md:flex md:justify-between md:flex-col">
+<section
+	id="mobilevers"
+	class="px-5 bg-white h-full skygge p-4 md:flex md:justify-between md:flex-col"
+>
 	<div>
 		<div class="pb-4 flex justify-between align-bottom">
 			<div class="">
@@ -54,7 +66,7 @@
 				<p>Til {countValue} personer</p>
 			</div>
 			<div class="total grid place-self-end md:hidden">
-				<h4 class="font-bold">Total:DKK</h4>
+				<h4 class="font-bold">Total:{total}</h4>
 			</div>
 		</div>
 
@@ -362,5 +374,15 @@
 	.mindrebillede {
 		width: 30px;
 		height: 30px;
+	}
+	@media only screen and (max-width: 768px) {
+		/* For mobile phones: */
+		#mobilevers {
+			overflow-y: scroll;
+			height: 11vh;
+			/* position: fixed;
+			bottom: 11vh;
+			left: 0; */
+		}
 	}
 </style>
