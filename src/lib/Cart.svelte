@@ -227,7 +227,7 @@
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
 							<p class="lilletekst">
-								{item.price * item.quantity};
+								{item.price * item.quantity * countValue};
 							</p>
 						</div>
 					</div>
@@ -372,15 +372,6 @@
 
 	<div class="total hidden md:block">
 		<h4 class="font-bold">
-			<!-- Total: {$cart.reduce((total, cartItem) => {
-				const item = $cart.find((i) => i.type === cartItem.type);
-				let itemT = (item.type === 't')((i) => total + (item.price || 0) * cartItem.quantity);
-				let itemP = (item.type === 'p')(
-					(i) => total + (item.price || 0) * cartItem.quantity * countValue
-				);
-				return total + itemT + itemP;
-			}, 0)}; -->
-
 			Total: {total};
 		</h4>
 	</div>

@@ -110,7 +110,7 @@
 											<div class="flex justify-between pt-1">
 												<p class="lilletekst pb-2">Til {countValue} personer</p>
 												<p class="lilletekst font-semibold">
-													{product.price} kr
+													{product.price * countValue} kr
 												</p>
 											</div>
 										</div>
@@ -132,7 +132,7 @@
 										<h4 class="font-semibold text-darkblue">{product.title}</h4>
 										<div class="flex justify-between pt-1">
 											<p class="lilletekst pb-2">Til {countValue} personer</p>
-											<p class="lilletekst font-semibold">{product.price} kr</p>
+											<p class="lilletekst font-semibold">{product.price * countValue} kr</p>
 										</div>
 									</div>
 									<div class="grid justify-center pb-2 pt-2">
