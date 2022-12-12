@@ -36,15 +36,14 @@
 		countValue = value;
 	});
 
-	// $: total = $cart.reduce((total, item) => total + item.price * item.quantity, 0) * countValue;
-	$: produktPris = $products.reduce((total, produkt) => produkt.price * countValue, 0);
+	// // $: total = $cart.reduce((total, item) => total + item.price * item.quantity, 0) * countValue;
+	$: produktPris = $products.reduce((total, item) => item.price * countValue, 0);
 
 	$: produktPris2 = $tilkoebs.reduce((total, item) => item.price, 0);
 
-	$: total =
-		$cart.reduce((total, produkt) => total + produktPris * produkt.quantity, 0) + produktPris2; // $= “re-run this code whenever any of the referenced values change”.
+	$: total = $cart.reduce((total, item) => total + produktPris * item.quantity, 0); // $= “re-run this code whenever any of the referenced values change”.
 
-	console.log(total);
+	console.log('total');
 </script>
 
 <section class="px-5 bg-white h-full skygge p-4 md:flex md:justify-between md:flex-col">
@@ -55,7 +54,7 @@
 				<p>Til {countValue} personer</p>
 			</div>
 			<div class="total grid place-self-end md:hidden">
-				<h4 class="font-bold">Total: {total} DKK</h4>
+				<h4 class="font-bold">Total:DKK</h4>
 			</div>
 		</div>
 
@@ -186,7 +185,9 @@
 							</button>
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
-							<p class="lilletekst">{produktPris} kr</p>
+							<p class="lilletekst">
+								{produktPris * item.quantity};
+							</p>
 						</div>
 					</div>
 				{/if}
@@ -318,7 +319,9 @@
 							</button>
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
-							<p class="lilletekst">{produktPris2} kr</p>
+							<p class="lilletekst">
+								{produktPris2 * item.quantity};
+							</p>
 						</div>
 					</div>
 				{/if}
@@ -327,7 +330,18 @@
 	</div>
 
 	<div class="total hidden md:block">
-		<h4 class="font-bold">Total: {total} DKK</h4>
+		<h4 class="font-bold">
+			<!-- Total: {$cart.reduce((total, cartItem) => {
+				const item = $cart.find((i) => i.type === cartItem.type);
+				let itemT = (item.type === 't')((i) => total + (item.price || 0) * cartItem.quantity);
+				let itemP = (item.type === 'p')(
+					(i) => total + (item.price || 0) * cartItem.quantity * countValue
+				);
+				return total + itemT + itemP;
+			}, 0)}; -->
+
+			Total: {total};
+		</h4>
 	</div>
 </section>
 
