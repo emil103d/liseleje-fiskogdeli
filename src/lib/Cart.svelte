@@ -37,9 +37,9 @@
 	});
 
 	// // $: total = $cart.reduce((total, item) => total + item.price * item.quantity, 0) * countValue;
-	$: produktPris = $products.reduce((total, item) => item.price * countValue, 0);
+	// $: produktPris = $products.reduce((total, item) => item.price * countValue, 0);
 
-	$: produktPris2 = $tilkoebs.reduce((total, item) => item.price, 0);
+	// $: produktPris2 = $tilkoebs.reduce((total, item) => item.price, 0);
 
 	//$: total = $cart.reduce((total, item) => total + produktPris * item.quantity, 0); // $= “re-run this code whenever any of the referenced values change”.
 
@@ -227,7 +227,7 @@
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
 							<p class="lilletekst">
-								{produktPris * item.quantity};
+								{item.price * item.quantity};
 							</p>
 						</div>
 					</div>
@@ -361,7 +361,7 @@
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
 							<p class="lilletekst">
-								{produktPris2 * item.quantity};
+								{item.price * item.quantity};
 							</p>
 						</div>
 					</div>

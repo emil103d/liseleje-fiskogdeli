@@ -50,7 +50,7 @@
 	// 	}
 	// }
 
-	$: produktPris = $products.reduce((total, produkt) => produkt.price * countValue, 0);
+	//$: produktPris = $products.reduce((total, produkt) => produkt.price * countValue, 0);
 </script>
 
 <main>
@@ -110,7 +110,7 @@
 											<div class="flex justify-between pt-1">
 												<p class="lilletekst pb-2">Til {countValue} personer</p>
 												<p class="lilletekst font-semibold">
-													{produktPris} kr
+													{product.price} kr
 												</p>
 											</div>
 										</div>

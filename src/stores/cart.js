@@ -5,7 +5,7 @@ export const products = readable([
 		id: '1',
 		title: 'Lynstegt tun',
 		kategory: 'fisk',
-		price: '30',
+		price: '35',
 		image: '/products/fisk/tun.webp',
 		quantity: 1,
 		type: 'p'
@@ -120,7 +120,7 @@ export const products = readable([
 		image: '/products/salater/tunsalat.webp',
 		quantity: 1,
 		type: 'p'
-	},
+	}
 ]);
 
 export const tilkoebs = readable([
@@ -128,7 +128,7 @@ export const tilkoebs = readable([
 		id: '13',
 		title: 'Chablis',
 		kategory: 'drikkevarer',
-		price: '30',
+		price: '150',
 		image: '/products/drikkevarer/chablis.webp',
 		quantity: 1,
 		type: 't'
@@ -240,10 +240,7 @@ export const tilkoebs = readable([
 		image: '/products/dyppelse/remoulade.webp',
 		quantity: 1,
 		type: 't'
-	},
-
-
-
+	}
 ]);
 
 export const cart = writable([]);
