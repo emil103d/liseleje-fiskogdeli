@@ -80,10 +80,10 @@
 
 		<div>
 			<section
-				class="grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling md:h-[40vh]"
+				class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]"
 			>
 				<div
-					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-scroll"
+					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll"
 				>
 					{#each $tilkoebs as tilkoeb}
 						<!-- Viser alle produkter -->
@@ -160,25 +160,8 @@
 					</div>
 				</div> -->
 
-				<div class="absolute md:block bottom-0 md:relative w-full z-30" id="mobile">
-					<button class="pr-3 pt-3 float-right md:hidden" on:click={toggleMenu}
-						><svg
-							id="roter"
-							width="16"
-							height="9"
-							viewBox="0 0 16 9"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M7.69717 0.983701L14.7468 8.3227L15.3948 7.561L8.13185 0L7.69714 0.511046L7.2624 4.82916e-05L0 7.56165L0.647986 8.32331L7.69717 0.983701Z"
-								fill="#1F425F"
-							/>
-						</svg>
-					</button>
-					<div class="h-full">
+				<div class="md:block md:bottom-0 md:relative w-full z-30" id="mobile">
+					<div>
 						<Tapas />
 					</div>
 				</div>
@@ -258,12 +241,5 @@
 
 	@media only screen and (max-width: 768px) {
 		/* For mobile phones: */
-		#mobile {
-			position: fixed;
-			left: 0;
-			transition: bottom 0.5s;
-			overflow-y: hidden;
-			max-height: 500px;
-		}
 	}
 </style>

@@ -38,15 +38,17 @@
 	// 	product.reduce((total, product) => total + product.price, 0) * countValue;
 	// };
 
-	function toggleMenu() {
-		if (document.getElementById('mobile').style.bottom == '10vh') {
-			document.getElementById('mobile').style.bottom = '10vh';
-			document.getElementById('roter').style.transform = 'rotate(180deg)';
-		} else {
-			document.getElementById('mobile').style.bottom = '40vh';
-			document.getElementById('roter').style.transform = 'rotate(0deg)';
-		}
-	}
+	// function toggleMenu() {
+	// 	if (document.getElementById('mobile').style.height == '11vh') {
+	// 		document.getElementById('mobile').style.height = '11vh';
+	// 		document.getElementById('mobile').style.bottom = '26vh';
+	// 		document.getElementById('roter').style.transform = 'rotate(180deg)';
+	// 	} else {
+	// 		document.getElementById('mobile').style.height = '24vh';
+	// 		document.getElementById('mobile').style.bottom = '11vh';
+	// 		document.getElementById('roter').style.transform = 'rotate(0deg)';
+	// 	}
+	// }
 
 	$: produktPris = $products.reduce((total, produkt) => produkt.price * countValue, 0);
 </script>
@@ -87,10 +89,10 @@
 
 		<div>
 			<section
-				class="grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling md:h-[40vh]"
+				class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]"
 			>
 				<div
-					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-scroll"
+					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll"
 				>
 					{#each $products as product}
 						<!-- Viser alle produkter -->
@@ -144,50 +146,8 @@
 					{/each}
 				</div>
 
-				<!-- <div id="mobile" class=" w-full md:relative md:bottom-0">
-					
-					<button class=" p-4 float-right md:hidden" on:click={toggleMenu}
-						><svg
-							id="roter"
-							width="16"
-							height="9"
-							viewBox="0 0 16 9"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M7.69717 0.983701L14.7468 8.3227L15.3948 7.561L8.13185 0L7.69714 0.511046L7.2624 4.82916e-05L0 7.56165L0.647986 8.32331L7.69717 0.983701Z"
-								fill="#1F425F"
-							/>
-						</svg>
-					</button>
-
-					<div class="hidden md:block">
-						<Tapas />
-					</div>
-				</div> -->
-
 				<div class="md:block md:bottom-0 md:relative w-full z-30" id="mobile">
-					<button class="pr-3 pt-3 float-right md:hidden" on:click={toggleMenu}
-						><svg
-							id="roter"
-							width="16"
-							height="9"
-							viewBox="0 0 16 9"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M7.69717 0.983701L14.7468 8.3227L15.3948 7.561L8.13185 0L7.69714 0.511046L7.2624 4.82916e-05L0 7.56165L0.647986 8.32331L7.69717 0.983701Z"
-								fill="#1F425F"
-							/>
-						</svg>
-					</button>
-					<div class="h-full">
+					<div>
 						<Tapas />
 					</div>
 				</div>
@@ -265,14 +225,28 @@
 		transform: rotate(180deg);
 	} */
 
+	.pil {
+		position: absolute;
+		bottom: 8vh;
+		z-index: 200;
+		left: 0;
+	}
+
 	@media only screen and (max-width: 768px) {
 		/* For mobile phones: */
-		#mobile {
-			position: fixed;
+		/* #mobile {
+			 position: fixed;
 			left: 0;
 			bottom: 10vh;
 			transition: bottom 0.5s;
-			width: 100vw;
-		}
+			width: 100vw; 
+			 overflow-y: scroll;
+			position: absolute;
+			bottom: 2vh;
+			left: 0vh;
+			width: 97vw;
+			height: 11vh;
+			transition: 300ms; 
+		} */
 	}
 </style>

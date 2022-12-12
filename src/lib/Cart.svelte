@@ -53,6 +53,18 @@
 	}, 0);
 
 	console.log('total');
+
+	function toggleMenu() {
+		if (document.getElementById('mobilevers').style.bottom == '6vh') {
+			document.getElementById('mobilevers').style.height = '53vh';
+			document.getElementById('mobilevers').style.bottom = '7vh';
+			document.getElementById('roter').style.transform = 'rotate(180deg)';
+		} else {
+			document.getElementById('mobilevers').style.bottom = '6vh';
+			document.getElementById('mobilevers').style.height = '11vh';
+			document.getElementById('roter').style.transform = 'rotate(0deg)';
+		}
+	}
 </script>
 
 <section
@@ -60,6 +72,23 @@
 	class="px-5 bg-white h-full skygge p-4 md:flex md:justify-between md:flex-col"
 >
 	<div>
+		<button class="pil pr-3 pt-3 float-right md:hidden" on:click={toggleMenu}
+			><svg
+				id="roter"
+				width="16"
+				height="9"
+				viewBox="0 0 16 9"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M7.69717 0.983701L14.7468 8.3227L15.3948 7.561L8.13185 0L7.69714 0.511046L7.2624 4.82916e-05L0 7.56165L0.647986 8.32331L7.69717 0.983701Z"
+					fill="#1F425F"
+				/>
+			</svg>
+		</button>
 		<div class="pb-4 flex justify-between align-bottom">
 			<div class="">
 				<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
@@ -379,10 +408,12 @@
 		/* For mobile phones: */
 		#mobilevers {
 			overflow-y: scroll;
+			position: absolute;
+			bottom: 6vh;
+			left: 0vh;
+			width: 97vw;
 			height: 11vh;
-			/* position: fixed;
-			bottom: 11vh;
-			left: 0; */
+			transition: 300ms;
 		}
 	}
 </style>
