@@ -5,9 +5,9 @@
 <section class="py-32 md:py-44 px-10 min-h-[20rem]">
 	<div class=" md:flex md:justify-between lg:max-w-[1024px] lg:m-auto lg:flex-col">
 		<div class="pb-12 gap-2 m-auto lg:m-0 text-textcolor">
-			<h2 class="font-bold ">Tilmeld dig vores nyhedsbrev <b class="text-yellowdot"> . </b></h2>
+			<h2 class="font-bold ">Modtag nyheder og inspiration <b class="text-yellowdot"> . </b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
-			<p>SPAR 10% på din første ordre</p>
+			<p>Tilmeld dig vores nyhedsbrev og spar 10% på din første ordre</p>
 		</div>
 
 		<div class="">
@@ -37,7 +37,7 @@
 				</div>
 
 				<div class="grid items-end">
-					<Button type="primary">Skriv mig op</Button>
+					<Button type="primary">Tilmeld mig</Button>
 				</div>
 			</div>
 		</div>

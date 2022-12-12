@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	// let visible = true;
 	import { onMount, setContext } from 'svelte';
 	import { writable } from 'svelte/store';
@@ -186,4 +186,4 @@
 			display: none !important;
 		}
 	}
-</style>
+</style> -->

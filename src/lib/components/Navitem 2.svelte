@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { getContext } from 'svelte';
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();
@@ -11,4 +11,4 @@
 	}
 </script>
 
-<li on:click={setSegment} class:active={$current === segment}><a href={segment}><slot /></a></li>
+<li on:click={setSegment} class:active={$current === segment}><a href={segment}><slot /></a></li> -->

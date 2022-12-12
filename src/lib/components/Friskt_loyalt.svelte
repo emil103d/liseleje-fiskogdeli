@@ -21,9 +21,9 @@
 				<h2 class="font-bold ">Friskt & Lokalt <b class="text-yellowdot"> . </b></h2>
 				<div class="h-[2px] w-20 bg-white mb-6 mt-2" />
 				<p class="pb-6">
-					Vi elsker Liseleje og har derfor startet Liseleje Fisk & Deli så du kan forkæles med frisk
-					fisk løbet af hele sommeren. Vi er født og opvokset i området og har derfor en stor
-					passion forkæles med frisk fisk løbet af hele sommeren.
+					Vi elsker Liseleje og har derfor startet Liseleje Fisk & Deli, så du kan forkæles med
+					frisk fisk og delikatesser året rundt. Vi er født og opvokset i området og har aftaler med
+					lokale fiskere, som er med til at sikre frisk fisk fra Kattegat af højeste kvalitet.
 				</p>
 				<SecondaryButton type="secondary"><a href="/construction">Læs mere</a></SecondaryButton>
 			</div>
