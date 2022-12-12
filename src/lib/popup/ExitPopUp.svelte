@@ -25,8 +25,8 @@
 		<h3>Ønsker du af forlade fadet?</h3>
 	</div>
 	<div class=" flex justify-between">
-		<SecondaryButton type="primary"><a href="/">Tilbage til fosiden fadet</a></SecondaryButton>
-		<Button type="primary"><a href="/blandselvtapas">Tilabge til fadet</a></Button>
+		<SecondaryButton type="primary"><a href="/">Tilbage til forsiden</a></SecondaryButton>
+		<Button type="primary"><a href="/blandselvtapas">Forsæt bestilling</a></Button>
 	</div>
 </div>
 

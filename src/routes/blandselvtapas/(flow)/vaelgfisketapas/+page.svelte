@@ -40,7 +40,7 @@
 
 	function toggleMenu() {
 		if (document.getElementById('mobile').style.bottom == '100px') {
-			document.getElementById('mobile').style.bottom = '0px';
+			document.getElementById('mobile').style.bottom = '100px';
 			document.getElementById('roter').style.transform = 'rotate(180deg)';
 		} else {
 			document.getElementById('mobile').style.bottom = '100px';
