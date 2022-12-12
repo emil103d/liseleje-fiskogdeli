@@ -4,6 +4,9 @@
 	import { modal } from '/src/stores/cart.js';
 </script>
 
+<Modal show={$modal}>
+	<ExitPopContent />
+</Modal>
 <section class="bg-darkblue flex justify-between px-5 md:px-10 fixed w-full py-3 md:py-6">
 	<div class="grid text-center">
 		<a href="/">
@@ -33,9 +36,6 @@
 		<div class="">
 			<img class="indkoebskurv" src="../indkobskurv.png" alt="Shoppingcart" />
 		</div>
-		<Modal show={$modal}>
-			<ExitPopContent />
-		</Modal>
 	</div>
 </section>
 
