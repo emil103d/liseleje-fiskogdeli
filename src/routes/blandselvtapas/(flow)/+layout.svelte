@@ -5,12 +5,11 @@
 </script>
 
 <div>
-<slot  />
+	<slot />
 </div>
 
 <style>
-
-/* @media only screen and (max-width: 768px) {
+	/* @media only screen and (max-width: 768px) {
 	.tapas {
 		position: fixed;
 		width: 100%;
@@ -19,7 +18,4 @@
 }
 	
 	 */
-	
-
-	
 </style>
