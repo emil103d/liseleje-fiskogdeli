@@ -91,7 +91,7 @@
 		</button>
 		<div class="pb-4 flex justify-between align-bottom">
 			<div class="">
-				<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
+				<h3 class="text-darkblue font-bold pb-4">Mit tapasfad<b class="text-yellowdot">.</b></h3>
 				<p class="mellemtekst">Til {countValue} personer</p>
 			</div>
 			<div class="total grid place-self-end md:hidden">
@@ -238,7 +238,7 @@
 		</div>
 
 		<div class="border-lightblue border-t-2" />
-		<p class="font-semibold pb-2 mellemtekst">Tilkøb</p>
+		<p class="font-semibold pb-2 mellemtekst pt-4">Tilkøb</p>
 		<div class=" md:grid-rows gap-2 justify-between">
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 't'}
