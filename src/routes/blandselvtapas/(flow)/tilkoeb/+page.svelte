@@ -99,7 +99,7 @@
 										<div class="grid py-2">
 											<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
 											<div class="flex justify-between pt-1">
-												<p class="lilletekst">pr. stk</p>
+												<p class="lilletekst pb-2">pr. stk</p>
 												<p class="lilletekst font-semibold">{tilkoeb.price} kr</p>
 											</div>
 										</div>
@@ -120,7 +120,7 @@
 									<div class="grid py-2">
 										<h4 class="font-semibold text-darkblue">{tilkoeb.title}</h4>
 										<div class="flex justify-between pt-1">
-											<p class="lilletekst">Pr. styk</p>
+											<p class="lilletekst pb-2">Pr. styk</p>
 											<p class="lilletekst font-semibold">{tilkoeb.price} kr</p>
 										</div>
 									</div>
@@ -161,12 +161,12 @@
 				</div> -->
 
 				<div class="md:block md:bottom-0 md:relative w-full z-30" id="mobile">
-					<div>
+					<div class="md:h-full">
 						<Tapas />
 					</div>
 				</div>
 
-				<div class="flex justify-between place-items-center md:hidden">
+				<div class="flex justify-between place-items-center md:hidden ">
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
 					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
 				</div>

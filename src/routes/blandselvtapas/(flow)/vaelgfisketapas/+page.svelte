@@ -147,7 +147,7 @@
 				</div>
 
 				<div class="md:block md:bottom-0 md:relative w-full z-30" id="mobile">
-					<div>
+					<div class="md:h-full">
 						<Tapas />
 					</div>
 				</div>
