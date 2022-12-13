@@ -277,8 +277,8 @@
 				</div>
 
 				<div class="flex justify-between place-items-center md:hidden ">
-					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
-					<Button type="primary"><a href="/blandselvtapas/vaelgfisketapas">Næste</a></Button>
+					<SecondaryButton><a href="/blandselvtapas/vaelgfisketapas">Tilbage</a></SecondaryButton>
+					<Button type="primary"><a href="/blandselvtapas/afslut">Næste</a></Button>
 				</div>
 			</section>
 
@@ -286,7 +286,7 @@
 				class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+4rem)] md:pt-6"
 			>
 				<div class="hidden md:flex justify-between place-items-center">
-					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
+					<SecondaryButton><a href="/blandselvtapas/vaelgfisketapas">Tilbage</a></SecondaryButton>
 					<Button type="primary"><a href="/blandselvtapas/afslut">Næste</a></Button>
 				</div>
 				<div />
