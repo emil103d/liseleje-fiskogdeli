@@ -89,10 +89,10 @@
 
 		<div>
 			<section
-				class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh]"
+				class="grid md:grid-cols gap-10 lg:gap-16  md:grid-cols-[minmax(auto,_1fr)_250px] scrollstyling h-[40vh] "
 			>
 				<div
-					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll"
+					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 overflow-y-scroll shadow"
 				>
 					{#each $products as product}
 						<!-- Viser alle produkter -->
@@ -206,6 +206,10 @@
 		cursor: pointer;
 		transition: 0.1s ease-in-out;
 		font-weight: 400;
+	}
+
+	.shadow {
+		box-shadow: 2px #e5f1f9;
 	}
 
 	/* Add a dark background color to the active button */
