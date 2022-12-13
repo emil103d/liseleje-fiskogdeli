@@ -17,7 +17,12 @@
 					som alle andre livsnyder og tag din mad nede på stranden. Kombiner dine egne favoritter eller
 					vælg en af vores sammensætninger. Vi glæder os til at se, hvad du finder på.
 				</p>
-				<Button type="primary"><a href="/blandselvtapas">Bland tapas</a></Button>
+
+				<a href="/blandselvtapas">
+					<Button type="primary"><a href="/blandselvtapas">Bland tapas</a></Button>
+				</a>
+
+				
 			</div>
 
 			<div class="w-full h-full skygge md:block">

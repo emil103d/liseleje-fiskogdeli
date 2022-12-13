@@ -4,6 +4,7 @@
 	export let beskrivelse;
 	export let image;
 	export let alt;
+	export let linktilcard;
 </script>
 
 <div class="flex justify-center">
@@ -22,7 +23,7 @@
 					{beskrivelse}
 				</p>
 				<SecondaryButton class="font-semibold text-right" type="secondary"
-					><a href="/construction">Se Udvalg </a></SecondaryButton
+					><a href="{linktilcard}">Se Udvalg </a></SecondaryButton
 				>
 			</div>
 		</a>

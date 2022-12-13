@@ -15,7 +15,7 @@
 				<div class="grid pb-4 lg:pb-0">
 					<form class="grid gap-4 lg:flex lg:justify-between w-[100%]">
 						<div>
-							<label for="navn" class="text-textcolor font-semibold mellemtekst">Navn</label>
+							<label for="navn" class="text-textcolor font-semibold">Navn</label>
 							<input
 								class="h-[53.6px] appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
 								type="text"
@@ -25,7 +25,7 @@
 						</div>
 
 						<div>
-							<label for="e-mail" class="text-textcolor font-semibold mellemtekst">E-mail</label>
+							<label for="e-mail" class="text-textcolor font-semibold ">E-mail</label>
 							<input
 								class="h-[53.6px] appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
 								type="text"

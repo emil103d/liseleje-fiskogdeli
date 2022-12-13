@@ -28,7 +28,11 @@
 		</div>
 
 		<div class="grid justify-center pt-6 md:pt-12">
-			<Button type="primary">Kom igang</Button>
+			<a href="/blandselvtapas">
+				<Button type="primary">Kom igang</Button>
+			</a>
+
+			
 		</div>
 	</div>
 </section>

@@ -14,18 +14,21 @@
 				alt="Lys fisk præsenteret på sort fad"
 				kategori="Fisk & Skaldyr"
 				beskrivelse="Alt godt fra havet - friskfanget i kattegat."
+				linktilcard="/construction"
 			/>
 			<Cards
 				image="udvalg_fisketapas.webp"
 				alt="Lyst brød med røget laks og citronskive"
 				kategori="Fisketapas"
 				beskrivelse="Bland selv eller vælg et fra vores menu"
+				linktilcard="/blandselvtapas"
 			/>
 			<Cards
 				image="udvalg_tilbehør.webp"
 				alt="Frisktbagt surdejsbrød"
 				kategori="Delikatesser "
 				beskrivelse="Vin, tilbehør og meget mere"
+				linktilcard="/construction"
 			/>
 		</div>
 	</div>

@@ -55,12 +55,12 @@
 	console.log('total');
 
 	function toggleMenu() {
-		if (document.getElementById('mobilevers').style.bottom == '5vh') {
+		if (document.getElementById('mobilevers').style.bottom == '80px') {
 			document.getElementById('mobilevers').style.height = '53vh';
 			document.getElementById('mobilevers').style.bottom = '7vh';
 			document.getElementById('roter').style.transform = 'rotate(180deg)';
 		} else {
-			document.getElementById('mobilevers').style.bottom = '5vh';
+			document.getElementById('mobilevers').style.bottom = '80px';
 			document.getElementById('mobilevers').style.height = '11vh';
 			document.getElementById('roter').style.transform = 'rotate(0deg)';
 		}
@@ -401,11 +401,12 @@
 		/* For mobile phones: */
 		#mobilevers {
 			position: fixed;
-			bottom: 5vh;
-			left: 0vh;
+			bottom: 80px;
 			width: 100vw;
 			height: 11vh;
 			transition: 300ms;
+			left: 0;
+			z-index: 50;
 		}
 	}
 </style>
