@@ -55,7 +55,7 @@
 
 <main class="w-[100vw]">
 	<div
-		class="grid lg:max-w-[1024px] px-5 md:px-10 lg:px-0  pt-[150px] pb-[200px] md:pb-[150px] lg:py-0 lg:m-auto place-content-center w-full md:h-[100vh]"
+		class="grid lg:max-w-[1024px] px-5 md:px-10 lg:px-0 pt-[150px] pb-[200px] md:pb-[150px] lg:py-0 lg:m-auto place-content-center md:h-[100vh]"
 	>
 		<div>
 			<h2 class="text-darkblue pb-2">Bland selv fisketapas <b class="text-yellowdot">.</b></h2>
@@ -64,7 +64,7 @@
 		</div>
 
 		<div
-			class="flex grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] py-4"
+			class="grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] py-4"
 		>
 			<div class="flex justify-between place-items-center">
 				<ButtonContainer>

@@ -172,7 +172,7 @@ export const tilkoebs = readable([
 	{
 		id: '18',
 		title: 'Limemayo',
-		kategory: 'tapanader',
+		kategory: 'dyp',
 		price: '30',
 		image: '/products/dyppelse/limemayo.webp',
 		quantity: 1,
@@ -181,7 +181,7 @@ export const tilkoebs = readable([
 	{
 		id: '19',
 		title: 'Remoulade',
-		kategory: 'tapanader',
+		kategory: 'dyp',
 		price: '30',
 		image: '/products/dyppelse/remoulade.webp',
 		quantity: 1,
@@ -190,7 +190,7 @@ export const tilkoebs = readable([
 	{
 		id: '20',
 		title: 'Tzatziki',
-		kategory: 'tapanader',
+		kategory: 'dyp',
 		price: '30',
 		image: '/products/dyppelse/tzatziki.webp',
 		quantity: 1,
@@ -235,7 +235,7 @@ export const tilkoebs = readable([
 	{
 		id: '25',
 		title: 'Remoulade',
-		kategory: 'tapanader',
+		kategory: 'dyp',
 		price: '30',
 		image: '/products/dyppelse/remoulade.webp',
 		quantity: 1,
@@ -249,7 +249,7 @@ export const count = writable(1);
 
 export const categories = ['alle', 'fisk', 'skaldyr', 'salater'];
 
-export const kategorier = ['alle', 'drikkevarer', 'tapanader', 'brød'];
+export const kategorier = ['alle', 'drikkevarer', 'dyp', 'brød'];
 
 // popup
 export const modal = writable(null);
