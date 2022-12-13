@@ -9,7 +9,7 @@
 
 <main>
 	<div
-		class="grid lg:max-w-[1024px] lg:px-0 py-[150px] md:py-32 lg:py-44   lg:py-0 lg:m-auto place-content-center w-[100vw] md:h-[100vh] "
+		class="grid lg:max-w-[1024px] lg:px-0 py-[150px] md:py-32 lg:py-44  lg:py-0 lg:m-auto place-content-center w-[100vw] md:h-[100vh] "
 	>
 		<div class="w-[100vw] px-5 md:px-10 lg:px-0 lg:max-w-[1024px]">
 			<div class="w-full">
@@ -20,8 +20,8 @@
 				</div>
 			</div>
 
-			<div class="grid sm:grid md:grid-cols-2 gap-6">
-				<div>
+			<div class="sm:grid md:grid-cols-3 gap-6">
+				<div class="col-start-1 col-span-2">
 					<Tapas />
 				</div>
 
@@ -29,7 +29,7 @@
 					<Opsummering />
 				</div>
 			</div>
-			<div class="grid w-fit pt-6">
+			<div class="grid w-fit pt-6 col-start-3">
 				<SecondaryButton><a href="/blandselvtapas/tilkoeb">Tilbage</a></SecondaryButton>
 			</div>
 		</div>

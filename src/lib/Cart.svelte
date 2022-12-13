@@ -397,6 +397,11 @@
 		width: 30px;
 		height: 30px;
 	}
+
+	#mobilevers {
+		height: 100%;
+	}
+
 	@media only screen and (max-width: 768px) {
 		/* For mobile phones: */
 		#mobilevers {
@@ -409,4 +414,12 @@
 			z-index: 50;
 		}
 	}
+
+	@media only screen and (min-width: 768px) {
+		/* For mobile phones: */
+		#mobilevers {
+			height: 100%;
+		}
+	}
+
 </style>
