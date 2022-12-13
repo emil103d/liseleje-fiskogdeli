@@ -268,6 +268,7 @@
 		animation: waveline 8s linear infinite;
 		/* opacity: 0; */
 		transition: all ease 0.5s;
+		z-index: 10000;
 	}
 
 	.burgercontainer:hover {

@@ -31,7 +31,7 @@
 			</div>
 		</div>
 		<div class="grid w-fit pt-6">
-			<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
+			<SecondaryButton><a href="/blandselvtapas/tilkoeb">Tilbage</a></SecondaryButton>
 		</div>
 	</div>
 </main>
