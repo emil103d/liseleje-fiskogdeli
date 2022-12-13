@@ -56,16 +56,18 @@
 	<div class=" border-shadowblue border-t-2 py-2 " />
 	<div>
 		<div>
-			<form>
-				<label class="block mb-2 text-sm font-medium " for="title">Tilføj Rabatkode:</label>
-				<input
-					class=" border border-shadowblue focus:border-yellowdot block"
-					placeholder="fx. Gladfiske20"
-					type="text"
-					id="title"
-					name="title"
-				/>
-				<input type="submit" value="Submit" />
+			<form >
+				<label class="block mb-2 text-sm font-semibold " for="title">Tilføj Rabatkode:</label>
+				<div class="flex gap-2 pb-5">
+					<input
+						class=" border border-shadowblue focus:border-yellowdot block"
+						placeholder="fx. Gladefisk22"
+						type="text"
+						id="title"
+						name="title"
+					/>
+					<input class="font-medium" type="submit" value="Indløs" />
+				</div>
 			</form>
 		</div>
 
