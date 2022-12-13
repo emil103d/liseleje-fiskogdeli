@@ -7,7 +7,7 @@
 <Burgermenu />
 
 
-<main class="pt-[150px] pb-[150px] md:py-32 lg:py-44 md:h-[100vh] px-5 md:px-10 place-content-center w-full grid overflow-y-hidden ">
+<main class="pt-[150px] pb-[150px] md:py-32 lg:py-44 md:h-[100vh] px-5 md:px-10 place-content-center w-full grid overflow-y-hidden" id="bla">
 	<div class="grid lg:max-w-[1024px] lg:m-auto">
 		
 		<div class="md:grid grid-cols-2 gap-10 text-center md:text-left items-center">
@@ -21,7 +21,9 @@
 					at blive bygget men tag en rundrejse på vores andre sider imens
 				</h3>
 				<div class="hidden md:block">
-					<Button type="primary">Tilbage til forsiden</Button>
+					<a href="/">
+						<Button type="primary">Tilbage til forsiden</Button>
+					</a>
 				</div>
 			</div>
 
@@ -32,7 +34,9 @@
 				alt="Illustration af siden er under opbygning"
 			/>
 			<div class="block md:hidden m-auto">
-				<Button class="m-auto" type="primary"><a href="/page">Tilbage til forsiden</a></Button>
+				<a href="/">
+					<button class="m-auto" type="primary">Tilbage til forsiden</button>
+				</a>
 			</div>
 			</div>
 			
