@@ -32,4 +32,7 @@
 	.skygge {
 		box-shadow: 6px 6px #b9ddf6;
 	}
+	img {
+		transition: all 0.2s ease-in-out;
+	}
 </style>
