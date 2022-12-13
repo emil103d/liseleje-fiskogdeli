@@ -196,7 +196,7 @@
 		overflow-x: hidden; /* Disable horizontal scroll */
 		overflow-y: hidden;
 		transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-		z-index: 100000;
+		z-index: 10001;
 	}
 
 	/* The navigation menu links */
@@ -261,15 +261,16 @@
 		display: inline-block;
 		cursor: pointer;
 		position: fixed;
-		height: 15vh;
+		height: 60px;
 		width: 60px;
 		background: url(/hamburger_ikon.svg) repeat-x;
 		background-position: 0;
-		right: 10%;
+		right: 5%;
+		top: 5%;
 		animation: waveline 8s linear infinite;
 		/* opacity: 0; */
 		transition: all ease 0.5s;
-		z-index: 100000;
+		z-index: 10000;
 	}
 
 	.burgercontainer:hover {
@@ -291,8 +292,8 @@
 	/* Position and style the close button (top right corner) */
 	.close {
 		position: absolute;
-		right: 32px;
-		top: 0;
+		right: 6.2%;
+		top: 3.2%;
 		width: 32px;
 		height: 32px;
 		opacity: 0.7;
