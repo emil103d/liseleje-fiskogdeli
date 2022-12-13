@@ -13,7 +13,8 @@
 			</h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2 hidden md:block" />
 			<h3 class="pb-8">
-				Vi beklager ulejligheden, vend snart tilbage igen så er vi klar med en ny side.
+				Vi beklager ulejligheden, vend snart tilbage igen så er vi klar med en ny side. Siden er ved
+				at blive bygget men tag en rundrejse på vores andre sider imens
 			</h3>
 			<div class="hidden md:block">
 				<Button type="primary">Tilbage til forsiden</Button>
