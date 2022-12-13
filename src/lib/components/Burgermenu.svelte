@@ -196,6 +196,7 @@
 		overflow-x: hidden; /* Disable horizontal scroll */
 		overflow-y: hidden;
 		transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+		z-index: 100000;
 	}
 
 	/* The navigation menu links */
@@ -268,7 +269,7 @@
 		animation: waveline 8s linear infinite;
 		/* opacity: 0; */
 		transition: all ease 0.5s;
-		z-index: 10000;
+		z-index: 100000;
 	}
 
 	.burgercontainer:hover {
