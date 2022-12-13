@@ -70,7 +70,7 @@
 			<div class="grid gap-6 md:flex md:justify-between md:text-left lg:flex lg:justify-between">
 				<div>
 					<p class="font-bold">Liseleje Fisk & Deli</p>
-					<ul class="">
+					<ul class="mellemtekst">
 						<li>Strandvejen 69</li>
 						<li>4930 Liseleje</li>
 						<li>Denmark</li>
@@ -83,32 +83,32 @@
 				</div>
 
 				<div>
-					<p class="font-bold">Seafood</p>
-					<ul>
-						<li>Cod</li>
-						<li>Tuna</li>
-						<li>Shrimps</li>
-						<li>Lobster</li>
-						<li>Clams</li>
-						<li>Oysters</li>
+					<p class="font-bold">Fisketapas</p>
+					<ul class="mellemtekst">
+						<li>Tun</li>
+						<li>Laks</li>
+						<li>Friskpillede Rejer</li>
+						<li>Hummer</li>
+						<li>Østers</li>
+						<li>Kammuslinger</li>
 					</ul>
 				</div>
 
 				<div>
-					<p class="font-bold">About</p>
-					<ul>
-						<li>Cod</li>
-						<li>Tuna</li>
-						<li>Shrimps</li>
-						<li>Lobster</li>
-						<li>Clams</li>
-						<li>Oysters</li>
+					<p class="font-bold">Fisk, Frokost & Ferie</p>
+					<ul class="mellemtekst">
+						<li>Opskrifter</li>
+						<li>Fisk til hverdag</li>
+						<li>Bæredygtig fangst</li>
+						<li>Frokost i Liseleje</li>
+						<li>Take away i Liseleje</li>
+						<li>Fiskehandler Liseleje</li>
 					</ul>
 				</div>
 
 				<div>
 					<p class="font-bold">Åbningstider</p>
-					<ul>
+					<ul class="mellemtekst">
 						<li>Mandag - Torsdag: Lukket</li>
 						<li>Fredag: 10.00 - 19.00</li>
 						<li>Lørdag: 10.00 - 18.00</li>
