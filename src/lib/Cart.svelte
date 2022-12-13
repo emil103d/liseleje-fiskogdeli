@@ -55,12 +55,12 @@
 	console.log('total');
 
 	function toggleMenu() {
-		if (document.getElementById('mobilevers').style.bottom == '6vh') {
+		if (document.getElementById('mobilevers').style.bottom == '100px') {
 			document.getElementById('mobilevers').style.height = '53vh';
-			document.getElementById('mobilevers').style.bottom = '7vh';
+			document.getElementById('mobilevers').style.bottom = '0px';
 			document.getElementById('roter').style.transform = 'rotate(180deg)';
 		} else {
-			document.getElementById('mobilevers').style.bottom = '6vh';
+			document.getElementById('mobilevers').style.bottom = '100px';
 			document.getElementById('mobilevers').style.height = '11vh';
 			document.getElementById('roter').style.transform = 'rotate(0deg)';
 		}
@@ -399,10 +399,10 @@
 		/* For mobile phones: */
 		#mobilevers {
 			overflow-y: scroll;
-			position: absolute;
-			bottom: 6vh;
+			position: fixed;
+			bottom: 100px;
 			left: 0vh;
-			width: 97vw;
+			width: 100vw;
 			height: 11vh;
 			transition: 300ms;
 		}
