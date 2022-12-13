@@ -29,17 +29,23 @@
 	}
 	.puls {
 		animation-name: puls_kf;
-		animation-duration: 1s;
+		animation-duration: 1.5s;
 		animation-iteration-count: infinite;
 		animation-fill-mode: both;
 	}
 
 	@keyframes puls_kf {
 		0% {
-			transform: scale(1.2);
+			transform: scale(1);
 		}
+
+		50% {
+			transform: scale(1.4);
+		}
+
 		100% {
-			transform: scale(1.5);
+			transform: scale(1);
 		}
+
 	}
 </style>

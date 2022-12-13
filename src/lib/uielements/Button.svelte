@@ -22,6 +22,12 @@
 <style>
 	/* PRIMARY-BUTTON */
 
+	svg {
+
+
+
+	}
+
 	button,
 	.primary {
 		font-size: clamp(0.9rem, 3vw, 1rem);
@@ -82,6 +88,11 @@
 		animation-iteration-count: 1;
 		animation-timing-function: linear;
 		animation-fill-mode: both;
+		pointer-events: none;
+		position: relative;
+  		display: inline-block; 
+		z-index: 0;
+		
 	}
 
 	button:hover .button_icon {

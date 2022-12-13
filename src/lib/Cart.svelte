@@ -92,7 +92,7 @@
 		<div class="pb-4 flex justify-between align-bottom">
 			<div class="">
 				<h3 class="text-darkblue font-bold">Mit tapasfad<b class="text-yellowdot">.</b></h3>
-				<p>Til {countValue} personer</p>
+				<p class="mellemtekst">Til {countValue} personer</p>
 			</div>
 			<div class="total grid place-self-end md:hidden">
 				<h4 class="font-bold">Total:{total}</h4>

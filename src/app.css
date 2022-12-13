@@ -82,3 +82,7 @@ p {
 button {
 	font-size: clamp(0.9rem, 3vw, 1rem);
 }
+
+html {
+	scroll-behavior: smooth;
+}

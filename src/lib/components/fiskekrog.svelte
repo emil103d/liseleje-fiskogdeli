@@ -1,12 +1,12 @@
 <div class="hidden xl:block hover:animation">
 	<div class="parent">
 		<div class="lineandtekst">
-			<a class=" absolute tekst font-semibold right-[-55px]" href="">Go to top</a>
+			<a class=" absolute tekst font-semibold right-[-55px]" href="#">Go to top</a>
 			<div class="line" />
 		</div>
 
 		<button class="">
-			<a href="">
+			<a href="#">
 				<div class="krog">
 					<svg
 						class="krog_style hover:cursor-pointer button_icon hover:button_icon"
