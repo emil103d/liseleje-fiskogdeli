@@ -3,6 +3,7 @@
 	import Opsummering from '/src/lib/opsummering.svelte';
 	import { cart } from '/src/stores/cart.js';
 	import Tapas from '../../../../lib/tapas.svelte';
+	import SecondaryButton from '../../../../lib/uielements/SecondaryButton.svelte';
 	console.log($cart);
 </script>
 
@@ -28,6 +29,9 @@
 					<Opsummering />
 				</div>
 			</div>
+		</div>
+		<div class="grid w-fit pt-6">
+			<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
 		</div>
 	</div>
 </main>
