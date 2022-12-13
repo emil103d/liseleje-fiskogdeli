@@ -22,7 +22,7 @@
 			</div>
 
 			<div class="hidden w-full h-full md:block ">
-				<img class="w-full h-full object-cover" src="testimonials.webp" alt="" />
+				<img class="w-full h-full object-cover" src="testimonials.webp" alt="Frisk fisk pakkes i madpapir og fiskebutikkens logo klistres på" />
 			</div>
 		</div>
 	</div>

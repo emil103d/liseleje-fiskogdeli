@@ -3,6 +3,7 @@
 	export let kategori;
 	export let beskrivelse;
 	export let image;
+	export let alt;
 </script>
 
 <div class="flex justify-center">
@@ -12,7 +13,7 @@
 				<img
 					class="w-full h-64 md:h-auto object-cover aspect-[4/5] hover:scale-110"
 					src={image}
-					alt=""
+					alt={alt}
 				/>
 			</div>
 			<div class="px-2 py-4">

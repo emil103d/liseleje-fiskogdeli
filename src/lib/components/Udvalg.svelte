@@ -11,16 +11,19 @@
 		<div class="grid md:flex gap-12 md:justify-between">
 			<Cards
 				image="udvalg_fiskskaldyr.webp"
+				alt="Lys fisk præsenteret på sort fad"
 				kategori="Fisk & Skaldyr"
 				beskrivelse="Alt godt fra havet - friskfanget i kattegat."
 			/>
 			<Cards
 				image="udvalg_fisketapas.webp"
+				alt="Lyst brød med røget laks og citronskive"
 				kategori="Fisketapas"
 				beskrivelse="Bland selv eller vælg et fra vores menu"
 			/>
 			<Cards
 				image="udvalg_tilbehør.webp"
+				alt="Frisktbagt surdejsbrød"
 				kategori="Delikatesser "
 				beskrivelse="Vin, tilbehør og meget mere"
 			/>
