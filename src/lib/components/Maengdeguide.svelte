@@ -5,9 +5,8 @@
 	<h3 class="text-darkblue font-bold pb-2">Vælg den rigtige mængde</h3>
 
 	<p class="mb-4">
-		Det kan være svært at vide hvor mange tapasretter du skal vælge når det angår bland selv fiske
-		tapas. <br /> Derfor har vi lavet nogen standard abefalinger som du kan vejlede dig efter når du
-		blander dit eget tapasfad <br /> <br /> Velbekomme !
+		Det kan være svært at vide hvor mange tapasretter du skal vælge, derfor har vi nedenfor lavet en
+		abefalinger som vejledning. <br /> <br /> Velbekomme !
 	</p>
 	<div class="grid gap-4">
 		<div class="border-lightblue border-t-2 py-2 ">

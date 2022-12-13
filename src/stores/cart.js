@@ -128,7 +128,7 @@ export const tilkoebs = readable([
 		id: '13',
 		title: 'Chablis',
 		kategory: 'drikkevarer',
-		price: '30',
+		price: '150',
 		image: '/products/drikkevarer/chablis.webp',
 		quantity: 1,
 		type: 't'
