@@ -21,7 +21,7 @@
 					{beskrivelse}
 				</p>
 				<SecondaryButton class="font-semibold text-right" type="secondary"
-					><a href="/construction">Se Udvalg</a></SecondaryButton
+					><a href="/construction">Se Udvalg </a></SecondaryButton
 				>
 			</div>
 		</a>
