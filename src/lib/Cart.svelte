@@ -55,12 +55,12 @@
 	console.log('total');
 
 	function toggleMenu() {
-		if (document.getElementById('mobilevers').style.bottom == '100px') {
+		if (document.getElementById('mobilevers').style.bottom == '83px') {
 			document.getElementById('mobilevers').style.height = '53vh';
-			document.getElementById('mobilevers').style.bottom = '0px';
+			document.getElementById('mobilevers').style.bottom = '7vh';
 			document.getElementById('roter').style.transform = 'rotate(180deg)';
 		} else {
-			document.getElementById('mobilevers').style.bottom = '100px';
+			document.getElementById('mobilevers').style.bottom = '83px';
 			document.getElementById('mobilevers').style.height = '11vh';
 			document.getElementById('roter').style.transform = 'rotate(0deg)';
 		}
@@ -400,7 +400,7 @@
 		#mobilevers {
 			overflow-y: scroll;
 			position: fixed;
-			bottom: 100px;
+			bottom: 83px;
 			left: 0vh;
 			width: 100vw;
 			height: 11vh;

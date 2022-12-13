@@ -4,9 +4,9 @@
 	export let data;
 </script>
 
-<div>
+
 	<slot />
-</div>
+
 
 <style>
 	/* @media only screen and (max-width: 768px) {
