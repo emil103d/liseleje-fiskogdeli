@@ -278,7 +278,7 @@
 
 				<div class="flex justify-between place-items-center md:hidden ">
 					<SecondaryButton><a href="/blandselvtapas">Tilbage</a></SecondaryButton>
-					<Button type="primary"><a href="/blandselvtapas/tilkoeb">Næste</a></Button>
+					<Button type="primary"><a href="/blandselvtapas/vaelgfisketapas">Næste</a></Button>
 				</div>
 			</section>
 
