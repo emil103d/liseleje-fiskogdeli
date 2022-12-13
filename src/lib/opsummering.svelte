@@ -17,7 +17,7 @@
 	<h3 class="text-darkblue font-bold pb-26">Opsummering</h3>
 
 	<div>
-		<p class="font-semibold">
+		<p class="font-semibold mellemtekst">
 			Bland selv tapas fad: {$cart.reduce((total, cartItem) => {
 				const item = $cart.find((i) => i.type === cartItem.type);
 				if (item.type === 'p') {
@@ -27,7 +27,7 @@
 				return total;
 			}, 0)} kr.
 		</p>
-		<p class="font-semibold">
+		<p class="font-semibold mellemtekst">
 			Tilkøbsvarer: {$cart.reduce((total, cartItem) => {
 				const item = $cart.find((i) => i.type === cartItem.type);
 				if (item.type === 't') {
@@ -36,7 +36,7 @@
 				return total;
 			}, 0)} kr.
 		</p>
-		<p class="font-semibold">
+		<p class="font-semibold mellemtekst">
 			<!-- Total: {$cart.reduce((total, cartItem) => {
 				const item = $cart.find((i) => i.type === cartItem.type);
 				return total + (item.price || 0) * cartItem.quantity * countValue;

@@ -20,7 +20,7 @@
 				</div>
 			</div>
 
-			<div class="grid sm:grid sm:grid-cols-2 gap-6">
+			<div class="grid sm:grid md:grid-cols-2 gap-6">
 				<div>
 					<Tapas />
 				</div>
@@ -29,10 +29,11 @@
 					<Opsummering />
 				</div>
 			</div>
+			<div class="grid w-fit pt-6">
+				<SecondaryButton><a href="/blandselvtapas/tilkoeb">Tilbage</a></SecondaryButton>
+			</div>
 		</div>
-		<div class="grid w-fit pt-6">
-			<SecondaryButton><a href="/blandselvtapas/tilkoeb">Tilbage</a></SecondaryButton>
-		</div>
+		
 	</div>
 </main>
 
