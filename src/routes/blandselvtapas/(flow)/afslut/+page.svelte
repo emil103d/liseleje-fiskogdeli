@@ -29,7 +29,7 @@
 					<Opsummering />
 				</div>
 			</div>
-			<div class="grid w-fit pt-6 col-start-3">
+			<div class="grid w-fit md:w-full pt-6 col-start-3">
 				<SecondaryButton><a href="/blandselvtapas/tilkoeb">Tilbage</a></SecondaryButton>
 			</div>
 		</div>
