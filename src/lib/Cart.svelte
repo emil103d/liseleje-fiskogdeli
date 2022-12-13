@@ -55,12 +55,12 @@
 	console.log('total');
 
 	function toggleMenu() {
-		if (document.getElementById('mobilevers').style.bottom == '83px') {
+		if (document.getElementById('mobilevers').style.bottom == '5vh') {
 			document.getElementById('mobilevers').style.height = '53vh';
 			document.getElementById('mobilevers').style.bottom = '7vh';
 			document.getElementById('roter').style.transform = 'rotate(180deg)';
 		} else {
-			document.getElementById('mobilevers').style.bottom = '83px';
+			document.getElementById('mobilevers').style.bottom = '5vh';
 			document.getElementById('mobilevers').style.height = '11vh';
 			document.getElementById('roter').style.transform = 'rotate(0deg)';
 		}
@@ -105,7 +105,7 @@
 		<div class="border-lightblue border-t-2 py-2" />
 		<p class="font-semibold pb-2 mellemtekst">Tapasretter</p>
 
-		<div class="cart-list md:grid md:grid-rows gap-2 justify-between">
+		<div class="cart-list md:grid md:grid-rows gap-2 justify-between overflow-scroll md:overflow-hidden">
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 'p'}
 					<div class="cart-item gap-2 pt-2 md:pt-0">
@@ -398,9 +398,8 @@
 	@media only screen and (max-width: 768px) {
 		/* For mobile phones: */
 		#mobilevers {
-			overflow-y: scroll;
 			position: fixed;
-			bottom: 83px;
+			bottom: 5vh;
 			left: 0vh;
 			width: 100vw;
 			height: 11vh;
