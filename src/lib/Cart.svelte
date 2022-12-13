@@ -95,7 +95,7 @@
 				<p class="mellemtekst">Til {countValue} personer</p>
 			</div>
 			<div class="total grid place-self-end md:hidden">
-				<h4 class="font-bold">Total:{total}</h4>
+				<h4 class="font-bold">Total:{total} kr.</h4>
 			</div>
 		</div>
 
@@ -105,7 +105,9 @@
 		<div class="border-lightblue border-t-2 py-2" />
 		<p class="font-semibold pb-2 mellemtekst">Tapasretter</p>
 
-		<div class="cart-list md:grid md:grid-rows gap-2 justify-between overflow-scroll md:overflow-hidden">
+		<div
+			class="cart-list md:grid md:grid-rows gap-2 justify-between overflow-scroll md:overflow-hidden"
+		>
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 'p'}
 					<div class="cart-item gap-2 pt-2 md:pt-0">
@@ -227,7 +229,7 @@
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
 							<p class="lilletekst">
-								{item.price * item.quantity * countValue};
+								{item.price * item.quantity * countValue} kr.
 							</p>
 						</div>
 					</div>
@@ -361,7 +363,7 @@
 						</div>
 						<div class="w-full h-full grid justify-center items-center">
 							<p class="lilletekst">
-								{item.price * item.quantity};
+								{item.price * item.quantity} kr.
 							</p>
 						</div>
 					</div>
@@ -372,7 +374,7 @@
 
 	<div class="total hidden md:block">
 		<h4 class="font-bold">
-			Total: {total};
+			Total: {total} kr.
 		</h4>
 	</div>
 </section>

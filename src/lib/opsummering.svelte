@@ -25,7 +25,7 @@
 				}
 
 				return total;
-			}, 0)};
+			}, 0)} kr.
 		</p>
 		<p class="font-semibold">
 			Tilkøbsvarer: {$cart.reduce((total, cartItem) => {
@@ -34,7 +34,7 @@
 					return total + (item.price || 0) * cartItem.quantity;
 				}
 				return total;
-			}, 0)};
+			}, 0)} kr.
 		</p>
 		<p class="font-semibold">
 			<!-- Total: {$cart.reduce((total, cartItem) => {
@@ -49,14 +49,14 @@
 				} else if (item.type === 't') {
 					return total + (item.price || 0) * cartItem.quantity;
 				}
-			}, 0)}
+			}, 0)} kr.
 		</p>
 	</div>
 
 	<div class=" border-shadowblue border-t-2 py-2 " />
 	<div>
 		<div>
-			<form >
+			<form>
 				<label class="block mb-2 text-sm font-semibold " for="title">Tilføj Rabatkode:</label>
 				<div class="flex gap-2 pb-5">
 					<input
