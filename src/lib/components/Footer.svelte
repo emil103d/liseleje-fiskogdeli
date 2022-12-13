@@ -1,8 +1,9 @@
 <footer class="grid align-middle items-center text-center px-10 bg-textcolor">
-	<div class="py-20 lg:flex lg:max-w-[1024px] lg:w-[-moz-available] lg:m-auto">
+	<div class="pt-32 pb-10 lg:flex lg:max-w-[1024px] lg:w-[-moz-available] lg:m-auto">
 		<div class="lg:grid lg:items-center">
 			<div class="grid justify-center pb-20 lg:pb-0">
-				<svg
+				<a href="/">
+					<svg
 					class="mx-12 lg:mx-0 lg:mr-20 "
 					width="211"
 					height="133"
@@ -63,6 +64,8 @@
 						</filter>
 					</defs>
 				</svg>
+			
+				</a>
 			</div>
 		</div>
 
@@ -99,7 +102,7 @@
 					<ul class="mellemtekst">
 						<li>Opskrifter</li>
 						<li>Fisk til hverdag</li>
-						<li>Bæredygtig fangst</li>
+						<li>Bæredygtig fisk</li>
 						<li>Frokost i Liseleje</li>
 						<li>Take away i Liseleje</li>
 						<li>Fiskehandler Liseleje</li>

@@ -3,8 +3,9 @@
 	import Button from '../uielements/Button.svelte';
 </script>
 
-<section>
-	<div class="wrapper py-32 md:py-44 px-10">
+<section id="section_2_container">
+	<div class="wrapper py-32 md:py-44 px-10
+	">
 		<div class="grid  md:grid-cols-2 lg:max-w-[1024px] lg:m-auto place-items-center">
 			<div class="pb-12 md:pb-0 gap-2 md:pr-10 m-auto lg:m-0 text-textcolor">
 				<Label title="Nyhed" />
@@ -37,6 +38,6 @@
 
 <style>
 	.skygge {
-		box-shadow: 20px 20px #b9ddf6;
+		box-shadow: 20px 20px #e5f1f9;
 	}
 </style>

@@ -18,7 +18,7 @@
 			</div>
 			<div class="px-2 py-4">
 				<h5 class="text-gray-900 text-l font-semibold mb-1">{kategori}</h5>
-				<p class="text-gray-700 text-sm mb-4">
+				<p class="text-gray-700 text-sm mb-4 tekst">
 					{beskrivelse}
 				</p>
 				<SecondaryButton class="font-semibold text-right" type="secondary"
@@ -31,9 +31,10 @@
 
 <style>
 	.skygge {
-		box-shadow: 6px 6px #b9ddf6;
+		box-shadow: 6px 6px #e5f1f9;
 	}
 	img {
 		transition: all 0.2s ease-in-out;
 	}
+
 </style>
