@@ -106,7 +106,7 @@
 		<p class="font-semibold pb-2 mellemtekst">Tapasretter</p>
 
 		<div
-			class="cart-list md:grid md:grid-rows gap-2 justify-between overflow-scroll md:overflow-hidden"
+			class="cart-list md:grid-rows gap-2 justify-between overflow-scroll md:overflow-hidden"
 		>
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 'p'}
@@ -118,9 +118,9 @@
 							alt={item.name}
 						/>
 						<p class="grid items-center lilletekst">{item.title}</p>
-						<div class="flex gap-1 justify-end items-center lilletekst">
+						<div class="flex gap-1 justify-end items-center m-auto lilletekst">
 							<button
-								class="place-content-center grid justify-center items-center"
+								class="place-content-center grid justify-center  items-center"
 								on:click={() => minusItem(item)}
 							>
 								<svg
@@ -170,7 +170,7 @@
 							</button>
 							{item.quantity}
 							<button
-								class="place-content-center grid justify-center items-center"
+								class="place-content-center grid justify-center  items-center"
 								on:click={() => plusItem(item)}
 							>
 								<svg
@@ -239,7 +239,7 @@
 
 		<div class="border-lightblue border-t-2" />
 		<p class="font-semibold pb-2 mellemtekst">Tilkøb</p>
-		<div class="md:grid md:grid-rows gap-2 justify-between">
+		<div class=" md:grid-rows gap-2 justify-between">
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 't'}
 					<div class="cart-item gap-2 pt-2 md:pt-0">
@@ -250,7 +250,7 @@
 							alt={item.name}
 						/>
 						<p class="grid items-center lilletekst">{item.title}</p>
-						<div class="flex gap-1 justify-end items-center">
+						<div class="flex gap-1 justify-end items-center  m-auto">
 							<button
 								class="place-content-center grid justify-center items-center "
 								on:click={() => minusItem(item)}
