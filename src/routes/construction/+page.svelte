@@ -7,7 +7,7 @@
 <Burgermenu />
 <section class="grid px-10 justify-center align-middle w-[100%] h-[100vh] place-content-center">
 	<div class="md:grid grid-cols-2 text-center md:text-left">
-		<div class="col-start-2 ">
+		<div class="col-start-2">
 			<h2 class="font-bold text-textcolor pb-8 md:pb-0">
 				Siden er under opbygning <b class="text-yellowdot"> . </b>
 			</h2>
@@ -20,7 +20,7 @@
 			</div>
 		</div>
 		<img
-			src="borat.jpg"
+			src="construction.png"
 			class=" m-auto max-w-[150px] md:max-w-xs col-start-1 pb-8"
 			alt="Illustration af siden er under opbygning"
 		/>
