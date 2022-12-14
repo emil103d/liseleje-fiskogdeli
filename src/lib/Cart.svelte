@@ -44,7 +44,7 @@
 	//$: total = $cart.reduce((total, item) => total + produktPris * item.quantity, 0); // $= “re-run this code whenever any of the referenced values change”.
 
 	$: total = $cart.reduce((total, cartItem) => {
-		let item = $cart.find((i) => i.type === cartItem.type);
+		let item = $cart.find((i) => i.id === cartItem.id);
 		if (item.type === 'p') {
 			return total + (item.price || 0) * cartItem.quantity * countValue;
 		} else if (item.type === 't') {
@@ -53,6 +53,8 @@
 	}, 0);
 
 	console.log('total');
+
+	let total;
 
 	function toggleMenu() {
 		if (document.getElementById('mobilevers').style.bottom == '80px') {
@@ -105,9 +107,7 @@
 		<div class="border-lightblue border-t-2 py-2" />
 		<p class="font-semibold pb-2 mellemtekst">Tapasretter</p>
 
-		<div
-			class="cart-list md:grid-rows gap-2 justify-between overflow-scroll md:overflow-hidden"
-		>
+		<div class="cart-list md:grid-rows gap-2 justify-between overflow-scroll md:overflow-hidden">
 			{#each $cart as item}
 				{#if item.quantity > 0 && item.type == 'p'}
 					<div class="cart-item gap-2 pt-2 md:pt-0">
@@ -421,5 +421,4 @@
 			height: 100%;
 		}
 	}
-
 </style>
