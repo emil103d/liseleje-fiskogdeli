@@ -2,10 +2,11 @@
 	import Button from '/src/lib/uielements/Button.svelte';
 	import Burgermenu from '/src/lib/components/Burgermenu.svelte';
 	import Footer from '/src/lib/components/Footer.svelte';
+	import Nav from '../../lib/components/Nav.svelte';
 </script>
 
 <Burgermenu />
-
+<Nav />
 
 <main class="pt-[150px] pb-[150px] md:py-32 lg:py-44 md:h-[100vh] px-5 md:px-10 place-content-center w-full grid overflow-y-hidden" id="bla">
 	<div class="grid lg:max-w-[1024px] lg:m-auto">
