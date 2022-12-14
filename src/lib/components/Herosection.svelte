@@ -7,7 +7,7 @@
 		<img src="logo.svg" class="fisk m-auto max-w-[150px] md:max-w-xs " alt="" />
 	</div>
 
-	<div class="puls absolute bottom-20 left-[calc(50%-33px)]">
+	<div class="puls absolute bottom-20 left-[calc(50%-16px)]">
 		<a href="#section_2_container">
 			<svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
@@ -31,9 +31,9 @@
 	}
 	.puls {
 		animation-name: puls_kf;
-		animation-duration: 1.5s;
+		animation-duration: 1.4s;
 		animation-iteration-count: infinite;
-		animation-fill-mode: both;
+		animation-timing-function: ease-in-out;
 	}
 
 	@keyframes puls_kf {
@@ -44,6 +44,8 @@
 		50% {
 			transform: scale(1.4);
 		}
+
+
 
 		100% {
 			transform: scale(1);

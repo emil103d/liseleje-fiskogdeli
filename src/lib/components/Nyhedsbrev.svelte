@@ -4,7 +4,7 @@
 
 <section class="py-32 md:py-44 px-10 min-h-[20rem]">
 	<div class=" md:flex md:justify-between gap-10 lg:max-w-[1024px] lg:m-auto lg:flex-col">
-		<div class="pb-12 gap-2 m-auto lg:m-0 text-textcolor">
+		<div class="pb-12 lg:pb-2 gap-2 m-auto lg:m-0 text-textcolor">
 			<h2 class="font-bold ">Modtag nyheder og inspiration <b class="text-yellowdot"> . </b></h2>
 			<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
 			<p>Tilmeld dig vores nyhedsbrev & spar 10% på din første ordre</p>
