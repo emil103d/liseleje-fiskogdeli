@@ -5,7 +5,7 @@
 <button class={type}>
 	<slot />
 	<svg
-		class="button_icon"
+		class="button_icon button_icon_secondary"
 		width="25"
 		height="28"
 		viewBox="0 0 33 28"
@@ -21,9 +21,7 @@
 
 <style>
 	/* PRIMARY-BUTTON */
-
-	button,
-	.primary {
+		.primary {
 		font-size: clamp(0.9rem, 3vw, 1rem);
 		color: #1f425f;
 		font-weight: bold;
@@ -37,13 +35,25 @@
 		place-items: center;
 		min-width: 150px;
 		white-space: nowrap;
-		animation-name: rotate_fish_out;
+	}
+
+	.primary svg {
+		animation-name: rotate_fish_out_primary;
 		animation-duration: 0.3s;
 		animation-iteration-count: 1;
 		animation-timing-function: linear;
 		animation-fill-mode: both;
 	}
 
+	.secondary svg {
+		animation-name: rotate_fish_out_secondary;
+		animation-duration: 0.3s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		animation-fill-mode: both;
+	}
+
+	/* SECONDARY-BUTTON */
 	.secondary {
 		font-size: clamp(0.9rem, 3vw, 1rem);
 		color: #1f425f;
@@ -56,27 +66,24 @@
 		padding: 0.8rem 30px;
 		display: inline-block;
 		display: flex;
+		flex-direction: row-reverse;
 		gap: 1rem;
 		justify-content: center;
 		place-items: center;
-		min-width: 200px;
+		min-width: 150px;
 		white-space: nowrap;
-		animation-name: rotate_fish_out;
-		animation-duration: 0.3s;
-		animation-iteration-count: 1;
-		animation-timing-function: linear;
-		animation-fill-mode: both;
 	}
-	button:hover,
-	.primary:hover {
+
+	button:hover{
 		color: #1f425f;
 		background-color: #f6d664;
 	}
 
+
 	button:hover .button_icon path {
 		fill: #1f425f;
 	}
-	.button_icon {
+	/* .button_icon {
 		animation-name: rotate_fish_out;
 		animation-duration: 0.3s;
 		animation-iteration-count: 1;
@@ -86,18 +93,36 @@
 		position: relative;
 		display: inline-block;
 		z-index: 0;
+	} */
+	¨
+	button,
+	.secondary .button_icon_secondary {
+		transform: rotatey(180deg);
+
 	}
 
-	button:hover .button_icon {
-		animation-name: rotate_fish_in;
+
+
+	.primary:hover .button_icon {
+		animation-name: rotate_fish_in_primary;
 		animation-duration: 0.3s;
 		animation-iteration-count: 1;
 		animation-timing-function: linear;
 		animation-fill-mode: both;
 	}
 
+	.secondary:hover .button_icon {
+		animation-name: rotate_fish_in_secondary;
+		animation-duration: 0.3s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		animation-fill-mode: both;
+	}
+
+
+
 	/* KEYFRAMES */
-	@keyframes rotate_fish_in {
+	@keyframes rotate_fish_in_primary {
 		0% {
 			transform: rotatey(0deg);
 		}
@@ -107,13 +132,33 @@
 		}
 	}
 
-	@keyframes rotate_fish_out {
+	@keyframes rotate_fish_in_secondary {
 		0% {
 			transform: rotatey(180deg);
 		}
 
 		100% {
 			transform: rotatey(0deg);
+		}
+	}
+
+	@keyframes rotate_fish_out_primary {
+		0% {
+			transform: rotatey(180deg);
+		}
+
+		100% {
+			transform: rotatey(0deg);
+		}
+	}
+
+	@keyframes rotate_fish_out_secondary {
+		0% {
+			transform: rotatey(0deg);
+		}
+
+		100% {
+			transform: rotatey(180deg);
 		}
 	}
 </style>
