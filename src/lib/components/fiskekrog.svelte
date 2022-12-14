@@ -1,7 +1,7 @@
 <div class="hidden xl:block hover:animation">
 	<div class="parent">
 		<div class="lineandtekst">
-			<a class=" absolute tekst font-semibold right-[-55px]" href="#">Go to top</a>
+			<a class=" absolute tekst mellemtekst font-semibold right-[-55px]" href="#">Go to top</a>
 			<div class="line" />
 		</div>
 
@@ -101,6 +101,7 @@
 		right: 0px;
 		top: 0px;
 		z-index: 10;
+		padding-top: 95px;
 	}
 
 	.lineandtekst {
@@ -108,7 +109,7 @@
 	}
 
 	.tekst {
-		margin-top: 74vh;
+		margin-top: 68vh;
 		writing-mode: vertical-lr;
 		text-orientation: mixed;
 		padding-right: 4rem;
@@ -117,7 +118,7 @@
 	.line {
 		background-color: black;
 		width: 1px;
-		height: 83vh;
+		height: 75vh;
 		margin-right: 9px;
 	}
 
