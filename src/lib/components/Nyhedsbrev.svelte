@@ -46,12 +46,11 @@
 
 <style>
 	section {
-		background-image: url('vaeg.png');
+		background-image: url('../../borat.jpg');
 		background-size: contain;
 	}
 
 	::placeholder {
-  font-size: 0.8em;
-}
-
+		font-size: 0.8em;
+	}
 </style>
