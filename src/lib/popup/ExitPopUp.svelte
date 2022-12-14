@@ -1,6 +1,6 @@
 <script>
 	import Button from '../uielements/Button.svelte';
-	import SecondaryButton from '../uielements/SecondaryButton.svelte';
+	import SecondaryButton from '../uielements/LinkButton.svelte';
 </script>
 
 <div class=" p-10">
@@ -25,7 +25,7 @@
 		<h3>Ønsker du af forlade fadet?</h3>
 	</div>
 	<div class=" flex justify-between">
-		<SecondaryButton type="primary"><a href="/">Tilbage til forsiden</a></SecondaryButton>
+		<Button type="secondary"><a href="/">Til forsiden</a></Button>
 		<Button type="primary"><a href="/blandselvtapas">Forsæt bestilling</a></Button>
 	</div>
 </div>

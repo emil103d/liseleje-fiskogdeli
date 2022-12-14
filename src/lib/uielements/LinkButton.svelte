@@ -32,7 +32,6 @@
 		position: absolute;
 		width: 100%;
 	}
-
 	svg path {
 		fill: transparent;
 		stroke-width: 4px;
@@ -40,18 +39,8 @@
 		stroke-dasharray: 547.4111328125;
 		stroke-dashoffset: 547.4111328125;
 		transition: stroke-dashoffset 0.5s cubic-bezier(0.29, 0.68, 0.74, 1.02);
-		animation: waveline 8s linear infinite;
 	}
-
-	/* button svg path {
+	button:hover svg path {
 		stroke-dashoffset: 0;
-	} */
-
-	/* Hover */
-
-	@keyframes waveline {
-		to {
-			background-position: -150px;
-		}
 	}
 </style>

@@ -1,5 +1,5 @@
 <script>
-	import SecondaryButton from '/src/lib/uielements/SecondaryButton.svelte';
+	import SecondaryButton from '/src/lib/uielements/LinkButton.svelte';
 </script>
 
 <section class="bg-darkblue">
