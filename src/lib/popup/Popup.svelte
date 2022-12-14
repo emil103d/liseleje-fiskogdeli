@@ -11,7 +11,7 @@
 	</p>
 	<div class="grid gap-4">
 		<div class="border-lightblue border-t-2 py-2 ">
-			<h4 class="font-semibold text-darkblue pb-2">Tapas til forret</h4>
+			<h4 class="font-semibold text-darkblue pb-4">Tapas til forret</h4>
 			<div class="flex gap-2 place-items-center w-auto">
 				<div class="w-10 h-10 grid place-content-center border-2 rounded-full border-yellowdot">
 					<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@
 				<p class="font-medium">Vi anbefaler som min. 5 tapasretter</p>
 			</div>
 		</div>
-		<div class="border-lightblue border-t-2 py-2">
+		<div class="border-lightblue border-t-2 py-4">
 			<h4 class="font-semibold text-darkblue">Tapas til hovedret</h4>
 			<div class="flex gap-2 h-full place-items-center w-auto">
 				<div class="w-10 h-10 grid place-content-center border-2 rounded-full border-yellowdot">

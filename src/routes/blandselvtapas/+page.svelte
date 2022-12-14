@@ -18,9 +18,9 @@
 
 			<div class="pt-12 md:pt-0 grid justify-center">
 				<div class="max-w-[16rem] md:max-w-[20rem] md:m-auto grid gap-6">
-					<h3 class="text-center text-darkblue">Hvor mange personer bliver I?</h3>
+					<h3 class="text-center text-darkblue ">Hvor mange personer bliver I?</h3>
 					<Numericbutton />
-					<div class="m-auto">
+					<div class="m-auto md:pt-6">
 						<Button type="primary" class="m-auto"
 							><a href="/blandselvtapas/vaelgfisketapas">Vælg tapasretter</a></Button
 						>

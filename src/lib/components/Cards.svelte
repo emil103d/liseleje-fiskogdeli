@@ -19,7 +19,7 @@
 				/>
 			</div>
 
-			<div class="px-2 py-4 z-10 bg-white ">
+			<div class="p-4 z-10 bg-white ">
 				<h3 class="text-gray-900 text-l font-semibold mb-1">{kategori}</h3>
 				<p class="text-gray-700 text-sm tekst">
 					{beskrivelse}
