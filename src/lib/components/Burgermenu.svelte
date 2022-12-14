@@ -292,8 +292,8 @@
 	/* Position and style the close button (top right corner) */
 	.close {
 		position: absolute;
-		right: 6.2%;
-		top: 3.2%;
+		right: 5.5%;
+		top: 3%;
 		width: 32px;
 		height: 32px;
 		opacity: 0.7;
