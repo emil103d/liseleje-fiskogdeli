@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import Burgermenu from '../lib/components/Burgermenu.svelte';
+	import Nav from '../lib/components/Nav.svelte';
 	import Herosection from '../lib/components/Herosection.svelte';
 	import Fiskekrog from '../lib/components/fiskekrog.svelte';
 	import Blandselvtapas from '../lib/components/Blandselvtapas.svelte';
@@ -11,9 +11,11 @@
 	import Howitworks from '../lib/components/Howitworks.svelte';
 	import Instafeed from '../lib/components/Instafeed.svelte';
 	import Footer from '../lib/components/Footer.svelte';
+	
 </script>
 
-<Burgermenu />
+
+<Nav />
 <Herosection />
 <Fiskekrog />
 <Blandselvtapas />
