@@ -30,7 +30,7 @@
 
 <style>
 	section {
-		background-image: url('../../static/event.webp');
+		background-image: url('../../static/vaeg.png');
 		background-size: contain;
 		z-index: 1000;
 		position: relative;
