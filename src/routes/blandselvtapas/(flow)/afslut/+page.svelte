@@ -20,7 +20,7 @@
 				</div>
 			</div>
 
-			<div class="sm:grid md:grid-cols-3 gap-6">
+			<div class="md:grid md:grid-cols-3 gap-6">
 				<div class="col-start-1 col-span-2">
 					<Tapas />
 				</div>
