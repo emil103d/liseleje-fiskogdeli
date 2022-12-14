@@ -46,7 +46,7 @@
 
 <style>
 	section {
-		background-image: url('../../borat.jpg');
+		background-image: url('/static/vaeg.png');
 		background-size: contain;
 	}
 
