@@ -262,8 +262,9 @@
 		cursor: pointer;
 		position: fixed;
 		right: 4%;
+		top: 15px;
 		height: 60px;
-		width: 60px;
+		width: 50px;
 		background: url(/hamburger_ikon.svg) repeat-x;
 		background-position: 0;
 		animation: waveline 8s linear infinite;
@@ -292,7 +293,7 @@
 	.close {
 		position: absolute;
 		right: 5.5%;
-		top: 3%;
+		top: 0%;
 		width: 32px;
 		height: 32px;
 		opacity: 0.7;

@@ -2,16 +2,15 @@
     import '/src/app.css';
 </script>
 
-<header class="bg-white fixed w-full top-0 ">
+<header class="bg-white fixed w-full top-0 py-4">
     
     <div class="relative flex justify-between m-auto  max-w-[92vw]">
         <div class="logo">
-            <a href="">
-                <p>Fisk & Deli</p>
-                <p>LiseLeje</p>
-                <div>
-                    <img src="logo.svg" alt="">
-                </div>
+            <a href="/" class="grid justify-items-center ">
+                <p class="mellemteks font-semibold">Fisk & Deli</p>
+                <p class="lilletekst">LiseLeje</p>
+                <img src="logo.svg" alt="">
+
             </a>
         </div>
     </div>
@@ -28,7 +27,7 @@
 <style>
 
 img {
-    max-width: 50px;
+    max-width: 30px;
     height: auto;
 }
 
