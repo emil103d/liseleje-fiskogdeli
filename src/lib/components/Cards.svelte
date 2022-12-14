@@ -7,7 +7,7 @@
 	export let linktilcard;
 </script>
 
-<div class="w-full md:justify-center">
+<div class="w-full md:justify-center z-10">
 
 	<a href="{linktilcard}" class="bg-white z-10">
 		<div class="skygge">
