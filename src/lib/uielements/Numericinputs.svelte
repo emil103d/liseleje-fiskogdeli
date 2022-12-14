@@ -17,9 +17,9 @@
 
 <!-- the function will be called on click -->
 <div class="flex justify-center	">
-	<button class=" grid place-self-center place-content-center " on:click={() => decreaseNum(count)}> <p class="h-12 w-12 border-2 border-r-darkblue  rounded-full grid place-content-center stortekst font-normal"> - </p> </button>
+	<button class=" grid place-self-center place-content-center " on:click={() => decreaseNum(count)}> <p class="h-12 w-12 border-2 border-lightblue  rounded-full grid place-content-center stortekst font-normal"> - </p> </button>
 	<label> <input type="number" class="stortekst grid h-full max-w-[4rem] place-self-center" value={countValue} min="0" max="10" /></label>
-	<button class="grid place-self-center place-content-center" on:click={() => increaseNum(count)}> <p class="h-12	 w-12 border-2 border-r-darkblue rounded-full grid place-content-center stortekst font-normal"> + </p> </button>
+	<button class="grid place-self-center place-content-center" on:click={() => increaseNum(count)}> <p class="h-12	 w-12 border-2 border-lightblue  rounded-full grid place-content-center stortekst font-normal"> + </p> </button>
 </div>
 
 <style>
