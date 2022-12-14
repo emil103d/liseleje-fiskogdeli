@@ -19,7 +19,7 @@
 			<p class="text-white font-medium">FISK & DELI</p>
 			<p class="text-white font-thin text-sm">LISELEJE</p>
 			<svg
-				class="logo h-5 mt-2 w-auto m-auto "
+				class="logo h-auto max-w-[30px] mt-2 w-auto m-auto "
 				width="254"
 				height="146"
 				viewBox="0 0 254 146"
