@@ -11,11 +11,13 @@
 	import Howitworks from '../lib/components/Howitworks.svelte';
 	import Instafeed from '../lib/components/Instafeed.svelte';
 	import Footer from '../lib/components/Footer.svelte';
+	import Burgermenu from '../lib/components/Burgermenu.svelte';
 	
 </script>
 
 
 <Nav />
+<Burgermenu />
 <Herosection />
 <Fiskekrog />
 <Blandselvtapas />

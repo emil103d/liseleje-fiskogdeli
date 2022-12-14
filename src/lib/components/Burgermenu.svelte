@@ -261,12 +261,11 @@
 		display: inline-block;
 		cursor: pointer;
 		position: fixed;
+		right: 4%;
 		height: 60px;
 		width: 60px;
 		background: url(/hamburger_ikon.svg) repeat-x;
 		background-position: 0;
-		right: 5%;
-		top: 5%;
 		animation: waveline 8s linear infinite;
 		/* opacity: 0; */
 		transition: all ease 0.5s;
