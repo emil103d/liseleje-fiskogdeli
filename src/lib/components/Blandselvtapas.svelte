@@ -8,8 +8,8 @@
 	">
 		<div class="grid  md:grid-cols-2 lg:max-w-[1024px] lg:m-auto place-items-center">
 			<div class="pb-12 md:pb-0 gap-2 md:pr-10 m-auto lg:m-0 text-textcolor">
-				<Label title="Nyhed" />
-				<h2 class="font-bold ">Bland selv fisketapas <b class="text-yellowdot"> . </b></h2>
+				<Label  title="Nyhed" />
+				<h2 class="font-bold pt-3">Bland selv fisketapas <b class="text-yellowdot"> . </b></h2>
 				<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
 				<p class="pb-8">
 					Vi har endnu engang udvalgt de bedste og lækreste fisketapasretter. Vi bringer alt det

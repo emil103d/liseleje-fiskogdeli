@@ -35,7 +35,7 @@
 		gap: 1rem;
 		justify-content: center;
 		place-items: center;
-		min-width: 200px;
+		min-width: 150px;
 		white-space: nowrap;
 		animation-name: rotate_fish_out;
 		animation-duration: 0.3s;
