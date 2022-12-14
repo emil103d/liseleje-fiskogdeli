@@ -28,11 +28,10 @@
 	}
 
 	svg {
-		/* height: 10px; */
+		height: 5px;
 		position: absolute;
 		width: 100%;
 	}
-
 	svg path {
 		fill: transparent;
 		stroke-width: 4px;
@@ -41,7 +40,6 @@
 		stroke-dashoffset: 547.4111328125;
 		transition: stroke-dashoffset 0.5s cubic-bezier(0.29, 0.68, 0.74, 1.02);
 	}
-
 	button:hover svg path {
 		stroke-dashoffset: 0;
 	}

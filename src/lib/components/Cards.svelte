@@ -1,5 +1,5 @@
 <script>
-	import SecondaryButton from '/src/lib/uielements/SecondaryButton.svelte';
+	import Button from '/src/lib/uielements/Button.svelte';
 	export let kategori;
 	export let beskrivelse;
 	export let image;
@@ -14,7 +14,7 @@
 				<img
 					class="w-full h-64 md:h-auto object-cover aspect-[4/5] hover:scale-110"
 					src={image}
-					alt={alt}
+					{alt}
 				/>
 			</div>
 			<div class="px-2 py-4">
@@ -23,9 +23,7 @@
 					{beskrivelse}
 				</p>
 				<div class="w-full">
-					<SecondaryButton class="font-semibold text-right justify-end grid" type="secondary"
-						><a href="{linktilcard}">Se Udvalg </a></SecondaryButton
-					>
+					<Button type="primary"><a href={linktilcard}>Se Udvalg</a></Button>
 				</div>
 			</div>
 		</a>
@@ -39,5 +37,4 @@
 	img {
 		transition: all 0.2s ease-in-out;
 	}
-
 </style>

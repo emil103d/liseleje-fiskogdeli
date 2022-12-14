@@ -1,10 +1,10 @@
 <footer class="grid align-middle items-center text-center px-10 bg-textcolor">
-	<div class="pt-32 pb-10 lg:flex lg:max-w-[1024px] lg:w-[-moz-available] lg:m-auto">
+	<div class="pt-32 pb-10 lg:max-w-[1024px] lg:w-[-moz-available] lg:m-auto">
 		<div class="lg:grid lg:items-center">
-			<div class="grid justify-center pb-20 lg:pb-0">
+			<div class="grid justify-center pb-24">
 				<a href="/">
 					<svg
-					class="mx-12 lg:mx-0 lg:mr-20 "
+					class=""
 					width="211"
 					height="133"
 					viewBox="0 0 211 133"

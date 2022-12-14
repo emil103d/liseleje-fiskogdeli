@@ -75,7 +75,7 @@
 		<div class="">
 			<div>
 				<form>
-					<label class="block mb-2 text-sm font-medium " for="title">Tilføj Rabatkode:</label>
+					<label class="block mb-2 text-sm font-medium" for="title">Tilføj Rabatkode:</label>
 					<div class="flex gap-2 pb-5">
 						<input
 							class=" border border-shadowblue focus:border-yellowdot block w-full"
