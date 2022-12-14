@@ -22,9 +22,11 @@
 				<p class="text-gray-700 text-sm mb-4 tekst">
 					{beskrivelse}
 				</p>
-				<SecondaryButton class="font-semibold text-right" type="secondary"
-					><a href="{linktilcard}">Se Udvalg </a></SecondaryButton
-				>
+				<div class="w-full">
+					<SecondaryButton class="font-semibold text-right justify-end grid" type="secondary"
+						><a href="{linktilcard}">Se Udvalg </a></SecondaryButton
+					>
+				</div>
 			</div>
 		</a>
 	</div>
