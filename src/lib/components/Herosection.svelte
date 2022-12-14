@@ -34,7 +34,6 @@
 		animation-duration: 1.5s;
 		animation-iteration-count: infinite;
 		animation-fill-mode: both;
-		animation;
 	}
 
 	@keyframes puls_kf {
