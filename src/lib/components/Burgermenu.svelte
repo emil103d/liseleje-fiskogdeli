@@ -293,7 +293,7 @@
 	.close {
 		position: absolute;
 		right: 4%;
-		top: 0%;
+		top: 2%;
 		width: 32px;
 		height: 32px;
 		opacity: 0.7;
