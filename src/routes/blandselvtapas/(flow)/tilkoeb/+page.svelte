@@ -6,7 +6,6 @@
 	import Tapas from '/src/lib/tapas.svelte';
 	import ButtonContainer from '/src/lib/ButtonContainer.svelte';
 	import Button from '../../../../lib/uielements/Button.svelte';
-	import SecondaryButton from '../../../../lib/uielements/SecondaryButton.svelte';
 	import Content from '/src/lib/popup/Content.svelte';
 	import Modal from '/src/lib/popup/Modal.svelte';
 
@@ -53,9 +52,7 @@
 			<p>Vælg dit tilbehør</p>
 		</div>
 
-		<div
-			class="grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] py-4"
-		>
+		<div class="grid md:grid-cols gap-10 lg:gap-16 md:grid-cols-[minmax(auto,_1fr)_250px] py-4">
 			<div class="flex justify-between place-items-center">
 				<ButtonContainer>
 					{#each kategorier as kategori}
@@ -277,7 +274,7 @@
 				</div>
 
 				<div class="flex justify-between place-items-center md:hidden ">
-					<SecondaryButton><a href="/blandselvtapas/vaelgfisketapas">Tilbage</a></SecondaryButton>
+					<Button><a href="/blandselvtapas/vaelgfisketapas">Tilbage</a></Button>
 					<Button type="primary"><a href="/blandselvtapas/afslut">Næste</a></Button>
 				</div>
 			</section>
@@ -286,7 +283,7 @@
 				class="grid md:grid-cols-[minmax(auto,_1fr)_calc(250px+2.5rem)] lg:grid-cols-[minmax(auto,_1fr)_calc(250px+4rem)] md:pt-6"
 			>
 				<div class="hidden md:flex justify-between place-items-center">
-					<SecondaryButton><a href="/blandselvtapas/vaelgfisketapas">Tilbage</a></SecondaryButton>
+					<Button><a href="/blandselvtapas/vaelgfisketapas">Tilbage</a></Button>
 					<Button type="primary"><a href="/blandselvtapas/afslut">Næste</a></Button>
 				</div>
 				<div />

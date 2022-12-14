@@ -3,7 +3,7 @@
 	import Opsummering from '/src/lib/opsummering.svelte';
 	import { cart } from '/src/stores/cart.js';
 	import Tapas from '../../../../lib/tapas.svelte';
-	import SecondaryButton from '../../../../lib/uielements/SecondaryButton.svelte';
+	import Button from '../../../../lib/uielements/Button.svelte';
 	console.log($cart);
 </script>
 
@@ -30,10 +30,9 @@
 				</div>
 			</div>
 			<div class="grid w-fit md:w-full pt-6 col-start-3">
-				<SecondaryButton><a href="/blandselvtapas/tilkoeb">Tilbage</a></SecondaryButton>
+				<Button><a href="/blandselvtapas/tilkoeb">Tilbage</a></Button>
 			</div>
 		</div>
-		
 	</div>
 </main>
 

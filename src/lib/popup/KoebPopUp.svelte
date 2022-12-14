@@ -1,6 +1,5 @@
 <script>
 	import Button from '../uielements/Button.svelte';
-	import SecondaryButton from '../uielements/SecondaryButton.svelte';
 </script>
 
 <div class=" p-10">
@@ -50,7 +49,7 @@
 	</div>
 
 	<div class=" flex justify-between">
-		<SecondaryButton type="primary"><a href="/construction">Shop videre</a></SecondaryButton>
+		<Button type="secondary"><a href="/construction">Shop videre</a></Button>
 		<Button type="primary"><a href="/blandselvtapas">Gå til betaling</a></Button>
 	</div>
 </div>
