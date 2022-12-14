@@ -2,63 +2,70 @@
 	import { fade } from 'svelte/transition';
 </script>
 
-<div class="sideboxRight flex bg-lightblue p-4 min min-h-full">
-	<ul class="menu self-center md:pl-32" in:fade={{ y: 200, duration: 1000 }}>
-		<li>
-			<div class="flex gap-2">
-				<a class="hover-underline-animation" href="/construction"
-					>Vores historie<svg
-						viewBox="0 0 455.555 48"
-						preserveAspectRatio="none"
-						width="150"
-						height="10"
+<div class="sideboxRight grid bg-lightblue p-4 min-h-full w-full">
+
+	<div class="justify-center grid place-self-center self-center">
+		<ul class="menu place-self-center self-center" in:fade={{ y: 200, duration: 1000 }}>
+			<li>
+				<div class="flex gap-2">
+					<a class="hover-underline-animation" href="/construction"
+						>Vores historie<svg
+							viewBox="0 0 455.555 48"
+							preserveAspectRatio="none"
+							width="150"
+							height="10"
+						>
+							<path
+								d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+							/><path
+								d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+							/></svg
+						></a
 					>
-						<path
-							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
-						/><path
-							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
-						/></svg
-					></a
-				>
-			</div>
-		</li>
-		<li>
-			<div class="flex gap-2">
-				<a class="hover-underline-animation" href="/construction"
-					>Vores vision<svg
-						viewBox="0 0 455.555 48"
-						preserveAspectRatio="none"
-						width="150"
-						height="10"
+				</div>
+			</li>
+			<li>
+				<div class="flex gap-2">
+					<a class="hover-underline-animation" href="/construction"
+						>Vores vision<svg
+							viewBox="0 0 455.555 48"
+							preserveAspectRatio="none"
+							width="150"
+							height="10"
+						>
+							<path
+								d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+							/><path
+								d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+							/></svg
+						></a
 					>
-						<path
-							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
-						/><path
-							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
-						/></svg
-					></a
-				>
-			</div>
-		</li>
-		<li>
-			<div class="flex gap-2">
-				<a class="hover-underline-animation" href="/construction"
-					>Medarbejdere<svg
-						viewBox="0 0 455.555 48"
-						preserveAspectRatio="none"
-						width="150"
-						height="10"
+				</div>
+			</li>
+			<li>
+				<div class="flex gap-2">
+					<a class="hover-underline-animation" href="/construction"
+						>Medarbejdere<svg
+							viewBox="0 0 455.555 48"
+							preserveAspectRatio="none"
+							width="150"
+							height="10"
+						>
+							<path
+								d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+							/><path
+								d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+							/></svg
+						></a
 					>
-						<path
-							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
-						/><path
-							d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
-						/></svg
-					></a
-				>
-			</div>
-		</li>
-	</ul>
+				</div>
+			</li>
+		</ul>
+	
+	</div>
+
+
+	
 </div>
 
 <style>
