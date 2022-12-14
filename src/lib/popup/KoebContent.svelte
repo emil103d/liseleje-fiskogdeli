@@ -13,10 +13,10 @@
 	};
 </script>
 
-<section>
+<section class="width_regler">
 	<button on:click={showKoebPopUp}
-		>Tilføj tapas til kurven <svg
-			class="button_icon"
+		>Bestil nu <svg
+			class="button_icon "
 			width="25"
 			height="28"
 			viewBox="0 0 33 28"
@@ -49,8 +49,8 @@
 		gap: 1rem;
 		justify-content: center;
 		place-items: center;
-		min-width: 200px;
 		white-space: nowrap;
+		max-width: 200px;
 		animation-name: rotate_fish_out;
 		animation-duration: 0.3s;
 		animation-iteration-count: 1;
@@ -89,6 +89,8 @@
     animation-fill-mode: both;
 } */
 
+
+
 	.button_icon {
 		animation-name: rotate_fish_out;
 		animation-duration: 0.3s;
@@ -123,6 +125,13 @@
 
 		100% {
 			transform: rotatey(0deg);
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		.width_regler, button {
+			max-width: 100%;
+			width: 100%;
 		}
 	}
 </style>
