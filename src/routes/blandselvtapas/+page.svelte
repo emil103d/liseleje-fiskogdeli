@@ -22,7 +22,7 @@
 					<Numericbutton />
 					<div class="m-auto">
 						<Button type="primary" class="m-auto"
-							><a href="/blandselvtapas/vaelgfisketapas">Næste</a></Button
+							><a href="/blandselvtapas/vaelgfisketapas">Vælg tapasretter</a></Button
 						>
 					</div>
 				</div>
