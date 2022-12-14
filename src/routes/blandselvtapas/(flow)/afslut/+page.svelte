@@ -29,8 +29,8 @@
 					<Opsummering />
 				</div>
 			</div>
-			<div class="grid w-fit md:w-full pt-6 col-start-3">
-				<Button><a href="/blandselvtapas/tilkoeb">Tilbage</a></Button>
+			<div class="grid w-fit md:w-fit pt-6 col-start-3">
+				<Button type="secondary"><a href="/blandselvtapas">Tilbage</a></Button>
 			</div>
 		</div>
 	</div>
