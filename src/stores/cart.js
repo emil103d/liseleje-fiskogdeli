@@ -137,7 +137,7 @@ export const tilkoebs = readable([
 		id: '14',
 		title: 'Pinotage',
 		kategory: 'drikkevarer',
-		price: '30',
+		price: '170',
 		image: '/products/drikkevarer/pinotage.webp',
 		quantity: 1,
 		type: 't'
@@ -146,7 +146,7 @@ export const tilkoebs = readable([
 		id: '15',
 		title: 'Rose',
 		kategory: 'drikkevarer',
-		price: '30',
+		price: '140',
 		image: '/products/drikkevarer/rose.webp',
 		quantity: 1,
 		type: 't'
@@ -155,7 +155,7 @@ export const tilkoebs = readable([
 		id: '16',
 		title: 'Rosso',
 		kategory: 'drikkevarer',
-		price: '30',
+		price: '200',
 		image: '/products/drikkevarer/rosso.webp',
 		quantity: 1,
 		type: 't'
@@ -164,7 +164,7 @@ export const tilkoebs = readable([
 		id: '17',
 		title: 'Sancerre',
 		kategory: 'drikkevarer',
-		price: '30',
+		price: '575',
 		image: '/products/drikkevarer/sancerre.webp',
 		quantity: 1,
 		type: 't'
@@ -173,7 +173,7 @@ export const tilkoebs = readable([
 		id: '18',
 		title: 'Limemayo',
 		kategory: 'dyp',
-		price: '30',
+		price: '15',
 		image: '/products/dyppelse/limemayo.webp',
 		quantity: 1,
 		type: 't'
@@ -182,7 +182,7 @@ export const tilkoebs = readable([
 		id: '19',
 		title: 'Remoulade',
 		kategory: 'dyp',
-		price: '30',
+		price: '15',
 		image: '/products/dyppelse/remoulade.webp',
 		quantity: 1,
 		type: 't'
@@ -191,7 +191,7 @@ export const tilkoebs = readable([
 		id: '20',
 		title: 'Tzatziki',
 		kategory: 'dyp',
-		price: '30',
+		price: '20',
 		image: '/products/dyppelse/tzatziki.webp',
 		quantity: 1,
 		type: 't'
@@ -209,7 +209,7 @@ export const tilkoebs = readable([
 		id: '22',
 		title: 'Surdej',
 		kategory: 'brød',
-		price: '30',
+		price: '35',
 		image: '/products/broed/surdej.webp',
 		quantity: 1,
 		type: 't'
@@ -218,7 +218,7 @@ export const tilkoebs = readable([
 		id: '23',
 		title: 'Knækbrød',
 		kategory: 'brød',
-		price: '30',
+		price: '20',
 		image: '/products/broed/knækbrød.webp',
 		quantity: 1,
 		type: 't'
@@ -227,7 +227,7 @@ export const tilkoebs = readable([
 		id: '24',
 		title: 'Rugbrød',
 		kategory: 'brød',
-		price: '30',
+		price: '35',
 		image: '/products/broed/rugbrød.webp',
 		quantity: 1,
 		type: 't'
@@ -236,7 +236,7 @@ export const tilkoebs = readable([
 		id: '25',
 		title: 'Remoulade',
 		kategory: 'dyp',
-		price: '30',
+		price: '15',
 		image: '/products/dyppelse/remoulade.webp',
 		quantity: 1,
 		type: 't'

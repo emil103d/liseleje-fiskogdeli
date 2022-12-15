@@ -25,13 +25,9 @@
 <Burgermenu />
 <Herosection />
 <Fiskekrog />
-
 <Blandselvtapas />
-
 <Friskt_loyalt />
-
 <Udvalg />
-
 <Testimonials />
 <Howitworks />
 <Instafeed />
