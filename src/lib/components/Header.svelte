@@ -40,7 +40,7 @@
 
 	<div class="flex gap-6 items-center">
 		<div class="">
-			<img class="indkoebskurv" src="../indkobskurv.png" alt="Shoppingcart" />
+			<img class="indkoebskurv" src="../indkobskurv.webp" alt="Shoppingcart" />
 		</div>
 		<button on:click={showPopup}
 			><svg

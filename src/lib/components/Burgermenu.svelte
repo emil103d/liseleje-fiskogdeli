@@ -28,7 +28,10 @@
 <svelte:window on:keydown={handleNavWithKey} />
 
 <div id="mySidenav" class="sidenav" class:open={navOpen}>
-	<button class="closebtn z-4 text-white close group-aria-checked: aria-[Luk menu-knap]" on:click={handleNav} />
+	<button
+		class="closebtn z-4 text-white close group-aria-checked: aria-[Luk menu-knap]"
+		on:click={handleNav}
+	/>
 	{#if navOpen}
 		<div class="" in:fly={{ y: 300, duration: 1000, delay: 500 }} out:fade>
 			<svg
@@ -82,7 +85,7 @@
 							fill="#1F425F"
 						/>
 					</svg>
-					FOOD MARKET
+					ALLE PRODUKTER
 				</button>
 				<button
 					class={current === '2' ? 'selected' : ''}
@@ -336,6 +339,4 @@
 			height: 50%; /* 100% Full-height */
 		}
 	}
-
-
 </style>
