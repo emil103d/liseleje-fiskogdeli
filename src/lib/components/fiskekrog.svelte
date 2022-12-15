@@ -5,7 +5,7 @@
 			<div class="line" />
 		</div>
 
-		<button class="aria-[go to top button]">
+		
 			<a href="#">
 				<div class="krog">
 					<svg
@@ -75,7 +75,7 @@
 					</svg>
 				</div>
 			</a>
-		</button>
+	
 	</div>
 </div>
 
