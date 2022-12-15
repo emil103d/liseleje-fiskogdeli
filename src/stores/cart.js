@@ -80,7 +80,7 @@ export const products = readable([
 		id: '9',
 		title: 'Pillede rejer',
 		kategory: 'skaldyr',
-		price: '30',
+		price: '40',
 		image: '/products/skaldyr/pillederejer.webp',
 		quantity: 1,
 		type: 'p'
@@ -89,7 +89,7 @@ export const products = readable([
 		id: '10',
 		title: 'Laksesalat',
 		kategory: 'salater',
-		price: '30',
+		price: '35',
 		image: '/products/salater/laksesalat.webp',
 		quantity: 1,
 		type: 'p'
@@ -107,7 +107,7 @@ export const products = readable([
 		id: '11',
 		title: 'Tangsalat',
 		kategory: 'salater',
-		price: '30',
+		price: '20',
 		image: '/products/salater/tangsalat.webp',
 		quantity: 1,
 		type: 'p'
