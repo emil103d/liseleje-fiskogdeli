@@ -5,6 +5,12 @@
 	import Nav from '../../lib/components/Nav.svelte';
 </script>
 
+<svelte:head>
+	<title> Siden er under opbygning - Liseleje Fisk & Deli </title>
+	<meta name="viewport" content="width=device-width" />
+	<meta name="content" content="Vi er ude og fisk - siden kommer er på vej." />
+</svelte:head>
+
 <Burgermenu />
 <Nav />
 

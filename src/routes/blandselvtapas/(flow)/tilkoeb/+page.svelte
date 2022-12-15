@@ -44,8 +44,9 @@
 </script>
 
 <svelte:head>
-	
-
+	<title>Tilkøb - Liseleje Fisk & Tapas </title>
+	<meta name="viewport" content="width=device-width" />
+	<meta name="content" content="Vælg dine tilkøb" />
 </svelte:head>
 
 

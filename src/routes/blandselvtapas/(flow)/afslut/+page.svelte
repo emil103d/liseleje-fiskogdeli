@@ -7,6 +7,13 @@
 	console.log($cart);
 </script>
 
+<svelte:head>
+	<title>Bestil dit fiskefad - Liseleje Fisk & Tapas </title>
+	<meta name="viewport" content="width=device-width" />
+	<meta name="content" content="Køb dit tapasfad" />
+</svelte:head>
+
+
 <main>
 	<div
 		class="grid lg:max-w-[1024px] lg:px-0 py-[150px] md:py-32 lg:py-44  lg:py-0 lg:m-auto place-content-center w-[100vw] md:h-[100vh] "
