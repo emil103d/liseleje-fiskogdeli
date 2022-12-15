@@ -1,3 +1,4 @@
+
 <section class="grid px-10 justify-center align-middle w-[100%] h-[100vh] place-content-center">
 	<div class="text-center grid gap-20 ">
 		<div class="grid gap-2">
@@ -8,7 +9,7 @@
 	</div>
 
 	<div class="puls absolute bottom-20 left-[calc(50%-16px)]">
-		<a href="#section_2_container">
+		<a href="#section_2_container" class="pointer-events-none">
 			<svg
 				width="32"
 				height="25"
