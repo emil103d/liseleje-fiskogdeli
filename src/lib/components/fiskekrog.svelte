@@ -5,7 +5,7 @@
 			<div class="line" />
 		</div>
 
-		<button class="">
+		<button class="aria-[go to top button]">
 			<a href="#">
 				<div class="krog">
 					<svg
