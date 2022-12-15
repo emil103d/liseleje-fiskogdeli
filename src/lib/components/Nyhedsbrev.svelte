@@ -46,7 +46,7 @@
 
 <style>
 	section {
-		background-image: url('/static/vaeg.png');
+		background-image: url('/static/vaeg.webp');
 		background-size: contain;
 	}
 
