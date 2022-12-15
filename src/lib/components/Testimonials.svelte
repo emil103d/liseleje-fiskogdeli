@@ -1,10 +1,15 @@
+<script>
+</script>
+
 <section>
 	<div class="wrapper py-32 md:py-44 px-10 ">
 		<div
 			class="flex md:justify-between lg:max-w-[1024px] lg:m-auto bg-white p-6 md:p-14 lg:p-20 skygge"
 		>
 			<div class="w-full h-full m-auto pr-10 ">
-				<h2 class="font-bold text-textcolor">Kunderne siger <b class="text-yellowdot "> . </b></h2>
+				<h2 class="font-bold text-textcolor">
+					Kunderne siger <b class="text-yellowdot "> . </b>
+				</h2>
 				<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2 skygge" />
 				<p class="pb-6 italic">
 					“Vi har nu for tredje gang blandet vores eget lækre smagfulde tapas fad, og det kan varmt

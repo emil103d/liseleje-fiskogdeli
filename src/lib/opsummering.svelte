@@ -18,37 +18,30 @@
 		<div class="pb-4">
 			<h3 class="text-darkblue font-bold pb-4">Opsummering</h3>
 			<div class="flex justify-between gap-2">
-			<p class="mellemtekst"> Bland selv tapas fad:</p> 
-				<p class="mellemtekst">  {$cart.reduce((total, cartItem) => {
-					const item = $cart.find((i) => i.type === cartItem.type);
-					if (item.type === 'p') {
-						return total + (item.price || 0) * cartItem.quantity * countValue;
-					}
-					return total;
-				}, 0)} kr.
+				<p class="mellemtekst">Bland selv tapas fad:</p>
+				<p class="mellemtekst">
+					{$cart.reduce((total, cartItem) => {
+						const item = $cart.find((i) => i.id === cartItem.id);
+						if (item.type === 'p') {
+							return total + (item.price || 0) * cartItem.quantity * countValue;
+						}
+						return total;
+					}, 0)} kr.
 				</p>
 			</div>
 
-
 			<div class="flex justify-between gap-2">
-			<p class=" mellemtekst">
-				Tilkøbsvarer:</p> 
+				<p class=" mellemtekst">Tilkøbsvarer:</p>
 				<p class="mellemtekst">
 					{$cart.reduce((total, cartItem) => {
-						const item = $cart.find((i) => i.type === cartItem.type);
+						const item = $cart.find((i) => i.id === cartItem.id);
 						if (item.type === 't') {
 							return total + (item.price || 0) * cartItem.quantity;
 						}
 						return total;
 					}, 0)} kr.
-				
 				</p>
 			</div>
-				
-				
-
-
-
 
 			<p class="font-semibold mellemtekst pt-4 grid place-content-end">
 				<!-- Total: {$cart.reduce((total, cartItem) => {
@@ -57,7 +50,7 @@
 				}, 0)}; -->
 
 				Total: {$cart.reduce((total, cartItem) => {
-					let item = $cart.find((i) => i.type === cartItem.type);
+					let item = $cart.find((i) => i.id === cartItem.id);
 					if (item.type === 'p') {
 						return total + (item.price || 0) * cartItem.quantity * countValue;
 					} else if (item.type === 't') {
@@ -67,10 +60,8 @@
 			</p>
 		</div>
 		<div class=" border-shadowblue border-t-2" />
-
 	</div>
 
-	
 	<div>
 		<div class="">
 			<div>

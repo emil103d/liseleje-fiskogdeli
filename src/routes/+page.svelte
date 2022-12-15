@@ -23,9 +23,9 @@
 <Blandselvtapas />
 
 <Friskt_loyalt />
-<Saos animation={'scale-in-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}>
-	<Udvalg />
-</Saos>
+
+<Udvalg />
+
 <Testimonials />
 <Howitworks />
 <Instafeed />
