@@ -6,7 +6,7 @@
 	<div class="wrapper py-32 md:py-44 px-10">
 		<div class="grid  md:grid-cols-2 lg:max-w-[1024px] lg:m-auto place-items-center">
 			<div class="w-full h-full skygge md:block relative">
-				<img src="martin.webp" alt="Ung og stolt ejer på fiskebåd - Martin" class="w-full" />
+				<img src="martin.webp" alt="Stolt ejer af fiskbutikken står på fiskebåd og smiler" class="w-full" />
 				<div
 					class="h-40 w-40 rounded-full bg-yellowdot absolute top-[-30px] right-[-30px] button text-center grid place-content-center"
 				>
