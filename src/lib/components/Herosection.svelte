@@ -4,7 +4,7 @@
 			<h1 class="text-darkblue tracking-wider">FISK & DELI</h1>
 			<p class="text-darkblue text-4xl tracking-widest">LISELEJE</p>
 		</div>
-		<img src="logo.svg" class="fisk m-auto max-w-[150px] md:max-w-xs " alt="" />
+		<img src="logo.svg" class="fisk m-auto max-w-[150px] md:max-w-xs " alt="pil ned" />
 	</div>
 
 	<div class="puls absolute bottom-20 left-[calc(50%-16px)]">
