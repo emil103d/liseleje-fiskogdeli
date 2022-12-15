@@ -28,9 +28,9 @@
 <svelte:window on:keydown={handleNavWithKey} />
 
 <div id="mySidenav" class="sidenav" class:open={navOpen}>
-	<button class="closebtn z-4 text-white close" on:click={handleNav} />
+	<button class="closebtn z-4 text-white close group-aria-checked: aria-[Luk menu-knap]" on:click={handleNav} />
 	{#if navOpen}
-		<div class="fisk" in:fly={{ y: 300, duration: 2000, delay: 1000 }} out:fade>
+		<div class="" in:fly={{ y: 300, duration: 1000, delay: 500 }} out:fade>
 			<svg
 				class="fisk"
 				width="898"
@@ -61,9 +61,9 @@
 		<!-- Menu container -->
 		<div
 			class="menu grid grid-cols-2 flex"
-			transition:fly={{ y: 700, duration: 2000, delay: 2000 }}
+			transition:fly={{ y: 700, duration: 1000, delay: 1000 }}
 		>
-			<div class="sideboxLeft p-4 bg-white self-center md:pl-32 block cols-start-1 ">
+			<div class="sideboxLeft p-4 bg-white place-self-center self-center block cols-start-1 ">
 				<button
 					class={current === '1' ? 'selected' : ''}
 					on:click={() => (current = '1')}
@@ -206,8 +206,8 @@
 		transition: 0.3s;
 		color: #1f425f;
 		font-size: clamp(1.0625rem, 0.6563rem + 1.625vw, 1.875rem);
-		margin-bottom: 2rem;
-		margin-top: 2rem;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
 		align-items: center;
 	}
 
@@ -241,8 +241,8 @@
 	}
 
 	.fisk {
-		width: 100vw;
-		height: 30vh;
+		width: 35vw;
+		height: auto;
 		margin: auto;
 	}
 
@@ -292,8 +292,8 @@
 	/* Position and style the close button (top right corner) */
 	.close {
 		position: absolute;
-		right: 5.5%;
-		top: 0%;
+		right: 4%;
+		top: 2%;
 		width: 32px;
 		height: 32px;
 		opacity: 0.7;
@@ -329,11 +329,13 @@
 		.fisk {
 			padding-top: 2rem;
 			padding-bottom: 4rem;
-			height: 40vh;
+			height: 50vh;
 		}
 
 		.menu {
-			height: 60%; /* 100% Full-height */
+			height: 50%; /* 100% Full-height */
 		}
 	}
+
+
 </style>

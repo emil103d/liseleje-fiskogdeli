@@ -6,6 +6,12 @@
 	import Maengdeguide from '/src/lib/components/Maengdeguide.svelte';
 </script>
 
+<svelte:head>
+	<title>Fiskebutik, Fisketapas & Deli - Liseleje Fisk & Tapas </title>
+	<meta name="viewport" content="width=device-width" />
+	<meta name="content" content="Bland selv tapas - vælg antal personer" />
+</svelte:head>
+
 <main class="pt-[150px] pb-[150px] md:py-32 lg:py-44 md:h-[100vh] px-5 md:px-10 place-content-center w-full grid overflow-y-hidden ">
 	<div class="grid lg:max-w-[1024px] lg:m-auto">
 		<h2 class="text-darkblue">
@@ -18,9 +24,9 @@
 
 			<div class="pt-12 md:pt-0 grid justify-center">
 				<div class="max-w-[16rem] md:max-w-[20rem] md:m-auto grid gap-6">
-					<h3 class="text-center text-darkblue">Hvor mange personer bliver I?</h3>
+					<h3 class="text-center text-darkblue ">Hvor mange personer bliver I?</h3>
 					<Numericbutton />
-					<div class="m-auto">
+					<div class="m-auto md:pt-6">
 						<Button type="primary" class="m-auto"
 							><a href="/blandselvtapas/vaelgfisketapas">Vælg tapasretter</a></Button
 						>

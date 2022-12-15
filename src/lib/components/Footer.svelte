@@ -77,10 +77,8 @@
 						<li>Strandvejen 69</li>
 						<li>4930 Liseleje</li>
 						<li>Denmark</li>
-						<br />
 						<li>TLF +45 31705091</li>
 						<li>E-mail fisk@fisk.dk</li>
-						<br />
 						<li>CVR: 12345678</li>
 					</ul>
 				</div>

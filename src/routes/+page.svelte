@@ -15,6 +15,12 @@
 	import Saos from 'saos';
 </script>
 
+<svelte:head>
+	<title>Fiskebutik, Fisketapas & Deli - Liseleje Fisk & Tapas </title>
+	<meta name="viewport" content="width=device-width" />
+	<meta name="content" content="Frisk fisk eller fisketapas til frokost i Liseleje." />
+</svelte:head>
+
 <Nav />
 <Burgermenu />
 <Herosection />

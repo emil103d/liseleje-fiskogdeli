@@ -28,7 +28,7 @@
 			<div class="w-full h-full skygge md:block">
 				<video
 					src="tapas.mp4"
-					class="w-full h-full object-cover aspect-square"
+					class="w-full h-full object-cover aspect-square filtercontiner"
 					track
 					kind="video/mp4"
 					autoplay
@@ -70,4 +70,10 @@
 	.skygge {
 		box-shadow: 20px 20px #e5f1f9;
 	}
+
+	.filtercontiner {
+		transform-style: preserve-3d;
+}
+
+
 </style>

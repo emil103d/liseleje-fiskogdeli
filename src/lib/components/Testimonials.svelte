@@ -41,7 +41,7 @@
 
 <style>
 	section {
-		background-image: url('vaeg.png');
+		background-image: url('/static/vaeg.png');
 		background-size: contain;
 	}
 

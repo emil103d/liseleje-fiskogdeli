@@ -1,11 +1,11 @@
 <div class="hidden xl:block hover:animation">
 	<div class="parent">
 		<div class="lineandtekst">
-			<a class=" absolute tekst mellemtekst font-semibold right-[-55px]" href="#">Go to top</a>
+			<a class="absolute tekst mellemtekst font-semibold right-[-55px]" href="#">Go to top</a>
 			<div class="line" />
 		</div>
 
-		<button class="">
+		
 			<a href="#">
 				<div class="krog">
 					<svg
@@ -75,7 +75,7 @@
 					</svg>
 				</div>
 			</a>
-		</button>
+	
 	</div>
 </div>
 

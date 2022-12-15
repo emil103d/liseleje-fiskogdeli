@@ -52,6 +52,14 @@
 	//$: produktPris = $products.reduce((total, produkt) => produkt.price * countValue, 0);
 </script>
 
+
+<svelte:head>
+	<title>Bland selv tapas - Liseleje Fisk & Tapas </title>
+	<meta name="viewport" content="width=device-width" />
+	<meta name="content" content="Vælg dine retter til fadet" />
+</svelte:head>
+
+
 <main class="w-[100vw]">
 	<div
 		class="grid lg:max-w-[1024px] px-5 md:px-10 lg:px-0 pt-[150px] pb-[200px] md:pb-[150px] lg:py-0 lg:m-auto place-content-center md:h-[100vh]"
