@@ -8,6 +8,7 @@
 	import Button from '../../../../lib/uielements/Button.svelte';
 	import Content from '/src/lib/popup/Content.svelte';
 	import Modal from '/src/lib/popup/Modal.svelte';
+	import { head_selector } from 'svelte/internal';
 
 	const addToCart = (tilkoeb) => {
 		console.log('addToCart tilkoeb');
@@ -22,7 +23,7 @@
 		}
 		$cart = [...$cart, tilkoeb]; //for at gøre reaktivt skal sveltekit have en assignment, så man bruger spreadopreatoren (...) beholdeeksisterende produkter men tilføje nye.
 	};
-
+	
 	let selected = 'alle';
 	const filterSelection = (e) => (selected = e.target.dataset.tilkoeb);
 	console.log(filterSelection);
@@ -41,6 +42,12 @@
 		}
 	}
 </script>
+
+<svelte:head>
+	
+
+</svelte:head>
+
 
 <main>
 	<div
