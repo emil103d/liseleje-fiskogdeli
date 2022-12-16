@@ -17,7 +17,7 @@
 						<div>
 							<label for="navn" class="text-textcolor font-semibold">Navn</label>
 							<input
-								class="h-[53.6px] appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+								class="h-[53.6px] appearance-none bg-transparent border-[1px] border-darkblue w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
 								type="text"
 								placeholder="Indtast navn"
 								aria-label="Full name"
@@ -27,7 +27,7 @@
 						<div>
 							<label for="e-mail" class="text-textcolor font-semibold ">E-mail</label>
 							<input
-								class="h-[53.6px] appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+								class="h-[53.6px] appearance-none bg-transparent border-[1px] border-darkblue w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
 								type="text"
 								placeholder="Indtast e-mail"
 								aria-label="E-mail"
