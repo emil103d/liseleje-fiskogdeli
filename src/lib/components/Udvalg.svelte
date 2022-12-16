@@ -35,7 +35,7 @@
 
 	<div class="bottom-0 left-2">
 		<svg
-			class="absolute top-[7vh] left-[40vw]"
+			class="absolute top-[7vh] left-[20vw] md:left-[60vw"
 			width="91"
 			height="47"
 			viewBox="0 0 91 47"
@@ -55,7 +55,7 @@
 		</svg>
 
 		<svg
-			class="absolute top-[24vh] left-[90vw]"
+			class="absolute top-[24vh] left-[20vw] md:left-[60vw]"
 			width="91"
 			height="47"
 			viewBox="0 0 91 47"
@@ -75,7 +75,7 @@
 		</svg>
 
 		<svg
-			class="absolute top-[70vh] left-[80vw]"
+			class="absolute top-[70vh] left-[20vw] md:left-[60vw]"
 			width="96"
 			height="52"
 			viewBox="0 0 96 52"
