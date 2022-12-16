@@ -84,14 +84,12 @@
 				</div>
 
 				<div>
-					<p class="font-bold">Fisketapas</p>
+					<p class="font-bold">Alle produkter</p>
 					<ul class="mellemtekst">
-						<li>Tun</li>
-						<li>Laks</li>
-						<li>Friskpillede Rejer</li>
-						<li>Hummer</li>
-						<li>Østers</li>
-						<li>Kammuslinger</li>
+						<li>Fisk & Skaldyr</li>
+						<li>Fisketapas</li>
+						<li>Delikatesser</li>
+						<li>Tilbehør</li>
 					</ul>
 				</div>
 
