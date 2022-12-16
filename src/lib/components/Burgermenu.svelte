@@ -66,7 +66,7 @@
 			class="menu grid grid-cols-2 flex"
 			transition:fly={{ y: 700, duration: 1000, delay: 1000 }}
 		>
-			<div class="sideboxLeft p-4 bg-white place-self-center self-center block cols-start-1 ">
+			<div class="sideboxLeft p-4 bg-white md:pr-24 place-self-end  self-center block cols-start-1 ">
 				<button
 					class={current === '1' ? 'selected' : ''}
 					on:click={() => (current = '1')}

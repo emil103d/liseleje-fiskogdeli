@@ -17,7 +17,8 @@
 					stranden.“
 				</p>
 
-				<p class="font-semibold">- Malene Jensen</p>
+				<p class="font-semibold">- Malene Jensen fra Liseleje</p>
+				
 
 				<div class="flex gap-[6px] place-content-center pt-6">
 					<div class="w-2 h-2 rounded-full bg-yellowdot" />
