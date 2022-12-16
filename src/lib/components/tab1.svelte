@@ -7,9 +7,9 @@
 	//console.log(length);
 </script>
 
-<div class="sideboxRight grid bg-lightblue p-4 min-h-full w-full">
-	<div class="justify-center grid place-self-center self-center">
-		<ul class="menu place-self-center self-center" in:fade={{ y: 200, duration: 1000 }}>
+<div class="sideboxRight grid bg-lightblue p-4 min-h-full w-full place-self-left">
+	<div class="place-self-left grid place-self-left self-center">
+		<ul class="menu place-self-left md:pl-24" in:fade={{ y: 200, duration: 1000 }}>
 			<li>
 				<div class="flex gap-2">
 					<a class="" href="/construction"
