@@ -1,41 +1,36 @@
 <script>
 	import Cards from './Cards.svelte';
-	import Saos from 'saos';
 </script>
 
 <section class="py-32 md:py-44 px-10 relative">
 	<div class="lg:max-w-[1024px] lg:m-auto">
-		<Saos animation={'slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}>
-			<div class="text-textcolor">
-				<h2>Fisk, Tapas & meget mere <b class="text-yellowdot">.</b></h2>
-				<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
-			</div>
-		</Saos>
-		<Saos animation={'scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}>
-			<div class="grid md:flex gap-12 md:justify-between">
-				<Cards
-					image="udvalg_fiskskaldyr.webp"
-					alt="Lys fisk præsenteret på sort fad"
-					kategori="Fisk & Skaldyr"
-					beskrivelse="Alt godt fra havet - friskfanget i kattegat."
-					linktilcard="/construction"
-				/>
-				<Cards
-					image="udvalg_fisketapas.webp"
-					alt="Lyst brød med røget laks og citronskive"
-					kategori="Fisketapas"
-					beskrivelse="Bland selv eller vælg et fra vores menu"
-					linktilcard="/blandselvtapas"
-				/>
-				<Cards
-					image="udvalg_tilbehør.webp"
-					alt="Frisktbagt surdejsbrød"
-					kategori="Delikatesser "
-					beskrivelse="Vin, tilbehør og meget mere"
-					linktilcard="/construction"
-				/>
-			</div>
-		</Saos>
+		<div class="text-textcolor">
+			<h2>Fisk, Tapas & meget mere <b class="text-yellowdot">.</b></h2>
+			<div class="h-[2px] w-20 bg-darkblue mb-6 mt-2" />
+		</div>
+		<div class="grid md:flex gap-12 md:justify-between">
+			<Cards
+				image="udvalg_fiskskaldyr.webp"
+				alt="Lys fisk præsenteret på sort fad"
+				kategori="Fisk & Skaldyr"
+				beskrivelse="Alt godt fra havet - friskfanget i kattegat."
+				linktilcard="/construction"
+			/>
+			<Cards
+				image="udvalg_fisketapas.webp"
+				alt="Lyst brød med røget laks og citronskive"
+				kategori="Fisketapas"
+				beskrivelse="Bland selv eller vælg et fra vores menu"
+				linktilcard="/blandselvtapas"
+			/>
+			<Cards
+				image="udvalg_tilbehør.webp"
+				alt="Frisktbagt surdejsbrød"
+				kategori="Delikatesser "
+				beskrivelse="Vin, tilbehør og meget mere"
+				linktilcard="/construction"
+			/>
+		</div>
 	</div>
 
 	<div class="bottom-0 left-2">
@@ -122,25 +117,4 @@
 </section>
 
 <style>
-	@keyframes -global-scale-in-center {
-		0% {
-			transform: scale(0.8);
-			opacity: 0.3;
-		}
-		100% {
-			transform: scale(1);
-			opacity: 1;
-		}
-	}
-
-	@keyframes -global-slide-in-top {
-		0% {
-			transform: translateY(-35px);
-			opacity: 0.6;
-		}
-		100% {
-			transform: translateY(0);
-			opacity: 1;
-		}
-	}
 </style>
